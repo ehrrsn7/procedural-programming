@@ -63,7 +63,3 @@ console.log(row1);
 As a challenge, try to increase the width of each column from 7 spaces to 10. How does this change the space between columns? Can you add a third column of numbers?
 
 Finally, what is the biggest number you can put in a column before things start to get "weird"? What happens when the numbers are wider than the columns?
-
-## See Also
-
-The complete solution is available at [1-1-alignMoney.js](link-to-your-javascript-file) (replace with the actual link to your JavaScript file)
