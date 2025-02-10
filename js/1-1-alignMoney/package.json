@@ -1,0 +1,16 @@
+{
+  "name": "1-1-align-money",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint --config eslint.config.js ./1-1-alignMoney.js && node ./etc/casingCheck.js ./1-1-alignMoney.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-jest": "^28.11.0",
+    "prettier": "^3.5.0",
+    "rollup": "^4.34.6",
+    "vitest": "^3.0.5"
+  }
+}
