@@ -1,5 +1,6 @@
 /***********************************************************************
- * This demo program is designed to:
+ * Name: alignMoney.js
+ * Description:
  *      Demonstrate how to align multiple columns of numbers (money
  *      in this case) so they are pleasing to the eye
  * Author:

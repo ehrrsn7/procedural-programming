@@ -16,31 +16,31 @@ The first part of the solution is to format the numbers as money, ensuring two d
 const fixed = (num) => num.toFixed(2); // Format to two decimals
 ```
 
-After the leading `$` the text is padded to a specific length. This will require code something like:
+After the leading `$` the text is padded and right-aligned to a specific length. This will require code something like:
 
 ```javascript
-const formattedValue = "$" + fixed(124.45).padStart(7); // Numbers not in quotes!
+"$" + fixed(124.45).padStart(7) // Numbers not in quotes!
 ```
 
 Following the first set of numbers, we have another column separated by a tab.
 
 ```javascript
-const tab = "\t";
+"\t"
 ```
 
 Next, another column of numbers just like the first.
 
 ```javascript
-const formattedValue2 = "$" + fixed(321.31).padStart(7); // Again, the numbers are not in quotes
+"$" + fixed(321.31).padStart(7) // Again, the numbers are not in quotes
 ```
 
 Finally, we end with a newline
 
 ```javascript
-const newLine = "\n";
+"\n"
 ```
 
-**To print the output to the console, import the `print` function from the `./etc/utils.js` module:**
+**To print the output to the console, import the `print` function from the `./etc/utils.js` module at the top of the file like this:**
 
 ```javascript
 import { print } from './etc/utils.js';
