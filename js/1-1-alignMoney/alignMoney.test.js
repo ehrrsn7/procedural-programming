@@ -1,5 +1,5 @@
 import { expect, describe, it, vi } from "vitest";
-import alignMoney from "./1-1-alignMoney.js";
+import alignMoney from "./alignMoney.js";
 
 describe("alignMoney", () => {
 	it("Should print the correct output to the console", () => {

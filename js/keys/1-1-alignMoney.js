@@ -1,5 +1,6 @@
 /***********************************************************************
- * This demo program is designed to:
+ * alignMoney.js
+ * Description:
  *      Demonstrate how to align multiple columns of numbers (money
  *      in this case) so they are pleasing to the eye
  * Author:
@@ -12,11 +13,10 @@
 /***********************************************************************
  * main()...
  ************************************************************************/
-function alignMoney() {
+export default function alignMoney() {
    // format the output for money
    const print = (txt) => process.stdout.write(txt);
-   const fixed = (num) => num.toFixed(2); // unless you own a gas station, money
-                                          //      is formatted to two decimals
+   const fixed = (num) => num.toFixed(2);
 
    // display the first row
    const row1 = "$" +
@@ -44,8 +44,3 @@ function alignMoney() {
 }
 
 alignMoney();
-
-/***********************************************************************
- * Export the alignMoney function so that it can be used in tests
- ***********************************************************************/
-export default alignMoney;

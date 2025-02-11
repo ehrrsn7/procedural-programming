@@ -24,7 +24,8 @@ def align_money():
 	"""
 
 	# Format the output for money
-	fixed = lambda num: f"{num : .2f}" # Format to two decimals and right-align
+	fixed = lambda num: f"{num : .2f}" 	# unless you own a gas station, money
+										#      is formatted to two decimals
 
 	# Display the first row
 	row1 = ("$" +
