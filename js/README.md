@@ -16,6 +16,32 @@ Invoke-WebRequest -Uri "https://gist.githubusercontent.com/ehrrsn7/df059e72090f5
 
 You should now have access to the `node` and `npm` commands.
 
+**Expected Output**
+```log
+File downloaded successfully to install_code.ps1
+Found an existing package already installed. Trying to upgrade the installed package...
+No available upgrade found.    << if not installed, this will be the install output for the IDE
+Found an existing package already installed. Trying to upgrade the installed package...
+Found cURL [cURL.cURL] Version 8.12.0.1    << if not installed, this will be the install output for the cURL command
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://curl.se/windows/dl-8.12.0_1/curl-8.12.0_1-win64-mingw.zip                                                ██████████████████████████████  7.52 MB / 7.52 MB
+Successfully extracted archive
+Starting package install...
+Command line alias added: "curl"
+Successfully installed
+Found an existing package already installed. Trying to upgrade the installed package...
+No available upgrade found.
+No newer package versions are available from the configured sources.
+
+File downloaded successfully to install_node.ps1
+Node.js portable version downloaded successfully to node-v23.7.0-win-x64.zip
+Node.js extracted to C:\Users\<youruser>\nodejs
+Node.js added to PATH
+v23.7.0
+10.9.2
+```
+
 ## About JavaScript
 
 JavaScript is a versatile programming language primarily used for web development. It allows you to create dynamic and interactive web pages.

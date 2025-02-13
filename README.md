@@ -15,7 +15,7 @@ Before you begin, ensure you have access to the following:
 2. **Navigate to your Downloads directory:**
 
 ```Powershell
-cd "$env:USERPROFILE$/Downloads"
+cd "Downloads"
 ```
 
 3. Clear the terminal:
@@ -40,7 +40,7 @@ Invoke-WebRequest -Uri "https://gist.githubusercontent.com/ehrrsn7/df059e72090f5
 
 ```Powershell
 Clear-Host
-cd "$env:USERPROFILE$/Downloads"
+cd "Downloads"
 Set-ExecutionPolicy RemoteSigned -Scope Process # Students only have access to this scope for good reason
 Invoke-WebRequest -Uri "https://gist.githubusercontent.com/ehrrsn7/df059e72090f5fe4fa2a48cff9f1aa8c/raw/install_code.ps1" -OutFile "install_code.ps1" -UseBasicParsing; Write-Host "File downloaded successfully to install_code.ps1"; .\install_code.ps1
 code .

@@ -70,7 +70,8 @@ Finally, what is the biggest number you can put in a column before things start 
 
 ## Setting up the Program
 
-First, you need to have Python installed on your machine. You can download Python from the [official website](https://www.python.org/).
+First, you need to have Python installed on your machine.
+You can revisit the provided commands in `stretch-programs/python/README.md`.
 To set up the program, navigate to the directory containing your requirements.txt file. Then, run the following command to set up the virtual environment and install the dependencies:
 
 ```Powershell
