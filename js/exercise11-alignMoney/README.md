@@ -1,14 +1,20 @@
 # Example 1.1 – Money Alignment (JavaScript)
 
-## Demo
-
-This example demonstrates how to align multiple columns of numbers (money in this case) in JavaScript so they are pleasing to the eye. This is important in many output scenarios.
-
 ## Problem
 
 Write a JavaScript program to output a list of numbers on a grid so they can be easily read by the user.
 
 A template file has been provided for you at `alignMoney.js`.
+
+## Demo
+
+```
+$ 124.45        $ 321.31
+$   1.74        $   4.21
+$7539.12        $  54.92
+```
+
+This example demonstrates how to align multiple columns of numbers (money in this case) in JavaScript so they are pleasing to the eye. This is important in many output scenarios.
 
 ## Solution
 
@@ -61,13 +67,6 @@ print(row1);
 ```
 
 Repeat this process three times using the numbers in the example output below.
-
-## Final Output
-```
-$ 124.45        $ 321.31
-$   1.74        $   4.21
-$ 7539.12       $  54.92
-```
 
 ## Challenge
 
