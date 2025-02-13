@@ -47,10 +47,18 @@ code .
 ```
 
 ## Exploring the Repository
-Open the repository in VS Code:
 
-Navigate to the relevant subfolder (js/python) for individual component installation instructions.
-6. Navigate to the relevant subfolder (js/python) for individual component installation instructions.
+6. Open the repository in VS Code:
+
+```Powershell
+code .
+```
+
+VS Code has a built in markdown preview feature. Just click on the icon with the magnifying class and window panes.
+
+## In this Folder
+
+7. Navigate to the relevant subfolder (js/python) for individual component installation instructions.
 
 For more detailed instructions, refer to the README files in the respective subfolders:
 

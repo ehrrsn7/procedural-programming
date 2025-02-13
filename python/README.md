@@ -33,3 +33,7 @@ Key features of Python include:
 Python is widely used in various fields such as web development, scientific computing, data analysis, artificial intelligence, and more. Its simplicity and readability make it an excellent choice for beginners and experienced developers alike.
 
 For more information, visit the [Python documentation](https://docs.python.org/3/).
+
+## In this Folder
+
+[TODO] Include an index for the subfolders in this directory.
