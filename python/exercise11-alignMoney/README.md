@@ -90,7 +90,7 @@ python align_money.py
 
 ## How to Test the Program
 
-To test the program, a test file has been provided for you at `test_align_money.py`, per PyTest conventions. Use the provided framework to test your program against the test cases by using the following command:
+To test the program, a test file has been provided for you at `align_money_test.py`, per PyTest conventions. Use the provided framework to test your program against the test cases by using the following command:
 
 ```Powershell
 python -m pytest
