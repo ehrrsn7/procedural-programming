@@ -76,7 +76,7 @@ Finally, what is the biggest number you can put in a column before things start 
 
 ## Setting up the Program
 
-First, you need to have NodeJS (the JavaScript runtime for the Terminal). You can download this using the provided [Install Script](https://docs.google.com/document/d/1Qn1t364JDQHaBO3hAh9bZYd06EnaQvQewCQgq8QrEKU/edit?usp=sharing) document.
+First, you need to have NodeJS (the JavaScript runtime for the Terminal). You can download this using the provided in `stretch-programs/js/README.md`.
 
 To set up the program, navigate to the directory containing your package.json file. Then, run the following command to install the dependencies:
 
