@@ -2,7 +2,7 @@
  * Name: assignment11.js
  * Description:
  *    Demonstrate how to align multiple columns of numbers (money
- *    in this case) so they are pleasing to the eye
+ *    in this case) to cleanly display a budget table.
  * Author:
  *    <insert your name>
  * Source:
