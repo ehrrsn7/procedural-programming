@@ -66,7 +66,7 @@ const row1 = "$" +
 print(row1);
 ```
 
-Repeat this process three times using the numbers in the example output below.
+Repeat this process three times using the numbers in the example output in the [demo](#demo).
 
 ## Challenge
 
