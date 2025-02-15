@@ -4,7 +4,7 @@
 
 Write a Python program to output a list of numbers on a grid so they can be easily read by the user.
 
-A template file has been provided for you at `align_money.py`.
+A template file has been provided for you at [`align_money.py`](align_money.py).
 
 ## Demo
 
@@ -42,7 +42,7 @@ Next, another column of numbers just like the first.
 "$" + f"${fixed(321.31) : >7}" # Note the use of `: >` to right align
 ```
 
-Finally, we end with a newline
+Finally, we end with a newline.
 
 ```Python
 "\n"
@@ -60,7 +60,7 @@ row1 = "$" +
 print(row1, end="")
 ```
 
-Repeat this process three times using the numbers in the example output below.
+Repeat this process three times using the numbers in the example output in the [demo](#demo).
 
 ## Challenge
 
@@ -71,7 +71,7 @@ Finally, what is the biggest number you can put in a column before things start 
 ## Setting up the Program
 
 First, you need to have Python installed on your machine.
-You can revisit the provided commands in `stretch-programs/python/README.md`.
+You can revisit the provided commands in [`stretch-programs/python/README.md`](../README.md).
 To set up the program, navigate to the directory containing your requirements.txt file. Then, run the following command to set up the virtual environment and install the dependencies:
 
 ```Powershell
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 ## How to Run the Program
 
-Open a terminal or command prompt and navigate to the directory where the `alignMoney.py` file is located.
+Open a terminal or command prompt and navigate to the [directory](.) where the [`alignMoney.py`](align_money.py) file is located.
 Run the program using the following command:
 
 ```Powershell
@@ -91,7 +91,7 @@ python align_money.py
 
 ## How to Test the Program
 
-To test the program, a test file has been provided for you at `align_money_test.py`, per PyTest conventions. Use the provided framework to test your program against the test cases by using the following command:
+To test the program, a test file has been provided for you at [`align_money_test.py`](align_money_test.py), per PyTest conventions. Use the provided framework to test your program against the test cases by using the following command:
 
 ```Powershell
 python -m pytest
