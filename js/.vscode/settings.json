@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:USERPROFILE}\\nodejs\\node-v23.7.0-win-x64;${env:PATH}"
+    },
+    "eslint.nodePath": "${env:USERPROFILE}\\nodejs\\node-v23.7.0-win-x64"
+}
