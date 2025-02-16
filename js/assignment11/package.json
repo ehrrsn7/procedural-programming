@@ -2,10 +2,9 @@
    "name": "assignment11",
    "type": "module",
    "scripts": {
-      "testBed": "npm run test",
-      "test": "vitest run",
-      "styleChecker": "npm run lint",
-      "lint": "eslint --config eslint.config.js ./assignment11.js && node ./etc/casingCheck.js ./assignment11.js && printf \"\\e[1;32mLinting successful!\\e[0m\\n\""
+      "testBed": "vitest run",
+      "styleChecker": "eslint --config etc/eslint.config.js ./assignment11.js && node ./etc/casingCheck.js ./assignment11.js && printf \"\\e[1;32mLinting successful!\\e[0m\\n\"",
+      "lint": "eslint --config etc/eslint.config.js"
    },
    "devDependencies": {
       "eslint": "^9.20.0",
