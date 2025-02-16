@@ -4,7 +4,7 @@
 
 Write a JavaScript program to output a list of numbers on a grid so they can be easily read by the user.
 
-A template file has been provided for you at `alignMoney.js`.
+A template file has been provided for you at [`alignMoney.js`](alignMoney.js).
 
 ## Demo
 
@@ -66,7 +66,7 @@ const row1 = "$" +
 print(row1);
 ```
 
-Repeat this process three times using the numbers in the example output below.
+Repeat this process three times using the numbers in the example output in the [demo](#demo).
 
 ## Challenge
 
@@ -76,7 +76,7 @@ Finally, what is the biggest number you can put in a column before things start 
 
 ## Setting up the Program
 
-First, you need to have NodeJS (the JavaScript runtime for the Terminal). You can download this using the provided in `stretch-programs/js/README.md`.
+First, you need to have NodeJS (the JavaScript runtime for the Terminal). You can download this using the provided instructions in [`stretch-programs/js/README.md`](../README.md).
 
 To set up the program, navigate to the directory containing your package.json file. Then, run the following command to install the dependencies:
 
@@ -109,4 +109,3 @@ npm run styleChecker
 ```
 
 This will check your code for any style issues and provide feedback on how to improve it.
-

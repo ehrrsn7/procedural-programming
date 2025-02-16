@@ -1,4 +1,4 @@
-# Assignment 1.1 - Monthly Budget
+# Assignment 1.1 - Monthly Budget (Java)
 
 ## Problem
 
@@ -34,19 +34,17 @@ Please note:
 - There is a single tab at the start of each line, but nowhere else.
 - There are 13 ‘=’s in the first column, 10 in the second. There are 2 spaces between the columns.
 - The spacing between the ‘$’ and the right edge of the money is 9.
-- You will need to set the formatting of the prices with the provided `fixed` function.
+- You will need to set the formatting of the prices with the provided `fixed` method.
 
-```javascript
-const fixed = (num) => num.toFixed(2); // Format to two decimals
+```java
+String.format("%.2f", num); // Format to two decimals
 ```
 
 - Please display the money as a number, rather than as text. This means two things. First, the numbers should be outside the quotes.
-- Second, you will need to use the `.padStart(n)` method on the number to get the numbers to line up correctly.
+- Second, you will need to use the `.format(str, n)` method on the number to get the numbers to line up correctly.
 
-```javascript
-const amount = /* amount of money as a decimal number */s;
-const padding = /* number amount for padding */;
-const aligned = "$" + fixed(amount).padStart(padding);
+```java
+String.format("%7s", amount); // Right-align with padding
 ```
 
 ## Challenge
@@ -55,28 +53,20 @@ Once you have everything running fine, try modifying how you present the `delta`
 
 ## Setting up the Program
 
-First, you need to have NodeJS (the JavaScript runtime for the Terminal). You can download this using the provided instructions in `stretch-programs/js/README.md`.
+First, you need to have the JDK (the Java Development Kit for the Terminal). You can download this using the provided instructions in `stretch-programs/js/README.md`.
 
-To set up the program, navigate to the directory containing your `package.json` file. Then, run the following command to install the dependencies:
-
-```Powershell
-npm i
-```
-
-## How to Run the Program
-
-In the terminal, navigate to the directory where the `assignment11.js` file is located. Run the program using the following command:
+To set up the program, navigate to the directory containing your `gradle.build` file. Then, run the following command to install the dependencies:
 
 ```Powershell
-node assignment11.js
+gradle build
 ```
 
 ## How to Test the Program
 
-To test the program, a test file has been provided for you at `assignment11.test.js`, per Vitest conventions. Use the provided framework to test your program against the test cases by using the following command:
+To test the program, a test file has been provided for you at [`tests\MainTest.java`](tests\MainTest.java), per Gradle conventions. Use the provided framework to test your program against the test cases by using the following command:
 
 ```Powershell
-npm run testBed
+gradle test
 ```
 
 ## Style Check
@@ -84,11 +74,12 @@ npm run testBed
 To ensure your code follows the style guide, a style linter has been provided for you. Be sure you've already done the [Setting up the Program](#setting-up-the-program) step. Run it by using the following command:
 
 ```Powershell
-npm run styleChecker
+gradle checkStyle
 ```
 
 This will check your code for any style issues and provide feedback on how to improve it.
 
 ## Submission
 
-Once the testBed passes for all cases, submit your code.
+Once your code passes all tests, submit your code.
+[TODO - set up submission instructions]
