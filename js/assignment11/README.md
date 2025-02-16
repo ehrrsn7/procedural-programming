@@ -91,4 +91,4 @@ This will check your code for any style issues and provide feedback on how to im
 
 ## Submission
 
-Once your code passes all tests, submit your code.
+Once the testBed passes for all cases, submit your code.

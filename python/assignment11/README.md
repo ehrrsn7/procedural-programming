@@ -88,4 +88,4 @@ flake8 assignment11.py
 This will check your code for any style issues and provide feedback on how to improve it.
 
 ## Submission
-Once your code passes all tests, submit your code.
+Once the testBed passes for all cases, submit your code.
