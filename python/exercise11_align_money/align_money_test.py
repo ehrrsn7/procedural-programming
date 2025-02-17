@@ -2,10 +2,13 @@
 
 import io
 import sys
+import pytest
 from align_money import align_money
+
 try:
     from etc.key.align_money import align_money as key
 except Exception as e:
+    key = None
     print(f"Could not import key from path etc.key.align_money")
 
 test_align_money_expected_output = """$ 124.45\t$ 321.31
@@ -24,7 +27,8 @@ def test_align_money(capsys):
     assert captured.out == test_align_money_expected_output
 
 def test_key(capsys):
-    if not key: return
+    if not key:
+        pytest.skip("Skipping test_key because key is not available")
     
     # Call the function
     key()
