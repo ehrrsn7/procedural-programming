@@ -1,4 +1,4 @@
-# Stretch Programs
+# [Stretch Programs](.)
 
 ## Installation Instructions
 
@@ -7,7 +7,8 @@ Welcome to the Stretch Programs repository! This repository contains various cod
 ## Prerequisites
 
 Before you begin, ensure you have access to the following:
-- Terminal
+
+[<img src="https://winaero.com/blog/wp-content/uploads/2019/06/WIndows-Terminal-icon.png" alt="terminal" width="40" style="position: relative; top: 15px;"/> Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US)
 
 ## Setting Up Your Environment
 
@@ -32,9 +33,19 @@ VS Code has a built in markdown preview feature. Just click on the icon with the
 
 ## In this Folder
 
-7. Navigate to the relevant subfolder (js/python) for individual component installation instructions.
+***Navigate to the subfolders in this repository*** for more detailed instructions:
 
-For more detailed instructions, refer to the README files in the respective subfolders:
+- Individual component installation instructions.
+- Assignments and exercises.
 
-- [JavaScript README](js\README.md)
-- [Python README](python\README.md)
+***Under Development***
+### [JavaScript README](js/README.md)
+### [Python README](python/README.md)
+### [Java README](java/README.md)
+### [C++ README](cpp/README.md)
+
+***TBD***
+### [C# README](cs/README.md)
+### [SQL README](sqlite/README.md)
+### [Go README](go/README.md)
+### [Ruby README](ruby/README.md)

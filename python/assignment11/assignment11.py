@@ -55,5 +55,7 @@ def main():
         if key == "Delta": print("\t=============  ==========")
         print(f"\t{key:<13}  ${fixed(amount):>9}")
 
+print("Running student's assignment11.py")
+
 if __name__ == "__main__":
     main()
