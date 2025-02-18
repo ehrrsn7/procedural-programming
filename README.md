@@ -13,7 +13,7 @@ Before you begin, ensure you have access to the following:
 ## Setting Up Your Environment
 
 1. **Open a terminal or command prompt.**
-4. Install VS Code and cURL using a script that has been prepared for you:
+2. Install VS Code and cURL using a script that has been prepared for you:
 
 ```Powershell
 Clear-Host
@@ -23,7 +23,7 @@ code .
 
 ## Exploring the Repository
 
-5. Open the repository in VS Code:
+3. Open the repository in VS Code:
 
 ```Powershell
 code .
