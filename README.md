@@ -13,7 +13,7 @@ Before you begin, ensure you have access to the following:
 ## Setting Up Your Environment
 
 1. **Open a terminal or command prompt.**
-4. Install VS Code and cURL using a script that has been prepared for you:
+2. Install VS Code using a script that has been prepared for you:
 
 ```Powershell
 Clear-Host
@@ -30,6 +30,20 @@ code .
 ```
 
 VS Code has a built in markdown preview feature. Just click on the icon with the magnifying class and window panes.
+
+Another useful tip is to set the preferences within vs code
+
+Use the **workbench.startupEditor** setting to control which editor is shown at startup. Set it to `readme` to open README files by default.
+
+```
+{
+  "workbench.startupEditor": "readme"
+}
+```
+
+<button>
+    Show in Settings Editor
+</button>
 
 ## In this Folder
 
