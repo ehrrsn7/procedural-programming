@@ -1,25 +1,49 @@
-# Define the path to the zip file and the target extraction directory
-$zipFilePath = "./.mingw_install/mingw-w64-v12.0.0.zip"
-$targetDirectory = [System.IO.Path]::Combine($env:TEMP, "mingw-w64")
-$installerPath = "$targetDirectory/mingw-w64-v12.0.0/mingw64/bin/mingw-w64-install.exe"
+$zipPath = "$PSScriptRoot\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r3.zip"
+$installDir = "$env:USERPROFILE\mingw"
 
-# Create the target directory if it doesn't exist
-if (-not (Test-Path $targetDirectory)) {
-    New-Item -ItemType Directory -Force -Path $targetDirectory
+# Ensure the ZIP file exists before proceeding
+if (-not (Test-Path $zipPath)) {
+    throw "Error: ZIP file not found at $zipPath"
 }
 
-# Extract the zip file
-Expand-Archive -Path $zipFilePath -DestinationPath $targetDirectory
-
-# Check if the installer exists
-if (-NOT (Test-Path $installerPath)) {
-    Write-Host "Installer not found in the extracted files."
-    exit 1
+# Ensure the installation directory exists
+if (-not (Test-Path $installDir)) {
+    New-Item -ItemType Directory -Path $installDir | Out-Null
+} else {
+    Write-Warning "Installation directory already exists: $installDir"
 }
 
-# Run the installer
-Write-Host "Extraction complete. Running installer..."
+# Extract the ZIP archive using Expand-Archive
+try {
+    if ((Get-ChildItem $installDir) -ne $null) {
+        Write-Warning "Skipping extraction: $installDir is not empty."
+    } else {
+        Expand-Archive -Path $zipPath -DestinationPath $installDir -Force
+        Write-Host "Extraction complete: $installDir" -ForegroundColor Green
+    }
+} catch {
+    throw "Error extracting the ZIP file: $_"
+}
 
-# Run the installer
-Start-Process -FilePath $installerPath -Wait
-Write-Host "Installer executed successfully."
+# Add install directory to PATH if not already present
+$binPath = Join-Path $installDir "bin"
+$existingPath = [System.Environment]::GetEnvironmentVariable("Path", "User") -replace ";;", ";" # Cleanup double semicolons
+
+if ($existingPath -notlike "*$binPath*") {
+    $newPath = if ($existingPath) { "$existingPath;$binPath" } else { $binPath }
+    [System.Environment]::SetEnvironmentVariable("Path", $newPath, "User")
+    Write-Host "Added $binPath to PATH" -ForegroundColor Cyan
+} else {
+    Write-Warning "Mingw-w64 bin directory is already in PATH"
+}
+
+# Refresh PATH variable in current session
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path", "User")
+
+# Verify the g++ installation
+try {
+    g++ --version
+    Write-Host "Mingw-w64 installed successfully to $installDir" -ForegroundColor Green
+} catch {
+    throw "Error: g++ is not recognized. Try restarting your session."
+}

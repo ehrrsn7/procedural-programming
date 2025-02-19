@@ -15,31 +15,26 @@ To do so, open the terminal and navigate to the following directory:
 ```
 stretch-programs-main\cpp
 ```
-Then, run the script with the following command. The process will take a minute. The script will download a compressed package containing the latest stable version of `g++` (*GNU Compiler Collection*), which is a CLI (*Command Line Interface*). The script will then extract that package to `C:\Users\<Your User Profile Folder>\g++`, and add it to the path.
+Then, run the script with the following command. The process will take a minute. The script will download a compressed package containing the latest stable version of `g++` (*GNU Compiler Collection*), which is a CLI (*Command Line Interface*). The script will then extract that package to `C:\Users\<Your User Profile Folder>\mingw`, and add it to the path.
 
 ```Powershell
-# Navigate to the directory containing .openjdk_install if it isn't already
-cd stretch-programs-main
-cd cpp
 Set-ExecutionPolicy RemoteSigned -Scope Process # Set to process ONLY
-.\.mingw_install\install_script.ps1 # Download, extract, and add cpp to path
+.\.mingw_install\install_script.ps1 # Download, extract, and add mingw tools to path
 ```
 
 You should now have access to the `g++` command.
 
 **Expected Output**
 ```log
-Using temporary directory: C:\Users\Username\AppData\Local\Temp
-Destination directory for MinGW installation: C:\Users\Username\mingw
-Checking if destination folder exists...
-Creating destination folder: C:\Users\Username\mingw
-Downloading MinGW-w64 installer from https://sourceforge.net/projects/mingw-w64/files/latest/download...
-MinGW-w64 installer downloaded to: C:\Users\Username\AppData\Local\Temp\mingw-w64.exe
-Running the MinGW-w64 installer...
-MinGW-w64 installation complete.
-Adding MinGW to the system PATH...
-MinGW-w64 added to PATH.
-MinGW-w64 installation is complete. You can now use GCC and G++ in the command line.
+WARNING: Installation directory already exists: $env:USERPROFILE\mingw
+Extraction complete: $env:USERPROFILE\mingw
+Added $env:USERPROFILE\mingw\bin to PATH
+g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Mingw-w64 installed successfully to $env:USERPROFILE\mingw
 ```
 
 ## About C++
