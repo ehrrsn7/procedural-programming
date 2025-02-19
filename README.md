@@ -31,7 +31,7 @@ code .
 
 VS Code has a built in markdown preview feature. Just click on the icon with the magnifying class and window panes.
 
-Another useful tip is to set the preferences within vs code
+Another useful tip is to set the preferences within vs code:
 
 Use the **workbench.startupEditor** setting to control which editor is shown at startup. Set it to `readme` to open README files by default.
 
@@ -40,10 +40,11 @@ Use the **workbench.startupEditor** setting to control which editor is shown at 
   "workbench.startupEditor": "readme"
 }
 ```
-
+<!--
 <button>
     Show in Settings Editor
 </button>
+-->
 
 ## In this Folder
 
