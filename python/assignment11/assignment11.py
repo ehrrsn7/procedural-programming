@@ -31,7 +31,5 @@ def main():
     # Display the budget table
     
 
-print("Running student's assignment11.py")
-
 if __name__ == "__main__":
     main()
