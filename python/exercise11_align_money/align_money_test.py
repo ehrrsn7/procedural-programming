@@ -10,7 +10,7 @@ import sys
 import pytest
 from align_money import align_money
 # Make sure to import this AFTER main
-from etc.key.exercise11_align_money_proxy import key 
+from etc.key.exercise11_align_money_proxy import key
 
 """
 Import Statements/Globals
@@ -22,12 +22,12 @@ def run_assertion(captured_lines):
     expected_output = [
         "$ 124.45\t$ 321.31\n",
         "$   1.74\t$   4.21\n",
-        "$ 7539.12\t$  54.92\n",
+        "$7539.12\t$  54.92\n",
     ]
 
     # Debug Header
     print(f"{'Captured Output':31}      {'Expected Output':31}")
-    
+
     for i, line in enumerate(captured_lines):
         if i >= len(expected_output):
             print(f"Extra line in captured output: {repr(line)}")

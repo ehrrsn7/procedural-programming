@@ -1,5 +1,5 @@
 $nodeUrl = "https://nodejs.org/dist/v23.7.0/node-v23.7.0-win-x64.zip"
-$destinationPath = "$env:USERPROFILE\Downloads\node-v23.7.0-win-x64.zip"
+$destinationPath = "$env:TEMP\node-v23.7.0-win-x64.zip"
 $extractPath = "$env:USERPROFILE\nodejs"
 
 # Download Node.js portable version

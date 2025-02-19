@@ -29,31 +29,7 @@ def main():
                                         #      is formatted to two decimals
 
     # Display the budget table
-    items = {
-        "Income": 1000.00,
-        "Taxes": 100.00,
-        "Tithing": 100.00,
-        "Living": 650.00,
-        "Other": 90.00,
-        # "Delta": 60.00, # Replaced by Challenge below
-    }
-
-    # Challenge: Add delta to items
-    items["Delta"] = (
-        items["Income"] - # Start with positive income
-        # The subtract sum of all negative items (all items except Income)
-        sum(amount for key, amount in items.items() if key != "Income")
-    )
-
-    # Print the header
-    print(f"\t{"Item":<13}  Projected")
-    print("\t=============  ==========")
-
-    # Print each item except Delta
-    for key, amount in items.items():
-        # Delta has extra '===' above
-        if key == "Delta": print("\t=============  ==========")
-        print(f"\t{key:<13}  ${fixed(amount):>9}")
+    
 
 print("Running student's assignment11.py")
 

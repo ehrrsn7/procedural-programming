@@ -23,7 +23,7 @@ code .
 
 ## Exploring the Repository
 
-5. Open the repository in VS Code:
+3. Open the repository in VS Code:
 
 ```Powershell
 code .
