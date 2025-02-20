@@ -78,4 +78,28 @@ catch {
     Throw "Error while setting PATH"
 }
 
+# Almost forgot. Check to see if g++ command works and c++ test files compile, as a final check
+Write-Host "Checking g++ command"
+$gpp = & g++ --version
+if ($gpp -like "*g++*") {
+    Write-Host "g++ command works"
+    Write-Host $gpp
+}
+else {
+    Throw "g++ command failed"
+}
+
+# Call cpp\.mingw_install\test\test.ps1
+Write-Host "Running c++ test files"
+$makeTest = & "$PSScriptRoot\test\test.ps1"
+# Test should output "Test script complete." if successful
+if ($makeTest -eq "Test script complete.") {
+    Write-Host "C++ test files compile"
+}
+else {
+    Throw "C++ test files failed to compile."
+}
+
+Write-Host "Checking c++ test files compile"
+
 Write-Host "Installation complete"
