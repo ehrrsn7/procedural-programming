@@ -90,16 +90,19 @@ else {
 }
 
 # Call cpp\.mingw_install\test\test.ps1
-Write-Host "Running c++ test files"
-$makeTest = & "$PSScriptRoot\test\test.ps1"
-# Test should output "Test script complete." if successful
-if ($makeTest -eq "Test script complete.") {
-    Write-Host "C++ test files compile"
+# Run the test script
+try {
+    # Set the working directory to the test directory
+    Push-Location -Path "$PSScriptRoot\test"
+    .\test.ps1
 }
-else {
+catch {
+    Write-Error "C++ test files failed to compile: $_"
     Throw "C++ test files failed to compile."
 }
-
-Write-Host "Checking c++ test files compile"
+finally {
+    # Return to the original directory
+    Pop-Location
+}
 
 Write-Host "Installation complete"

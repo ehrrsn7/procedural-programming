@@ -1,13 +1,13 @@
 param (
     [string]$mingwPath = "$env:userprofile\mingw\mingw64",
-    [string]$testDir = "$env:userprofile\mingw\test"
+    [string]$testDir = "$PSScriptRoot"
 )
 
 try {
-    Write-Host "Testing compilation..." -ForegroundColor Cyan
+    Write-Host "Testing hello.cpp..." -ForegroundColor Cyan
 
-    # Change directory to where the hello.cpp and makefile are located
-    cd $testDir
+    # Set the current working directory to the script's directory
+    Push-Location -Path $testDir
 
     # Compile hello.cpp
     & g++ "hello.cpp" -o "hello.exe"
@@ -18,9 +18,21 @@ try {
     } else {
         Throw "Unable to compile or run hello.cpp"
     }
+}
+catch {
+    Write-Error "Error compiling hello.cpp: $_"
+}
+finally {
+    # Return to the original directory
+    Pop-Location
+}
+
+try {
+    Write-Host "Testing makefile..." -ForegroundColor Cyan
+    Push-Location -Path $testDir
 
     # Run makefile
-    $process = Start-Process -FilePath "$mingwPath\bin\mingw32-make.exe" -Wait -PassThru
+    $process = Start-Process -FilePath "$mingwPath\bin\mingw32-make.exe" -ArgumentList "test" -Wait -PassThru
 
     # Check the exit code (important!)
     if ($process.ExitCode -eq 0) {
@@ -29,14 +41,11 @@ try {
         Throw "Make failed with exit code $($process.ExitCode)."
     }
 
-    # Link the object files to create an executable
-    & g++ "add.o" "add_test.o" -o "test_program.exe"
-
-    # Run the resulting executable
-    if (Test-Path "test_program.exe") {
-        & "./test_program.exe"
+    # Run the resulting test executable
+    if (Test-Path "test.exe") {
+        & "./test.exe"
     } else {
-        Write-Error "Linking failed or executable not found."
+        Write-Error "Executable not found."
     }
 }
 catch {
@@ -44,7 +53,7 @@ catch {
 }
 finally {
     # Return to the original directory
-    cd $PSScriptRoot
+    Pop-Location
 }
 
 Write-Host "Test script complete." -ForegroundColor Green

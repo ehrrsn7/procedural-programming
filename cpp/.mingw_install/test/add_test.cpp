@@ -13,7 +13,7 @@ void test_add() {
 }
 
 int main() {
-    std::cout << "Running tests..." << std::endl;
+    std::cout << "Running add_test..." << std::endl;
     test_add();
     float f = 5.4;
     std::cout << "test float" << f << std::endl;
