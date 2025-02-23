@@ -1,6 +1,5 @@
-import { expect, describe, it, vi } from "vitest";
+import { expect, describe, it, vi, beforeAll } from "vitest";
 import alignMoney from "./alignMoney.js";
-import { alignMoney as key } from "./etc/.key/exercise11-alignMoney.js";
 
 describe("alignMoney", () => {
 	it("Should print the correct output to the console", () => {
@@ -14,8 +13,21 @@ describe("alignMoney", () => {
 	});
 });
 
-if (key) { // 'stretch-programs-keys' is in the same dir as 'stretch-programs'
-	describe("key", () => {
+describe("key", () => {
+	let key;
+	beforeAll(async () => {
+		try {
+			key = await import("./etc/.key/exercise11-alignMoney.js").then(module => module.main);
+		} catch (error) {
+			console.warn("Key file not found. Skipping key tests.");
+			key = null;
+		}
+	});
+
+	if (!key) {
+		it.skip("Key file not found. Skipping key tests.");
+	}
+	else {
 		it("Should print the correct output to the console", () => {
 			const stdoutSpy = vi.spyOn(process.stdout, "write");
 			key();
@@ -25,5 +37,5 @@ if (key) { // 'stretch-programs-keys' is in the same dir as 'stretch-programs'
 			expect(stdoutSpy.mock.calls[2][0]).toBe("$7539.12\t$  54.92\n");
 			stdoutSpy.mockRestore();
 		});
-	});
-}
+	}
+});
