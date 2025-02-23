@@ -37,6 +37,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Mingw-w64 installed successfully to $env:USERPROFILE\mingw
 ```
 
+## In this Folder
+
+[TODO] Include an index for the subfolders in this directory.
+
 ## About C++
 
 **C++** is a high-performance, general-purpose programming language used for system and application software, game development, and more. Known for its flexibility and power, C++ remains one of the most widely used programming languages today.
@@ -81,7 +85,3 @@ For more information, visit the [OpenJDK-21 documentation](https://devdocs.io/op
 [<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaUlEQVR4Ac2SgQqAQAhD/fT9+TIbsQjJCuAGQ4DbU+VieVF+LwD8BVCwg3AY7gGasJEecK9pC4xWY7rCJZviCUA3fQqg3I8uGlMqR0iWBB9cmzf1AN/Jus0BDjmbOzRwXe/T1/V7xHLaAKIBvWKLs4qAAAAAAElFTkSuQmCC" alt="Nodecpp" width="20" style="position: relative; top: 5px;"/> <img src="https://openjdk.org/images/openjdk.png" alt="Nodecpp" width="60" style="position: relative; top: 5px;"/> - Oracle's free, GPL-licensed, production-ready OpenJDK](https://openjdk.org/)
 
 [<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAALVBMVEXr6u1HcEyxsLLMzM7Hxsj29fi9vL719Pfa2dvR0NLHxsjj4uRjYmObmpx/f4AKPt7WAAAABnRSTlP+APwhe5cWoVzqAAAAyUlEQVQokX2TiRKDIAxEl5tw+P+f20QkYi3dQCD7AuM4CmNcQHoJwRkD499kyBu4HUvJIexhQE1AGjHGlditEDTTqpfxQ/Wa3y57VYVaaCmF3oVtrR2lPvDNbKbehOZ6pow81ayY/aiZbdGEbMd27kq7eqVBTyokvetxrfT3I6+QrpAH4iRwWiDd9naqq0EgVS7WUmSqzgKH+FVEhYXukEG2a43CWee5kDoM9/oP4x/BxxLHmKtWHm5/0MFsqeMv3jhv4yus59/hA3J6FbvGnM0BAAAAAElFTkSuQmCC" alt="Nodecpp" width="20" style="position: relative; top: 5px;"/> devdocs.io/OpenJDK 21 Documentation](https://devdocs.io/openjdk~21/)
-
-## In this Folder
-
-[TODO] Include an index for the subfolders in this directory.
