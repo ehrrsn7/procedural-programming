@@ -1,21 +1,3 @@
-# note that it's fairly technical ---
-# - each of the .7z filles make up different parts of the standalone build of GCC and MinGW-w64 for Windows. they are compressed separately for the sake of github (no files >100 MB)
-# - the .zip file is a portable executable for 7zip -- in case the computers this will be shipped to doesn't have it. I've included this zipped normally for the sake of the .7z files. This needs to be extracted prior to extracting any of the other files.
-
-# my script needs to:
-# - extract 7-zipportable.zip to $env:userprofile/7-ZipPortable/ (do a check first to skip)
-# - set a variable (in the powershell script) to $env:userprofile/7-ZipPortable/App/7-Zip/7z.exe so we can call it again
-# - Now that 7-zip is available, extract each of the 7z files to $env:userprofile/MinGW/ (do a check first to skip if already installed)
-#    - 7z files are:
-#      bin.7z
-#      include.7z
-#      lib.7z
-#      libexec.7z
-#      share.7z
-#      version_info.txt.7z
-#      x86_64-w64-mingw32.7z
-# - add $env:userprofile/MinGW/bin to the PATH User variable
-
 # Define
 $7z = "$env:userprofile\7-ZipPortable\App\7-Zip\7z.exe" # Not extracted yet
 $Mingw = "$env:userprofile\mingw\mingw64" # Not extracted yet

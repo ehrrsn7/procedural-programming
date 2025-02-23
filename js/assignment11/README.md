@@ -1,4 +1,4 @@
-# Assignment 1.1 - Monthly Budget
+# [Stretch Programs](../../README.md) > [JavaScript](../README.md) > [Assignment 1.1 - Monthly Budget](.)
 
 ## Problem
 
@@ -16,7 +16,7 @@ Write a program to output your monthly budget:
 
 ## Demo
 ```
-	Item Projected
+	Item 		   Projected
 	=============  ==========
 	Income         $  1000.00
 	Taxes          $   100.00
@@ -44,7 +44,7 @@ const fixed = (num) => num.toFixed(2); // Format to two decimals
 - Second, you will need to use the `.padStart(n)` method on the number to get the numbers to line up correctly.
 
 ```javascript
-const amount = /* amount of money as a decimal number */s;
+const amount = /* amount of money as a decimal number */;
 const padding = /* number amount for padding */;
 const aligned = "$" + fixed(amount).padStart(padding);
 ```

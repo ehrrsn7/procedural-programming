@@ -21,6 +21,8 @@ winget install -e --id Microsoft.VisualStudioCode
 code .
 ```
 
+VS Code will be opened automatically.
+
 ## Exploring the Repository
 
 3. Open the repository in VS Code:
@@ -28,6 +30,8 @@ code .
 ```Powershell
 code .
 ```
+
+**PRO TIP: In VS Code Open this README preview by opening it and then pressing: `Ctrl-Shift-V`**
 
 VS Code has a built in markdown preview feature. Just click on the icon with the magnifying class and window panes.
 

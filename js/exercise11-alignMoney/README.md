@@ -1,4 +1,4 @@
-# Example 1.1 – Money Alignment (JavaScript)
+# [Stretch Programs](../../README.md) > [JavaScript](../README.md) > [Example 1.1 – Money Alignment (JavaScript)](.)
 
 ## Problem
 

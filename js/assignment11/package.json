@@ -3,8 +3,7 @@
    "type": "module",
    "scripts": {
       "testBed": "vitest run",
-      "styleChecker": "eslint --config etc/eslint.config.js ./assignment11.js && node ./etc/casingCheck.js ./assignment11.js && printf \"\\e[1;32mLinting successful!\\e[0m\\n\"",
-      "lint": "eslint --config etc/eslint.config.js"
+      "styleChecker": "eslint --config etc/eslint.config.js ./assignment11.js && node ./etc/casingCheck.js ./assignment11.js && printf \"\\e[1;32mLinting successful!\\e[0m\\n\""
    },
    "devDependencies": {
       "eslint": "^9.20.0",
