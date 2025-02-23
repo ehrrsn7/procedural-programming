@@ -36,7 +36,7 @@ try { # Extract 7-zipportable.zip to $env:userprofile/7-ZipPortable/
         Expand-Archive -Path "$PSScriptRoot\7-zipportable.zip" -DestinationPath "$env:userprofile\7-ZipPortable"
     }
     else {
-        Write-Warning "7-ZipPortable already extracted"
+        Write-Warning "7-ZipPortable already extracted, console executable found here: $7z"
     }
 }
 catch {
@@ -57,7 +57,7 @@ try { # With 7z now available decompress mingw files into $env:userprofile/mingw
         }
     }
     else {
-        Write-Warning "Mingw already extracted"
+        Write-Warning "Mingw already extracted; g++ found at $Mingw\bin\g++.exe"
     }
 }
 catch {
