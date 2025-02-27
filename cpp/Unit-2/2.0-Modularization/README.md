@@ -17,21 +17,17 @@ was a way to map all the functions in a program and judge how large a function s
 
 By the end of this class, you will be able to:
 
-##  Measure the Cohesion level of a function.
-
-##  Measure the degree of Coupling between functions.
-
-##  Create a map of a program using a Structure Chart.
-
-##  Design programs that exhibit high degrees of modularization.
+* Measure the Cohesion level of a function.
+* Measure the degree of Coupling between functions
+* Create a map of a program using a Structure Chart
+* Design programs that exhibit high degrees of modularization.
 
 ## Prerequisites
 
 Before reading this section, please make sure you are able to:
 
-##  Create a function in C++ (Chapter 1.4).
-
-##  Pass data into a function using both pass-by-value and pass-by-reference (Chapter 1.4).
+* Create a function in C++ (Chapter 1.4).
+* Pass data into a function using both pass-by-value and pass-by-reference (Chapter 1.4).
 
 ## Overview
 
@@ -41,29 +37,22 @@ could conceivably keep the entire design in your head. Most interesting software
 too large and far too complex for this. Very soon, this become so difficult that it is impossible for any one
 person or even group of people to understand everything. What is to be done?
 ```
-One of the main techniques we have at our disposal to tame these size and complexity challenges is
 
-## modularization. Modularization is a collection of tools metrics, and techniques that together enable us to
+One of the main techniques we have at our disposal to tame these size and complexity challenges is modularization. Modularization is a collection of tools metrics, and techniques that together enable us to reduce large problems into smaller ones.
 
-reduce large problems into smaller ones.
-
-```
 The first tool we have at our disposal is the Structure Chart. This is a graphical representation of the functions
 in a program, including how they “talk” to each other. You may have noticed an example of a structure chart
 in the Unit 1 project.
-```
-```
+
 The second modularization tool is a metric by which we measure the “strength” of a function. This will tell
 us the degree in which a given function is dedicated to a single task. We call this metric Cohesion.
-```
-```
+
 The third and final modularization tool is a metric by which we measure the complexity of the information
 interchange between two functions. We call this metric Coupling.
-```
-```
+
 These three tools (Structure Chart, Cohesion, and Coupling) together help a programmer to more effectively
 modularize a program so it is easier to write the code, easier to fix bugs, and easier to understand.
-```
+
 
 ```
 Procedural Programming in C++ | Unit 2 : Design & Loops | 2.0 Modularization | Page 109
@@ -86,58 +75,39 @@ You are 29 again? I was 29 for over a decade!
 ```
 The Structure Chart would be:
 
-There are three components to a Structure Chart: the function, the parameters, and how the functions call
+`Insert Structure Chart Here`
 
-each other (program structure).
+There are three components to a Structure Chart: the function, the parameters, and how the functions call each other (program structure).
 
 #### Functions
 
-Each function in the Structure Chart is represented with a round rectangle. You specify the function by name
-
-(remember to camelCase the name as we do with all variable and function names). Since functions are typically
-
-verbs, there is typically a verb in the name. In the above example, there are three functions: main, prompt, and
-
-display.
+Each function in the Structure Chart is represented with a round rectangle. You specify the function by name (remember to camelCase the name as we do with all variable and function names). Since functions are typically verbs, there is typically a verb in the name. In the above example, there are three functions: main, prompt, and display.
 
 #### Parameters
 
-The second part of a Structure Chart is how information flows between functions. This occurs through
-
-parameters as well as through the return mechanism. If a function takes two parameters, then one would
-
-expect an arrow to flow into the function with two variables listed. In the above example, the function prompt
-
-accepts no data from main though it sends out a single piece of data: the age. Thus the following prototype
-
-for prompt:
+The second part of a Structure Chart is how information flows between functions. This occurs through parameters as well as through the return mechanism. If a function takes two parameters, then one would expect an arrow to flow into the function with two variables listed. In the above example, the function prompt accepts no data from main though it sends out a single piece of data: the age. Thus the following prototype for prompt:
 
 ```
 int prompt();
 ```
-The next function is display. It sends no data back to main but accepts a single piece of data, the age. Thus
 
-one would expect the following prototype for display:
+The next function is display. It sends no data back to main but accepts a single piece of data, the age. Thus one would expect the following prototype for display:
 
 ```
 void display(int age);
 ```
+
 #### Program structure
 
-The final part of a Structure Chart is how the functions in a program call each other. Typically, we put main
+The final part of a Structure Chart is how the functions in a program call each other. Typically, we put main on top and, below main, all the functions that main calls. Note that you can have a single function that is called by more than one function. In this case, arrows will be reaching this function from multiple sources. Please see Project 1 for an example of a Structure Chart.
 
-on top and, below main, all the functions that main calls. Note that you can have a single function that is called
-
-by more than one function. In this case, arrows will be reaching this function from multiple sources. Please
-
-see Project 1 for an example of a Structure Chart.
-
+```
 main
-
+V
 prompt display
-
-age age
-
+V
+age  |  age
+```
 
 ```
 Page 110 | 2.0 Modularization | Unit 2: Design & Loops | Procedural Programming in C++
@@ -148,72 +118,52 @@ Page 110 | 2.0 Modularization | Unit 2: Design & Loops | Procedural Programming 
 
 #### Designing with Structure Charts
 
-```
 The Structure Chart is often the first step in the design process. Here we answer the big questions of the
 program:
-```
-####  What will the program do?
 
-####  What are the big parts of the program?
+* What will the program do?
+* What are the big parts of the program?
+* How will the various parts communicate with each other?
 
-####  How will the various parts communicate with each other?
 
-```
 To accomplish this, we start with the top-down approach. We start with very general questions and slowly
 work to the details. Consider, for example, a program designed to play Tic-Tac-Toe. We would start with a
 very general design: the program will read a board from a file, allow the user to interact with the board, and
 then write the board back to the file.
-```
-```
+
 Note how each of the functions is Cohesive (does one thing and one thing only) and has simple Coupling
 (only one parameter is passed between the functions). That being said, the interact() function is probably
 doing too much work. We will delegate some of that work to three other functions:
-```
-```
+
 Again, each of the functions (prompt(), move(), and display()) are Cohesive and have loose Coupling.
 However, it appears that the move() function is still too complex. While it is still Cohesive, we still might want
 to delegate some of the work to other functions.
+
+```
+main
+V        V
+read  |  write
+
+```
+
+board
+
+```
+interact
+```
+board
 ```
 main
 
 read write
-
 ```
 board
 ```
 interact
-
-```
-board
-```
-```
-board
-```
-main
-
-read write
-
-```
-board
-```
-interact
-
 ```
 r, c
 ```
-```
-board
-```
-```
-board
-```
 prompt move display
-
-```
-board
-```
-```
-board
 ```
 
 ```
@@ -225,40 +175,27 @@ The final Structure Chart for our Tic-Tac-Toe program is the following:
 
 There are a few things to observe about this and all Structure Charts:
 
-#### 7. We always put main() on top. This means that control goes from the top down, rather than following
+7. We always put main() on top. This means that control goes from the top down, rather than following the flow of the arrows. A common mistake new programmers make is to put main() in the center of the Structure Chart with arrows extending in all directions. We call this “spider” Structure Charts.
 
-```
-the flow of the arrows. A common mistake new programmers make is to put main() in the center of
-the Structure Chart with arrows extending in all directions. We call this “spider” Structure Charts.
-```
-#### 8. There are seldom more than three functions called from a single function. If too many arrows emanate
+8. There are seldom more than three functions called from a single function. If too many arrows emanate from a given function, then that function is probably doing too much. There are exceptions from this rule-of-thumb of course. One example is when all the child functions do the same type of thing. The Structure Chart from Project 1 is an example. When in doubt, ask yourself if each function is Functionally cohesive.
 
-```
-from a given function, then that function is probably doing too much. There are exceptions from this
-rule-of-thumb of course. One example is when all the child functions do the same type of thing. The
-Structure Chart from Project 1 is an example. When in doubt, ask yourself if each function is
-Functionally cohesive.
-```
-#### 9. A Structure Chart is a tree; there are no circuits. If a function (interact() in the above example) calls
-
-another function (prompt()), control returns to the caller when the callee is finished.
+9. A Structure Chart is a tree; there are no circuits. If a function (interact() in the above example) calls another function (prompt()), control returns to the caller when the callee is finished.
 
 ```
 void caller() // caller will call three functions
 {
-int data = callee1(); // first callee1 is called with the return value in data
-callee2(data); // next data is sent to callee2.
-callee3(data); // finally data is sent to callee
+    int data = callee1(); // first callee1 is called with the return value in data
+    callee2(data); // next data is sent to callee2.
+    callee3(data); // finally data is sent to callee
 }
-```
 ```
 Structure Chart of one function calling three in
 sequence
 ```
-```
 ERROR: there are no circuits in a Structure
 Chart! When callee1() is finished, data flows
 back to caller(). It cannot flow to callee2()
+```
 ```
 caller
 
@@ -283,14 +220,11 @@ board
 r,c,
 board
 board
-
-
+```
 ```
 Page 112 | 2.0 Modularization | Unit 2: Design & Loops | Procedural Programming in C++
 ```
-#### Unit
-
-(^2)
+#### Unit 2
 
 #### Example 2.0 – Count Factors^
 
@@ -507,16 +441,14 @@ return (wage * 40.0) +
 (wage * 1.5 * (hours – 40.0));
 }
 ```
-```
+
 This function completely accomplishes the task of computing the pay for a worker. Unfortunately, it also does
 something that is not directly related to the task at hand. In this case, it warns if too much work is reported.
 As a general rule, a function designed to “compute” should not also “display.”
-```
-```
+
 Any time a function has code that is not directly related to the task at hand, there is a good chance that the
 function is Extraneous Cohesion (or worse!). Fortunately, the fix is very easy: move the extra code to a more
 appropriate location.
-```
 
 ```
 Procedural Programming in C++ | Unit 2 : Design & Loops | 2.0 Modularization | Page 115
@@ -607,18 +539,16 @@ Page 116 | 2.0 Modularization | Unit 2: Design & Loops | Procedural Programming 
 
 #### Weak Cohesion
 
-```
+
 The worst form of cohesion is Weak. One should never design for Weak Cohesion; it is a state that is to be
 generally avoided. The formal definition of Weak Cohesion is:
-```
-```
+
 At least one part of a function is not directed towards performing a single task.
 Additionally, the task is not completely represented by the function.
-```
-```
+
 In other words, weak cohesion is a combination of Extraneous and Partial. In theory, one should never come
 across Weak cohesion. Alas, if only this were true.
-```
+
 Consider the following function:
 
 ```
@@ -634,35 +564,29 @@ float computePay(float hours, float wage)
 cout.setf(ios::fixed);
 cout.setf(ios::showpoint);
 cout.precision(2);
-```
-```
+
 // regular pay
 if (hours < 40.0)
 cout << "ERROR: This only works for hours greater than 40\n";
-```
-```
+
 // compute overtime pay
 return (wage * 40.0) +
 (wage * 1.5 * (hours – 40.0));
 }
 ```
-```
 This function exhibits Extraneous Cohesion. We can tell first because the function comment block contains
 the word “also.” A subsequent inspection of the code will reveal the code to configure output for money.
 Since this function does not display anything, the code clearly does not belong here.
-```
-```
+
 This function exhibits Partial Cohesion because it only produces correct output if the employee’s wage is not
 less than 40 hours. In this case, the program will display an error message on the screen and still produce
 erroneous output.
-```
-```
+
 Since this function is both Extraneous and Partial, it can be classified as Weakly Cohesive. It appears that the
 programmer threw code together hoping it would work, rather than properly designed the function. On the
 surface, it might seem that the best approach from this point is to add the missing functionality and remove
 the extraneous parts. In practice, a better approach is to start the design process from scratch with Cohesion
 in mind.
-```
 
 ```
 Procedural Programming in C++ | Unit 2 : Design & Loops | 2.0 Modularization | Page 117
