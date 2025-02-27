@@ -1,222 +1,216 @@
-Here is the markdown version of section **1.5 Boolean Expressions** from your document:  
+Here is the content of section 1.6 "IF Statements" converted into Markdown:
 
----
+```markdown
+# 1.6 IF Statements
 
-# 1.5 Boolean Expressions  
+Sue has just received her third text message in the last minute. Not only are her best friends text-aholics, but it seems that new people are texting her every day. Sometimes she feels like she is swimming in a sea of text messages.  
+*"If only I could filter them like I do my e-mail messages,"* thinks Sue as four new messages appear on her phone in quick succession. Deciding to put a stop to this madness, she writes a program to filter her text messages. This program features a series of IF statements, each containing a rule to route the messages to the appropriate channel.
 
-## Objectives  
-By the end of this class, you will be able to:  
-* Declare a Boolean variable.  
-* Convert a logic problem into a Boolean expression.  
-* Recite the order of operations.  
+## Objectives
 
-## Prerequisites  
-Before reading this section, please make sure you are able to:  
-* Represent simple equations in C++ (Chapter 1.3).  
-* Choose the best data-type to represent your data (Chapter 1.2).  
+By the end of this class, you will be able to:
 
-## Overview  
-Boolean algebra is a way to express logical statements mathematically. This is important because virtually all programs need to have decision-making logic. There are three parts to Boolean algebra:  
-1. **Boolean variables** – variables enabling the programmer to store the results of Boolean expressions.  
-2. **Boolean operators** – operations that can be performed on Boolean variables.  
-3. **Comparison operators** – allowing the programmer to convert a number to a Boolean value by comparing it to some value.  
+- Create an IF statement to modify program flow.
+- Recognize the pitfalls associated with IF statements.
 
-### Common Boolean Operators  
-| Math | English | C++ | Example |
-|------|---------|-----|---------|
-| ~ | Not | `!` | `!true` |
-| ∧ | And | `&&` | `true && false` |
-| ∨ | Or | `||` | `true || false` |
-| = | Equals | `==` | `x + 5 == 42 / 2` |
-| ≠ | Not Equals | `!=` | `graduated != true` |
-| < | Less than | `<` | `age < 16` |
-| ≤ | Less than or equal to | `<=` | `timeNow <= timeLimit` |
-| > | Greater than | `>` | `age > 65` |
-| ≥ | Greater than or equal to | `>=` | `grade >= 90` |
+## Prerequisites
 
----
+Before reading this section, please make sure you are able to:
 
-## Boolean Operators: And, Or, and Not  
+- Declare a Boolean variable (Chapter 1.5).
+- Convert a logic problem into a Boolean expression (Chapter 1.5).
+- Recite the order of operations (Chapter 1.5).
 
-### AND (`&&`)  
-The Boolean operator **AND** evaluates to `true` only if both the left-side and right-side are `true`. If either is `false`, the expression evaluates to `false`.  
+## Overview
 
-Example:  
-```cpp
-bool answer = leftSide && rightSide;
-```
+IF statements allow the program to choose between two courses of action depending on the result of a Boolean expression. In some cases, the options are **“action” and “no action.”** In other cases, the options may be **“action A” or “action B.”**  
+In each of these cases, the IF statement is the tool of choice.
 
-**Truth Table for AND:**  
+## Action/No-Action
 
-| Left-Side | Right-Side | Result |
-|-----------|------------|--------|
-| `true` | `true` | `true` |
-| `true` | `false` | `false` |
-| `false` | `true` | `false` |
-| `false` | `false` | `false` |
-
-### OR (`||`)  
-The Boolean operator **OR** evaluates to `true` if either the left-side or the right-side is `true`.  
-
-Example:  
-```cpp
-bool answer = leftSide || rightSide;
-```
-
-**Truth Table for OR:**  
-
-| Left-Side | Right-Side | Result |
-|-----------|------------|--------|
-| `true` | `true` | `true` |
-| `true` | `false` | `true` |
-| `false` | `true` | `true` |
-| `false` | `false` | `false` |
-
-### NOT (`!`)  
-The Boolean operator **NOT** is a unary operator that negates the Boolean value.  
-
-Example:  
-```cpp
-bool wrong = !right;
-```
-
-**Truth Table for NOT:**  
-
-| Right-Side | Result |
-|------------|--------|
-| `true` | `false` |
-| `false` | `true` |
-
----
-
-## Comparison Operators  
-
-### Equivalence  
-The first class of comparison operators consists of **equivalence** and **inequality**. These determine whether values are the same or not.  
-
-Example:  
-```cpp
-int grade = 100;
-bool isPerfectScore = (grade == 100);  // Evaluates to true only when grade is 100
-```
-
-It is also possible to check if two values are not the same:  
-```cpp
-int numStudents = 21;
-bool isClassHeldToday = (numStudents != 0); // True if class is held
-```
-
-### Relative Operators  
-The second class of comparison operators performs relative evaluations:  
-* Greater than `>`  
-* Less than `<`  
-* Greater than or equal to `>=`  
-* Less than or equal to `<=`  
-
-Example:  
-```cpp
-int numBoys = 6;
-int numGirls = 8;
-bool isMoreGirls = (numGirls > numBoys); // True
-```
-
-Comparison operators also work with floating-point numbers and characters:  
-```cpp
-float grade = 82.5;
-bool hasPassedCS124 = (grade >= 60.0); // Passed if grade is 60 or higher
-
-char letterGrade = 'B';
-bool goodGrade = ('C' >= letterGrade); // True since 'B' comes before 'C'
-```
-
----
-
-## Example 1.5 – Decision Function  
-
-This example demonstrates how to write a function to make a binary decision (choosing between two options).  
-
-### Problem Statement  
-Write a program to compute whether a user qualifies for the child tax credit. The rule states:  
-* You qualify if your income is less than $110,000 per year.  
-* Otherwise, you do not qualify.  
-
-#### Sample Output  
-```
-What is your income: 115000.00
-How many children? 2
-Child Tax Credit: $ 0.00
-```
-
-### Solution  
-The key part of this problem is the function deciding whether the user qualifies for the tax credit.  
+The first flavor of the IF statement is represented with the following syntax:
 
 ```cpp
-bool qualify(double income)
+if (<Boolean expression>)
+   <body statement>;
+```
+
+For example:
+
+```cpp
+if (assignmentLate == true)
+   assignmentGrade = 0;
+```
+
+The **Boolean expression**, also called the **controlling expression**, determines whether the statements inside the body of the IF statement are executed. If the Boolean expression evaluates to `true`, then control enters the body of the IF statement. Otherwise, the body of the IF statement is skipped.
+
+## Action-A/Action-B
+
+The second flavor of the IF statement is represented with the following syntax:
+
+```cpp
+if (<Boolean expression>)
+   <body statement>;
+else
+   <body statement>;
+```
+
+For example:
+
+```cpp
+if (grade >= 60)
+   cout << "Great job! You passed!\n";
+else
+   cout << "I will see you again next semester...\n";
+```
+
+Much like the Action/No-Action IF statement, the Boolean expression determines whether the first set of statements is executed or the second.  
+The first statement is often called the **“true condition”**, and the second the **“else condition.”**  
+
+Observe how:
+- The `else` component aligns with the `if`.
+- Both the true-condition and the else-condition are indented the same (three additional spaces).
+- There is no semicolon after the Boolean expression nor after the `else`.
+
+## Compound Statements
+
+Frequently, we want to have more than one statement inside the body of the IF. Instead of duplicating the IF statement, we use `{}` to surround all the statements inside the body:
+
+```cpp
+if (!(classGrade >= 60))
 {
-   return (income <= 110000.00);
+   classFail = true;
+   classRetake = true;
+   studentHappy = false;
 }
 ```
 
-Observe how the function name clearly indicates what `true` means. If `qualify()` returns `true`, then the user qualifies for the tax credit. Otherwise, they do not.  
+Each time an additional indentation is added, three more spaces are used.
 
-### Challenge  
-Modify the above example to reflect the law more accurately:  
-* The full $1,000 per child is given if income is less than $110,000.  
-* The credit phases out at 5¢ per $1 over $110,000.  
-* Families making more than $130,000 receive no credit.  
+## Nested Statements
+
+Often, we want to put an IF statement inside another IF statement. This is called a **nested statement**:
+
+```cpp
+if (grade >= 90 && grade <= 100)
+{
+   cout << "A";
+   if (grade <= 93)
+      cout << "-";
+}
+```
+
+Observe:
+- The second `cout` statement is indented nine spaces, three more than the inner `if`, and six more than the outer `if`.
+- Excessive nesting (more than 12 spaces) reduces human readability.
+
+## Multi-Way IF Statements
+
+An IF statement can only differentiate between two options. However, often the program requires more than two options. This can be addressed by **nesting IF statements**:
+
+```cpp
+if (option == 1)
+   cout << "Good!";
+else
+{
+   if (option == 2)
+      cout << "Better";
+   else
+      cout << "Best!";
+}
+```
+
+A preferred style for readability:
+
+```cpp
+if (option == 1)
+   cout << "Good!";
+else if (option == 2)
+   cout << "Better";
+else
+   cout << "Best!";
+```
+
+## Common Pitfalls
+
+### `=` Instead of `==`
+
+```cpp
+bool fail = false;
+if (fail = true)  // PITFALL: Assignment `=` used instead of `==`
+   cout << "You failed!\n";
+```
+
+- The condition mistakenly **assigns** `true` to `fail` instead of checking equivalence.
+- This means `fail` will always be `true`, leading to incorrect program behavior.
+
+### Extra Semicolon
+
+```cpp
+if (false);  // PITFALL: Extra semicolon signifies an empty body
+   cout << "False!\n";
+```
+
+- The semicolon terminates the IF statement prematurely, making the Boolean condition useless.
+- The `cout` statement executes **regardless** of the condition.
+
+### Missing `{}` for Compound Statements
+
+```cpp
+if (classGrade < 60)
+   classFail = true;
+   classRetake = true;  // PITFALL: Missing `{}` makes this always execute
+   studentHappy = false;
+```
+
+- This is equivalent to:
+
+```cpp
+if (classGrade < 60)
+   classFail = true;
+classRetake = true;
+studentHappy = false;
+```
+
+- Only `classFail = true;` is part of the IF statement.  
+- Always use `{}` when multiple statements should execute inside an IF.
+
+## Example 1.6 – GPA Validator
+
+**Problem:**  
+Write a program that prompts the user for their GPA and displays whether the value is in the valid range.
+
+```cpp
+bool validGpa(float gpa)
+{
+   if (gpa > 4.0 || gpa < 0.0)
+      return false;
+   else
+      return true;
+}
+```
+
+```cpp
+int main()
+{
+   float gpa;
+
+   cout << "Please enter your GPA: ";
+   cin >> gpa;
+
+   if (!validGpa(gpa))
+      cout << "Your GPA is not in a valid range\n";
+
+   return 0;
+}
+```
+
+### Challenge:
+Modify the IF statement in `main()` to display a message when the GPA is valid.
 
 ---
 
-## Order of Operations in Boolean Expressions  
-
-With multiple Boolean operators, the **order of operations** becomes complex. Here is the priority order:  
-
-| Operator | Description |
-|----------|------------|
-| `()` | Parentheses (highest precedence) |
-| `++ --` | Increment, Decrement |
-| `!` | NOT |
-| `* / %` | Multiply, Divide, Modulo |
-| `+ -` | Addition, Subtraction |
-| `> >= < <=` | Greater than, Less than, etc. |
-| `== !=` | Equality |
-| `&&` | AND |
-| `||` | OR |
-| `=` `+=` `*=` | Assignment (lowest precedence) |
-
----
-
-## Assignment 1.5  
-
-Write a function to determine if an individual is a **full tithe payer**.  
-
-### Requirements  
-* Function accepts **income** and **payment** as parameters.  
-* Returns a **Boolean value** indicating whether the user is a full tithe payer.  
-
-### Example Output  
-
-#### **Example 1: Full Tithe Payer**  
-```
-Income: 100
-Tithe: 91
-You are a full tithe payer.
+**End of Section 1.6**
 ```
 
-#### **Example 2: Not a Full Tithe Payer**  
-```
-Income: 532
-Tithe: 40
-Will a man rob God?  Yet ye have robbed me.
-But ye say, Wherein have we robbed thee?
-In tithes and offerings. Malachi 3:8
-```
-
-Test your solution using:  
-```
-testBed cs124/assign15 assignment15.cpp
-```
-
----
-
-This should be a clean markdown conversion of your section **1.5 Boolean Expressions**. Let me know if you need any modifications! 🚀
+This Markdown preserves the original structure, code examples, and formatting of the document. Let me know if you need any modifications!
