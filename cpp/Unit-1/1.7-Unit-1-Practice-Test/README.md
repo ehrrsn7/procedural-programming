@@ -1,41 +1,170 @@
-Here's how to write markdown for the steps in creating a program in C++ procedural programming, based on the sources:
+Procedural Programming in C++ | Unit 1: Simple Programs | Unit 1 Practice Test | Page 99
+```
+## Unit
 
-**Steps for creating a program in C++:**
+## 1
 
-1.  **Login**: Access the Linux system, either in the lab or remotely. Use tools like PuTTY (for Windows) or the terminal (macOS/Linux) with the `ssh` command for remote access.
-2.  **Copy Template**: Copy the assignment template from the course directory using the `cp` command.
-    *   Example: `cp /home/cs124/template.cpp hw10.cpp` copies the template to a file named `hw10.cpp`.
-3.  **Edit with Emacs**: Use a code editor like `emacs` to edit the copied file.
-    *   Open a file: `emacs hello.cpp`.
-    *   Save: `C-x C-s`.
-    *   Exit: `C-x C-c`.
-4.  **Compile with g++**: Translate the C++ source code into machine language using the `g++` compiler.
-    *   Syntax: `g++ <source file>`.
-    *   Example: `g++ hw10.cpp`.
-    *   Successful compilation creates an executable file named `a.out`.
-    *   Compilation Steps:
-        *   Lexing: Breaking the text into tokens.
-        *   Parsing: Fitting the words into the syntax of the language.
-        *   Generating: Creating assembly language.
-        *   Linking: Creating machine language.
-5.  **Test Bed**: Execute the compiled program and verify the output.
-    *   Run the program: `./a.out`.
-    *   Use `testBed` to compare the program's output against the expected output.
-    *   Syntax: `testBed <test name> <file name>`.
-    *   Example: `testBed cs124/assign10 hw10.cpp`.
-6.  **Style Checker**: Ensure the code adheres to style guidelines using the `styleChecker` tool.
-    *   Syntax: `styleChecker <file name>`.
-    *   Example: `styleChecker hw10.cpp`.
-    *   Style Guidelines:
-        *   Meaningful variable names using camelCase.
-        *   Function names that are verbs, also using camelCase.
-        *   Indentation of three spaces, without tabs.
-        *   Line length no longer than 80 characters.
-        *   Program comments at the beginning of the file.
-        *   Spacing around operators.
-7.  **Submit**: Turn in the assignment using the `submit` command.
-    *   The `submit` command identifies assignment details from the header comments.
-    *   Verify the details that submit extracts from the header.
-    *   `Submit` copies the program for the user and the instructor.
+# Unit 1 Practice Test
 
-An example of a simple program is displaying "Hello World" on the screen.
+## Practice 1 .2^
+
+Write a program to prompt the user for his grade on a test, and inform him if he passed:
+
+## Example
+
+User input is **underlined**.
+
+```
+What was your grade on the last test? 92
+You passed the test.
+```
+Another example
+
+```
+What was your grade on the last test? 59
+You failed the test.
+```
+## Three Functions
+
+```
+Your program needs to have three functions: one to prompt the user for his grade, one to display the
+"passed" message, and one to display the "failed" message.
+```
+## Assignment
+
+Please copy into your home directory the course template from:
+
+```
+/home/cs124/tests/templateTest1.cpp
+```
+Use it to create the file for your test. Please:
+
+##  Write the program.
+
+##  Compile it.
+
+##  Run it to make sure it gives you the output you expect.
+
+##  Run the style checker and fix any style errors.
+
+##  Run the test bed and make sure that the output is exactly as expected:
+
+```
+testBed cs124/practice12 practice12.cpp
+```
+A sample solution is on:
+
+```
+/home/cs124/tests/practice12.cpp
+```
+```
+Continued on the next page
+```
+
+```
+Page 100 | Unit 1 Practice Test | Unit 1 : Simple Program | Procedural Programming in C++
+```
+## Unit
+
+(^1)
+
+## Practice 1.2^
+
+```
+Continued from previous page
+```
+**Grading for Test1**
+
+Sample grading criteria:
+
+(^) Exceptional
+100%
+Good
+90%
+Acceptable
+70%
+Developing
+50%
+Missing
+0%
+Copy template
+10%
+Template is copied Need a hint Something other
+than the standard
+template is used
+Compile
+20%
+No compile errors
+or warnings
+One warning One error Two errors Three or more
+compile errors
+Modularization
+20%
+Functions used
+effectively in the
+program
+No bugs exist in
+the declaration
+or use of
+functions
+One bug exists
+in the function
+Two bugs All the code
+exists in one
+function
+Conditional
+10%
+The conditional is
+both elegant and
+efficient
+A conditional
+exists that
+determines if the
+grade is sufficient
+A bug exists in
+the conditional
+Elements of the
+solution are
+present
+No attempt was
+made at the
+solution
+I/O
+20%
+Zero test bed errors Looks the same
+on screen, but
+minor test bed
+errors
+One major test
+bed error
+One or more
+tests pass test
+bed
+Program input
+and output do
+not resemble the
+problem
+Programming
+Style
+20%
+Well commented,
+meaningful variable
+names, effective use
+of blank lines
+Zero style
+checker errors
+One or two
+minor style
+checker errors
+Code is
+readable, but
+serious style
+infractions
+No evidence of
+the principles of
+"elements of
+style" in the
+program
+
+
+```
