@@ -1,8 +1,215 @@
+<style>
+  h1, h2, h3, h4, p, table, li {
+    font-family: georgia, "Open Sans", sans-serif;
+    line-height: 1.5;
+    color: #333;
+  }
+  table.table-of-contents {
+    width: calc(100% - 40px);
+    max-width: 500px;
+    margin: 20px 20px;
+  }
+  table.table-of-contents > tbody > tr > td {
+    /* border: 1px solid blue; */
+    vertical-align: middle;
+    padding: 0px;
+    text-align: left;
+    border: none;
+  }
+  table.table-of-contents > tbody > tr > td > p {
+    /* border: 1px solid green; */
+    position: relative;
+    top: .5em;
+  }
+  table.table-of-contents > tbody > tr > td.page-number > p {
+    position: relative;
+    top: 0;
+  }
+  table.table-of-contents > tbody > tr > td > h4 {
+    /* border: 1px solid green; */
+    position: relative;
+    top: -1em;
+    padding: 0;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+  }
+
+  table.linux-commands {
+    min-width: 600px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+  }
+
+  table.linux-commands > tbody > tr.title-row {
+    background: #4f81bd;
+    color: white;
+    text-align: center;
+    white-space: normal;
+  }
+  table.linux-commands > tbody > tr.title-row > td {
+    min-width: 120px;
+    padding: 5px;
+  }
+
+  table.linux-commands > tbody > tr.tool > td {
+    margin: 0;
+    padding: 0;
+  }
+  table.linux-commands > tbody > tr.tool > td:first-of-type {
+    min-width: 50px;
+    padding: 0;
+    margin: 0;
+    padding-left: .5em;
+    white-space: nowrap;
+  }
+  table.linux-commands > tbody > tr.tool > td:first-of-type > * {
+    margin: 0;
+  }
+  table.linux-commands > tbody > tr.tool > td:not(:first-of-type) {
+    min-width: 200px;
+    width: 100%;
+    white-space: nowrap;
+  }
+  table.linux-commands > tbody > tr.tool > td > code {
+    color: black;
+  }
+  table.linux-commands > tbody > tr.tool > td > span.monospace {
+    padding: 0;
+    margin: 0;
+  }
+
+  a, a:hover {
+    color: dark-blue;
+    text-decoration: none;
+  }
+
+  p.footer {
+    text-align: right;
+    font-size: .75em;
+  }
+  p.footer.left {
+    text-align: left;
+  }
+  p.footer.right {
+    text-align: right;
+  }
+
+  span.monospace {
+    font-family: "Courier New", Courier, monospace;
+  }
+</style>
+
+<img src="..\..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
+
 # Unit 1. Simple Programs
+
+## Table of Contents
+
+<table class="table-of-contents">
+<tbody>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.0 First Program&nbsp;...............................................................................................
+      </p>
+      </a>
+    </td>
+    <td class="page-number"><p>13</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.1 Output&nbsp;...........................................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p>24</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.2 Input & Variables&nbsp;.........................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p class="page-number">35</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.3 Expressions&nbsp;..................................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p>46</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.4 Functions&nbsp;.....................................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p class="page-number">58</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.5 Boolean Expressions&nbsp;....................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p class="page-number">76</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      1.6 IF Statements&nbsp;...............................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p class="page-number">86</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      Unit 1 Practice Test&nbsp;............................................................................................
+      </p>
+      </a>
+    </td>
+    <td><p class="page-number">99</p></td>
+  </tr>
+  <tr>
+    <td style="white-space: nowrap">
+      <a href="../Unit-1/1.0-First-Program/README.md">
+      <p>
+      Unit 1 Project : Monthly Budget&nbsp;........................................................................
+      </p>
+      </a>
+    </td>
+    <td><p class="page-number">101</p></td>
+  </tr>
+</tbody>
+</table>
+
+<div style="page-break-after: always;"></div>
 
 ## 1.0 First Program
 
-Sue is home for the Christmas holiday when her mother asks her to fix a "computer problem." It turns out that the problem is not the computer itself, but some data their bank has sent them. Instead of e-mailing a list of stock prices in US dollars ($), the entire list is in Euros (€)! Rather than perform the conversion by hand, Sue decides to write a program to do the conversion. Without referencing any books (they are back in her apartment) or any of her previous programs (also back in her apartment), she quickly writes the code to complete the task.
+Sue is home for the Christmas holiday when her mother asks her to fix a "computer problem."
+It turns out that the problem is not the computer itself, but some data their bank has sent them.
+Instead of e-mailing a list of stock prices in US dollars ($), the entire list is in Euros (€)!
+Rather than perform the conversion by hand, Sue decides to write a program to do the conversion.
+Without referencing any books (they are back in her apartment) or any of her previous programs (also back in her apartment), she quickly writes the code to complete the task.
 
 ### Objectives
 
@@ -19,7 +226,10 @@ Before reading this section, please make sure you are able to:
 
 ### Overview of the process
 
-The process of turning in a homework assignment consists of several steps. While these steps may seem unfamiliar at first, they will be well-rehearsed and second-nature in a week or two. The lab assistants (wearing green vests in the Linux lab) are ready and eager to help you if you get stuck on the way. The process consists of the following steps:
+The process of turning in a homework assignment consists of several steps.
+While these steps may seem unfamiliar at first, they will be well-rehearsed and second-nature in a week or two.
+The lab assistants (wearing green vests in the Linux lab) are ready and eager to help you if you get stuck on the way.
+The process consists of the following steps:
 
 1. Log into the lab
 2. Copy the assignment template using `cp`
@@ -31,16 +241,48 @@ The process of turning in a homework assignment consists of several steps. While
 
 This entire process will be demonstrated in "Example - Hello World" at the end of the chapter.
 
-### Login
+<p class="footer">
+<br>
+<br>
+<br>
+<br>
+<br>
+Procedural Programming in C++ &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+1.0 First Program &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<strong>Page 13</strong>
+</p>
 
-All programming assignments are done on the Linux system. This includes the pre-class assignments, the projects, and the in-lab tests. You can either go to the Linux Lab to use the campus computers, or connect remotely to the lab from your personal computer. Either way, you will need to log in. If you have not done this in Assignment 0.0, please re-visit the quiz for the default password. The lab assistants will be able to help you reset your password if necessary. Please see Appendix C: Lab Help for a description of what the lab assistants can and cannot do.
+<div style="page-break-after: always;"></div>
 
-It is worthwhile to set up your computer so you do not need to come to the lab to do an assignment. The method is different for a Microsoft Windows computer than it is for an Apple Macintosh computer.
+### 0. Login
+
+All programming assignments are done on the Linux system.
+This includes the pre-class assignments, the projects, and the in-lab tests.
+You can either go to the Linux Lab to use the campus computers, or connect remotely to the lab from your personal computer.
+Either way, you will need to log in.
+If you have not done this in Assignment 0.0, please re-visit the quiz for the default password.
+The lab assistants will be able to help you reset your password if necessary.
+Please see Appendix C: Lab Help for a description of what the lab assistants can and cannot do.
+
+It is worthwhile to set up your computer so you do not need to come to the lab to do an assignment.
+The method is different for a Microsoft Windows computer than it is for an Apple Macintosh computer.
 
 #### Remote access for Windows computers
 
 1. Download the tool called PuTTY
-2. Go to the lab and read the IP address (four numbers separated by periods) from any machine in the lab. They are 157.201.194.201 through 157.201.194.210. This will be the physical machine you are accessing when using remote access.
+
+<div style="text-align: center;">
+  <p>
+    <a href="https://www.ssh.com/academy/ssh/putty/windows">
+      Setup - PuTTY
+    </p>
+  </a>
+</div>
+
+2. Go to the lab and read the IP address (four numbers separated by periods) from any machine in the lab.
+They are 157.201.194.201 through 157.201.194.210.
+This will be the physical machine you are accessing when using remote access.
 3. Boot PuTTY and type in your IP address from step 2 and the port 215. You might want to save this session so you don't have to keep typing the numbers in.
 4. Select [OPEN]. After you specify your username and password, you are now logged into that machine.
 
@@ -60,7 +302,29 @@ ssh sam@157.201.194.230 -p 215
 
 For more information, please see: Setup - Terminal
 
-### Copy Template
+<div style="text-align: center;">
+  <p>
+    <a href="https://support.apple.com/en-ie/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac">
+      Setup - Terminal
+    </p>
+  </a>
+</div>
+
+<p class="footer left">
+<br>
+<br>
+<br>
+<br>
+<br>
+Procedural Programming in C++ &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+1.0 First Program &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<strong>Page 14</strong>
+</p>
+
+<div style="page-break-after: always;"></div>
+
+### 1. Copy Template
 
 Once you have successfully logged into the Linux system (either remotely or in the Linux Lab), the next step is to copy over the template for the assignment. All the assignments for this class start with a template file which has placeholders for the assignment name and the author (that would be you!). This file, and all other files pertaining to the course, can be found on:
 
@@ -88,34 +352,170 @@ cp /home/cs124/template.cpp hw10.cpp
 
 Most Linux commands do not display anything on the screen if they were successful. You will need to do a directory listing (`ls`) to see if the file copied. A list of other common Linux commands are the following:
 
-- **Navigation tools**
-  - `cd`: Change Directory
-  - `ls`: List information about file(s)
-  - `cat`: Display the contents of a file to the screen
-  - `clear`: Clear terminal screen
-  - `exit`: Exit the shell
-  - `yppasswd`: Modify a user password
+<table class="linux-commands" style="background: #a7bfde80">
+  <tbody>
+    <tr class="title-row">
+      <td rowspan="10">
+        <strong>Navigation<br>tools</strong>
+      </td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>cd</code>
+        <span class="monospace">...........</span>&nbsp;
+      </td>
+      <td>Change Directory</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>ls</code>
+        <span class="monospace">...........</span>&nbsp;
+      </td>
+      <td>List information about file(s)</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>cat</code>
+        <span class="monospace">..........</span>&nbsp;
+      </td>
+      <td>Display the contents of a file to the screen</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>clear</code>
+        <span class="monospace">........</span>&nbsp;
+      </td>
+      <td>Clear terminal screen</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>exit</code>
+        <span class="monospace">.........</span>&nbsp;
+      </td>
+      <td>Exit the shell</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>yppasswd</code>
+        <span class="monospace">.....</span>&nbsp;
+      </td>
+      <td>Modify a user password</td>
+    </tr>
+  </tbody>
+</table>
 
-- **Organization tools**
-  - `mkdir`: Create new folder(s)
-  - `mv`: Move or rename files or directories
-  - `rm`: Remove files
+<table class="linux-commands" style="background: #d3dfee80">
+  <tbody>
+    <tr class="title-row">
+      <td rowspan="10" style="padding: 5px;">
+        <strong>Organization<br>tools</strong>
+      </td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>mkdir</code>
+        <span class="monospace">........</span>&nbsp;
+      </td>
+      <td>Create new folder(s)</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>mv</code>
+        <span class="monospace">...........</span>&nbsp;
+      </td>
+      <td>Move or rename files or directories</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>rm</code>
+        <span class="monospace">...........</span>&nbsp;
+      </td>
+      <td>Remove files</td>
+    </tr>
+  </tbody>
+</table>
 
-- **Programming tools**
-  - `emacs`: Common code editor
-  - `vi`: More primitive but ubiquitous editor
-  - `g++`: Compile a C++ program
-  - `styleChecker`: Run the style checker on a file
+<table class="linux-commands" style="background: #a7bfde80">
+  <tbody>
+    <tr class="title-row">
+      <td rowspan="10" style="padding: 5px;">
+        <strong>Programming<br>tools</strong>
+      </td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>emacs</code>
+        <span class="monospace">........</span>&nbsp;
+      </td>
+      <td>Common code editor</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>vi</code>
+        <span class="monospace">...........</span>&nbsp;
+      </td>
+      <td>More primitive but ubiquitous editor</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>g++</code>
+        <span class="monospace">..........</span>&nbsp;
+      </td>
+      <td>Compile a C++ program</td>
+    </tr>
+  </tbody>
+</table>
 
-- **Homework tools**
-  - `testBed`: Run the test bed on a file
-  - `submit`: Turn in a file
+<table class="linux-commands" style="background: #d3dfee80">
+  <tbody>
+    <tr class="title-row">
+      <td rowspan="10" style="padding: 5px;">
+        <strong>Homework<br>tools</strong>
+      </td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>styleChecker</code>
+        <span class="monospace">..</span>&nbsp;
+      </td>
+      <td>Run the style checker on a file</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>testBed</code>
+        <span class="monospace">......</span>&nbsp;
+      </td>
+      <td>Run the test bed on a file</td>
+    </tr>
+    <tr class="tool">
+      <td>
+        <code>submit</code>
+        <span class="monospace">.......</span>&nbsp;
+      </td>
+      <td>Turn in a file</td>
+    </tr>
+  </tbody>
+</table>
 
-For more commands or more details on the above, please see Appendix D: Linux and Emacs Cheat-Sheet.
+For more commands or more details on the above, please see [Appendix D: Linux and Emacs Cheat-Sheet](../Unit-5/Appendix-D/README.md).
 
 ### Sue's Tips
 
 Be careful how you name your files. By the end of the semester, you could easily get lost in a sea of files. Spend a few moments thinking of how you will organize all your files as this will be a useful practice for the remainder of your career.
+
+<p class="footer right">
+<br>
+<br>
+<br>
+<br>
+<br>
+Procedural Programming in C++ &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+1.0 First Program &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<strong>Page 15</strong>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ### Edit with Emacs
 
@@ -130,6 +530,7 @@ emacs hello.cpp
 This will start emacs with a blank document named `hello.cpp`. From here you can type anything you like. However, if you wish this program to function correctly, you need to type valid C++. For your first program, you can make it say "Hello World" as we need to do for the first assignment:
 
 ```cpp
+/***********************************************************************
 * Program:
 * Assignment 10, Hello World
 * Brother Helfrich, CS124
@@ -139,7 +540,7 @@ This will start emacs with a blank document named `hello.cpp`. From here you can
 * This program is designed to be the first C++ program you have ever
 * written. While not particularly complex, it is often the most difficult
 * to write because the tools are so unfamiliar.
-
+***********************************************************************/
 #include <iostream>
 using namespace std;
 
