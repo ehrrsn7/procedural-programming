@@ -1,90 +1,67 @@
-# Define
-$7z = "$env:userprofile\7-ZipPortable\App\7-Zip\7z.exe" # Not extracted yet
-$Mingw = "$env:userprofile\mingw\mingw64" # Not extracted yet
-$mingw_files = @(
-    "$PSScriptRoot\bin.7z",
-    "$PSScriptRoot\include.7z",
-    "$PSScriptRoot\lib.7z",
-    "$PSScriptRoot\libexec.7z",
-    "$PSScriptRoot\share.7z",
-    "$PSScriptRoot\version_info.txt.7z",
-    "$PSScriptRoot\x86_64-w64-mingw32.7z"
+param (
+    [switch]$Reinstall
 )
 
-try { # Extract 7-zipportable.zip to $env:userprofile/7-ZipPortable/
-    # Check if already extracted
-    if (!(Test-Path "$env:userprofile\7-ZipPortable")) {
-        Write-Host "Extracting 7-ZipPortable.zip to $env:userprofile\7-ZipPortable"
-        Expand-Archive -Path "$PSScriptRoot\7-zipportable.zip" -DestinationPath "$env:userprofile\7-ZipPortable"
-    }
-    else {
-        Write-Warning "7-ZipPortable already extracted, console executable found here: $7z"
-    }
-}
-catch {
-    Throw "Failed to extract 7-ZipPortable.zip"
-}
+$InstallerPath = "$PSScriptRoot\msys2-x86_64-20250221.exe"
+$InstallDir = "$env:USERPROFILE\msys2"
+$UninstallerPath = "$InstallDir\uninstall.exe"
+if ($args -contains "--reinstall") { $Reinstall = $true }
 
-try { # With 7z now available decompress mingw files into $env:userprofile/mingw/mingw64
-    # Check if already extracted
-    if (!(Test-Path $Mingw)) {
-        # Create directory $env:userprofile/mingw/mingw64 for extraction
-        New-Item -ItemType Directory -Path $Mingw
-        Write-Host "Extracting mingw files to $Mingw"
-        # Extract each of the 7z files to $env:userprofile/mingw/mingw64
-        foreach ($file in $mingw_files) {
-            # Loop through each of the files in the array
-            & $7z x -y -o"$Mingw" $file
-            Write-Host "Extracted $file to $Mingw" -ForegroundColor Green
+# Uninstall previous installation if it exists and --reinstall is specified
+if ($Reinstall) {
+    Write-Host "Uninstalling previous installation..."
+    if ((Test-Path $UninstallerPath) -and (Test-Path $InstallDir)) {
+        try {
+            & $UninstallerPath --confirm-command --accept-messages
+            Write-Host "Previous installation uninstalled successfully."
+        } catch {
+            Write-Host "Failed to uninstall the previous installation." -ForegroundColor Red
+            throw $_
         }
+    } elseif (Test-Path $InstallDir) {
+        Write-Host "Uninstaller not found. Removing installation directory..."
+        Remove-Item -Recurse -Force $InstallDir
+        Write-Host "Installation directory removed successfully."
+    } else {
+        Write-Host "No previous installation found."
     }
-    else {
-        Write-Warning "Mingw already extracted; g++ found at $Mingw\bin\g++.exe"
-    }
-}
-catch {
-    Throw "Error while extracting mingw files"
+} else {
+    Write-Host "Skipping uninstallation. Use --reinstall to uninstall the previous installation."
 }
 
-try { # Now that mingw is extracted, set the path
-    $path = [System.Environment]::GetEnvironmentVariable("Path", "User")
-    if ($path -notlike "*$Mingw\bin*") {
-        Write-Host "Adding $Mingw\bin to PATH"
-        [System.Environment]::SetEnvironmentVariable("Path", "$path;$Mingw\bin", "User")
-    }
-    else {
-        Write-Warning "$Mingw\bin already in PATH"
-    }
+# Create a temporary script to select components
+$ComponentScript = @"
+function ComponentSelectionPageCallback() {
+    var widget = gui.pageWidgetByObjectName("ComponentSelectionPage");
+    widget.deselectAll();
+    widget.selectComponent("com.msys2.root");
+    widget.selectComponent("mingw64");
 }
-catch {
-    Throw "Error while setting PATH"
-}
+"@
 
-# Almost forgot. Check to see if g++ command works and c++ test files compile, as a final check
-Write-Host "Checking g++ command"
-$gpp = & g++ --version
-if ($gpp -like "*g++*") {
-    Write-Host "g++ command works"
-    Write-Host $gpp
-}
-else {
-    Throw "g++ command failed"
-}
+$ScriptPath = [System.IO.Path]::Combine($env:TEMP, "msys2_install_script.qs")
+Set-Content -Path $ScriptPath -Value $ComponentScript
 
-# Call cpp\.mingw_install\test\test.ps1
-# Run the test script
 try {
-    # Set the working directory to the test directory
-    Push-Location -Path "$PSScriptRoot\test"
-    .\test.ps1
-}
-catch {
-    Write-Error "C++ test files failed to compile: $_"
-    Throw "C++ test files failed to compile."
-}
-finally {
-    # Return to the original directory
-    Pop-Location
+    # Start the installer with specified options
+    Write-Host "Starting the installer..."
+    & $InstallerPath in --confirm-command --accept-messages --root $InstallDir --script $ScriptPath
+    Write-Host "Installer completed successfully."
+} catch {
+    Write-Host "Failed to start the installer." -ForegroundColor Red
+    throw $_
 }
 
-Write-Host "Installation complete"
+try {
+    # Add the mingw64\bin folder to the PATH environment variable
+    Write-Host "Adding mingw64\bin to the PATH environment variable..."
+    $MingwBinPath = "$InstallDir\mingw64\bin"
+    [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";$MingwBinPath", [System.EnvironmentVariableTarget]::User)
+    Write-Host "PATH environment variable updated successfully."
+} catch {
+    Write-Host "Failed to update the PATH environment variable." -ForegroundColor Red
+    throw $_
+}
+
+# Note that the user might need to restart the terminal for the changes to take effect
+Write-Host "Installation complete. Please restart the terminal to use the new PATH."
