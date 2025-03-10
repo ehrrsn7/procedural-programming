@@ -317,261 +317,261 @@ Computers & Programs
 <table>
 <thead>
 <tr style="background: #4f81bd; border-top: 3px solid black; border-bottom: 3px solid black;">
-    <td style="border-right: 1px solid #FFFFFF50">
-        <strong style="color: white">
-            Name
-        </strong>
-    </td>
-    <td style="border-right: 1px solid #FFFFFF50">
-        <strong style="color: white">
-            Opcode
-        </strong>
-    </td>
-    <td width="70%" style="border-right: 1px solid #FFFFFF50">
-        <strong style="color: white">
-            Description
-        </strong>
-    </td>
-    <td width="20%">
-        <strong style="color: white">
-            Example
-        </strong>
-    </td>
+<td style="border-right: 1px solid #FFFFFF50">
+<strong style="color: white">
+Name
+</strong>
+</td>
+<td style="border-right: 1px solid #FFFFFF50">
+<strong style="color: white">
+Opcode
+</strong>
+</td>
+<td width="70%" style="border-right: 1px solid #FFFFFF50">
+<strong style="color: white">
+Description
+</strong>
+</td>
+<td width="20%">
+<strong style="color: white">
+Example
+</strong>
+</td>
 </tr>
 </thead>
 <tbody>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            NOOP
-        </code>
-    </td>
-    <td>
-        0
-    </td>
-    <td>
-        Do nothing
-    </td>
-    <td>
-        <code>NOOP</code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+NOOP
+</code>
+</td>
+<td>
+0
+</td>
+<td>
+Do nothing
+</td>
+<td>
+<code>NOOP</code>
+</td>
 </tr>
 <tr>
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            LOAD
-        </code>
-    </td>
-    <td>
-        1
-    </td>
-    <td>
-        Load a value from some memory location into the register
-    </td>
-    <td>
-        <code>
-            LOAD M:3
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+LOAD
+</code>
+</td>
+<td>
+1
+</td>
+<td>
+Load a value from some memory location into the register
+</td>
+<td>
+<code>
+LOAD M:3
+</code>
+</td>
 </tr>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            SET
-        </code>
-    </td>
-    <td>
-        2
-    </td>
-    <td>
-        Set the register to some value
-    </td>
-    <td>
-        <code>
-            SET 1
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+SET
+</code>
+</td>
+<td>
+2
+</td>
+<td>
+Set the register to some value
+</td>
+<td>
+<code>
+SET 1
+</code>
+</td>
 </tr>
 <tr>
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            SAVE
-        </code>
-    </td>
-    <td>
-        3
-    </td>
-    <td>
-        Saves the value in a register to some memory location
-    </td>
-    <td>
-        <code>
-            SAVE M:10
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+SAVE
+</code>
+</td>
+<td>
+3
+</td>
+<td>
+Saves the value in a register to some memory location
+</td>
+<td>
+<code>
+SAVE M:10
+</code>
+</td>
 </tr>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            JUMP
-        </code>
-    </td>
-    <td>
-        5
-    </td>
-    <td>
-        Sets the Next Instruction value to some memory location
-    </td>
-    <td>
-        <code>
-            JUMP M:0
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+JUMP
+</code>
+</td>
+<td>
+5
+</td>
+<td>
+Sets the Next Instruction value to some memory location
+</td>
+<td>
+<code>
+JUMP M:0
+</code>
+</td>
 </tr>
 <tr>
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            JUMPZ
-        </code>
-    </td>
-    <td>
-        6
-    </td>
-    <td>
-        Same  as  JUMP  except  only  sets  the  Next  Instruction  value  if  the
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+JUMPZ
+</code>
+</td>
+<td>
+6
+</td>
+<td>
+Same  as  JUMP  except  only  sets  the  Next  Instruction  value  if  the
 register is set to zero
-    </td>
-    <td>
-        <code>
-            JUMPZ M:0
-        </code>
-    </td>
+</td>
+<td>
+<code>
+JUMPZ M:0
+</code>
+</td>
 </tr>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            ADD
-        </code>
-    </td>
-    <td>
-        8
-    </td>
-    <td>
-        Adds a value to the register
-    </td>
-    <td>
-        <code>
-            ADD 1
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+ADD
+</code>
+</td>
+<td>
+8
+</td>
+<td>
+Adds a value to the register
+</td>
+<td>
+<code>
+ADD 1
+</code>
+</td>
 </tr>
 <tr>
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            SUB
-        </code>
-    </td>
-    <td>
-        9
-    </td>
-    <td>
-        Subtracts a value from what is currently in the register
-    </td>
-    <td>
-        <code>
-            SUB 1
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+SUB
+</code>
+</td>
+<td>
+9
+</td>
+<td>
+Subtracts a value from what is currently in the register
+</td>
+<td>
+<code>
+SUB 1
+</code>
+</td>
 </tr>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            MULT
-        </code>
-    </td>
-    <td>
-        10
-    </td>
-    <td>
-        Multiplies the current value in the register by some value
-    </td>
-    <td>
-        <code>
-            MULT 2
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+MULT
+</code>
+</td>
+<td>
+10
+</td>
+<td>
+Multiplies the current value in the register by some value
+</td>
+<td>
+<code>
+MULT 2
+</code>
+</td>
 </tr>
 <tr>
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            DIV
-        </code>
-    </td>
-    <td>
-        11
-    </td>
-    <td>
-        Integer division for some value in the register
-    </td>
-    <td>
-        <code>
-            DIV 2
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+DIV
+</code>
+</td>
+<td>
+11
+</td>
+<td>
+Integer division for some value in the register
+</td>
+<td>
+<code>
+DIV 2
+</code>
+</td>
 </tr>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            AND
-        </code>
-    </td>
-    <td>
-        12
-    </td>
-    <td>
-        Returns 1 if the value and the register are both non-zero
-    </td>
-    <td>
-        <code>
-            AND 1
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+AND
+</code>
+</td>
+<td>
+12
+</td>
+<td>
+Returns 1 if the value and the register are both non-zero
+</td>
+<td>
+<code>
+AND 1
+</code>
+</td>
 </tr>
 <tr>
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            OR
-        </code>
-    </td>
-    <td>
-        13
-    </td>
-    <td>
-        Returns 1 if the value or the register is non-zero
-    </td>
-    <td>
-        <code>
-            OR 1
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+OR
+</code>
+</td>
+<td>
+13
+</td>
+<td>
+Returns 1 if the value or the register is non-zero
+</td>
+<td>
+<code>
+OR 1
+</code>
+</td>
 </tr>
 <tr style="background: #d8d8d8">
-    <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-        <code style="color: white">
-            NOT
-        </code>
-    </td>
-    <td>
-        14
-    </td>
-    <td>
-        Returns 1 if the value in the register is zero
-    </td>
-    <td>
-        <code>
-            NOT
-        </code>
-    </td>
+<td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
+<code style="color: white">
+NOT
+</code>
+</td>
+<td>
+14
+</td>
+<td>
+Returns 1 if the value in the register is zero
+</td>
+<td>
+<code>
+NOT
+</code>
+</td>
 </tr>
 </tbody>
 </table>
