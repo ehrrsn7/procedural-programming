@@ -2,209 +2,205 @@
 
 ## Table of Contents
 
-<table style="width: 100%; max-width: 500px; margin-left: 80px">
+<table style="width: 100%; max-width: 500px; margin-left: 80px; line-height: 12px;">
   <thead>
-    <tr>
+    <tr style="background-color: #f2f2f2;">
       <th>Content</th>
       <th style="text-align: right;">Page</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Table of Contents</td>
-      <td style="text-align: right;">1</td>
-    </tr>  
-    <tr>
-      <td><a href="#course-overview">Course Overview</a></td>
-      <td style="text-align: right;">2</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none">Table of Contents</td>
+      <td style="text-align: right; border: none">1</td>
     </tr>
-    <tr>
-      <td><a href="#computers-and-programs">Computers & Programs</a></td>
-      <td style="text-align: right;">4</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="#course-overview">Course Overview</a></td>
+      <td style="text-align: right; border: none">2</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="#computers-and-programs">Computers & Programs</a></td>
+      <td style="text-align: right; border: none">4</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.0 First Program</a></td>
-      <td style="text-align: right;">13</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"></td>
+      <td style="border: none"></td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.1 Output</a></td>
-      <td style="text-align: right;">24</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.0 First Program</a></td>
+      <td style="text-align: right; border: none">13</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.2 Input & Variables</a></td>
-      <td style="text-align: right;">35</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.1 Output</a></td>
+      <td style="text-align: right; border: none">24</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.3 Expressions</a></td>
-      <td style="text-align: right;">46</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.2 Input & Variables</a></td>
+      <td style="text-align: right; border: none">35</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.4 Functions</a></td>
-      <td style="text-align: right;">58</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.3 Expressions</a></td>
+      <td style="text-align: right; border: none">46</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.5 Boolean Expressions</a></td>
-      <td style="text-align: right;">76</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.4 Functions</a></td>
+      <td style="text-align: right; border: none">58</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">1.6 IF Statements</a></td>
-      <td style="text-align: right;">86</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.5 Boolean Expressions</a></td>
+      <td style="text-align: right; border: none">76</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Practice Test</a></td>
-      <td style="text-align: right;">99</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.6 IF Statements</a></td>
+      <td style="text-align: right; border: none">86</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Project : Monthly Budget</a></td>
-      <td style="text-align: right;">101</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Practice Test</a></td>
+      <td style="text-align: right; border: none">99</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Project : Monthly Budget</a></td>
+      <td style="text-align: right; border: none">101</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.0-Modularization/README.md">2.0 Modularization</a></td>
-      <td style="text-align: right;">108</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"></td>
+      <td style="border: none"></td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.1-Debugging/README.md">2.1 Debugging</a></td>
-      <td style="text-align: right;">130</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-2/2.0-Modularization/README.md">2.0 Modularization</a></td>
+      <td style="text-align: right; border: none">108</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.2-Designing-Algorithms/README.md">2.2 Designing Algorithms</a></td>
-      <td style="text-align: right;">145</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-2/2.1-Debugging/README.md">2.1 Debugging</a></td>
+      <td style="text-align: right; border: none">130</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.3-Loop-Syntax/README.md">2.3 Loop Syntax</a></td>
-      <td style="text-align: right;">156</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-2/2.2-Designing-Algorithms/README.md">2.2 Designing Algorithms</a></td>
+      <td style="text-align: right; border: none">145</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.4-Loop-Output/README.md">2.4 Loop Output</a></td>
-      <td style="text-align: right;">168</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-2/2.3-Loop-Syntax/README.md">2.3 Loop Syntax</a></td>
+      <td style="text-align: right; border: none">156</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.5-Loop-Design/README.md">2.5 Loop Design</a></td>
-      <td style="text-align: right;">181</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-2/2.4-Loop-Output/README.md">2.4 Loop Output</a></td>
+      <td style="text-align: right; border: none">168</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/2.6-Files/README.md">2.6 Files</a></td>
-      <td style="text-align: right;">190</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-2/2.5-Loop-Design/README.md">2.5 Loop Design</a></td>
+      <td style="text-align: right; border: none">181</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/Practice-Test/README.md">Unit 2 Practice Test</a></td>
-      <td style="text-align: right;">207</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-2/2.6-Files/README.md">2.6 Files</a></td>
+      <td style="text-align: right; border: none">190</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-2/Project-Calendar-Program/README.md">Unit 2 Project : Calendar Program</a></td>
-      <td style="text-align: right;">209</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-2/Practice-Test/README.md">Unit 2 Practice Test</a></td>
+      <td style="text-align: right; border: none">207</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-2/Project-Calendar-Program/README.md">Unit 2 Project : Calendar Program</a></td>
+      <td style="text-align: right; border: none">209</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/3.0-Array-Syntax/README.md">3.0 Array Syntax</a></td>
-      <td style="text-align: right;">214</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"></td>
+      <td style="border: none"></td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/3.1-Array-Design/README.md">3.1 Array Design</a></td>
-      <td style="text-align: right;">233</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-3/3.0-Array-Syntax/README.md">3.0 Array Syntax</a></td>
+      <td style="text-align: right; border: none">214</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/3.2-Strings/README.md">3.2 Strings</a></td>
-      <td style="text-align: right;">242</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-3/3.1-Array-Design/README.md">3.1 Array Design</a></td>
+      <td style="text-align: right; border: none">233</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/3.3-Pointers/README.md">3.3 Pointers</a></td>
-      <td style="text-align: right;">255</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-3/3.2-Strings/README.md">3.2 Strings</a></td>
+      <td style="text-align: right; border: none">242</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/3.4-Pointer-Arithmetic/README.md">3.4 Pointer Arithmetic</a></td>
-      <td style="text-align: right;">269</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-3/3.3-Pointers/README.md">3.3 Pointers</a></td>
+      <td style="text-align: right; border: none">255</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/3.5-Advanced-Conditionals/README.md">3.5 Advanced Conditionals</a></td>
-      <td style="text-align: right;">284</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-3/3.4-Pointer-Arithmetic/README.md">3.4 Pointer Arithmetic</a></td>
+      <td style="text-align: right; border: none">269</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/Practice-Test/README.md">Unit 3 Practice Test</a></td>
-      <td style="text-align: right;">301</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-3/3.5-Advanced-Conditionals/README.md">3.5 Advanced Conditionals</a></td>
+      <td style="text-align: right; border: none">284</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-3/Project-MadLib/README.md">Unit 3 Project : MadLib</a></td>
-      <td style="text-align: right;">303</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-3/Practice-Test/README.md">Unit 3 Practice Test</a></td>
+      <td style="text-align: right; border: none">301</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-3/Project-MadLib/README.md">Unit 3 Project : MadLib</a></td>
+      <td style="text-align: right; border: none">303</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/4.0-Multi-Dimensional-Arrays/README.md">4.0 Multi-Dimensional Arrays</a></td>
-      <td style="text-align: right;">309</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"></td>
+      <td style="border: none"></td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/4.1-Allocating-Memory/README.md">4.1 Allocating Memory</a></td>
-      <td style="text-align: right;">324</td>
+    <tr style="background-color: #ffffff;">
+      <td style="border: none"><a href="../Unit-4/4.0-Multi-Dimensional-Arrays/README.md">4.0 Multi-Dimensional Arrays</a></td>
+      <td style="text-align: right; border: none">309</td>
+    </tr> <!--LEFT OFF HERE-->
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-4/4.1-Allocating-Memory/README.md">4.1 Allocating Memory</a></td>
+      <td style="text-align: right; border: none">324</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/4.2-String-Class/README.md">4.2 String Class</a></td>
-      <td style="text-align: right;">337</td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Unit-4/4.2-String-Class/README.md">4.2 String Class</a></td>
+      <td style="text-align: right; border: none">337</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/4.3-Command-Line/README.md">4.3 Command Line</a></td>
-      <td style="text-align: right;">346</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-4/4.3-Command-Line/README.md">4.3 Command Line</a></td>
+      <td style="text-align: right; border: none">346</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/4.4-Instrumentation/README.md">4.4 Instrumentation</a></td>
-      <td style="text-align: right;">356</td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Unit-4/4.4-Instrumentation/README.md">4.4 Instrumentation</a></td>
+      <td style="text-align: right; border: none">356</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/Practice-Test/README.md">Unit 4 Practice Test</a></td>
-      <td style="text-align: right;">361</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Unit-4/Practice-Test/README.md">Unit 4 Practice Test</a></td>
+      <td style="text-align: right; border: none">361</td>
     </tr>
-    <tr>
-      <td><a href="../Unit-4/Project-Sudoku/README.md">Unit 4 Project : Sudoku</a></td>
-      <td style="text-align: right;">363</td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Unit-4/Project-Sudoku/README.md">Unit 4 Project : Sudoku</a></td>
+      <td style="text-align: right; border: none">363</td>
     </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"></td>
+      <td style="border: none"></td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/A-Elements-of-Style/README.md">A. Elements of Style</a></td>
-      <td style="text-align: right;">369</td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Appendix/A-Elements-of-Style/README.md">A. Elements of Style</a></td>
+      <td style="text-align: right; border: none">369</td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/B-Order-of-Operations/README.md">B. Order of Operations</a></td>
-      <td style="text-align: right;">375</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Appendix/B-Order-of-Operations/README.md">B. Order of Operations</a></td>
+      <td style="text-align: right; border: none">375</td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/C-Lab-Help/README.md">C. Lab Help</a></td>
-      <td style="text-align: right;">376</td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Appendix/C-Lab-Help/README.md">C. Lab Help</a></td>
+      <td style="text-align: right; border: none">376</td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/D-Emacs-Linux-Cheat-Sheet/README.md">D. Emacs & Linux Cheat-Sheet</td>
-      <td style="text-align: right;">377</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Appendix/D-Emacs-Linux-Cheat-Sheet/README.md">D. Emacs & Linux Cheat-Sheet</td>
+      <td style="text-align: right; border: none">377</td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/E-C++-Syntax-Reference-Guide/README.md">E. C++ Syntax Reference Guide</a></td>
-      <td style="text-align: right;">378</td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Appendix/E-C++-Syntax-Reference-Guide/README.md">E. C++ Syntax Reference Guide</a></td>
+      <td style="text-align: right; border: none">378</td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/F-Glossary/README.md">F. Glossary</a></td>
-      <td style="text-align: right;">381</td>
+    <tr style="background-color: #f2f2f2;">
+      <td style="border: none"><a href="../Appendix/F-Glossary/README.md">F. Glossary</a></td>
+      <td style="text-align: right; border: none">381</td>
     </tr>
-    <tr>
-      <td><a href="../Appendix/G-Index/README.md">G. Index</a></td>
-      <td style="text-align: right;">393</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
+    <tr style="background-color: #FFFFFF;">
+      <td style="border: none"><a href="../Appendix/G-Index/README.md">G. Index</a></td>
+      <td style="text-align: right; border: none">393</td>
     </tr>
   </tbody>
 </table>
