@@ -846,7 +846,8 @@ not. We typically use block comments at the beginning of the program:
 * Summary:
 *    This program is designed to be the first C++ program you have ever
 *    written. While not particularly complex, it is often the most difficult
-*    to write because the tools are so unfamiliar. ************************************************************************/
+*    to write because the tools are so unfamiliar.
+************************************************************************/
 </code></pre>
 
 All programs created for CS 124 need to start with this comment block. Observe how the comment blocks
@@ -875,7 +876,8 @@ function comment block:
 
 <pre style="min-width: 500px"><code>/**********************************************************
 * MAIN
-* This program will display a simple message on the screen  **********************************************************/
+* This program will display a simple message on the screen 
+**********************************************************/
 </code></pre>
 
 <br><br>
@@ -883,11 +885,9 @@ function comment block:
 <br><br>
 <br><br>
 <br><br>
-<br><br>
-<br><br>
 
 
-<table>
+<table width="650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -911,7 +911,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<table>
+<table width="650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -937,6 +937,8 @@ If a program is like a recipe for cookies then which of the following is most li
 </table>
 
 <p style="text-align: right; font-size: .75em;">
+<br><br>
+<br><br>
 Procedural Programming in C++
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
@@ -951,7 +953,7 @@ Computers & Programs
 
 <div style="page-break-after: always;"></div>
 
-<table>
+<table width="650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -965,9 +967,11 @@ Computers & Programs
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 What is missing from this program?
 <pre style="max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;
+<!-- Blank Line -->
 int main()
 {
    cout << "Howdy\n";
+   <!-- Blank Line -->
    return 0;
 }
 </code></pre>
@@ -983,7 +987,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<table>
+<table width="650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -1012,7 +1016,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<table>
+<table width="650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -1071,7 +1075,7 @@ Procedural Programming in C++
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
-    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0">Assignment 0.2</p>
+    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0; white-space: nowrap">Assignment 0.2</p>
 </td>
 <td><!-- Blank Cell --></td>
 </tr>
@@ -1115,6 +1119,7 @@ JUMP M:0
 
 4. What is the purpose of comments in a program?
 
+<br><br>
 <br><br>
 
 5. Give an example of all the ways to write a comment in C++:
