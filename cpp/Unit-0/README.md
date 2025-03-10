@@ -520,9 +520,7 @@ Do nothing
 Load a value from some memory location into the register
 </td>
 <td>
-<code>
-LOAD M:3
-</code>
+<code>LOAD M:3</code>
 </td>
 </tr>
 <tr style="background: #d8d8d8">
@@ -536,9 +534,7 @@ LOAD M:3
 Set the register to some value
 </td>
 <td>
-<code>
-SET 1
-</code>
+<code>SET 1</code>
 </td>
 </tr>
 <tr>
@@ -552,9 +548,7 @@ SET 1
 Saves the value in a register to some memory location
 </td>
 <td>
-<code>
-SAVE M:10
-</code>
+<code>SAVE M:10</code>
 </td>
 </tr>
 <tr style="background: #d8d8d8">
@@ -568,9 +562,7 @@ SAVE M:10
 Sets the Next Instruction value to some memory location
 </td>
 <td>
-<code>
-JUMP M:0
-</code>
+<code>JUMP M:0</code>
 </td>
 </tr>
 <tr>
@@ -585,9 +577,7 @@ Same  as  JUMP  except  only  sets  the  Next  Instruction  value  if  the
 register is set to zero
 </td>
 <td>
-<code>
-JUMPZ M:0
-</code>
+<code>JUMPZ M:0</code>
 </td>
 </tr>
 <tr style="background: #d8d8d8">
@@ -601,9 +591,7 @@ JUMPZ M:0
 Adds a value to the register
 </td>
 <td>
-<code>
-ADD 1
-</code>
+<code>ADD 1</code>
 </td>
 </tr>
 <tr>
@@ -617,9 +605,7 @@ ADD 1
 Subtracts a value from what is currently in the register
 </td>
 <td>
-<code>
-SUB 1
-</code>
+<code>SUB 1</code>
 </td>
 </tr>
 <tr style="background: #d8d8d8">
@@ -633,9 +619,7 @@ SUB 1
 Multiplies the current value in the register by some value
 </td>
 <td>
-<code>
-MULT 2
-</code>
+<code>MULT 2</code>
 </td>
 </tr>
 <tr>
@@ -649,9 +633,7 @@ MULT 2
 Integer division for some value in the register
 </td>
 <td>
-<code>
-DIV 2
-</code>
+<code>DIV 2</code>
 </td>
 </tr>
 <tr style="background: #d8d8d8">
@@ -665,9 +647,7 @@ DIV 2
 Returns 1 if the value and the register are both non-zero
 </td>
 <td>
-<code>
-AND 1
-</code>
+<code>AND 1</code>
 </td>
 </tr>
 <tr>
@@ -681,9 +661,7 @@ AND 1
 Returns 1 if the value or the register is non-zero
 </td>
 <td>
-<code>
-OR 1
-</code>
+<code>OR 1</code>
 </td>
 </tr>
 <tr style="background: #d8d8d8">
@@ -697,9 +675,7 @@ OR 1
 Returns 1 if the value in the register is zero
 </td>
 <td>
-<code>
-NOT
-</code>
+<code>NOT</code>
 </td>
 </tr>
 </tbody>
