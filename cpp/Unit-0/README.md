@@ -225,8 +225,6 @@ Course Overview
 
 <div style="page-break-after: always;"></div>
 
-<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
-
 # Computers and Programs
 
 Sam is talking with an old high school friend when he find out he is majoring in Computer Science. “You
