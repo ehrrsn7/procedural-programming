@@ -342,9 +342,7 @@ Example
 <tbody>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-NOOP
-</code>
+<code style="color: white">NOOP</code>
 </td>
 <td>
 0
@@ -358,9 +356,7 @@ Do nothing
 </tr>
 <tr>
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-LOAD
-</code>
+<code style="color: white">LOAD</code>
 </td>
 <td>
 1
@@ -376,9 +372,7 @@ LOAD M:3
 </tr>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-SET
-</code>
+<code style="color: white">SET</code>
 </td>
 <td>
 2
@@ -394,9 +388,7 @@ SET 1
 </tr>
 <tr>
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-SAVE
-</code>
+<code style="color: white">SAVE</code>
 </td>
 <td>
 3
@@ -412,9 +404,7 @@ SAVE M:10
 </tr>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-JUMP
-</code>
+<code style="color: white">JUMP</code>
 </td>
 <td>
 5
@@ -430,9 +420,7 @@ JUMP M:0
 </tr>
 <tr>
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-JUMPZ
-</code>
+<code style="color: white">JUMPZ</code>
 </td>
 <td>
 6
@@ -449,9 +437,7 @@ JUMPZ M:0
 </tr>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-ADD
-</code>
+<code style="color: white">ADD</code>
 </td>
 <td>
 8
@@ -467,9 +453,7 @@ ADD 1
 </tr>
 <tr>
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-SUB
-</code>
+<code style="color: white">SUB</code>
 </td>
 <td>
 9
@@ -485,9 +469,7 @@ SUB 1
 </tr>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-MULT
-</code>
+<code style="color: white">MULT</code>
 </td>
 <td>
 10
@@ -503,9 +485,7 @@ MULT 2
 </tr>
 <tr>
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-DIV
-</code>
+<code style="color: white">DIV</code>
 </td>
 <td>
 11
@@ -521,9 +501,7 @@ DIV 2
 </tr>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-AND
-</code>
+<code style="color: white">AND</code>
 </td>
 <td>
 12
@@ -539,9 +517,7 @@ AND 1
 </tr>
 <tr>
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-OR
-</code>
+<code style="color: white">OR</code>
 </td>
 <td>
 13
@@ -557,9 +533,7 @@ OR 1
 </tr>
 <tr style="background: #d8d8d8">
 <td style="background: #4f81bd; border-bottom: 1px solid #FFFFFF50">
-<code style="color: white">
-NOT
-</code>
+<code style="color: white">NOT</code>
 </td>
 <td>
 14
