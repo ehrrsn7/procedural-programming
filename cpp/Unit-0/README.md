@@ -2,57 +2,212 @@
 
 ## Table of Contents
 
-| Content                                                                      | Page |
-| ---------------------------------------------------------------------------- | ---: |
-| Table of Contents                                                            |    1 |
-| [Course Overview](#course-overview)                                          |    2 |
-| [Computers & Programs](#computers-and-programs)                              |    4 |
-|                                                                              |      |
-| [1.0 First Program                  ](../Unit-1/1.0-First-Program/README.md) |   13 |
-| [1.1 Output                         ](../Unit-1/1.0-First-Program/README.md) |   24 |
-| [1.2 Input & Variables              ](../Unit-1/1.0-First-Program/README.md) |   35 |
-| [1.3 Expressions                    ](../Unit-1/1.0-First-Program/README.md) |   46 |
-| [1.4 Functions                      ](../Unit-1/1.0-First-Program/README.md) |   58 |
-| [1.5 Boolean Expressions            ](../Unit-1/1.0-First-Program/README.md) |   76 |
-| [1.6 IF Statements                  ](../Unit-1/1.0-First-Program/README.md) |   86 |
-| [Unit 1 Practice Test               ](../Unit-1/1.0-First-Program/README.md) |   99 |
-| [Unit 1 Project : Monthly Budget    ](../Unit-1/1.0-First-Program/README.md) |  101 |
-|                                                                              |      |
-| 2.0 Modularization                                                           |  108 |
-| 2.1 Debugging                                                                |  130 |
-| 2.2 Designing Algorithms                                                     |  145 |
-| 2.3 Loop Syntax                                                              |  156 |
-| 2.4 Loop Output                                                              |  168 |
-| 2.5 Loop Design                                                              |  181 |
-| 2.6 Files                                                                    |  190 |
-| Unit 2 Practice Test                                                         |  207 |
-| Unit 2 Project : Calendar Program                                            |  209 |
-|                                                                              |      |
-| 3.0 Array Syntax                                                             |  214 |
-| 3.1 Array Design                                                             |  233 |
-| 3.2 Strings                                                                  |  242 |
-| 3.3 Pointers                                                                 |  255 |
-| 3.4 Pointer Arithmetic                                                       |  269 |
-| 3.5 Advanced Conditionals                                                    |  284 |
-| Unit 3 Practice Test                                                         |  301 |
-| Unit 3 Project : MadLib                                                      |  303 |
-|                                                                              |      |
-| 4.0 Multi-Dimensional Arrays                                                 |  309 |
-| 4.1 Allocating Memory                                                        |  324 |
-| 4.2 String Class                                                             |  337 |
-| 4.3 Command Line                                                             |  346 |
-| 4.4 Instrumentation                                                          |  356 |
-| Unit 4 Practice Test                                                         |  361 |
-| Unit 4 Project : Sudoku                                                      |  363 |
-|                                                                              |      |
-| A. Elements of Style                                                         |  369 |
-| B. Order of Operations                                                       |  375 |
-| C. Lab Help                                                                  |  376 |
-| D. Emacs & Linux Cheat-Sheet                                                 |  377 |
-| E. C++ Syntax Reference Guide                                                |  378 |
-| F. Glossary                                                                  |  381 |
-| G. Index                                                                     |  393 |
-|                                                                              |      |
+<table style="width: 100%; max-width: 500px; margin-left: 80px">
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th style="text-align: right;">Page</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Table of Contents</td>
+      <td style="text-align: right;">1</td>
+    </tr>
+    <tr>
+      <td><a href="#course-overview">Course Overview</a></td>
+      <td style="text-align: right;">2</td>
+    </tr>
+    <tr>
+      <td><a href="#computers-and-programs">Computers & Programs</a></td>
+      <td style="text-align: right;">4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.0 First Program</a></td>
+      <td style="text-align: right;">13</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.1 Output</a></td>
+      <td style="text-align: right;">24</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.2 Input & Variables</a></td>
+      <td style="text-align: right;">35</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.3 Expressions</a></td>
+      <td style="text-align: right;">46</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.4 Functions</a></td>
+      <td style="text-align: right;">58</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.5 Boolean Expressions</a></td>
+      <td style="text-align: right;">76</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">1.6 IF Statements</a></td>
+      <td style="text-align: right;">86</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Practice Test</a></td>
+      <td style="text-align: right;">99</td>
+    </tr>
+    <tr>
+      <td><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Project : Monthly Budget</a></td>
+      <td style="text-align: right;">101</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2.0 Modularization</td>
+      <td style="text-align: right;">108</td>
+    </tr>
+    <tr>
+      <td>2.1 Debugging</td>
+      <td style="text-align: right;">130</td>
+    </tr>
+    <tr>
+      <td>2.2 Designing Algorithms</td>
+      <td style="text-align: right;">145</td>
+    </tr>
+    <tr>
+      <td>2.3 Loop Syntax</td>
+      <td style="text-align: right;">156</td>
+    </tr>
+    <tr>
+      <td>2.4 Loop Output</td>
+      <td style="text-align: right;">168</td>
+    </tr>
+    <tr>
+      <td>2.5 Loop Design</td>
+      <td style="text-align: right;">181</td>
+    </tr>
+    <tr>
+      <td>2.6 Files</td>
+      <td style="text-align: right;">190</td>
+    </tr>
+    <tr>
+      <td>Unit 2 Practice Test</td>
+      <td style="text-align: right;">207</td>
+    </tr>
+    <tr>
+      <td>Unit 2 Project : Calendar Program</td>
+      <td style="text-align: right;">209</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3.0 Array Syntax</td>
+      <td style="text-align: right;">214</td>
+    </tr>
+    <tr>
+      <td>3.1 Array Design</td>
+      <td style="text-align: right;">233</td>
+    </tr>
+    <tr>
+      <td>3.2 Strings</td>
+      <td style="text-align: right;">242</td>
+    </tr>
+    <tr>
+      <td>3.3 Pointers</td>
+      <td style="text-align: right;">255</td>
+    </tr>
+    <tr>
+      <td>3.4 Pointer Arithmetic</td>
+      <td style="text-align: right;">269</td>
+    </tr>
+    <tr>
+      <td>3.5 Advanced Conditionals</td>
+      <td style="text-align: right;">284</td>
+    </tr>
+    <tr>
+      <td>Unit 3 Practice Test</td>
+      <td style="text-align: right;">301</td>
+    </tr>
+    <tr>
+      <td>Unit 3 Project : MadLib</td>
+      <td style="text-align: right;">303</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4.0 Multi-Dimensional Arrays</td>
+      <td style="text-align: right;">309</td>
+    </tr>
+    <tr>
+      <td>4.1 Allocating Memory</td>
+      <td style="text-align: right;">324</td>
+    </tr>
+    <tr>
+      <td>4.2 String Class</td>
+      <td style="text-align: right;">337</td>
+    </tr>
+    <tr>
+      <td>4.3 Command Line</td>
+      <td style="text-align: right;">346</td>
+    </tr>
+    <tr>
+      <td>4.4 Instrumentation</td>
+      <td style="text-align: right;">356</td>
+    </tr>
+    <tr>
+      <td>Unit 4 Practice Test</td>
+      <td style="text-align: right;">361</td>
+    </tr>
+    <tr>
+      <td>Unit 4 Project : Sudoku</td>
+      <td style="text-align: right;">363</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A. Elements of Style</td>
+      <td style="text-align: right;">369</td>
+    </tr>
+    <tr>
+      <td>B. Order of Operations</td>
+      <td style="text-align: right;">375</td>
+    </tr>
+    <tr>
+      <td>C. Lab Help</td>
+      <td style="text-align: right;">376</td>
+    </tr>
+    <tr>
+      <td>D. Emacs & Linux Cheat-Sheet</td>
+      <td style="text-align: right;">377</td>
+    </tr>
+    <tr>
+      <td>E. C++ Syntax Reference Guide</td>
+      <td style="text-align: right;">378</td>
+    </tr>
+    <tr>
+      <td>F. Glossary</td>
+      <td style="text-align: right;">381</td>
+    </tr>
+    <tr>
+      <td>G. Index</td>
+      <td style="text-align: right;">393</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 <div style="page-break-after: always;"></div>
 
