@@ -887,7 +887,7 @@ function comment block:
 <br><br>
 
 
-<table width="650px">
+<table style="min-width: 650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -911,7 +911,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<table width="650px">
+<table style="min-width: 650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -953,7 +953,7 @@ Computers & Programs
 
 <div style="page-break-after: always;"></div>
 
-<table width="650px">
+<table style="min-width: 650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -987,7 +987,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<table width="650px">
+<table style="min-width: 650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
@@ -1016,7 +1016,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<table width="650px">
+<table style="min-width: 650px">
 <theader>
 <tr>
 <td width="20%" style="background: #244061; border: 3px solid #a6a6a6">
