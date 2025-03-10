@@ -1,25 +1,3 @@
-<style>
-    * {
-        font-family: georgia, "Open Sans", sans-serif;
-        line-height: 1.5;
-        color: #333;
-    }
-    table {
-        width: calc(100% - 40px);
-        max-width: 700px;
-        margin: 20px 20px;
-    }
-
-    table > tbody > tr > td {
-        height: 1em;
-    }
-
-    a, a:hover {
-        color: dark-blue;
-        text-decoration: none;
-    }
-</style>
-
 <img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
 
 ## Table of Contents
