@@ -13,7 +13,7 @@
     <tr>
       <td>Table of Contents</td>
       <td style="text-align: right;">1</td>
-    </tr>
+    </tr>  
     <tr>
       <td><a href="#course-overview">Course Overview</a></td>
       <td style="text-align: right;">2</td>
@@ -67,39 +67,39 @@
       <td></td>
     </tr>
     <tr>
-      <td>2.0 Modularization</td>
+      <td><a href="../Unit-2/2.0-Modularization/README.md">2.0 Modularization</a></td>
       <td style="text-align: right;">108</td>
     </tr>
     <tr>
-      <td>2.1 Debugging</td>
+      <td><a href="../Unit-2/2.1-Debugging/README.md">2.1 Debugging</a></td>
       <td style="text-align: right;">130</td>
     </tr>
     <tr>
-      <td>2.2 Designing Algorithms</td>
+      <td><a href="../Unit-2/2.2-Designing-Algorithms/README.md">2.2 Designing Algorithms</a></td>
       <td style="text-align: right;">145</td>
     </tr>
     <tr>
-      <td>2.3 Loop Syntax</td>
+      <td><a href="../Unit-2/2.3-Loop-Syntax/README.md">2.3 Loop Syntax</a></td>
       <td style="text-align: right;">156</td>
     </tr>
     <tr>
-      <td>2.4 Loop Output</td>
+      <td><a href="../Unit-2/2.4-Loop-Output/README.md">2.4 Loop Output</a></td>
       <td style="text-align: right;">168</td>
     </tr>
     <tr>
-      <td>2.5 Loop Design</td>
+      <td><a href="../Unit-2/2.5-Loop-Design/README.md">2.5 Loop Design</a></td>
       <td style="text-align: right;">181</td>
     </tr>
     <tr>
-      <td>2.6 Files</td>
+      <td><a href="../Unit-2/2.6-Files/README.md">2.6 Files</a></td>
       <td style="text-align: right;">190</td>
     </tr>
     <tr>
-      <td>Unit 2 Practice Test</td>
+      <td><a href="../Unit-2/Practice-Test/README.md">Unit 2 Practice Test</a></td>
       <td style="text-align: right;">207</td>
     </tr>
     <tr>
-      <td>Unit 2 Project : Calendar Program</td>
+      <td><a href="../Unit-2/Project-Calendar-Program/README.md">Unit 2 Project : Calendar Program</a></td>
       <td style="text-align: right;">209</td>
     </tr>
     <tr>
@@ -107,35 +107,35 @@
       <td></td>
     </tr>
     <tr>
-      <td>3.0 Array Syntax</td>
+      <td><a href="../Unit-3/3.0-Array-Syntax/README.md">3.0 Array Syntax</a></td>
       <td style="text-align: right;">214</td>
     </tr>
     <tr>
-      <td>3.1 Array Design</td>
+      <td><a href="../Unit-3/3.1-Array-Design/README.md">3.1 Array Design</a></td>
       <td style="text-align: right;">233</td>
     </tr>
     <tr>
-      <td>3.2 Strings</td>
+      <td><a href="../Unit-3/3.2-Strings/README.md">3.2 Strings</a></td>
       <td style="text-align: right;">242</td>
     </tr>
     <tr>
-      <td>3.3 Pointers</td>
+      <td><a href="../Unit-3/3.3-Pointers/README.md">3.3 Pointers</a></td>
       <td style="text-align: right;">255</td>
     </tr>
     <tr>
-      <td>3.4 Pointer Arithmetic</td>
+      <td><a href="../Unit-3/3.4-Pointer-Arithmetic/README.md">3.4 Pointer Arithmetic</a></td>
       <td style="text-align: right;">269</td>
     </tr>
     <tr>
-      <td>3.5 Advanced Conditionals</td>
+      <td><a href="../Unit-3/3.5-Advanced-Conditionals/README.md">3.5 Advanced Conditionals</a></td>
       <td style="text-align: right;">284</td>
     </tr>
     <tr>
-      <td>Unit 3 Practice Test</td>
+      <td><a href="../Unit-3/Practice-Test/README.md">Unit 3 Practice Test</a></td>
       <td style="text-align: right;">301</td>
     </tr>
     <tr>
-      <td>Unit 3 Project : MadLib</td>
+      <td><a href="../Unit-3/Project-MadLib/README.md">Unit 3 Project : MadLib</a></td>
       <td style="text-align: right;">303</td>
     </tr>
     <tr>
@@ -143,31 +143,31 @@
       <td></td>
     </tr>
     <tr>
-      <td>4.0 Multi-Dimensional Arrays</td>
+      <td><a href="../Unit-4/4.0-Multi-Dimensional-Arrays/README.md">4.0 Multi-Dimensional Arrays</a></td>
       <td style="text-align: right;">309</td>
     </tr>
     <tr>
-      <td>4.1 Allocating Memory</td>
+      <td><a href="../Unit-4/4.1-Allocating-Memory/README.md">4.1 Allocating Memory</a></td>
       <td style="text-align: right;">324</td>
     </tr>
     <tr>
-      <td>4.2 String Class</td>
+      <td><a href="../Unit-4/4.2-String-Class/README.md">4.2 String Class</a></td>
       <td style="text-align: right;">337</td>
     </tr>
     <tr>
-      <td>4.3 Command Line</td>
+      <td><a href="../Unit-4/4.3-Command-Line/README.md">4.3 Command Line</a></td>
       <td style="text-align: right;">346</td>
     </tr>
     <tr>
-      <td>4.4 Instrumentation</td>
+      <td><a href="../Unit-4/4.4-Instrumentation/README.md">4.4 Instrumentation</a></td>
       <td style="text-align: right;">356</td>
     </tr>
     <tr>
-      <td>Unit 4 Practice Test</td>
+      <td><a href="../Unit-4/Practice-Test/README.md">Unit 4 Practice Test</a></td>
       <td style="text-align: right;">361</td>
     </tr>
     <tr>
-      <td>Unit 4 Project : Sudoku</td>
+      <td><a href="../Unit-4/Project-Sudoku/README.md">Unit 4 Project : Sudoku</a></td>
       <td style="text-align: right;">363</td>
     </tr>
     <tr>
@@ -175,31 +175,31 @@
       <td></td>
     </tr>
     <tr>
-      <td>A. Elements of Style</td>
+      <td><a href="../Appendix/A-Elements-of-Style/README.md">A. Elements of Style</a></td>
       <td style="text-align: right;">369</td>
     </tr>
     <tr>
-      <td>B. Order of Operations</td>
+      <td><a href="../Appendix/B-Order-of-Operations/README.md">B. Order of Operations</a></td>
       <td style="text-align: right;">375</td>
     </tr>
     <tr>
-      <td>C. Lab Help</td>
+      <td><a href="../Appendix/C-Lab-Help/README.md">C. Lab Help</a></td>
       <td style="text-align: right;">376</td>
     </tr>
     <tr>
-      <td>D. Emacs & Linux Cheat-Sheet</td>
+      <td><a href="../Appendix/D-Emacs-Linux-Cheat-Sheet/README.md">D. Emacs & Linux Cheat-Sheet</td>
       <td style="text-align: right;">377</td>
     </tr>
     <tr>
-      <td>E. C++ Syntax Reference Guide</td>
+      <td><a href="../Appendix/E-C++-Syntax-Reference-Guide/README.md">E. C++ Syntax Reference Guide</a></td>
       <td style="text-align: right;">378</td>
     </tr>
     <tr>
-      <td>F. Glossary</td>
+      <td><a href="../Appendix/F-Glossary/README.md">F. Glossary</a></td>
       <td style="text-align: right;">381</td>
     </tr>
     <tr>
-      <td>G. Index</td>
+      <td><a href="../Appendix/G-Index/README.md">G. Index</a></td>
       <td style="text-align: right;">393</td>
     </tr>
     <tr>
@@ -416,8 +416,6 @@ Procedural Programming in C++
 
 <div style="page-break-after: always;"></div>
 
-<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
-
 ## Computers
 
 Computers today are all based on the basic model developed by Dr. John von Neumann. They consist of a
@@ -448,10 +446,6 @@ Finally, programs consist of simple instructions that are executed by the CPU.
 <img src="./.etc/assets/bus.png" width="50%" height="auto" style="margin-left: 10em">
 
 <p style="text-align: right; font-size: .75em;">
-<br><br>
-<br><br>
-<br><br>
-<br><br>
 <br><br>
 <br><br>
 <br><br>
@@ -687,7 +681,6 @@ Please view the following movie to learn about how these instructions can be use
     <img src="./.etc/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;">
     Programs
 </a>
-<br>
 
 The last item is an emulator (a program that pretends it is something else. In this case, it emulates the simple computer presented in the previous movies).
 
@@ -695,7 +688,6 @@ The last item is an emulator (a program that pretends it is something else. In t
     <img src="./.etc/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;">
     Emulator
 </a>
-<br>
 
 To run a program:
 
@@ -753,8 +745,6 @@ A couple programs you may want to run... what will they do?
 <p style="text-align: left; font-size: .75em;">
 <br><br>
 <br><br>
-<br><br>
-<br><br>
 <strong>Page 6</strong>
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
@@ -771,11 +761,7 @@ Procedural Programming in C++
 
 ## Programs
 
-There are many computer languages, each enabling the programmer to write a computer program. In this
-class, we will be using the C++ language developed by Bjarne Stroustrup in the early 1980’s.  A  C++
-program consists of two parts: the header and the functions. The header describes what tools will be used in
-the program and the functions contain the recipes themselves. The functions consist of individual instructions
-called statements:
+There are many computer languages, each enabling the programmer to write a computer program. In this class, we will be using the C++ language developed by Bjarne Stroustrup in the early 1980’s.  A  C++ program consists of two parts: the header and the functions. The header describes what tools will be used in the program and the functions contain the recipes themselves. The functions consist of individual instructions called statements:
 
 <table>
 <thead>
@@ -783,42 +769,27 @@ called statements:
 <tbody>
 <tr>
 <td style="border: 2px solid #4f81bd; vertical-align: top">
-
-// 1
-
-The “pound include” statement allows
-the program to include a library.
-
-The `iostream` library allows you to
-read/write data to the screen
-
+<p>// 1</p>
+<p>The “pound include” statement allows
+the program to include a library.</p>
+<p>The `iostream` library allows you to
+read/write data to the screen</p>
 </td>
-
 <td width="2px" style="padding: 0"></td>
-
 <td style="border: 2px solid #4f81bd; vertical-align: top">
-
-// 2
-
-The `using` statement allows us to
+<p>// 2</p>
+<p>The `using` statement allows us to
 conveniently access the library
 functions. This library function is
-called `std`, short for standard.
-
+called `std`, short for standard.</p>
 </td>
-
 <td width="2px" style="padding: 0"></td>
-
 <td style="border: 2px solid #4f81bd; vertical-align: top">
-
-// 3
-
-Every C++ program begins with a function
-called main.
-
-This tells the program where to begin
-execution.
-
+<p>// 3</p>
+<p>Every C++ program begins with a function
+called main.</p>
+<p>This tells the program where to begin
+execution.</p>
 </td>
 </tr>
 </tbody>
@@ -843,73 +814,42 @@ int main()
 <tbody>
 <tr>
 <td style="border: 2px solid #4f81bd; vertical-align: top">
-
-// 4
-
-Every  block  of  related  code  is
-surrounded by “curly braces”.
-
-All functions encapsulate their
-code with curly braces.
-
+<p>// 4</p>
+<p>Every  block  of  related  code  is
+surrounded by “curly braces”.</p>
+<p>All functions encapsulate their
+code with curly braces.</p>
 </td>
-
 <td width="2px" style="padding: 0"></td>
-
 <td style="border: 2px solid #4f81bd; vertical-align: top">
-
-// 5
-
-This line actually does the work for this program.
-
-We are “piping” the text “`Hello  World!`” to the output
-function called `cout`.
-
+<p>// 5</p>
+<p>This line actually does the work for this program.</p>
+<p>We are “piping” the text “`Hello  World!`” to the output
+function called `cout`.</p>
 </td>
-
 <td width="2px" style="padding: 0"></td>
-
 <td style="border: 2px solid #4f81bd; vertical-align: top">
-
-// 6
-
-The  `return`  statement  lets  us
+<p>// 6</p>
+<p>The  `return`  statement  lets  us
 exit  the  function.  Here  we  are
-leaving  the  return  code  of  0.
-
-`Code = 0`: No Error
-
-`Code > 0`: Increasing Severity
-
+leaving  the  return  code  of  0.</p>
+<p>`Code = 0`: No Error</p>
+<p>`Code > 0`: Increasing Severity</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-**IOSTREAM**: This simple program has two parts to the header. The first part indicates that the `iostream`
-library will be used. The `iostream` library contains many useful tools that we will be using in every program
-this semester, including the ability to display text on the screen. There are other libraries we will be introduced
-to through the course of the semester, including `iomanip`, `cassert`, and `fstream`.
+**IOSTREAM**: This simple program has two parts to the header. The first part indicates that the `iostream` library will be used. The `iostream` library contains many useful tools that we will be using in every program this semester, including the ability to display text on the screen. There are other libraries we will be introduced to through the course of the semester, including `iomanip`, `cassert`, and `fstream`.
 
-**NAMESPACE**: The second line of code in the header indicates we are to be using the shorthand version
-of  the  tools  rather  than  the  longer  and  more  verbose  versions.  This semester we will always have “using
-namespace std;” at the top of our programs, though in CS 165 we will learn when this may not be desirable.
+**NAMESPACE**: The second line of code in the header indicates we are to be using the shorthand version of  the  tools  rather  than  the  longer  and  more  verbose  versions.  This semester we will always have “using namespace std;” at the top of our programs, though in CS 165 we will learn when this may not be desirable.
 
-**CURLY BRACES**: All the instructions or statements in a C++ program exist in functions. The `{}`s (called
-“curly braces”) denote where the function begins and ends. Most programs have many functions, though
-initially  our  programs  will  only  have  one.  Back  to  our  recipe  analogy,  a  program  with  many  functions  is
-similar to a recipe having sub-recipes to make special parts (such as the sauce). The functions can be named
-most anything, but there must be exactly one function called `main()`. When a program begins, execution starts
-at the head of `main()`.
+**CURLY BRACES**: All the instructions or statements in a C++ program exist in functions. The `{}`s (called “curly braces”) denote where the function begins and ends. Most programs have many functions, though initially  our  programs  will  only  have  one.  Back  to  our  recipe  analogy,  a  program  with  many  functions  is similar to a recipe having sub-recipes to make special parts (such as the sauce). The functions can be named most anything, but there must be exactly one function called `main()`. When a program begins, execution starts at the head of `main()`.
 
-**COUT**: The first instruction in the program indicates that the text “Hello world” will be displayed on the
-screen. We will learn more about how to display text on the screen, as well as how to do more complex and
-powerful tasks later in the semester (Chapter 1.1).
+**COUT**: The first instruction in the program indicates that the text “Hello world” will be displayed on the screen. We will learn more about how to display text on the screen, as well as how to do more complex and powerful tasks later in the semester (Chapter 1.1).
 
-**RETURN**:  The  last  statement  in  this  example  is  the  return  statement.  The  return  statement  serves  two
-purposes. The first is to indicate that the function is over. If, for example, a return statement is put at the
-beginning of a function, all the statements after return will not be executed. The second purpose is to send
+**RETURN**:  The  last  statement  in  this  example  is  the  return  statement.  The  return  statement  serves  two purposes. The first is to indicate that the function is over. If, for example, a return statement is put at the beginning of a function, all the statements after return will not be executed. The second purpose is to send
 
 <p style="text-align: right; font-size: .75em;">
 Procedural Programming in C++
@@ -926,25 +866,16 @@ Computers & Programs
 
 <div style="page-break-after: always;"></div>
 
-data from one function to another. Consider, for example, the absolute value function from mathematics. In
-this  example,  the  output  of  the  absolute  value  function  would  be  sent  to  the  client  through  the  return
-mechanism. We will learn more about the use of return later in the semester (Chapter 1.4).
+data from one function to another. Consider, for example, the absolute value function from mathematics. In this  example,  the  output  of  the  absolute  value  function  would  be  sent  to  the  client  through  the  return mechanism. We will learn more about the use of return later in the semester (Chapter 1.4).
 
 ## Comments
-Strictly speaking, the sole purpose of a recipe is to give the cook the necessary information to create a dish.
-However, sometimes other chefs also need to be able to read and understand what the recipe is trying to do.
-In other words, it is often useful to answer “why” questions (example: “Why did we use whole wheat flour
-instead  of  white flour?”) as well as “how” questions (example: “How do I adjust the recipe for high
-elevation?”). We use comment to address “why” questions.
+Strictly speaking, the sole purpose of a recipe is to give the cook the necessary information to create a dish. However, sometimes other chefs also need to be able to read and understand what the recipe is trying to do. In other words, it is often useful to answer “why” questions (example: “Why did we use whole wheat flour instead  of  white flour?”) as well as “how” questions (example: “How do I adjust the recipe for high elevation?”). We use comment to address “why” questions.
 
-Comments  are  notes  placed  in  a program  that  are  not  read  by  the  compiler.  They  are  meant  to  make  the
-program more human-readable and easier to adjust. There are two commenting styles in C++: line and block
-comments.
+Comments  are  notes  placed  in  a program  that  are  not  read  by  the  compiler.  They  are  meant  to  make  the program more human-readable and easier to adjust. There are two commenting styles in C++: line and block comments.
 
 ### Line comments
 
-Line comments indicate that all the text from the beginning of the line comment (two forward slashes `//`) to
-the end of the line is part of the comment:
+Line comments indicate that all the text from the beginning of the line comment (two forward slashes `//`) to the end of the line is part of the comment:
 
 <pre style="min-width: 650px"><code>{
     // line comments typically go inside functions just before a collection
@@ -956,17 +887,13 @@ the end of the line is part of the comment:
 
 Some general guidelines on comments:
 
-* Comments should answer “Why” and “How” questions such as “Why is this variable set to zero?”
-or “How does this equation work?”
+* Comments should answer “Why” and “How” questions such as “Why is this variable set to zero?” or “How does this equation work?”
 * Comments should not state the obvious.
-* When there are multiple related statements in a function, set them apart with a blank line and a
-comment. This facilitates skimming the function to quickly gain a high-level understanding of the
-code.
+* When there are multiple related statements in a function, set them apart with a blank line and a comment. This facilitates skimming the function to quickly gain a high-level understanding of the code.
 
 ### Block comments
 
-Block comments start with `/*` and continue until a `*/` is reached. They can span multiple lines, but often do
-not. We typically use block comments at the beginning of the program:
+Block comments start with `/*` and continue until a `*/` is reached. They can span multiple lines, but often do not. We typically use block comments at the beginning of the program:
 
 <pre style="min-width: 650px"><code>/***********************************************************************
 * Program:
@@ -981,9 +908,7 @@ not. We typically use block comments at the beginning of the program:
 ************************************************************************/
 </code></pre>
 
-All programs created for CS 124 need to start with this comment block. Observe how the comment blocks
-starts with the `/*` at the top and continues until the `*/` on the last line. We will start all of our programs with
-the same comment block. Fortunately there is a template provided so you won’t have to type it yourself.
+All programs created for CS 124 need to start with this comment block. Observe how the comment blocks starts with the `/*` at the top and continues until the `*/` on the last line. We will start all of our programs with the same comment block. Fortunately there is a template provided so you won’t have to type it yourself.
 
 <p style="text-align: left; font-size: .75em;">
 <strong>Page 8</strong>
@@ -1000,14 +925,11 @@ Procedural Programming in C++
 
 <div style="page-break-after: always;"></div>
 
-We also have a comment block at the beginning of every function. This comment block should state the name
-of the function and briefly describing what it is designed to do. If there is anything unusual or exceptional
-about the  function, then  it should be  mentioned in the  comment block.  The  following  is an example of a
-function comment block:
+We also have a comment block at the beginning of every function. This comment block should state the name of the function and briefly describing what it is designed to do. If there is anything unusual or exceptional about the  function, then  it should be  mentioned in the  comment block.  The  following  is an example of a function comment block:
 
 <pre style="min-width: 500px"><code>/**********************************************************
 * MAIN
-* This program will display a simple message on the screen 
+* This program will display a simple message on the screen
 **********************************************************/
 </code></pre>
 
@@ -1030,17 +952,20 @@ function comment block:
 <tbody>
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
-
+<!--Empty Row-->
 Which part of the CPU performs math operations?
-
 Answer:
-
+<br>
+<br>
+<br>
 ____________________________________________________________________________________________
 <div width="100%" style="text-align: right; font-size: 10px; color: #a6a6a6"><em>Please see page 5 for a hint.</em></div>
 </td>
 </tr>
 </tbody>
 </table>
+
+<br>
 
 <table style="min-width: 650px">
 <theader>
@@ -1055,12 +980,18 @@ ________________________________________________________________________________
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 If a program is like a recipe for cookies then which of the following is most like the data of the program?
-
-* Ingredients
-* Instructions
-* Measurements
-* Chef
-
+<!--Empty Row-->
+<ul>
+  <li>Ingredients</li>
+  <li>Instructions</li>
+  <li>Measurements</li>
+  <li>Chef</li>
+</ul>
+Answer:
+<br>
+<br>
+<br>
+____________________________________________________________________________________________
 <div width="100%" style="text-align: right; font-size: 10px; color: #a6a6a6"><em>Please see page 4 for a hint.</em></div>
 </td>
 </tr>
@@ -1097,7 +1028,7 @@ Computers & Programs
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 What is missing from this program?
-<pre style="max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;
 <!-- Blank Line -->
 int main()
 {
@@ -1106,17 +1037,18 @@ int main()
    return 0;
 }
 </code></pre>
-
 Answer:
-<br><br>
-
+<br>
+<br>
+<br>
 ____________________________________________________________________________________________
-
 <div width="100%" style="text-align: right; font-size: 10px; color: #a6a6a6"><em>Please see page 7 for a hint.</em></div>
 </td>
 </tr>
 </tbody>
 </table>
+
+<br>
 
 <table style="min-width: 650px">
 <theader>
@@ -1131,21 +1063,22 @@ ________________________________________________________________________________
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 Which of the following is a function?
-<pre style="max-width: 500px"><code style="max-width: 500px">int main()</code></pre>
-<pre style="max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;</code></pre>
-<pre style="max-width: 500px"><code style="max-width: 500px">return 0;</code></pre>
-<pre style="max-width: 500px"><code style="max-width: 500px">using namespace std;</code></pre>
-
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">int main()</code></pre>
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;</code></pre>
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">return 0;</code></pre>
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">using namespace std;</code></pre>
 Answer:
-<br><br>
-
+<br>
+<br>
+<br>
 ____________________________________________________________________________________________
-
 <div width="100%" style="text-align: right; font-size: 10px; color: #a6a6a6"><em>Please see page 7 for a hint.</em></div>
 </td>
 </tr>
 </tbody>
 </table>
+
+<br>
 
 <table style="min-width: 650px">
 <theader>
@@ -1160,7 +1093,7 @@ ________________________________________________________________________________
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 What is wrong with this program?
-<pre style="max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">#include &lt;iostream&gt;
 using namespace std;
 <!--Empty Space-->
 int main()
@@ -1168,12 +1101,11 @@ int main()
    cout << "Howdy\n";
 }
 </code></pre>
-
 Answer:
-<br><br>
-
+<br>
+<br>
+<br>
 ____________________________________________________________________________________________
-
 <div width="100%" style="text-align: right; font-size: 10px; color: #a6a6a6"><em>Please see page 7 for a hint.</em></div>
 </td>
 </tr>
@@ -1181,11 +1113,6 @@ ________________________________________________________________________________
 </table>
 
 <p style="text-align: left; font-size: .75em;">
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
 <br><br>
 <br><br>
 <strong>Page 10</strong>
@@ -1260,7 +1187,6 @@ JUMP M:0
 
 
 
-
 </code></pre>
 
 </td>
@@ -1269,8 +1195,6 @@ JUMP M:0
 </table>
 
 <p style="text-align: right; font-size: .75em;">
-<br><br>
-<br><br>
 <br><br>
 <br><br>
 Procedural Programming in C++
