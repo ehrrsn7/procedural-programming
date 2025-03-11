@@ -4,6 +4,7 @@ loPage 214 | 3.0 Array Syntax | Unit 3 : Pointers & Arrays | Procedural Programm
 
 (^3)
 
+```
 # 3. 0 Array Syntax
 
 ```
