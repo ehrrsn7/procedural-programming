@@ -296,7 +296,7 @@ You may notice two characters present in various sections of this text. They emb
 <theader>
 <tr style="background: #244061">
 <td width="80%">
-    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0">Sam's Tips</p>
+    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0">Sam's Corner</p>
 </td>
 <td></td>
 </tr>

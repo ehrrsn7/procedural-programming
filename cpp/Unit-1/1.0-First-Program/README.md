@@ -15,7 +15,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.0-First-Program/README.md">
       <p style="
         /* border: 1px solid green; */
         position: relative;
@@ -43,7 +43,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.1-Output/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -69,7 +69,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.2-Input-&-Variables/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -97,7 +97,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.3-Expressions/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -123,7 +123,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.4-Functions/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -151,7 +151,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.5-Boolean-Expressions/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -179,7 +179,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.6-IF-Statements/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -207,7 +207,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.7-Unit-1-Practice-Test/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -235,7 +235,7 @@
     padding: 0px;
     text-align: left;
     border: none;">
-      <a href="../Unit-1/1.0-First-Program/README.md">
+      <a href="../1.8-Unit-1-Project-Monthly-Budget/README.md">
       <p style="
       /* border: 1px solid green; */
       position: relative;
@@ -826,9 +826,26 @@ Most Linux commands do not display anything on the screen if they were successfu
 
 For more commands or more details on the above, please see [Appendix D: Linux and Emacs Cheat-Sheet](../Unit-5/Appendix-D/README.md).
 
-### Sues Tips
-
-Be careful how you name your files. By the end of the semester, you could easily get lost in a sea of files. Spend a few moments thinking of how you will organize all your files as this will be a useful practice for the remainder of your career.
+<table>
+<theader>
+<tr style="background: #632423">
+<td width="80%">
+    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0">Sue's Tips</p>
+</td>
+<td></td>
+</tr>
+</theader>
+<tbody>
+<tr>
+<td>
+<p>Be careful how you name your files. By the end of the semester, you could easily get lost in a sea of files. Spend a few moments thinking of how you will organize all your files as this will be a useful practice for the remainder of your career.</p>
+</td>
+<td style="display: flex; padding: 0; height: 100%">
+    <img src="../../.etc/assets/sue.png" width="200px" height="auto"">
+</td>
+</tr>
+</tbody>
+</table>
 
 <p class="footer right" style="
   text-align: right;
@@ -1174,17 +1191,38 @@ submit homework to helfrich cs124 and assign10. (y/n)
 
 It is worthwhile to read that message. 
  
-#### Sam’s Corner  
+<table>
+<theader>
+<tr style="background: #244061">
+<td width="80%">
+    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0">Sam's Corner</p>
+</td>
+<td></td>
+</tr>
+</theader>
+<tbody>
+<tr>
+<td>
+  <p>
+    Submit is basically a fancy copy function. It makes two copies of the program: one for you and one for the instructor. If, for example, you submitted to “Assignment 10” for “CS 124”, then you will get a copy on:
+  </p>
 
-Submit is basically a fancy copy function. It makes two copies of the program: one for you and one for the instructor. If, for example, you submitted to “Assignment 10” for “CS 124”, then you will get a copy on. 
+  <pre><code>/home/&lt;username&gt;/submittedHomework/cs124_assign10.cpp</code></pre>
 
-```file
-/home/<username>/submittedHomework/cs124_assign10.cpp
-```
+  <p>
+    Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is “<code>eniac</code>”, then the file appears as eniac.cpp in the instructor’s folder. 
+  </p>
 
-Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is “eniac”, then the file appears as eniac.cpp in the instructor’s folder. 
-
-Please  do  not  use  a  dot  in  the  name  of  your  file.  If  you  submit  `hw1.0.cpp`,  for  example,  then  it  will appear as eniac.0 instead of eniac.cpp and the instructor will not grade it
+  <p>
+    Please  do  not  use  a  dot  in  the  name  of  your  file.  If  you  submit  <code>hw1.0.cpp</code>,  for  example,  then  it  will appear as <code>eniac.0</code> instead of <code>eniac.cpp</code> and the instructor will not grade it
+  </p>
+</td>
+<td style="display: flex; padding: 0; height: 100%">
+    <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+</td>
+</tr>
+</tbody>
+</table>
 
 <p class="footer left" style="
   text-align: left;
@@ -1381,7 +1419,7 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </thead>
 </table>
 
-<p class="footer right" style="
+<p class="footer" style="
   text-align: right;
   font-size: .75em;">
 <br>
@@ -1396,4 +1434,3 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <div style="page-break-after: always;"></div>
-
