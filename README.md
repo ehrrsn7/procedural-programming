@@ -12,28 +12,42 @@ Before you begin, ensure you have access to the following:
 
 ## Setting Up Your Environment
 
-1. **Open a terminal or command prompt.**
-2. Install VS Code using a script that has been prepared for you:
+### Installing Visual Studio Code
 
-```Powershell
-Clear-Host
-winget install -e --id Microsoft.VisualStudioCode
-code .
-```
-
-VS Code will be opened automatically.
+[Install Visual Studio Code from the Microsoft Store.](https://apps.microsoft.com/detail/XP9KHM4BK9FZ7Q?hl=en-US&gl=US&ocid=pdpshare)
 
 ## Exploring the Repository
 
-3. Open the repository in VS Code:
+3. Open this repository in VS Code:
+
+### Option 1:
+
+* Open VS Code
+  - Navigate the menu bar or press `Ctrl-K Ctrl-O` to `Open Folder...`
+  - Navigate to the `stretch-programs-main` folder and open it.
+
+### Option 2: (This way is pretty fun)
+
+* In File Explorer: 
+
+  - Right Click on the background to open the context menu for this folder.
+  - Select `Open in Terminal`
+  - Enter the following command in the terminal:
 
 ```Powershell
-code .
+# Open Visual Studio Code in the folder "." AKA the 'current directory'
+code . 
 ```
 
-**PRO TIP: In VS Code Open this README preview by opening it and then pressing: `Ctrl-Shift-V`**
+## Once you have this folder open in VS Code:
 
-VS Code has a built in markdown preview feature. Just click on the icon with the magnifying class and window panes.
+**PRO TIP: In VS Code Open this README preview by opening the file `README.md` and then pressing: `Ctrl-Shift-V`**
+
+A more straightforward way to open this preview (or if the shortcut above doesn't work) is to use VS Code's built-in markdown preview feature. Just click on the icon with the magnifying class and window panes, found near the top-right of the active editor.
+
+<div style="width: 200px;">
+  <img src=".etc/assets/preview.png" alt="preview" />
+</div><br>
 
 Another useful tip is to set the preferences within vs code:
 
@@ -55,10 +69,10 @@ Another useful tip is to set the preferences within vs code:
 - Assignments and exercises.
 
 ***Under Development***
+### [C++ README](cpp/README.md)
 ### [JavaScript README](js/README.md)
 ### [Python README](python/README.md)
 ### [Java README](java/README.md)
-### [C++ README](cpp/README.md)
 
 ***TBD***
 ### [C# README](cs/README.md)
