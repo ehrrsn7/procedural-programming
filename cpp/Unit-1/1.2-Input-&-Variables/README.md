@@ -1472,32 +1472,6 @@ Unit 1: Simple Programs
 </tr>
 <tr>
    <td style="background: #17365d">
-      <h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; min-height: 40px; position: relative; top: -32px; left: -10px">
-         Challenge
-      </h4>
-   </td>
-   <td>
-      <p>
-         No challenge for this assignment.
-      </p>
-   </td>
-   <td style="background: #17365d">
-      <!-- Blank -->
-   </td>
-</tr>
-<tr>
-   <td>
-      <!-- Blank -->
-   </td>
-   <td style="border: 1px solid #70839c">
-      <!-- Blank -->
-   </td>
-   <td>
-      <!-- Blank -->
-   </td>
-</tr>
-<tr>
-   <td style="background: #17365d">
       <h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; position: relative; bottom: 30px; left: 7px">
          Instructions
       </h4>
