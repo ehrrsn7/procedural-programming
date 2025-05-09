@@ -337,10 +337,10 @@ In this case, when you divide 19 by 10, the remainder is 9. Therefore, the value
 <table style="padding: 0; margin: 0">
    <tbody>
       <tr>
-         <td width=300><!--Blank Cell--></td>
-         <td><pre style="padding: .5em"><code>2 == 161 / 60</code></pre></td>
+         <td width=240><!--Blank Cell--></td>
+         <td><pre style="background: #eeffff; margin: .5em 0; padding: 0 .5em; "><code>2 == 161 / 60</code></pre></td>
          <td width=0 style="padding: 0"><!--Blank Cell--></td>
-         <td><pre style="padding: .5em"><code>41 == 161 % 60</code></pre></td>
+         <td><pre style="background: #ffeedd; margin: .5em 0; padding: 0 .5em; "><code>41 == 161 % 60</code></pre></td>
       </tr>
    </tbody>
 </table>
@@ -349,13 +349,13 @@ In this case, when you divide 19 by 10, the remainder is 9. Therefore, the value
    <tbody>
       <tr>
          <td style="padding: 0;" width=200><!--Blank Cell--></td>
-         <td style="padding: 0;"><pre style="padding: .5em"><code>161 modulus 60</code></pre></td>
+         <td style="padding: 0;"><pre style="background: #eeffee; margin: .5em 0; padding: 0 .5em; "><code>161 modulus 60</code></pre></td>
          <td style="padding: 0;" width=20 style="padding: 0"><!--Blank Cell--></td>
-         <td style="padding: 0;"><pre style="padding: .5em"><code>2</code></pre></td>
+         <td style="padding: 0;"><pre style="background: #eeffff; margin: .5em 0; padding: 0 .5em; "><code>2</code></pre></td>
          <td style="padding: 0;" width=20 style="padding: 0"><!--Blank Cell--></td>
-         <td style="padding: 0;"><p style="padding: 0; font-family: Consolas">r.</p></td>
+         <td style="padding: 0;"><p style="margin: .5em 0; padding: 0 .5em; font-family: Consolas">r.</p></td>
          <td style="padding: 0;" width=20 style="padding: 0"><!--Blank Cell--></td>
-         <td style="padding: 0;"><pre style="padding: .5em; margin-left: 0"><code>41</code></pre></td>
+         <td style="padding: 0;"><pre style="background: #ffeedd; margin: .5em 0; padding: 0 .5em; margin-left: 0"><code>41</code></pre></td>
       </tr>
    </tbody>
 </table>
@@ -363,22 +363,22 @@ In this case, when you divide 19 by 10, the remainder is 9. Therefore, the value
 <table style="padding: 0; margin: 0">
    <tbody>
       <tr>
-         <td width=320><!--Blank Cell--></td>
-         <td><pre style="padding: .5em; margin: 0"><code>60</code></pre></td>
+         <td width=240><!--Blank Cell--></td>
+         <td><pre style="background: #eeffee; margin: 0; padding: 0 .5em; "><code>60</code></pre></td>
          <td width=20 style="padding: 0; "><!--Blank Cell--></td>
-         <td style="border-left: 5px solid black; border-top: 5px solid black"><pre style="padding: .5em; margin: 0"><code>161</code></pre></td> 
+         <td style="border-left: 5px solid black; border-top: 5px solid black"><pre style="background: #eeffee; margin: 0; padding: 0 .5em; "><code>161</code></pre></td> 
       </tr>
       <tr>
-         <td width=320><!--Blank Cell--></td>
+         <td width=240><!--Blank Cell--></td>
          <td><!--Blank Cell--></td>
          <td width=20 style="padding: 0; "><!--Blank Cell--></td>
-         <td style="border-bottom: 3px solid #a6a6a6"><pre style="padding: .5em; margin: 0"><code>120</code></pre></td> 
+         <td style="border-bottom: 3px solid #a6a6a6"><pre style="margin: 0; padding: 0 .5em; "><code>120</code></pre></td> 
       </tr>
       <tr>
-         <td width=320><!--Blank Cell--></td>
+         <td width=240><!--Blank Cell--></td>
          <td><!--Blank Cell--></td>
          <td width=20 style="padding: 0; "><!--Blank Cell--></td>
-         <td><pre style="padding: .5em; margin: 0"><code> 41</code></pre></td> 
+         <td><pre style="margin: 0; padding: 0 .5em; "><code> 41</code></pre></td> 
       </tr>
    </tbody>
 </table>
