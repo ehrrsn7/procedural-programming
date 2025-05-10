@@ -32,6 +32,9 @@
 #include <algorithm> // For std::find_if and std::isspace
 #include <sys/ioctl.h>
 #include <unistd.h>
+#include <chrono>
+#include <iomanip> // for std::setprecision
+
 
 using namespace std;
 
@@ -59,6 +62,7 @@ string runProgram(
    bool debug = false);
 
 std::string centeredHeader(const std::string & title);
+std::string centeredBody(const std::string & body, int width);
 std::string centeredBody(const std::string & body);
 std::string leftAlignedBody(const std::string & body);
 std::string footer();
@@ -98,6 +102,8 @@ bool testMain(
    }
 
    try {
+      auto start = std::chrono::high_resolution_clock::now();
+
       string output = runProgram(filePath, executableName, label, debug);
       string expectedOutput   = "Hello, World!";
 
@@ -105,11 +111,23 @@ bool testMain(
       std::cout << std::endl
          << centeredHeader(CYAN + "STANDARD OUTPUT TEST" + RESET)
          << std::endl;
+      std::cout << footer() << std::endl;
 
       if (output == expectedOutput)
       {
          std::cout << centeredBody(GREEN + label + " Test passed!" + RESET) << std::endl;
-         std::cout << footer() << std::endl << std::endl;
+
+         // End timer and print elapsed time
+         auto end = std::chrono::high_resolution_clock::now();
+         std::chrono::duration<double> elapsed = end - start;
+
+         // Format with 3 decimal places
+         std::ostringstream oss;
+         oss << std::fixed << std::setprecision(3) << elapsed.count();
+
+         // Now you can use oss.str() as your string version
+         std::cout << centeredHeader(CYAN + "Time Elapsed: " + BOLD + oss.str() + " s" + RESET) << std::endl << std::endl;
+
          return true;
       }
       else
@@ -117,7 +135,18 @@ bool testMain(
          std::cout << centeredBody(RED + label + " Test failed!" + RESET) << std::endl;
          std::cout << leftAlignedBody(BOLD + CYAN   + "Expected: " + RESET + expectedOutput) << std::endl;
          std::cout << leftAlignedBody(BOLD + YELLOW + "  Actual: " + RESET + output) << std::endl;
-         std::cout << footer() << std::endl << std::endl;
+
+         // End timer and print elapsed time
+         auto end = std::chrono::high_resolution_clock::now();
+         std::chrono::duration<double> elapsed = end - start;
+
+         // Format with 3 decimal places
+         std::ostringstream oss;
+         oss << std::fixed << std::setprecision(3) << elapsed.count();
+
+         // Now you can use oss.str() as your string version
+         std::cout << centeredHeader(CYAN + "Time Elapsed: " + BOLD + oss.str() + " s" + RESET) << std::endl << std::endl;
+
          throw std::runtime_error("Test failed: Output does not match expected output.");
       }
    }
@@ -297,14 +326,43 @@ int getTerminalWidth() {
 }
 
 /**********************************************************************
+ * Count the number of Escape characters in a string
+ ***********************************************************************/
+int countEscapeChars(const std::string & str) {
+   int count = 0;
+   bool inEscape = false;
+
+   for (char c : str) {
+      if (c == '\033') {
+         inEscape = true;
+         count++; // Count ESC character
+      } else if (inEscape) {
+         count++; // Count characters in the escape sequence
+         if (c == 'm') {
+            inEscape = false; // End of ANSI sequence
+         }
+      }
+   }
+
+   return count;
+}
+
+/**********************************************************************
  * Center the header
  *    This function will create a centered header for the terminal.
  ***********************************************************************/
 std::string centeredHeader(const std::string & title, int width) {
-   int totalPadding = 7 + width - title.length() - 2; // -2 for inner spaces
-   int side = totalPadding / 2;
-   std::string line(side, '=');
-   return line + "  " + title + "  " + line + ((totalPadding % 2) ? "=" : "");
+   std::string titleStr = ' ' + title + ' '; // add spaces to the sides
+   int visibleLength = titleStr.length() - countEscapeChars(titleStr);
+   std::cout << visibleLength % 2 << std::endl;
+   if (visibleLength % 2 == 1) {
+      titleStr = '=' + titleStr; // add 
+   }
+   int padding = 0.5 * (width - visibleLength);
+   // generate ======'s
+   std::string sides(padding, '=');
+   // all together
+   return sides + titleStr + sides;
 }
 
 /**********************************************************************
@@ -320,9 +378,7 @@ std::string centeredHeader(const std::string & title) {
  *    This function will create a footer for the terminal.
  ***********************************************************************/
 std::string footer(int width) {
-   int side = width;
-   std::string line(side, '=');
-   return line + ((width % 2) ? "=" : "");
+   return std::string(width, '=');
 }
 
 /**********************************************************************
@@ -339,18 +395,29 @@ std::string footer() {
  * ANSI escape codes are ignored for padding math (approximate).
  ***********************************************************************/
 std::string centeredBody(const std::string & body, int width) {
+   
    const int paddingSides = 2; // for "| " and " |"
    int cleanLength = 0;
+   int escapeLength = 0;
    bool inEscape = false;
 
-   // Strip ANSI sequences from body length for padding math
+   // Calculate visible length and count escape characters
    for (char c : body) {
-      if (c == '\033') inEscape = true;
-      else if (inEscape && c == 'm') inEscape = false;
-      else if (!inEscape) cleanLength++;
+      if (c == '\033') {
+         inEscape = true; // Start of ANSI escape sequence
+         escapeLength++;  // Count the escape character
+      } else if (inEscape && c == 'm') {
+         inEscape = false; // End of ANSI escape sequence
+         escapeLength++;   // Count the 'm' character
+      } else if (inEscape) {
+         escapeLength++;   // Count characters within the escape sequence
+      } else {
+         cleanLength++;    // Count visible characters
+      }
    }
 
-   int totalPadding = width - cleanLength - paddingSides - 2; // extra -2 for inner spaces
+   // Adjust padding based on visible length
+   int totalPadding = width - (cleanLength + escapeLength + paddingSides);
    int side = totalPadding / 2;
    std::string line(side, ' ');
    return "| " + line + body + line + ((totalPadding % 2) ? " " : "") + " |";
@@ -373,16 +440,26 @@ std::string centeredBody(const std::string & body) {
 std::string leftAlignedBody(const std::string & body, int width) {
    const int boxPadding = 4; // 2 spaces + '| ' and ' |'
    int cleanLength = 0;
+   int escapeLength = 0;
    bool inEscape = false;
 
-   // Calculate visible length by ignoring ANSI sequences
+   // Calculate visible length and count escape characters
    for (char c : body) {
-      if (c == '\033') inEscape = true;
-      else if (inEscape && c == 'm') inEscape = false;
-      else if (!inEscape) cleanLength++;
+      if (c == '\033') {
+         inEscape = true; // Start of ANSI escape sequence
+         escapeLength++;  // Count the escape character
+      } else if (inEscape && c == 'm') {
+         inEscape = false; // End of ANSI escape sequence
+         escapeLength++;   // Count the 'm' character
+      } else if (inEscape) {
+         escapeLength++;   // Count characters within the escape sequence
+      } else {
+         cleanLength++;    // Count visible characters
+      }
    }
 
-   int paddingRight = width - cleanLength - boxPadding;
+   // Adjust padding based on visible length
+   int paddingRight = width - (cleanLength + escapeLength + boxPadding);
    std::string line(paddingRight, ' ');
    return "| " + body + line + " |";
 }
