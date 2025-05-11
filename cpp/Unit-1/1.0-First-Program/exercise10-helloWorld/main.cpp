@@ -39,8 +39,8 @@ int main()
  *       try again.
  * All together it should look like this:
 ```PowerShell
-g++ -o main main.cpp
-./main
+g++ main.cpp
+./a.out
 ```
 > Hello, World!
 ***********************************************************************/
@@ -56,8 +56,7 @@ g++ -o main main.cpp
  * All together it should look like this:
 
 ```PowerShell
-g++ -o main main.cpp
-g++ -o tests/test tests/test.cpp
+g++ tests/test.cpp -o tests/test
 ./tests/test
 ```
 
@@ -72,7 +71,12 @@ g++ -o tests/test tests/test.cpp
  * Example:
 
 ```PowerShell
-g++ -o main main.cpp
-main.exe
+g++ main.cpp -o main.exe
+& main.exe
+```
+
+```PowerShell
+g++ tests/test.cpp -o tests/test.exe
+& tests/test.exe
 ```
  ***********************************************************************/

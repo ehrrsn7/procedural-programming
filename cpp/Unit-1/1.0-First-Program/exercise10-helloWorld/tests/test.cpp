@@ -111,7 +111,6 @@ bool testMain(
       std::cout << std::endl
          << centeredHeader(CYAN + "STANDARD OUTPUT TEST" + RESET)
          << std::endl;
-      std::cout << footer() << std::endl;
 
       if (output == expectedOutput)
       {
@@ -201,7 +200,6 @@ string runProgram(
    bool debug)
 {
    try {
-
       // Compile the file
       int compileReturnCode = compileFile(filePath, executableName, debug, label);
       if (compileReturnCode != 0)
@@ -218,6 +216,13 @@ string runProgram(
 
       // Extract the output from the temporary file
       string output = extractTempFileOutput("temp_output.txt", label);
+
+      // Cleanup: Remove the executables
+      if (debug) {
+         std::cout << YELLOW << "Cleaning up " << executableName << "..." << RESET << std::endl;
+      }
+      remove(executableName);
+
       return output;
    }
    catch (const std::exception & e)
@@ -352,17 +357,13 @@ int countEscapeChars(const std::string & str) {
  *    This function will create a centered header for the terminal.
  ***********************************************************************/
 std::string centeredHeader(const std::string & title, int width) {
-   std::string titleStr = ' ' + title + ' '; // add spaces to the sides
-   int visibleLength = titleStr.length() - countEscapeChars(titleStr);
-   std::cout << visibleLength % 2 << std::endl;
-   if (visibleLength % 2 == 1) {
-      titleStr = '=' + titleStr; // add 
-   }
-   int padding = 0.5 * (width - visibleLength);
+   const std::string titleStr = ' ' + title + ' '; // add spaces to the sides
+   const int visibleLength = titleStr.length() - countEscapeChars(titleStr);
    // generate ======'s
-   std::string sides(padding, '=');
+   const int padding = 0.5 * (width - visibleLength);
+   const std::string sides(padding, '=');
    // all together
-   return sides + titleStr + sides;
+   return sides + ((visibleLength % 2) ? "=" : "") + titleStr + sides;
 }
 
 /**********************************************************************
@@ -395,32 +396,14 @@ std::string footer() {
  * ANSI escape codes are ignored for padding math (approximate).
  ***********************************************************************/
 std::string centeredBody(const std::string & body, int width) {
-   
-   const int paddingSides = 2; // for "| " and " |"
-   int cleanLength = 0;
-   int escapeLength = 0;
-   bool inEscape = false;
-
-   // Calculate visible length and count escape characters
-   for (char c : body) {
-      if (c == '\033') {
-         inEscape = true; // Start of ANSI escape sequence
-         escapeLength++;  // Count the escape character
-      } else if (inEscape && c == 'm') {
-         inEscape = false; // End of ANSI escape sequence
-         escapeLength++;   // Count the 'm' character
-      } else if (inEscape) {
-         escapeLength++;   // Count characters within the escape sequence
-      } else {
-         cleanLength++;    // Count visible characters
-      }
-   }
-
-   // Adjust padding based on visible length
-   int totalPadding = width - (cleanLength + escapeLength + paddingSides);
-   int side = totalPadding / 2;
-   std::string line(side, ' ');
-   return "| " + line + body + line + ((totalPadding % 2) ? " " : "") + " |";
+   const std::string bodyStr = ' ' + body + ' ';
+   const int visibleLength = bodyStr.length() - countEscapeChars(bodyStr);
+   const int paddingSides = 2; // for '|' and '|'
+   // generate spaces
+   const int padding = 0.5 * (width - (visibleLength + paddingSides));
+   const std::string sides(padding, ' ');
+   // all together
+   return '|' + sides + ((width % 2) ? " " : "") + bodyStr + sides + '|';
 }
 
 /**********************************************************************
@@ -438,30 +421,15 @@ std::string centeredBody(const std::string & body) {
  * ANSI escape codes are preserved but not counted for padding.
  ***********************************************************************/
 std::string leftAlignedBody(const std::string & body, int width) {
-   const int boxPadding = 4; // 2 spaces + '| ' and ' |'
-   int cleanLength = 0;
-   int escapeLength = 0;
-   bool inEscape = false;
+   const std::string bodyStr = ' ' + body + ' ';
+   const int visibleLength = bodyStr.length() - countEscapeChars(bodyStr);
+   const int paddingSides = 2; // for '|' and '|'
 
-   // Calculate visible length and count escape characters
-   for (char c : body) {
-      if (c == '\033') {
-         inEscape = true; // Start of ANSI escape sequence
-         escapeLength++;  // Count the escape character
-      } else if (inEscape && c == 'm') {
-         inEscape = false; // End of ANSI escape sequence
-         escapeLength++;   // Count the 'm' character
-      } else if (inEscape) {
-         escapeLength++;   // Count characters within the escape sequence
-      } else {
-         cleanLength++;    // Count visible characters
-      }
-   }
-
-   // Adjust padding based on visible length
-   int paddingRight = width - (cleanLength + escapeLength + boxPadding);
-   std::string line(paddingRight, ' ');
-   return "| " + body + line + " |";
+   // generate spaces
+   const int paddingRight = width - (visibleLength + paddingSides);
+   const std::string line(paddingRight, ' ');
+   // all together
+   return '|' + bodyStr + line + ((width % 2) ? " " : "") + '|';
 }
 
 /**********************************************************************
