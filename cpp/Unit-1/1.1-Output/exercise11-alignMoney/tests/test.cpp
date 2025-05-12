@@ -126,8 +126,8 @@ bool testMain(
       else
       {
          std::cout << centeredBody(RED + label + " Test failed!" + RESET) << std::endl;
-         std::cout << leftAlignedBody(BOLD + CYAN   + "Expected: \n" + RESET + expectedOutput) << std::endl;
-         std::cout << leftAlignedBody(BOLD + YELLOW + "  Actual: \n" + RESET + output) << std::endl;
+         std::cout << BOLD + CYAN   + "Expected: \n" + RESET + expectedOutput << std::endl;
+         std::cout << BOLD + YELLOW + "  Actual: \n" + RESET + output << std::endl;
 
          if (debug)
          {
