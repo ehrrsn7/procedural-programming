@@ -18,27 +18,40 @@ int main()
    cout.setf(ios::showpoint); // always show the decimal point
    cout.precision(2);         // unless you own a gas station, money
                               //    is formatted to two decimals
-   
-   // display the first row
-   cout << "$"
-        << setw(7) << 124.45
-        << "\t$"
-        << setw(7) << 321.31
-        << endl;
-   
-   // display the second row
-   cout << "$"
-        << setw(7) << 1.74
-        << "\t$"
-        << setw(7) << 4.21
-        << endl;
 
-   // display the third row
-   cout << "$"
-        << setw(7) << 7539.12
-        << "\t$"
-        << setw(7) << 54.92
-        << endl;
+   // display the first row
+   
 
    return 0;
 }
+
+/**********************************************************************
+Windows: Running the program
+
+```PowerShell
+g++ alignMoney.cpp -o alignMoney.exe
+& alignMoney.exe
+```
+
+Windows: Testing the program
+
+```PowerShell
+g++ tests/test.cpp -o tests/test.exe
+& tests/test.exe
+```
+
+Running the program
+
+```sh
+g++ alignMoney.cpp
+./a.out
+```
+
+Testing the program
+
+```sh
+g++ tests/test.cpp -o tests/test
+./tests/test
+```
+
+ ***********************************************************************/

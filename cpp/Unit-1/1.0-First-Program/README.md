@@ -1409,7 +1409,7 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     /home/cs124/examples/1-0-firstProgram.cpp
 
   <a href="https://video.byui.edu/media/1.0+-+First+Program/0_9dc3rb33/18442462">
-    <img src="image.png">
+    <img src=".etc/assets/video.png">
   </a>
   </td>
   <td style="background: #17365d">
