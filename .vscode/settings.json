@@ -117,6 +117,15 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "strstream": "cpp",
+        "netfwd": "cpp",
+        "string_view": "cpp",
+        "rope": "cpp",
+        "slist": "cpp",
+        "flat_map": "cpp",
+        "flat_set": "cpp",
+        "generator": "cpp",
+        "text_encoding": "cpp"
     }
 }

@@ -19,11 +19,16 @@
 #include <cstdlib> // For system()
 #include <fstream> // For file operations
 #include <algorithm> // For std::find_if and std::isspace
-#include <sys/ioctl.h>
 #include <unistd.h>
 #include <chrono>
 #include <iomanip> // for std::setprecision
 #include <unistd.h> // for chdir()
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <sys/ioctl.h>
+#include <unistd.h>
+#endif
 
 using namespace std;
 
@@ -61,11 +66,14 @@ std::string footer();
  ***********************************************************************/
 int main()
 {
+   std::cout << "test" << std::endl;
    // Test the student's file
    auto studentPass = testMain("./alignMoney.cpp", "student_program", "Student");
 
    // Test the key file silently
    auto keyPass = testMain("../../../../../stretch-programs-keys/cpp/exercise11-alignMoney.cpp", "key_program", "Key");
+
+   std::cout << "All tests passed!" << std::endl;
 
    // If any test fails, exit with an error code
    if (!studentPass || !keyPass) exit(1);
@@ -348,9 +356,17 @@ string trim(const string & str)
  *  It will use the ioctl system call to get the size of the terminal.
  ***********************************************************************/
 int getTerminalWidth() {
-   struct winsize w;
-   if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &w) == -1) return 100; // fallback
-   return w.ws_col;
+#ifdef _WIN32
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    int columns = 100; // fallback
+    if (GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi))
+        columns = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+    return columns;
+#else
+    struct winsize w;
+    if (ioctl(STDOUT_FILENO, TIOCGWINSZ, &w) == -1) return 100; // fallback
+    return w.ws_col;
+#endif
 }
 
 /**********************************************************************

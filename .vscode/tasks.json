@@ -1,15 +1,31 @@
 {
     "tasks": [
         {
+            "label": "build active file",
+            "type": "shell",
+            "command": "${workspaceFolder}/cpp/.etc/winlibs/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for building C++ files with MinGW-w64"
+        },
+        {
             "type": "cppbuild",
-            "label": "C/C++: g++ build active file",
-            "command": "/usr/bin/g++",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\Users\\eliharrison\\Code\\stretch-programs\\cpp\\.etc\\winlibs\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

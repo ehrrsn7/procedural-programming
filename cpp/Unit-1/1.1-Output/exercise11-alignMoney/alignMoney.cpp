@@ -20,7 +20,11 @@ int main()
                               //    is formatted to two decimals
 
    // display the first row
-   
+   std::cout << "Item" << std::setw(10) << "Price" << std::endl;
+   std::cout.flush(); // force flush
+   std::cerr << "This always goes to the error stream" << std::endl;
+   std::cerr.flush(); // force flush
+
 
    return 0;
 }
@@ -29,15 +33,15 @@ int main()
 Windows: Running the program
 
 ```PowerShell
-g++ alignMoney.cpp -o alignMoney.exe
-& alignMoney.exe
+g++ alignMoney.cpp
+.\a.exe
 ```
 
 Windows: Testing the program
 
 ```PowerShell
-g++ tests/test.cpp -o tests/test.exe
-& tests/test.exe
+g++ tests\test.cpp -o tests\test.exe
+.\tests\test.exe
 ```
 
 Running the program

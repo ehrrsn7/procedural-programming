@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Winlibs MinGW-w64",
+            "compilerPath": "${workspaceFolder}/cpp/.etc/winlibs/mingw64/bin/g++.exe",
+            "intelliSenseMode": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
