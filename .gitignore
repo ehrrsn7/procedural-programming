@@ -19,3 +19,6 @@ cpp/.etc/winlibs/winlibs-x86_64-posix-seh-gcc-15.1.0-mingw-w64ucrt-12.0.0-r1.zip
 *.7z
 cpp/Unit-1/1.0-First-Program/exercise10-helloWorld/a.out
 cpp/Unit-1/1.1-Output/exercise11-alignMoney/a.out
+cpp/Unit-1/1.1-Output/exercise11-alignMoney/a.exe
+cpp/Unit-1/1.1-Output/exercise11-alignMoney/main.cpp
+cpp/Unit-1/1.1-Output/exercise11-alignMoney/main.exe
