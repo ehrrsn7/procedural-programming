@@ -2,102 +2,66 @@
 
 # 1.6 IF Statements
 
-```
-Sue has just received her third text message in the last minute. Not only are her best friends text-aholics, but
-it seems that new people are texting her every day. Sometimes she feels like she is swimming in a sea of text
-messages. “If only I could filter them like I do my e-mail messages” thinks Sue as four new messages appear
-on her phone in quick succession. Deciding to put a stop to this madness, she writes a program to filter her
-text messages. This program features a series of IF statements, each containing a rule to route the messages
-to the appropriate channel.
-```
 ## Objectives
-
 By the end of this class, you will be able to:
-
-##  Create an IF statement to modify program flow.
-
-##  Recognize the pitfalls associated with IF statements.
+- Create an IF statement to modify program flow.
+- Recognize the pitfalls associated with IF statements.
 
 ## Prerequisites
-
 Before reading this section, please make sure you are able to:
-
-##  Declare a Boolean variable (Chapter 1.5).
-
-##  Convert a logic problem into a Boolean expression (Chapter 1.5).
-
-##  Recite the order of operations (Chapter 1.5)
+- Declare a Boolean variable (Chapter 1.5).
+- Convert a logic problem into a Boolean expression (Chapter 1.5).
+- Recite the order of operations (Chapter 1.5).
 
 ## Overview
 
-```
-IF statements allow the program to choose between two courses of action depending on the result of a
-Boolean expression. In some cases, the options are “action” and “no action.” In other cases, the options may
-be “action A” or “action B.” In each of these cases, the IF statement is the tool of choice.
-```
+IF statements allow the program to choose between two courses of action depending on the result of a Boolean expression. In some cases, the options are “action” and “no action.” In other cases, the options may be “action A” or “action B.” In each of these cases, the IF statement is the tool of choice.
+
+---
+
 ## Action/No-Action
 
 The first flavor of the IF statement is represented with the following syntax:
 
+```cpp
+if (<Boolean expression>)
+   <body statement>;
 ```
-if (< Boolean expression >)
-< body statement >;
-```
+
 For example:
 
-```
-{
+```cpp
 if (assignmentLate == true)
-assignmentGrade = 0;
-}
-```
-```
-The Boolean expression, also called the controlling expression, determines whether the statements inside the
-body of the loop are to be executed. If the Boolean expression (assignmentLate == true in this case) evaluates
-to true, then control enters the body of the IF statement (assignmentGrade = 0;). Otherwise, the body of the
-IF statement is skipped.
+   assignmentGrade = 0;
 ```
 
-```
-Procedural Programming in C++ | Unit 1: Simple Programs | 1.6 IF Statements | Page 87
-```
-## Unit
+The Boolean expression, also called the controlling expression, determines whether the statements inside the body of the IF statement are to be executed. If the Boolean expression evaluates to true, then control enters the body of the IF statement. Otherwise, the body of the IF statement is skipped.
 
-## 1
+---
 
-**Action-A/Action-B**
+## Action-A/Action-B
 
 The second flavor of the IF statement is represented with the following syntax:
 
-```
-if (< Boolean expression >)
-< body statement >;
+```cpp
+if (<Boolean expression>)
+   <body statement>;
 else
-< body statement >;
+   <body statement>;
 ```
+
 For example:
 
-```
-{
+```cpp
 if (grade >= 60)
-cout << "Great job! You passed!\n";
+   cout << "Great job! You passed!\n";
 else
-cout << "I will see you again next semester...\n";
-}
+   cout << "I will see you again next semester...\n";
 ```
-Much like the Action/No-Action IF statement, the Boolean expression determines whether the first set of
 
-statements is executed (cout << "Great job! You passed!\n";) or the second (cout << "I will see you again
+Much like the Action/No-Action IF statement, the Boolean expression determines whether the first set of statements is executed or the second. The first statement is often called the “true condition” and the second the “else condition”.
 
-next semester\n";). The first statement is often called the “true condition” and the second the “else condition”.
-
-Observe how the else component of the IF statement aligns with the if. Also, both the true-condition and
-
-the else-condition are indented the same: three additional spaces. Finally, note that there is no semicolon after
-
-the Boolean expression nor after the else. This is because the entire IF-ELSE statement is considered a single
-
-C++ statement.
+Observe how the else component of the IF statement aligns with the if. Also, both the true-condition and the else-condition are indented the same: three additional spaces. Finally, note that there is no semicolon after the Boolean expression nor after the else. This is because the entire IF-ELSE statement is considered a single C++ statement.
 
 (^) **Sam’s Corner**
 IF statements in C++ are compiled into JUMPZ (or one of many conditional jump) assembly
@@ -148,44 +112,42 @@ Your GPA is not in the valid range
 The first part of the program is a function determining whether the GPA is within the acceptable range.
 It will take a float GPA as input and return a bool, whether the value is valid.
 ```
-```
+```cpp
 /******************************************
 * Demonstrating an Action-A/Action-B IF statement
 ******************************************/
 bool validGpa(float gpa)
 {
-if (gpa > 4.0 || gpa < 0.0) // Boolean expression
-return false; // True condition
-else
-return true; // False or Else condition
+   if (gpa > 4.0 || gpa < 0.0) // Boolean expression
+      return false; // True condition
+   else
+      return true; // False or Else condition
 }
+```
+
 ```
 Note how two options are presented, the invalid range and the valid range.
 
-```
 The second part of the program displays an error message only in the case where GPA is outside the
 accepted range. This is an example of the Action/No-Action flavor.
 ```
-```
+
+```cpp
 /******************************************
 * Demonstrating an Action/No-Action IF statement
 ******************************************/
 int main()
 {
-float gpa;
-```
-```
-// prompt for GPA
-cout << "Please enter your GPA: ";
-cin >> gpa;
-```
-```
-// give error message if invalid
-if (!validGpa(gpa)) // Boolean expression
-cout << "Your GPA is not in a valid range\n"; // Action or Body of the IF
-```
-```
-return 0;
+   float gpa;
+   // prompt for GPA
+   cout << "Please enter your GPA: ";
+   cin >> gpa;
+
+   // give error message if invalid
+   if (!validGpa(gpa)) // Boolean expression
+      cout << "Your GPA is not in a valid range\n"; // Action or Body of the IF
+
+   return 0;
 }
 ```
 (^)
@@ -195,8 +157,6 @@ return 0;
 ```
 As a challenge, see if you can modify the IF statement in main() to the Action-A/Action-B variety by
 displaying a message if the user has entered a valid GPA.
-```
-```
 Another challenge would be to remove the IF statement from the validGpa() function and replace it
 with a simple boolean expression similar to what was done in Chapter 1.5
 ```
@@ -230,16 +190,15 @@ Frequently we want to have more than one statement inside the body of the IF. Ra
 
 IF statement, we use {}s to surround all the statements going inside the body:
 
-```
-{
+```cpp
 if (!(classGrade >= 60))
 {
-classFail = true;
-classRetake = true;
-studentHappy = false;
-}
+   classFail = true;
+   classRetake = true;
+   studentHappy = false;
 }
 ```
+
 Each time an additional indention is added, three more spaces are used. In this case, the IF statement is
 
 indented 3 spaces. Observe how the {}s align with the IF statement. The three assignment statements (such
@@ -252,16 +211,15 @@ Often we want to put an IF statement inside the body of another IF statement. Th
 
 because one statement is inside of (or part of) another:
 
-```
-{
+```cpp
 if (grade >= 90 && grade <= 100)
 {
-cout << "A";
-if (grade <= 93)
-cout << "-";
-}
+   cout << "A";
+   if (grade <= 93)
+      cout << "-";
 }
 ```
+
 Observe how the second COUT statement is indented 9 spaces, three more than the inner IF and six more
 
 than the outer IF. There really is no limit to the number of degrees of nesting you can use. However, when
@@ -274,17 +232,15 @@ An IF statement can only differentiate between two options. However, often the p
 
 two options. This can be addressed by nesting IF statements:
 
-```
-{
+```cpp
 if (option == 1)
-cout << "Good!";
+   cout << "Good!";
 else
 {
-if (option == 2)
-cout << "Better";
-else
-cout << "Best!";
-}
+   if (option == 2)
+      cout << "Better";
+   else
+      cout << "Best!";
 }
 ```
 
@@ -350,28 +306,21 @@ expressions are redundant. This statement has exactly the same descriptive power
 
 IF:
 
-```
+```cpp
 {
 if (numberGrade >= 90)
-letterGrade = 'A';
-```
-```
+   letterGrade = 'A';
 else if (numberGrade >= 80)
-letterGrade = 'B';
-```
-```
+   letterGrade = 'B';
 else if (numberGrade >= 70)
-letterGrade = 'C';
-```
-```
+   letterGrade = 'C';
 else if (numberGrade >= 60)
-letterGrade = 'D';
-```
-```
+   letterGrade = 'D';
 else
-letterGrade = 'F';
+   letterGrade = 'F';
 }
 ```
+
 Not only is this code much easier to read (simpler Boolean expressions) and less bug-prone (there is no
 
 redundancy), it is also much more efficient. Consider the case where numberGrade == 93. In this case, the first
@@ -400,13 +349,14 @@ Algebra treats the equals sign as a statement of equivalence, much like C++ trea
 
 is therefore common to mistakenly use a single equals when a double is needed:
 
-```
+```cpp
 {
 bool fail = false;
 if (fail = true) // PITFALL: Assignment = used instead of ==
-cout << "You failed!\n";
+   cout << "You failed!\n";
 }
 ```
+
 In this statement, it may look like the program will display a message if the user has failed the class. Since the
 
 first statement sets fail to false, we will not execute the cout in the body of the IF. Closer inspection,
@@ -423,46 +373,49 @@ Page 92 | 1.6 IF Statements | Unit 1 : Simple Program | Procedural Programming i
 
 (^1)
 **Pitfall: Extra semicolon**
-Remember that the semicolon signifies the end of a statement. The end of an IF statement is the end of the
-statement inside of the body of the IF. Thus, if there is a semicolon after the Boolean expression, we are
-signifying that there is no body in the IF!
-{
+Remember that the semicolon signifies the end of a statement. The end of an IF statement is the end of the statement inside of the body of the IF. Thus, if there is a semicolon after the Boolean expression, we are signifying that there is no body in the IF!
+
+```cpp
 if (false); // PITFALL: Extra semicolon signifies empty body
 cout << "False!\n";
-}
-Because of the semicolon after the (false), the above code is equivalent to:
-{
+```
+
+Because of the semicolon after the `(false)`, the above code is equivalent to:
+
+```cpp
 if (false) // If you mean to have an empty body,
 ; // then put it on its own line like this.
 cout << "False!\n";
-}
+```
+
 In other words, the Boolean expression is ignored and the body of the IF is always executed!
+
 (^) **Sue’s Tips**
-(^) Train your eye to look for extra semicolons on IF statements. They should never be there! If
-you meant to have an empty body (and you shouldn’t!), then put the semicolon on its own line
-so the reader of the code knows it was intentional.
-If the code editor tries to out-dent the body of your IF statement, pay attention: it is trying to
-tell you something important! The editor knows about semicolons and IF statements and is
-not fooled by this pitfall.
+(^) Train your eye to look for extra semicolons on IF statements. They should never be there! If you meant to have an empty body (and you shouldn’t!), then put the semicolon on its own line so the reader of the code knows it was intentional.
+
+If the code editor tries to out-dent the body of your IF statement, pay attention: it is trying to tell you something important! The editor knows about semicolons and IF statements and is not fooled by this pitfall.
+
 **Pitfall: Missing {}s**
-In order to use a compound statement (more than one statement) in the body of an IF, it is necessary to
-surround the statements with {}s. A common mistake is to forget the {}s and just indent the statements. C++
-ignores indentations (they are just used for human readability; the compiler throws away all white-spaces
-during the lexing process) and will not know the statements need to be in the body:
-{
+
+In order to use a compound statement (more than one statement) in the body of an IF, it is necessary to surround the statements with `{}`s. A common mistake is to forget the `{}`s and just indent the statements. C++ ignores indentations (they are just used for human readability; the compiler throws away all white-spaces during the lexing process) and will not know the statements need to be in the body:
+
+```cpp
 if (classGrade < 60)
-classFail = true;
+    classFail = true;
 classRetake = true; // PITFALL: Missing {}s around the body of the IF
 studentHappy = false;
-}
+```
+
 This is exactly the same as:
-{
+
+```cpp
 if (classGrade < 60)
-classFail = true;
+    classFail = true;
 classRetake = true;
 studentHappy = false;
-}
-Observe how only the first statement (classFail = true;) is part of the IF.
+```
+
+Observe how only the first statement (`classFail = true;`) is part of the IF.
 
 
 ```
@@ -499,7 +452,7 @@ Pay: $ 415.00
 
 The function to compute pay taking the hourly wage and hours worked as input.
 
-```
+```cpp
 /*****************************************
 * COMPUTE PAY
 * Compute the user's pay using time-and-a-half
@@ -507,23 +460,18 @@ The function to compute pay taking the hourly wage and hours worked as input.
 ****************************************/
 float computePay(float hourlyWage, float hoursWorked)
 {
-float pay;
-```
-```
-// regular rate
-if (hoursWorked < 40)
-pay = hoursWorked * hourlyWage; // regular rate
-```
-```
-// overtime rate
-else
-pay = (40.0 * hourlyWage) + // first 40 are normal...
-((hoursWorked - 40.0) * (hourlyWage * 1.5)); // ...the balance overtime
-```
-```
-return pay;
+   float pay;
+   // regular rate
+   if (hoursWorked < 40)
+      pay = hoursWorked * hourlyWage; // regular rate
+   // overtime rate
+   else
+      pay = (40.0 * hourlyWage) + // first 40 are normal...
+           ((hoursWorked - 40.0) * (hourlyWage * 1.5)); // ...the balance overtime
+   return pay;
 }
 ```
+
 (^)
 
 ## Challenge
@@ -614,13 +562,6 @@ bool g = 10 + 2 - false;
 }
 Please see page 79 for a hint.
 ```
-
-```
-Procedural Programming in C++ | Unit 1: Simple Programs | 1.6 IF Statements | Page 95
-```
-## Unit
-
-## 1
 
 ## Problem 9 - 13^
 
@@ -760,17 +701,20 @@ What is the output when the user inputs the letter ‘m’?
 {
 char gender;
 ```
+
 ```
 // prompt for gender
 cout << "What is your gender? (m/f)";
 cin >> gender;
 ```
+
 ```
 // turn it into a bool
 bool isMale = true;
 if (gender == 'f');
 isMale = false;
 ```
+
 ```
 // output the result
 if (isMale)
@@ -792,16 +736,19 @@ What is the output when the user inputs the number 5?
 {
 int number;
 ```
+
 ```
 // prompt for number
 cout << "number? ";
 cin >> number;
 ```
+
 ```
 // crazy math
 if (number = 0)
 number += 2;
 ```
+
 ```
 // output
 cout << number << endl;
