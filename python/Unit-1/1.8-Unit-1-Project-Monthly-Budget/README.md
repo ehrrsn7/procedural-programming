@@ -6,7 +6,7 @@ Our first project will be to write a program to manage a user’s personal finan
 
 This project will be done in one phase:
 
-- **Project 04:** Determine the tax burden
+- **Project 01:** Determine the tax burden
 
 ---
 
@@ -154,7 +154,7 @@ Note that this algorithm is vastly oversimplified because it does not take into 
 
 ## Project Phase
 
-### Project 04
+### Project 01
 
 This part of the Monthly Budget project will be to add the compute tax component.
 
@@ -183,23 +183,23 @@ To complete this project, please do the following:
 1. Implement the compute_tax() function.
 2. Run the program to ensure that it works as you expect:
    ```
-   python3 project04.py
+   python3 project01.py
    ```
 3. Test the program with testbed and fix all the errors:
    ```
-   testBed cs124/project04 project04.py
+   testBed cs124/project01 project01.py
    ```
 4. Run the style checker and fix all the errors:
    ```
-   styleChecker project04.py
+   styleChecker project01.py
    ```
-5. Submit it with "Project 04, Monthly Budget" in the program header:
+5. Submit it with "Project 01, Monthly Budget" in the program header:
    ```
-   submit project04.py
+   submit project01.py
    ```
 An executable version of the project is available at:
 ```
-/home/cs124/projects/prj04.py
+/home/cs124/projects/prj01.py
 ```
 
 ---
