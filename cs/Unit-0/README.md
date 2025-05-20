@@ -1,4 +1,4 @@
-<img src=".\.etc\assets\topic-header.png" width="100%" height="auto" style="">
+<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
 
 ## Table of Contents
 
@@ -62,13 +62,13 @@
       <td style="border: none"><a href="../Unit-1/1.8-Unit-1-Project-Monthly-Budget/README.md">Unit 1 Project : Monthly Budget</a></td>
       <td style="text-align: right; border: none">101</td>
     </tr>
-    <!-- ...repeat for Units 2, 3, 4, and Appendices as in the C++ README, but with Java-appropriate file/section names... -->
+    <!-- ...repeat for Units 2, 3, 4, and Appendices as in the C++ README, but with C#-appropriate file/section names... -->
   </tbody>
 </table>
 
 <div style="page-break-after: always;"></div>
 
-<img src=".\.etc\assets\topic-header.png" width="100%" height="auto" style="">
+<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
 
 # Course Overview
 
@@ -76,14 +76,14 @@ Procedural programming is the process of solving programming challenges by break
 
 ## Goals
 
-The goal of this class is that each student will be able to solve problems in Java and have a solid foundation in software development methodology. By the end of the semester...
+The goal of this class is that each student will be able to solve problems in C# and have a solid foundation in software development methodology. By the end of the semester...
 
-* You will be well prepared for advanced Java courses and other computing majors. This class is the foundation on which all Computer Science (CS), Electrical Engineering (EE), and Electrical & Computer Engineering (ECEN) courses are based.
-* You will have confidence in your ability to solve problems with Java. This class will include many opportunities for hands-on programming. By the end of the semester, you will have written more than thirty programs.
-* You will possess a tool-bag of different approaches to solve software problems. Not only will we learn the mechanics of the Java programming language, we will also learn how to solve programming problems using procedural tools.
-* You will have a firm foundation in the basic constructs of procedural Java. All the components of procedural programming (except classes and objects) will be learned in this course. Object Oriented Programming, the second half of the Java language, is the topic of next semester.
+* You will be well prepared for advanced C# courses and other computing majors. This class is the foundation on which all Computer Science (CS), Electrical Engineering (EE), and Electrical & Computer Engineering (ECEN) courses are based.
+* You will have confidence in your ability to solve problems with C#. This class will include many opportunities for hands-on programming. By the end of the semester, you will have written more than thirty programs.
+* You will possess a tool-bag of different approaches to solve software problems. Not only will we learn the mechanics of the C# programming language, we will also learn how to solve programming problems using procedural tools.
+* You will have a firm foundation in the basic constructs of procedural C#. All the components of procedural programming (except classes and objects) will be learned in this course. Object Oriented Programming, the second half of the C# language, is the topic of next semester.
 
-These goals will be explored in the context of Java using the Linux operating system or your preferred development environment.
+These goals will be explored in the context of C# using the Linux operating system or your preferred development environment.
 
 ## Course Layout
 
@@ -102,7 +102,7 @@ The course will be broken into four sections:
 <strong>Page 2</strong>
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
-Procedural Programming in Java &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+Procedural Programming in C# &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 Course Overview &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 Unit 0: Overview
 &nbsp;&nbsp;&nbsp;
@@ -189,7 +189,7 @@ If you find the programming problems to be too hard, take the time to type out a
 
 <p style="text-align: right; font-size: .75em;">
 <br><br>
-Procedural Programming in Java
+Procedural Programming in C#
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
 Unit 0: Overview
@@ -245,7 +245,7 @@ Computers & Programs
 Unit 0: Overview
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
-Procedural Programming in Java
+Procedural Programming in C#
 </p>
 
 <div style="page-break-after: always;"></div>
@@ -262,7 +262,7 @@ Computers today are all based on the basic model developed by Dr. John von Neuma
 <br><br>
 <br><br>
 <br><br>
-Procedural Programming in Java
+Procedural Programming in C#
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
 Unit 0: Overview
@@ -280,7 +280,7 @@ Computers & Programs
 
 ## Programs
 
-There are many computer languages, each enabling the programmer to write a computer program. In this class, we will be using the Java language developed by James Gosling in the mid-1990’s.  A  Java program consists of two parts: the import statements and the class with methods. The import statements describe what tools will be used in the program and the methods contain the recipes themselves. The methods consist of individual instructions called statements:
+There are many computer languages, each enabling the programmer to write a computer program. In this class, we will be using the C# language developed by Microsoft in the early 2000s.  A  C# program consists of two parts: the using directives and the methods inside a class. The using directives describe what tools will be used in the program and the methods contain the recipes themselves. The methods consist of individual instructions called statements:
 
 <table>
 <thead>
@@ -289,34 +289,34 @@ There are many computer languages, each enabling the programmer to write a compu
 <tr>
 <td style="border: 2px solid #4f81bd; vertical-align: top">
 <p>// 1</p>
-<p>The `import` statement allows the program to include a library.</p>
-<p>The `java.util` or `java.io` libraries allow you to read/write data to the screen or files.</p>
+<p>The `using` statement allows the program to include a library.</p>
+<p>The `System` library allows you to read/write data to the screen.</p>
 </td>
 <td width="2px" style="padding: 0"></td>
 <td style="border: 2px solid #4f81bd; vertical-align: top">
 <p>// 2</p>
-<p>Every Java program begins with a class definition.</p>
+<p>Every C# program begins with a class definition.</p>
 <p>This tells the program where to begin execution.</p>
 </td>
 <td width="2px" style="padding: 0"></td>
 <td style="border: 2px solid #4f81bd; vertical-align: top">
 <p>// 3</p>
-<p>The `main` method is the entry point for the program.</p>
+<p>The `Main` method is the entry point for the program.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-<pre><code class="language-java">import java.util.*;                        // 1
+<pre><code class="language-csharp">using System;                              // 1
 /***************************************** // 2
 * This program will display “Hello World!”
 * to the screen.
 ******************************************/
-public class HelloWorld {                   // 2
-    public static void main(String[] args)  // 3
-    {                                       // 4
-        System.out.println("Hello World!"); // 5
-    }                                       // 6
+class HelloWorld {                         // 2
+    static void Main(string[] args)        // 3
+    {                                      // 4
+        Console.WriteLine("Hello World!"); // 5
+    }                                      // 6
 }
 </code></pre>
 
@@ -334,29 +334,29 @@ public class HelloWorld {                   // 2
 <td style="border: 2px solid #4f81bd; vertical-align: top">
 <p>// 5</p>
 <p>This line actually does the work for this program.</p>
-<p>We are displaying the text “Hello World!” to the output using `System.out.println`.</p>
+<p>We are displaying the text “Hello World!” to the output using `Console.WriteLine`.</p>
 </td>
 <td width="2px" style="padding: 0"></td>
 <td style="border: 2px solid #4f81bd; vertical-align: top">
 <p>// 6</p>
-<p>The method ends here. In Java, the `main` method does not require a return statement if its return type is `void`.</p>
+<p>The method ends here. In C#, the `Main` method does not require a return statement if its return type is `void`.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**IMPORT**: This simple program has an import statement at the top. The `java.util.*` library contains many useful tools that we will be using in every program this semester, including the ability to display text on the screen. There are other libraries we will be introduced to through the course of the semester, including `java.io`, `java.math`, and more.
+**USING SYSTEM**: This simple program has a using directive at the top. The `System` library contains many useful tools that we will be using in every program this semester, including the ability to display text on the screen. There are other libraries we will be introduced to through the course of the semester, including `System.IO`, `System.Math`, and more.
 
-**CLASS**: All Java programs are organized into classes. The class name should match the filename. The `main` method is the entry point for the program.
+**CLASS**: All C# programs are organized into classes. The class name should match the filename. The `Main` method is the entry point for the program.
 
-**CURLY BRACES**: All the instructions or statements in a Java program exist in methods. The `{}`s (called “curly braces”) denote where the method or class begins and ends.
+**CURLY BRACES**: All the instructions or statements in a C# program exist in methods. The `{}`s (called “curly braces”) denote where the method or class begins and ends.
 
-**SYSTEM.OUT.PRINTLN**: The first instruction in the program indicates that the text “Hello World!” will be displayed on the screen. We will learn more about how to display text on the screen, as well as how to do more complex and powerful tasks later in the semester.
+**CONSOLE.WRITELINE**: The first instruction in the program indicates that the text “Hello World!” will be displayed on the screen. We will learn more about how to display text on the screen, as well as how to do more complex and powerful tasks later in the semester.
 
-**COMMENTS**: Java supports both line (`//`) and block (`/* ... */`) comments, just like C++.
+**COMMENTS**: C# supports both line (`//`) and block (`/* ... */`) comments, just like C++.
 
 <p style="text-align: right; font-size: .75em;">
-Procedural Programming in Java
+Procedural Programming in C#
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
 Unit 0: Overview
@@ -374,7 +374,7 @@ Computers & Programs
 
 Strictly speaking, the sole purpose of a recipe is to give the cook the necessary information to create a dish. However, sometimes other developers also need to be able to read and understand what the code is trying to do. In other words, it is often useful to answer “why” questions as well as “how” questions. We use comments to address “why” questions.
 
-Comments are notes placed in a program that are not read by the compiler. They are meant to make the program more human-readable and easier to adjust. There are two commenting styles in Java: line and block comments.
+Comments are notes placed in a program that are not read by the compiler. They are meant to make the program more human-readable and easier to adjust. There are two commenting styles in C#: line and block comments.
 
 ### Line comments
 
@@ -383,8 +383,8 @@ Line comments indicate that all the text from the beginning of the line comment 
 <pre style="min-width: 650px"><code>{
     // line comments typically go inside methods just before a collection
     //     of related statements
-    System.out.println("Display text"); // You can also put a line comment on the end
-                                        // of a line of code like this.
+    Console.WriteLine("Display text"); // You can also put a line comment on the end
+                                       // of a line of code like this.
 }
 </code></pre>
 
@@ -405,7 +405,7 @@ Block comments start with `/*` and continue until a `*/` is reached. They can sp
 * Author:
 *    Sam Student
 * Summary:
-*    This program is designed to be the first Java program you have ever
+*    This program is designed to be the first C# program you have ever
 *    written. While not particularly complex, it is often the most difficult
 *    to write because the tools are so unfamiliar.
 ************************************************************************/
@@ -421,7 +421,7 @@ We also have a comment block at the beginning of every method. This comment bloc
 **********************************************************/
 </code></pre>
 
-<!-- ...existing code for problems and assignments, update code samples to Java as needed... -->
+<!-- ...existing code for problems and assignments, update code samples to C# as needed... -->
 
 <table style="min-width: 650px">
 <theader>
@@ -436,9 +436,9 @@ We also have a comment block at the beginning of every method. This comment bloc
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 What is missing from this program?
-<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Howdy");
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">class Hello {
+    static void Main(string[] args) {
+        Console.WriteLine("Howdy");
         // Blank Line
     }
 }
@@ -454,7 +454,7 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<!-- ...existing code for other problems, update code samples to Java as needed... -->
+<!-- ...existing code for other problems, update code samples to C# as needed... -->
 
 <table style="min-width: 650px">
 <theader>
@@ -469,9 +469,9 @@ ________________________________________________________________________________
 <tr>
 <td colspan=2 style="; border: 3px solid #a6a6a6">
 What is wrong with this program?
-<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Howdy");
+<pre style="padding: 0; max-width: 500px"><code style="max-width: 500px">class Hello {
+    static void Main(string[] args) {
+        Console.WriteLine("Howdy");
     }
 }
 </code></pre>
@@ -486,18 +486,20 @@ ________________________________________________________________________________
 </tbody>
 </table>
 
-<!-- ...existing code for assignments, update code samples to Java as needed... -->
+<!-- ...existing code for assignments, update code samples to C# as needed... -->
 
 3. Write the code to put “Hello world” on the screen:
 
-<pre style="max-width: 500px"><code style="max-width: 500px">public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello world");
+<pre style="max-width: 500px"><code style="max-width: 500px">using System;
+
+class HelloWorld {
+    static void Main(string[] args) {
+        Console.WriteLine("Hello world");
     }
 }
 </code></pre>
 
-5. Give an example of all the ways to write a comment in Java:
+5. Give an example of all the ways to write a comment in C#:
 
 <pre style="max-width: 500px"><code style="max-width: 500px">// This is a line comment
 
@@ -509,7 +511,7 @@ ________________________________________________________________________________
 <p style="text-align: right; font-size: .75em;">
 <br><br>
 <br><br>
-Procedural Programming in Java
+Procedural Programming in C#
 &nbsp;&nbsp;&nbsp; |
 &nbsp;&nbsp;&nbsp;
 Unit 0: Overview
