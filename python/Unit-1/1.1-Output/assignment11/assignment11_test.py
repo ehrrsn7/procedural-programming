@@ -54,6 +54,7 @@ def test_key(capsys):
     """
     For Mr. Eli's key.
     """
+    # return # The key is not available yet
     if not key:
         pytest.skip("Skipping test_key because key is not available")
 

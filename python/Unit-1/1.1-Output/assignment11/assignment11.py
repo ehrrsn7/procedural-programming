@@ -5,6 +5,8 @@ Description:
     in this case) to cleanly display a budget table.
 Author:
     <YOUR NAME>
+ID:
+    <YOUR ID>
 Source:
     Elijah Harrison
     James Helfrich
@@ -33,3 +35,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+Set up environment:
+    python -m venv venv
+    venv/Scripts/activate.bat
+    pip install -r requirements.txt
+Run file:
+    python assignment10.py
+Test program:
+    python -m pytest
+Style check:
+    python -m flake8 assignment10.py
+"""
