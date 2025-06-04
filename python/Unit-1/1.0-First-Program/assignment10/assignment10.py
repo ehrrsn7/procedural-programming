@@ -24,8 +24,7 @@ def main():
     """
     Displays Hello world
     """
-    pass
-    
+    print("Hello world")
 
 if __name__ == "__main__":
     main()

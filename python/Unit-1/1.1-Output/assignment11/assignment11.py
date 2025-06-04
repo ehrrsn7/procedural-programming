@@ -27,10 +27,13 @@ def main():
     """
 
     # Format the output for money
-    fixed = lambda num: f"{num:.2f}" 	# unless you own a gas station, money
+    fixed = lambda num: f"{num:,.2f}" 	# unless you own a gas station, money
                                         #      is formatted to two decimals
 
+    # Usage:
+    print(fixed(1000))	# 1,000.00
     # Display the budget table
+
     
 
 if __name__ == "__main__":
