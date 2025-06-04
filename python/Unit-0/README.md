@@ -1,4 +1,4 @@
-<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
+<img src=".\.etc\assets\topic-header.png" width="100%" height="auto" style="">
 
 ## Table of Contents
 
@@ -175,7 +175,7 @@
 
 <div style="page-break-after: always;"></div>
 
-<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
+<img src=".\.etc\assets\topic-header.png" width="100%" height="auto" style="">
 
 # Course Overview
 

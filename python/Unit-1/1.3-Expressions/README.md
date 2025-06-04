@@ -229,11 +229,29 @@ As a challenge, try to modify the above program so it will not only compute chan
 
 ---
 
-### Assignment 1.3 - Temperature Conversion
-
-#### Problem
-
+<table style="width: 100%; min-width: 715px; border: 1px solid #00000010">
+<thead>
+<tr>
+   <td>
+      <!-- Blank -->
+   </td>
+   <td style="text-align: center; background: #17365d; height: 12px;">
+      <h4 style="color: white; padding: 0; margin: 0;">Assignment 1.3 - Temperature Conversion</h4>
+   </td>
+   <td>
+   <!-- Blank -->
+   </td>
+</tr>
+<tr>
+<td style="background: #17365d">
+<h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; position: relative; bottom: 30px; left: 7px">
+    Problem
+</h4>
+</td>
+<td>
+<p>
 Write a program to convert Fahrenheit to Celsius. This program will prompt the user for the Fahrenheit number and convert it to Celsius. The equation is:
+</p>
 
 ```
 C = 5/9 * (F – 32)
@@ -245,23 +263,79 @@ The program will prompt the user for the temperature, compute the Celsius value,
 
 **Hint:** If the last test fails, then you are probably not rounding correctly. Note that integers cannot hold the decimal part of a number so they always round down. If you use `round()`, then the rounding will occur the way you expect.
 
-#### Example
-
+</td>
+<td style="background: #17365d">
+<!-- Blank -->
+</td>
+</tr>
+<tr>
+  <td>
+    <!-- Blank -->
+  </td>
+  <td style="border: 1px solid #70839c">
+    <!-- Blank -->
+  </td>
+  <td>
+    <!-- Blank -->
+  </td>
+</tr>
+<tr>
+<td style="background: #17365d">
+<h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; position: relative; bottom: 30px; left: 7px">
+    Example
+</h4>
+</td>
+<td>
 User input is **underlined**.
 
 ```
 Please enter Fahrenheit degrees: 72
 Celsius: 22
 ```
+</td>
+<td style="background: #17365d">
+<!-- Blank -->
+</td>
+</tr>
+<tr>
+   <td>
+      <!-- Blank -->
+   </td>
+   <td style="border: 1px solid #70839c">
+      <!-- Blank -->
+   </td>
+   <td>
+      <!-- Blank -->
+   </td>
+</tr>
+<tr>
+<td style="background: #17365d">
+    <h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; position: relative; bottom: 30px; left: 7px">
+        Instructions
+    </h4>
+</td>
+<td>
 
-#### Instructions
+The Test Bed is available by running
 
-The test bed is available at:
-
+```powershell
+pytest
 ```
-testBed cs124/assign13 assignment13.py
+
+The Style Checker is available by running 
+```powershell
+flake8
 ```
 
 Don’t forget to submit your assignment with the name “Assignment 13” in the header.
+
+<div width="100%" style="text-align: right; font-size: 10px; color: #a6a6a6"><em>Please see page 41 for a hint.</em></div>
+</td>
+<td style="background: #17365d">
+    <!-- Blank -->
+</td>
+</tr>
+</thead>
+</table>
 
 ---

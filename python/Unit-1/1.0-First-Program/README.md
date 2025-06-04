@@ -165,12 +165,12 @@ The process consists of the following steps:
 
 1. Download the project files onto your machine
 2. Navigate to your folder using **Visual Studio Code**
-3.0 - Ensure you have Python installed on your machine
-3. Activate the virtual environment and download all the dependencies
-4. Run the program using `python`
-5. Verify your solution with `pytest`
-6. Verify your style with `flake8`
-7. Turn it into Google Classroom
+3. Ensure you have Python installed on your machine
+4. Activate the virtual environment using `venv` and download all the dependencies
+5. Run the program using `python`
+6. Verify your solution with `pytest`
+7. Verify your style with `flake8`
+8. Turn it into Google Classroom
 
 This entire process will be demonstrated in "Example - Hello World" at the end of the chapter.
 
@@ -190,40 +190,20 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 <div style="page-break-after: always;"></div>
 
-### 0. Forking the Repository with VisualSVN Server
+## 0. Downloading and Opening the Assignment Code
 
-All programming assignments are managed using a version control system. In this course, we use Subversion (SVN) with VisualSVN Server. This allows you to keep track of your code changes and collaborate more easily.
+All programming assignments begin by downloading the starter code to your computer. Follow these steps to get started:
 
-#### Forking the Repository
+#### 1. Download the Code as a ZIP File
 
-1. **Install TortoiseSVN (Client)**  
-    Download and install [TortoiseSVN](https://tortoisesvn.net/) to interact with SVN repositories from Windows Explorer.
+- In Google Classroom, your instructor will provide a link to download the assignment code as a `.zip` file for each assignment.
+- Click the link and save the `.zip` file to a location on your computer (such as your Desktop or Downloads folder).
 
-2. **Get the Repository URL**  
-    Your instructor or course materials will provide the URL to the base repository you need to fork.
+#### 2. Extract the ZIP File
 
-3. **Create Your Own Repository (Fork)**  
-    In VisualSVN Server, create a new repository for your assignments. This will act as your personal fork.
-
-4. **Checkout the Repository**  
-    Using TortoiseSVN, right-click in your working directory and select “SVN Checkout.” Enter the URL of your personal repository.
-
-7. **Commit Your Changes**  
-    Right-click the folder, select “SVN Commit,” and add a message describing your changes.
-
-> **Note:** These instructions are a placeholder and will be updated with more detailed steps in the future.
-
-For more information on using VisualSVN Server and TortoiseSVN, see the official documentation:
-- [VisualSVN Server Documentation](https://www.visualsvn.com/server/documentation/)
-- [TortoiseSVN Documentation](https://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html)
-
-<div style="text-align: center;">
-  <p>
-    <a href="https://support.apple.com/en-ie/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac">
-      Setup - Terminal
-    </p>
-  </a>
-</div>
+- Locate the downloaded `.zip` file in your file explorer.
+- Right-click the file and select **Extract All...** (Windows) or **Extract Here** (Mac/Linux).
+- Choose a destination folder and complete the extraction. This will create a new folder containing the assignment files.
 
 <p class="footer left" style="
   text-align: left;
@@ -262,6 +242,98 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </tbody>
 </table>
 
+
+Below is a table of common PowerShell commands you may use:
+
+<table style="width: 100%; max-width: 750px">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="background:rgb(73, 137, 180); color: white" rowspan="7">Navigation</td>
+            <td><code>cd</code></td>
+            <td>Change Directory</td>
+        </tr>
+        <tr>
+            <td><code>ls</code></td>
+            <td>List information about file(s)</td>
+        </tr>
+        <tr>
+            <td><code>cat</code></td>
+            <td>Display the contents of a file to the screen</td>
+        </tr>
+        <tr>
+            <td><code>clear</code></td>
+            <td>Clear terminal screen</td>
+        </tr>
+        <tr>
+            <td><code>exit</code></td>
+            <td>Exit the shell</td>
+        </tr>
+        <tr>
+            <td><code>pwd</code></td>
+            <td>Print current working directory</td>
+        </tr>
+        <tr>
+            <td><code>Get-ChildItem</code></td>
+            <td>List files and directories (alias: <code>ls</code>)</td>
+        </tr>
+        <tr>
+            <td style="background:rgb(73, 137, 180); color: white" rowspan="4">Organization</td>
+            <td><code>mkdir</code></td>
+            <td>Create new folder(s)</td>
+        </tr>
+        <tr>
+            <td><code>mv</code></td>
+            <td>Move or rename files or directories</td>
+        </tr>
+        <tr>
+            <td><code>rm</code></td>
+            <td>Remove files</td>
+        </tr>
+        <tr>
+            <td><code>Copy-Item</code></td>
+            <td>Copy files or directories</td>
+        </tr>
+        <tr>
+            <td style="background:rgb(73, 137, 180); color: white" rowspan="4">Programming</td>
+            <td><code>notepad</code></td>
+            <td>Open Notepad editor</td>
+        </tr>
+        <tr>
+            <td><code>code</code></td>
+            <td>Open Visual Studio Code editor</td>
+        </tr>
+        <tr>
+            <td><code>Write-Output</code></td>
+            <td>Display output to the screen</td>
+        </tr>
+        <tr>
+            <td><code>Write-Host</code></td>
+            <td>Display output directly to the console</td>
+        </tr>
+        <tr>
+            <td style="background:rgb(73, 137, 180); color: white" rowspan="3">Homework</td>
+            <td><code>Invoke-WebRequest</code></td>
+            <td>Download files from the web</td>
+        </tr>
+        <tr>
+            <td><code>Test-Path</code></td>
+            <td>Check if a file or directory exists</td>
+        </tr>
+        <tr>
+            <td><code>Start-Process</code></td>
+            <td>Run a program or script</td>
+        </tr>
+    </tbody>
+</table>
+
+
 <p class="footer right" style="
   text-align: right;
   font-size: .75em;">
@@ -278,16 +350,22 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 <div style="page-break-after: always;"></div>
 
-### 2. Edit with Visual Studio Code
+## 1. Edit with Visual Studio Code
+
+Open the Folder in Visual Studio Code
+
+- Open Visual Studio Code.
+- Go to **File > Open Folder...**.
+- Navigate to the folder you just extracted and select it.
+- The assignment files will now appear in the Explorer pane, ready for you to edit and run.
+
+For more tips on using Visual Studio Code, see the [official documentation](https://code.visualstudio.com/docs).
 
 Once the template has been copied to your directory, you are ready to edit your program. There are many editors to choose from, but Visual Studio Code (VS Code) is a popular, user-friendly option for writing code. VS Code provides features like syntax highlighting, code completion, and integrated terminal support, making it ideal for programming assignments.
 
 To create and edit a file named `hello.py` in VS Code:
 
-1. Open Visual Studio Code.
-2. Use the menu to select **File > Open Folder...** and navigate to your project directory.
-3. In the Explorer pane, right-click and select **New File**, then enter `hello.py`.
-4. Type your Python code in the editor window. For your first program, you can make it say "Hello World" as required for the first assignment:
+For your first program, you can make it say "Hello World" as required for the first assignment:
 
 ```python
 """
@@ -362,13 +440,15 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 After we have successfully run the program, it is then necessary to verify our solution. This is typically done in a two-step process. The first is to simply run the program by hand and visually inspect the output. The second step in the verification process is to test the program against the key. This is done with a program called Test Bed. Test Bed compares the output of your program against what was expected. If everything behaves correctly, a message "No Errors" will be displayed. On the other hand, if the program malfunctions or produces different output than expected, then the difference is displayed to the user. In this way, Test Bed is a two-edged sword: you know when you got the right answer, but it is exceedingly picky. In other words, Test Bed will notice if a space was used instead of a tab even though it appears identical on the screen. The syntax for Test Bed is:
 
-```sh
-testBed <test name> <file name>
+```powershell
+pytest
 ```
+
+Running `pytest` in your assignment directory will automatically discover and run all tests for your code. You do not need to specify a file name; pytest will find and execute every test in the directory. Each assignment includes a corresponding test that will be run using pytest to check your code against the assignment requirements.
 
 The first parameter to the Test Bed program is the test which is to be run. This test name is always present on a homework assignment, in-lab test, and project. The second parameter is the file you are testing. If, for example, your program is in the file `hw10.py` and the test is `cs124/assign10`, then the following code will be executed:
 
-```sh
+```powershell
 testBed cs124/assign10 hw10.py
 ```
 
@@ -376,19 +456,19 @@ It is important to note that you will not get a point on a pre-class assignment 
 
 ### 5. Style Checker
 
-Once the program has been written and passes Test Bed, it is not yet finished. Another important component is whether the code itself is human-readable and in a standard format. This is collectively called “style.”  A programming style consists of many components, including variable names, indentations, and comments.  While style is an inherently subjective notion, we have a tool to help us with the process. This tool is called Style Checker. 
+Once the program has been written and passes Test Bed, it is not yet finished. Another important component is whether the code itself is human-readable and in a standard format. This is collectively called “style.”  A programming style consists of many components, including variable names, indentations, and comments.  While style is an inherently subjective notion, we have a tool to help us with the process. This tool is called `flake8`.
 
-While Style Checker will certainly not catch all possible style mistakes, it will catch the most obvious ones. You should never turn in an assignment without running Style Checker first. The syntax for 
-Style Checker is: 
+While `flake8` will certainly not catch all possible style mistakes, it will catch the most obvious ones. You should never turn in an assignment without running `flake8` first. The syntax for
+`flake8` is:
 
-```sh
-styleChecker  <file name> 
+```powershell
+flake8  <file name>
 ```
 
-If,  for  example,  you  would  like  to  run  Style  Checker  on  hw10.py,  then  the  following  command  is  to  be executed. 
+If, for example, you would like to run Style Checker on hw10.py, then the following command is to be executed.
 
 ```
-styleChecker  hw10.py 
+flake8 hw10.py
 ```
 
 The main components to style include:
@@ -412,94 +492,106 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <table id="Figure-5">
 <tbody>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Variable names
-  </td>
-  <td>
-    Variable names should completely describe what each variable contains. Each should be snake_case: use lowercase letters and underscores between words. We will learn about variables in Chapter 1.2:
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Variable names
+</td>
+<td>
+Variable names should completely describe what each variable contains. Each should be snake_case: use lowercase letters and underscores between words. We will learn about variables in Chapter 1.2:
 
-    num_students
-  </td>
+num_students
+</td>
 </tr>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Function names
-  </td>
-  <td>
-    Function names are snake_case just like variable names. Function names are typically verbs while variable names are nouns. We will learn about functions in Chapter 1.4:
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Function names
+</td>
+<td>
+Function names are snake_case just like variable names. Function names are typically verbs while variable names are nouns. We will learn about functions in Chapter 1.4:
 
-    display_budget()
-  </td>
+display_budget()
+</td>
 </tr>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Indent
-  </td>
-  <td>
-    Indentations are four spaces. No tabs please!
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Indent
+</td>
+<td>
+Indentations are four spaces. No tabs please!
 
-    def main():
-        print("Hello world")
-  </td>
+```python
+def main():
+    print("Hello world")
+```
+
+In python,
+</td>
 </tr>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Line length 
-  </td>
-  <td>
-    Lines are no longer than 80 characters in length. If more space is needed for a  comment,  break  the  comment  into  two  lines.  The  same  is  true  for  print statements (Chapter 1.1) and function parameters (Chapter 1.4). 
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Line length
+</td>
+<td>
+Lines are no longer than 80 characters in length. If more space is needed for a  comment,  break  the  comment  into  two  lines.  The  same  is  true  for  print statements (Chapter 1.1) and function parameters (Chapter 1.4).
 
-    # Long comments can be broken into two lines 
-    # to increase readability. Start each new 
-    # line with “#”
-  </td>
+```python
+# Long comments can be broken into more lines
+# to increase readability. Start each new
+# line with “#”s
+```
+</td>
 </tr>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Program comments
-  </td>
-  <td>
-    All programs have a program docstring at the beginning of the file. This can be found in the standard template. An example is: 
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Program comments
+</td>
+<td>
+All programs have a program docstring at the beginning of the file. This can be found in the standard template. An example is:
 
-    """
-    Program:
-        Assignment 10, Hello World
-        Brother Helfrich, CS124
-    Author:
-        Sam Student
-    Summary:
-        Display a message
-    """
-  </td>
+```python
+"""
+Program:
+Assignment 10, Hello World
+Brother Helfrich, CS124
+Author:
+Sam Student
+Summary:
+Display a message
+"""
+```
+</td>
 </tr>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Function comments
-  </td>
-  <td>
-    Every  function  such  as  <code>main()</code>  has  a  docstring  describing  what  the function does: 
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Function comments
+</td>
+<td>
+Every  function  such  as  <code>main()</code>  has  a  docstring  describing  what  the function does:
 
-    """
-    main
-    This program will display a simple message
-    on the screen
-    """
-  </td>
+```python
+"""
+main
+This program will display a simple message
+on the screen
+"""
+```
+</td>
 </tr>
 <tr>
-  <td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
-    Space between operators
-  </td>
-  <td>
-    All operators, such as addition (<code>+</code>) and assignment (<code>=</code>) are to have a single space on either side to set them apart: 
+<td class="left-blue" style="background: #4f81bd; min-width: 100px; font-weight: bold; text-align: center; color: white;">
+Space between operators
+</td>
+<td>
+All operators, such as addition (<code>+</code>) and assignment (<code>=</code>) are to have a single space on either side to set them apart:
 
-    sum_of_squares += user_input * user_input
-  </td>
+```py
+sum_of_squares += user_input * user_input
+```
+</td>
 </tr>
 </tbody>
 </table>
 
-For more details on the University’s style guidelines, please see “Appendix A: Elements of Style” and look at the coding examples presented in this class. 
+For more details on the University’s style guidelines, please see “Appendix A: Elements of Style” and look at the coding examples presented in this class.
 
 <p class="footer right" style="
   text-align: right;
@@ -519,19 +611,7 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 ### 6. Submit
 
-The last step of turning in an assignment is to submit it. While we discuss this as the end of the homework process, you can submit an assignment as often as you like. In the case of multiple submissions, the last one submitted at the moment the assignment is graded is the one that will be used. It is therefore a good idea to submit your assignments frequently so your professor has the most recent copy of your work. The syntax for the program submission tool is: 
-
-```sh
-submit  <file name> 
-```
-
-If, for example, your program is named “`hw10.py`,” then the following command is to be executed: 
-
-```sh
-submit  hw10.py 
-```
-
-One word of caution with the Submit tool. The tool reads the program docstring to determine the professor name, the class number, and the assignment number. If any of these are incorrect, then the program will not be submitted correctly. For example, consider the following docstring: 
+Make sure the docstring is first properly filled out at the top of the screen. If not, the automated grading tool won't pick up your name!
 
 ```python
 """
@@ -540,6 +620,8 @@ Program:
     Brother Helfrich, CS124
 Author:
     Susan Bakersfield
+ID:
+    309557
 Summary:
     This program is designed to be the first Python program you have ever
     written. While not particularly complex, it is often the most difficult
@@ -547,46 +629,7 @@ Summary:
 """
 ```
 
-Here, Submit will determine that the program is an Assignment (as opposed to a Test or Project), the assignment number is 10, the professor is Br. Helfrich, and the class is CS 124. If any of these are incorrect, then the file will be sent to another location. To help you with this, submit tells the user what it read from the docstring: 
-
-```sh
-submit homework to helfrich cs124 and assign10. (y/n) 
-```
-
-It is worthwhile to read that message. 
- 
-<table>
-<theader>
-<tr style="background: #244061">
-<td width="80%">
-    <p style="color: white; font-weight: bold; margin-top: 10px; line-height: 0">Sam's Corner</p>
-</td>
-<td></td>
-</tr>
-</theader>
-<tbody>
-<tr>
-<td>
-  <p>
-    Submit is basically a fancy copy function. It makes two copies of the program: one for you and one for the instructor. If, for example, you submitted to “Assignment 10” for “CS 124”, then you will get a copy on:
-  </p>
-
-  <pre><code>/home/&lt;username&gt;/submittedHomework/cs124_assign10.py</code></pre>
-
-  <p>
-    Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is “<code>eniac</code>”, then the file appears as eniac.py in the instructor’s folder. 
-  </p>
-
-  <p>
-    Please do not use a dot in the name of your file except before the extension. If you submit <code>hw1.0.py</code>, for example, then it will appear as <code>eniac.0</code> instead of <code>eniac.py</code> and the instructor will not grade it.
-  </p>
-</td>
-<td style="display: flex; padding: 0; height: 100%">
-    <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
-</td>
-</tr>
-</tbody>
-</table>
+Then, **submit to Google Classroom**.
 
 <p class="footer left" style="
   text-align: left;
@@ -670,44 +713,44 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   </td>
 </tr>
 <tr>
-  <td style="background: #17365d">
-    <h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; position: relative; bottom: 30px; left: 7px">
-      Solution
-    </h4>
-  </td>
-  <td>
-  <p>
-    The code for the solution is:
-  </p>
+<td style="background: #17365d">
+  <h4 style="transform: rotate(90deg); white-space: nowrap; color: white; height: 5px; width: 5px; position: relative; bottom: 30px; left: 7px">
+    Solution
+  </h4>
+</td>
+<td>
+<p>
+  The code for the solution is:
+</p>
 
-  ```python
-  """
-  Program:
-      Assignment 10, Hello World
-      Brother Helfrich, CS124
-  Author:
-      Sam Student
-  Summary:
-      This program is designed to be the first Python program you have ever
-      written. While not particularly complex, it is often the most difficult
-      to write because the tools are so unfamiliar.
-  """
+```python
+"""
+Program:
+    Assignment 10, Hello World
+    Brother Helfrich, CS124
+Author:
+    Sam Student
+Summary:
+    This program is designed to be the first Python program you have ever
+    written. While not particularly complex, it is often the most difficult
+    to write because the tools are so unfamiliar.
+"""
 
-  def main():
-      # display
-      print("Hello World")
+def main():
+    # display
+    pass
 
-  if __name__ == "__main__":
-      main()
-  ```
+if __name__ == "__main__":
+    main()
+```
 
-  <p>
-    Of course the real challenge is using the tools...
-  </p>
-  </td>
-  <td style="background: #17365d">
-    <!-- Blank -->
-  </td>
+<p>
+  Of course the real challenge is using the tools...
+</p>
+</td>
+<td style="background: #17365d">
+  <!-- Blank -->
+</td>
 </tr>
 <tr>
   <td>
@@ -728,14 +771,14 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   </td>
   <td>
     <p>
-      As a challenge, modify this program to display a paragraph including your name and a short introduction. My paragraph is: 
+      As a challenge, modify this program to display a paragraph including your name and a short introduction. My paragraph is:
     </p>
 
-    Hello, I am Br. Helfrich. 
-    
-    My favorite thing about teaching is interacting with interesting students every 
-    day. Some days, however, students have no questions and don’t bother to come by 
-    my office. Those are long and lonely days...
+    Hello, I am Mr. Eli.
+
+    My favorite thing about teaching is interacting with interesting students every
+    day. Some days, however, students have no questions and don’t bother to come by
+    my classroom. Those are long and lonely days...
   </td>
   <td style="background: #17365d">
     <!-- Blank -->
@@ -760,10 +803,8 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   </td>
   <td>
   <p>
-    The complete solution is available at <a href="https://content.byui.edu/file/66227afd-b800-4ba3-b6b3-18db4db6c440/1/1-0-firstProgram.html">1-0-firstProgram.py</a> or: 
+    The complete solution is available at <a href="https://content.byui.edu/file/66227afd-b800-4ba3-b6b3-18db4db6c440/1/1-0-firstProgram.html">1-0-firstProgram.py</a> or:
   </p>
-
-    /home/cs124/examples/1-0-firstProgram.py
 
   <a href="https://video.byui.edu/media/1.0+-+First+Program/0_9dc3rb33/18442462">
     <img src=".etc/assets/video.png">
@@ -791,3 +832,70 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <div style="page-break-after: always;"></div>
+
+```
+Problem 1
+If your body was a computer, select all the von Neumann functions that the spinal cord would perform?
+
+Answer:
+           ____________________________________________________________________________________________
+Please see page 5 for a hint.
+
+Problem 2
+If a given processor were to be simplified to only contain a single instruction, which part would be most
+affected?
+
+Answer:
+           ____________________________________________________________________________________________
+Please see page 5 for a hint.
+
+Problem 3
+Which of the following does a CPU consume?  {Natural language, C++, Assembly language, Machine }?
+
+Answer:
+           ____________________________________________________________________________________________
+Please see page 5 for a hint.
+
+Problem 4
+What is wrong with the following program:
+#include <iostream>
+using namespace std;
+
+int main()
+(
+   cout << "Howdy\n";
+
+   return 0;
+)
+
+Answer:
+           ____________________________________________________________________________________________
+Please see page 7 for a hint.
+```
+
+<table>
+<thead>
+<th style="display: flex; background: #254061; border: 3px solid lightgray; color: white; width: 150px"><span style="width: 100%; text-align: center">Assignment 1.0</span></th>
+<th><!--Blank Cell--></th>
+</thead>
+<tbody>
+<td colspan=2 style="border: 3px solid lightgray">
+
+Write a program to put the text “`Hello World`” on the screen. Please note that examples of the code for this 
+program are present in the course notes. 
+
+# Example 
+Run the program to get the following output:
+```
+Hello World 
+```
+
+# Instructions
+
+1. Download and extract the zip file from the assignment.
+2. Edit the file with VS Code and run the tests using `pytest` and `flake8`
+3. Submit the file to that same assignment.
+
+</td>
+</tbody>
+</table>
