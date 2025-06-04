@@ -24,3 +24,7 @@ cpp/.etc/winlibs/winlibs-x86_64-posix-seh-gcc-15.1.0-mingw-w64ucrt-12.0.0-r1.zip
 **/**/**/**/**/test
 ~/.nvm/nvm-exec
 ~/.nvm/nvm.sh
+**/**/**/**/**/obj/
+**/**/**/**/**/bin/
+**/**/**/**/obj/
+**/**/**/**/bin/

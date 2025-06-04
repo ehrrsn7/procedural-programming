@@ -82,7 +82,7 @@ python -m pytest
 To ensure your code follows the PEP 8 style guide, you can use a tool like `flake8`. Be sure you've already run your virtual environment script and pip install command. Run the style checker on your Python file by entering:
 
 ```Powershell
-flake8 assignment11.py
+python -m flake8 assignment11.py
 ```
 
 This will check your code for any style issues and provide feedback on how to improve it.

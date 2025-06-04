@@ -5,6 +5,8 @@ Description:
     in this case) to cleanly display a budget table.
 Author:
     <YOUR NAME>
+ID:
+    <YOUR ID>
 Source:
     Elijah Harrison
     James Helfrich
@@ -25,11 +27,27 @@ def main():
     """
 
     # Format the output for money
-    fixed = lambda num: f"{num:.2f}" 	# unless you own a gas station, money
+    fixed = lambda num: f"{num:,.2f}" 	# unless you own a gas station, money
                                         #      is formatted to two decimals
 
+    # Usage:
+    print(fixed(1000))	# 1,000.00
     # Display the budget table
+
     
 
 if __name__ == "__main__":
     main()
+
+"""
+Set up environment:
+    python -m venv venv
+    venv/Scripts/activate.bat
+    pip install -r requirements.txt
+Run file:
+    python assignment10.py
+Test program:
+    python -m pytest
+Style check:
+    python -m flake8 assignment10.py
+"""
