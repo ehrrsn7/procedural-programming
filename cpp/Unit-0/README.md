@@ -1,209 +1,1019 @@
-<img src="..\.etc\assets\topic-header.png" width="100%" height="auto" style="">
+<style>
+   /* VS-Code Markdown Preview-Specific Styles */
+   pre:not(.hljs), pre.hljs code > div {
+      padding: 4px 1em;
+      margin: 0;
+      border-radius: 3px;
+      overflow: auto;
+   }
+   /* Add a copy button to all code blocks */
+   pre code {
+      position: relative;
+      display: block;
+      padding-right: 3em;
+   }
+   .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #0078d4;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 2px 8px;
+      font-size: 0.9em;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+      z-index: 10;
+   }
+   .copy-btn:hover {
+      opacity: 1;
+   }
 
-## Table of Contents
+   :root {
+      --scale-difference: 15%;
+      zoom: 85%;
+   }
 
-<table style="width: 100%; max-width: 500px; margin-left: 80px; line-height: 12px;">
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th>Content</th>
-      <th style="text-align: right;">Page</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none">Table of Contents</td>
-      <td style="text-align: right; border: none">1</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="#course-overview">Course Overview</a></td>
-      <td style="text-align: right; border: none">2</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="#computers-and-programs">Computers & Programs</a></td>
-      <td style="text-align: right; border: none">4</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"></td>
-      <td style="border: none"></td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.0 First Program</a></td>
-      <td style="text-align: right; border: none">13</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.1 Output</a></td>
-      <td style="text-align: right; border: none">24</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.2 Input & Variables</a></td>
-      <td style="text-align: right; border: none">35</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.3 Expressions</a></td>
-      <td style="text-align: right; border: none">46</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.4 Functions</a></td>
-      <td style="text-align: right; border: none">58</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.5 Boolean Expressions</a></td>
-      <td style="text-align: right; border: none">76</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">1.6 IF Statements</a></td>
-      <td style="text-align: right; border: none">86</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Practice Test</a></td>
-      <td style="text-align: right; border: none">99</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-1/1.0-First-Program/README.md">Unit 1 Project : Monthly Budget</a></td>
-      <td style="text-align: right; border: none">101</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"></td>
-      <td style="border: none"></td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-2/2.0-Modularization/README.md">2.0 Modularization</a></td>
-      <td style="text-align: right; border: none">108</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-2/2.1-Debugging/README.md">2.1 Debugging</a></td>
-      <td style="text-align: right; border: none">130</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-2/2.2-Designing-Algorithms/README.md">2.2 Designing Algorithms</a></td>
-      <td style="text-align: right; border: none">145</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-2/2.3-Loop-Syntax/README.md">2.3 Loop Syntax</a></td>
-      <td style="text-align: right; border: none">156</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-2/2.4-Loop-Output/README.md">2.4 Loop Output</a></td>
-      <td style="text-align: right; border: none">168</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-2/2.5-Loop-Design/README.md">2.5 Loop Design</a></td>
-      <td style="text-align: right; border: none">181</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-2/2.6-Files/README.md">2.6 Files</a></td>
-      <td style="text-align: right; border: none">190</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-2/Practice-Test/README.md">Unit 2 Practice Test</a></td>
-      <td style="text-align: right; border: none">207</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-2/Project-Calendar-Program/README.md">Unit 2 Project : Calendar Program</a></td>
-      <td style="text-align: right; border: none">209</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"></td>
-      <td style="border: none"></td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-3/3.0-Array-Syntax/README.md">3.0 Array Syntax</a></td>
-      <td style="text-align: right; border: none">214</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-3/3.1-Array-Design/README.md">3.1 Array Design</a></td>
-      <td style="text-align: right; border: none">233</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-3/3.2-Strings/README.md">3.2 Strings</a></td>
-      <td style="text-align: right; border: none">242</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-3/3.3-Pointers/README.md">3.3 Pointers</a></td>
-      <td style="text-align: right; border: none">255</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-3/3.4-Pointer-Arithmetic/README.md">3.4 Pointer Arithmetic</a></td>
-      <td style="text-align: right; border: none">269</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-3/3.5-Advanced-Conditionals/README.md">3.5 Advanced Conditionals</a></td>
-      <td style="text-align: right; border: none">284</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-3/Practice-Test/README.md">Unit 3 Practice Test</a></td>
-      <td style="text-align: right; border: none">301</td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-3/Project-MadLib/README.md">Unit 3 Project : MadLib</a></td>
-      <td style="text-align: right; border: none">303</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"></td>
-      <td style="border: none"></td>
-    </tr>
-    <tr style="background-color: #ffffff;">
-      <td style="border: none"><a href="../Unit-4/4.0-Multi-Dimensional-Arrays/README.md">4.0 Multi-Dimensional Arrays</a></td>
-      <td style="text-align: right; border: none">309</td>
-    </tr> <!--LEFT OFF HERE-->
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-4/4.1-Allocating-Memory/README.md">4.1 Allocating Memory</a></td>
-      <td style="text-align: right; border: none">324</td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Unit-4/4.2-String-Class/README.md">4.2 String Class</a></td>
-      <td style="text-align: right; border: none">337</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-4/4.3-Command-Line/README.md">4.3 Command Line</a></td>
-      <td style="text-align: right; border: none">346</td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Unit-4/4.4-Instrumentation/README.md">4.4 Instrumentation</a></td>
-      <td style="text-align: right; border: none">356</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Unit-4/Practice-Test/README.md">Unit 4 Practice Test</a></td>
-      <td style="text-align: right; border: none">361</td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Unit-4/Project-Sudoku/README.md">Unit 4 Project : Sudoku</a></td>
-      <td style="text-align: right; border: none">363</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"></td>
-      <td style="border: none"></td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Appendix/A-Elements-of-Style/README.md">A. Elements of Style</a></td>
-      <td style="text-align: right; border: none">369</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Appendix/B-Order-of-Operations/README.md">B. Order of Operations</a></td>
-      <td style="text-align: right; border: none">375</td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Appendix/C-Lab-Help/README.md">C. Lab Help</a></td>
-      <td style="text-align: right; border: none">376</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Appendix/D-Emacs-Linux-Cheat-Sheet/README.md">D. Emacs & Linux Cheat-Sheet</td>
-      <td style="text-align: right; border: none">377</td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Appendix/E-C++-Syntax-Reference-Guide/README.md">E. C++ Syntax Reference Guide</a></td>
-      <td style="text-align: right; border: none">378</td>
-    </tr>
-    <tr style="background-color: #f2f2f2;">
-      <td style="border: none"><a href="../Appendix/F-Glossary/README.md">F. Glossary</a></td>
-      <td style="text-align: right; border: none">381</td>
-    </tr>
-    <tr style="background-color: #FFFFFF;">
-      <td style="border: none"><a href="../Appendix/G-Index/README.md">G. Index</a></td>
-      <td style="text-align: right; border: none">393</td>
-    </tr>
-  </tbody>
-</table>
+   div::-webkit-scrollbar {
+      display: none;
+   }
+</style>
+
+<div id="Unit-0-Overview" style="
+   display: block;
+   flex-flow: column;
+   justify-content: center;
+   align-items: stretch;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   margin-left: -4em;
+">
+
+<div class="page" id="page-1" style="
+   display: flex;
+   flex-direction: column;
+   font-size: calc(100% - var(--scale-difference));
+   padding: 2em;
+   margin: 0 auto;
+   width: 8.5in;
+   min-height: 11in;
+   box-sizing: border-box;
+   overflow-x: scroll;
+   height: 11in;
+   overflow-y: scroll;
+   scrollbar-width: none;         /* Firefox */
+   -ms-overflow-style: none;      /* IE/Edge  */
+   page-break-after: always;
+">
+
+<div class="body" style="display: flex; flex-direction: column; flex-grow: 1">
+
+<div id="topic-header" style="
+   width: 100%;
+   color: white;
+   padding: 40px 0 0 0;
+   background-color: rgb(0, 96, 232); /* Fallback */
+   background-image: url('..\.etc\assets\topic-header.png')
+">
+   <h1 style="width: 100%; text-align: right; padding-right: 1em;">
+      Unit 0: Overview
+      &nbsp;
+   </h1>
+</div>
+
+<div id="table-of-contents" style="
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   padding-left: 1in;
+   padding-top: 0.25in;
+   margin-left: -1in;
+   margin-top: -1in;
+   margin: 0 auto;
+   width: 6in;
+   max-width: calc(100% - 2in);
+">
+<a href="#course-overview" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Table of Contents</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>1</span>
+</div>
+</a>
+<a href="#course-overview" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Course Overview</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>2</span>
+</div>
+</a>
+<a href="#computers-and-programs" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Computers & Programs</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>4</span>
+</div>
+</a>
+<a href="../Unit-1/1.0-First-Program/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.0 First Program</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>13</span>
+</div>
+</a>
+<a href="../Unit-1/1.1-Output/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.1 Output</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>24</span>
+</div>
+</a>
+<a href="../Unit-1/1.2-Input-Variables/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.2 Input & Variables</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>35</span>
+</div>
+</a>
+<a href="../Unit-1/1.3-Expressions/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.3 Expressions</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>46</span>
+</div>
+</a>
+<a href="../Unit-1/1.4-Functions/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.4 Functions</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>58</span>
+</div>
+</a>
+<a href="../Unit-1/1.5-Boolean-Expressions/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.5 Boolean Expressions</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>76</span>
+</div>
+</a>
+<a href="../Unit-1/1.6-IF-Statements/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">1.6 IF Statements</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>86</span>
+</div>
+</a>
+<a href="../Unit-1/Practice-Test/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 1 Practice Test</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>99</span>
+</div>
+</a>
+<a href="../Unit-1/Project-Monthly-Budget/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 1 Project : Monthly Budget</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>101</span>
+</div>
+</a>
+<a href="../Unit-2/2.0-Modularization/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.0 Modularization</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>108</span>
+</div>
+</a>
+<a href="../Unit-2/2.1-Debugging/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.1 Debugging</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>130</span>
+</div>
+</a>
+<a href="../Unit-2/2.2-Designing-Algorithms/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.2 Designing Algorithms</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>145</span>
+</div>
+</a>
+<a href="../Unit-2/2.3-Loop-Syntax/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.3 Loop Syntax</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>156</span>
+</div>
+</a>
+<a href="../Unit-2/2.4-Loop-Output/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.4 Loop Output</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>168</span>
+</div>
+</a>
+<a href="../Unit-2/2.5-Loop-Design/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.5 Loop Design</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>181</span>
+</div>
+</a>
+<a href="../Unit-2/2.6-Files/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">2.6 Files</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>190</span>
+</div>
+</a>
+<a href="../Unit-2/Practice-Test/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 2 Practice Test</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>207</span>
+</div>
+</a>
+<a href="../Unit-2/Project-Calendar-Program/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 2 Project : Calendar Program</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>209</span>
+</div>
+</a>
+<a href="../Unit-3/3.0-Array-Syntax/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">3.0 Array Syntax</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>214</span>
+</div>
+</a>
+<a href="../Unit-3/3.1-Array-Design/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">3.1 Array Design</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>233</span>
+</div>
+</a>
+<a href="../Unit-3/3.2-Strings/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">3.2 Strings</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>242</span>
+</div>
+</a>
+<a href="../Unit-3/3.3-Pointers/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">3.3 Pointers</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>255</span>
+</div>
+</a>
+<a href="../Unit-3/3.4-Pointer-Arithmetic/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">3.4 Pointer Arithmetic</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>269</span>
+</div>
+</a>
+<a href="../Unit-3/3.5-Advanced-Conditionals/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">3.5 Advanced Conditionals</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>284</span>
+</div>
+</a>
+<a href="../Unit-3/Practice-Test/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 3 Practice Test</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>301</span>
+</div>
+</a>
+<a href="../Unit-3/Project-MadLib/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 3 Project : MadLib</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>303</span>
+</div>
+</a>
+<a href="../Unit-4/4.0-Multi-Dimensional-Arrays/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">4.0 Multi-Dimensional Arrays</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>309</span>
+</div>
+</a>
+<a href="../Unit-4/4.1-Allocating-Memory/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">4.1 Allocating Memory</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>324</span>
+</div>
+</a>
+<a href="../Unit-4/4.2-String-Class/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">4.2 String Class</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>337</span>
+</div>
+</a>
+<a href="../Unit-4/4.3-Command-Line/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">4.3 Command Line</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>346</span>
+</div>
+</a>
+<a href="../Unit-4/4.4-Instrumentation/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">4.4 Instrumentation</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>356</span>
+</div>
+</a>
+<a href="../Unit-4/Practice-Test/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 4 Practice Test</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>361</span>
+</div>
+</a>
+<a href="../Unit-4/Project-Sudoku/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">Unit 4 Project : Sudoku</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>363</span>
+</div>
+</a>
+<a href="../Appendix/A-Elements-of-Style/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">A. Elements of Style</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>369</span>
+</div>
+</a>
+<a href="../Appendix/B-Order-of-Operations/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">B. Order of Operations</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>375</span>
+</div>
+</a>
+<a href="../Appendix/C-Lab-Help/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">C. Lab Help</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>376</span>
+</div>
+</a>
+<a href="../Appendix/D-Emacs-Linux-Cheat-Sheet/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">D. Emacs & Linux Cheat-Sheet</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>377</span>
+</div>
+</a>
+<a href="../Appendix/E-C++-Syntax-Reference-Guide/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">E. C++ Syntax Reference Guide</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>378</span>
+</div>
+</a>
+<a href="../Appendix/F-Glossary/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">F. Glossary</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>381</span>
+</div>
+</a>
+<a href="../Appendix/G-Index/README.md" alt="">
+<div style="
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   overflow-x: hidden;
+">
+   <span style="white-space: nowrap;">G. Index</span>
+   <span style="
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: right;
+      font-family: monospace;
+   ">
+      ..................................................................................
+   </span>
+   <span>393</span>
+</div>
+</a>
+</div> <!-- End Table of Contents -->
+
+</div class="body">
+
+<div class="footer" style="width: 100%; margin-top: auto; text-align: left;">
+   <strong>Page 1</strong>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Table of Contents
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Unit 0: Overview
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Procedural Programming in C++
+</div>
+
+</div> <!-- End of Page -->
 
 <div style="page-break-after: always;"></div>
 
