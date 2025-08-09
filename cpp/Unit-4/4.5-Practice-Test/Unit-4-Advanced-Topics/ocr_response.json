@@ -1,0 +1,90 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# Unit 4. Advanced Topics \n\n## Unit 4 Practice Test\n\n## Practice 4.2\n\nSam has read that many programmers get paid by the number of lines of code they generate. Wanting to maximize the size of his paycheck, he has decided to write a program to count the number of lines in a given file.\n\n## Problem\n\nWrite a program to perform the following tasks:\n\n1. Attempt to gather the filename from the command line\n2. If no filename is present, prompt the user for the filename\n3. Loop through the file, counting the number of lines\n4. Display the results using the correct tense for empty, 1 , and more than one.\n\n## Example\n\nThe user may specify the filename from the command line. Assume the file \"example1.txt\" has 2 lines:\na.out example1.txt\nexample1.txt has 2 lines.\nIf no file is specified on the command line, then the program will prompt the user for a file. Assume the file \"example2.txt\" has 1 line of text:\na.out\nPlease enter the file name: example2.txt\nexample2.txt has 1 line.\nNote how \"line\" is singular. Finally, if the file is empty or non-existent, then the following message will appear:\na.out missing.txt\nmissing.txt is empty.\n\n## Grading\n\nThe test bed is:\ntestBed cs124/practice42 practice42.cpp\nThe sample solution is:\n/home/cs124/tests/practice42.cpp",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 1,
+            "markdown": "# Grading for Test4 \n\nSample grading criteria:\n\n|  | Exceptional $100 \\%$ | Good $90 \\%$ | Acceptable $70 \\%$ | Developing $50 \\%$ | Missing $0 \\%$ |\n| :--: | :--: | :--: | :--: | :--: | :--: |\n| Modularization $10 \\%$ | Perfect cohesion and coupling | No bugs exist in calling functions, though modularization is not perfect | Redundant data passed between functions | A bug exists passing parameters or calling a function | Only one function used |\n| Command line $10 \\%$ | Input logic \"elegant\" | Able to access the filename from the command line and from a prompt | One bug | An attempt was made to accept input from both the command line and from prompts. | No attempt was made to access the command line parameters |\n| File $20 \\%$ | \"Good\" and perfect error detection | Able to fetch all the text from a file | One bug | Elements of the solution exist | No attempt was made to read from the file |\n| Problem <br> Solving <br> $30 \\%$ | The most elegant and efficient solution was found | Zero test bed errors | Correct on at least one test case | Elements of the solution are present | No attempt was made to count all the words or program failed to compile |\n| Handle tense on output $10 \\%$ | The most elegant and efficient solution was found | All three cases handled | One bug | Logic exists to attempt to detect need for different tenses | No attempt was made to handle tense |\n| Programming <br> Style <br> $20 \\%$ | Well commented, meaningful variable names, effective use of blank lines | Zero style checker errors | One or two minor style checker errors | Code is readable, but serious style infractions | No evidence of the principles of \"elements of style\" in the program |",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 2,
+            "markdown": "# Unit 4 Project : Sudoku \n\nWrite a program to allow the user to play Sudoku. For details on the rules of the game, see:\nhttp://en.wikipedia.org/wiki/Sudoku\nThe program will prompt the user for the filename of the game he or she is currently working on and display the board on the screen. The user will then be allowed to interact with the game by selecting which square he or she wishes to change. While the program will not solve the game for the user, it will ensure that the user has not selected an invalid number. If the user types ' $s$ ' in the prompt, then the program will show the user the possible valid numbers for a given square. When the user is finished, then the program will save the board to a given filename and exit.\n\nThis project will be done in three phases:\n\n- Project 11 : Design the Sudoku program\n- Project 12 : Allow the user to interact with the Sudoku game\n- Project 13 : Enforce the rules of the Sudoku game\n\n\n## Interface Design\n\nConsider a game saved as myGame.txt:\n\n| 7 | 2 | 3 | 0 | 0 | 0 | 1 | 5 | 9 |\n| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |\n| 6 | 0 | 0 | 3 | 0 | 2 | 0 | 0 | 8 |\n| 8 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 2 |\n| 0 | 7 | 0 | 6 | 5 | 4 | 0 | 2 | 0 |\n| 0 | 0 | 4 | 2 | 0 | 7 | 3 | 0 | 0 |\n| 0 | 5 | 0 | 9 | 3 | 1 | 0 | 4 | 0 |\n| 5 | 0 | 0 | 0 | 7 | 0 | 0 | 0 | 3 |\n| 4 | 0 | 0 | 1 | 0 | 3 | 0 | 0 | 6 |\n| 9 | 3 | 2 | 0 | 0 | 0 | 7 | 1 | 4 |\n\nNote that ' 0 ' corresponds to an unknown value. The following is an example run of the program. Please see the following program for an example of how this works:\n/home/cs124/projects/prj13.out\n\n## Program starts\n\nAn example of input is underlined.\nWhere is your board located? myGame.txt\nWith the filename specified, the program will display a menu of options:\n\n```\nOptions:\n    ? Show these instructions\n    D Display the board\n    E Edit one square\n    S Show the possible values for a square\n    Q Save and quit\n```\n\nAfter this, the board as read from the file will be displayed:",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 3,
+            "markdown": "|  | A | B | C | D | E | F | G | H | I |\n| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |\n| 1 | 7 | 2 | 3 |  |  | 1 | 5 | 9 |  |\n| 2 | 6 |  | 3 |  | 2 |  |  | 8 |  |\n| 3 | 8 |  |  | 1 |  |  |  | 2 |  |\n|  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |\n| 4 |  | 7 |  | 6 | 5 | 4 |  | 2 |  |\n| 5 |  |  | 4 | 2 |  | 7 | 3 |  |  |\n| 6 |  | 5 |  | 9 | 3 | 1 |  | 4 |  |\n|  |  |  |  |  |  |  |  |  |  |\n| 7 | 5 |  |  | 7 |  |  |  | 3 |  |\n| 8 | 4 |  |  | 1 |  | 3 |  |  | 6 |\n| 9 | 9 | 3 | 2 |  |  |  | 7 | 1 | 4 |\n\nHere, the user will be prompted for a command (the main prompt).\n\n# $>\\underline{Z}$ \n\nPlease note that you will need a newline, a carat (' $>$ '), and a space before the prompt.\nThe next action of the program will depend on the user's command. If the user types an invalid command, then the following message will be displayed:\n\nERROR: Invalid command\n\n## Show Instructions\n\nIf the user types ' $?$ ', then the menu of options will be displayed again. These are the same instructions that are displayed when the program is first run.\n\n## Display the Board\n\nIf the user types ' $D$ ', then the board will be redrawn. This is the same as the drawing of the board when the program is first run.\n\n## Save and Quit\n\nIf the user types ' $Q$ ', then he or she will be prompted for the filename:\nWhat file would you like to write your board to: newGame.txt\nThe program will display the following message:\nBoard written successfully\nThen the program will terminate.\n\n## Edit One Square\n\nIf the user types ' $t$ ', then the program will prompt him for the coordinates and the value for the square to be edited:\n\nWhat are the coordinates of the square: $\\underline{A 1}$\nIf the value is invalid or if the square is already filled, then the program will display one of the following message and return to the main prompt:\n\n```\nERROR: Square 'zz' is invalid\nERROR: Square 'A1' is filled\n```",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 4,
+            "markdown": "With a valid coordinate, then the program next prompts the user for the value:\n\n```\nWhat is the value at 'A1': 9\n```\n\nIf the user types a value that is outside the accepted range ( $1 \\leq$ value $\\leq 9$ ) or does not follow the rules of Sudoku, then a message appears and the program returns to the main prompt:\n\nERROR: Value '9' in square 'A1' is invalid\n\n# Show Possible Values \n\nIf the user types ' $s$ ', then the program will prompt him for the coordinates and display the possible values:\n\n```\nWhat are the coordinates of the square: A1\n```\n\nThe same parsing logic applies here as for the Edit One Square case. Once the user has selected a valid coordinate, then the program will display the possible values:\n\nThe possible values for 'A1' are: 1, 5, 8, 9\nAfter the message appears, the program returns to the main prompt.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 5,
+            "markdown": "# Project 11 \n\nThe first part of the project is the design document. This consists of three parts:\n\n1. Create a structure chart describing the entire Sudoku program.\n2. Write the pseudocode for the function computeValues(). This function will take as parameters coordinates (row and column) for a given square on the board and calculate the possible values for the square. To do this, computeValues( ) must be aware of all the rules of Sudoku. Make sure to include both the logic for the rules of the game (only one of each number on a row, column, and inside square), but also to display the values.\n3. Write the pseudocode for the function interact(). This function will prompt the user for his option (ex: 'D' for \"Display the board\" or ' $S$ ' for \"Show the possible values for a square\") and call the appropriate function to carry out the user's request. Note that the program will continue to play the game until the user has indicated he is finished (with the ' $Q$ ' option).\n\nOn campus students are required to attach this rubric to your design document. Please self-grade.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 6,
+            "markdown": "# Project 12 \n\nThe second part of the Sudoku Program project (the first part being the design document due earlier) is to write the code necessary to make the Sudoku appear on the screen:\n\n```\nWhere is your board located? pri4.txt\nOptions:\n    ? Show these instructions\n    D Display the board\n    E Edit one square\n    5 Show the possible values for a square\n    Q Save and Quit\n    A B C D E F G H I\n1\n2\n3\n4\n5\n6\n7\n```\n\nPerhaps the easiest way to do this is in a four-step process:\n\n1. Create the framework for the program using stub functions based on the structure chart from your design document.\n2. Write each function. Test them individually before \"hooking them up\" to the rest of the program.\n3. Verify your solution with testBed:\ntestBed cs124/project12 project12.cpp\n4. Submit it with \"Project 12, Sudoku\" in the program header.\n\nAn executable version of the project is available at:\n/home/cs124/projects/prj12.out",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 7,
+            "markdown": "# Project 13 \n\nThe final part of the Sudoku Program project is to enforce the rules of Sudoku. This means that there can be only one instance of a given number on a row, column, or inside square.\n\n```\nWhere is your board located? pri4.txt\nOptions:\n    ? Show these instructions\n    D Display the board\n    E Edit one square\n    5 Show the possible values for a square\n    Q Save and Quit\n    A B C D E F G H I\n1\n2\n3\n4\n5\n6\n7\n7\n8\n9\n```\n\n> s\nWhat are the coordinates of the square: b2\nThe possible values for 'B2' are: 1, 4, 9\n> e\nWhat are the coordinates of the square: b2\nWhat is the value at 'B2': 2\nERROR: Value '2' in square 'B2' is invalid\n> g\nWhat file would you like to write your board to: deleteMe.txt\nPerhaps the easiest way to do this is in a four-step process:\n\n1. Start with the code written in Project 12.\n2. Fix any necessary bugs.\n3. Verify your solution with testBed:\ntestBed cs124/project13 project13.cpp\n4. Submit it with \"Project 13, Sudoku\" in the program header.\n\nAn executable version of the project is available at:\n/home/cs124/projects/prj13.out",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 8,
+        "doc_size_bytes": 435168
+    },
+    "document_annotation": null
+}

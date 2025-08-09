@@ -841,7 +841,7 @@ For more commands or more details on the above, please see [Appendix D: Linux an
 <p>Be careful how you name your files. By the end of the semester, you could easily get lost in a sea of files. Spend a few moments thinking of how you will organize all your files as this will be a useful practice for the remainder of your career.</p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-    <img src="../../.etc/assets/sue.png" width="200px" height="auto"">
+    <img src="../../.vscode/assets/sue.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -918,7 +918,7 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 After the program is saved in a file, the next step is compilation. Compilation is the process of translating the program from one format (C++ in this case) to another (machine language). This process is remarkably similar to how people translate text from French to English. There are four steps:
 
-![Compiler broken down: Lexer - Parser - Generator - Linker](./.etc/assets/compile.png)
+![Compiler broken down: Lexer - Parser - Generator - Linker](./.vscode/assets/compile.png)
 ..\..\Unit-1\1.0-First-Program\.etc\assets\compile.png
 
 1. **Lexer**: Lexing is the process of breaking a list of text or sounds into words. When a non-speaker hears someone speak French, they are not even sure how many words are spoken. This is because they do not have the ability to lex. The end result of the lexing is a list of tokens or words, each hopefully part of the source language.
@@ -1218,7 +1218,7 @@ It is worthwhile to read that message.
   </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-    <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+    <img src="../../.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -1409,7 +1409,7 @@ Unit 1: Simple Programs &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     /home/cs124/examples/1-0-firstProgram.cpp
 
   <a href="https://video.byui.edu/media/1.0+-+First+Program/0_9dc3rb33/18442462">
-    <img src=".etc/assets/video.png">
+    <img src=".vscode/assets/video.png">
   </a>
   </td>
   <td style="background: #17365d">

@@ -543,7 +543,7 @@ There  are  a  few  quirks  to  casting.  First,  the  variable  you  are  casti
 ```
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sam.png" width="100px" height="auto" style="margin: 0 auto">
+   <img src="../../.vscode/assets/sam.png" width="100px" height="auto" style="margin: 0 auto">
 </td>
 </tr>
 </tbody>
@@ -602,7 +602,7 @@ Seemingly simple expressions can be quite complex and unpredictable when data-ty
 
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sue.png" width="100px" height="auto" style="margin: 0 auto">
+   <img src="../../.vscode/assets/sue.png" width="100px" height="auto" style="margin: 0 auto">
 </td>
 </tr>
 </tbody>

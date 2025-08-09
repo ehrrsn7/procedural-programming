@@ -1,0 +1,130 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# 2.3 Loop Syntax \n\nSue's little brother is learning his multiplication facts and has asked her to write them on a sheet of paper. Rather than spend a few minutes to hand-write the table, she decides to write a program instead. This program will need to count from 1 to 10 , so a FOR loop is the obvious choice.\n\n## Objectives\n\nBy the end of this class, you will be able to:\n\n- Demonstrate the correct syntax for a WHILE, DO-WHILE, and FOR loop.\n- Create a loop to solve a simple problem.\n\n\n## Prerequisites\n\nBefore reading this section, please make sure you are able to:\n\n- Convert a logic problem into a Boolean expression (Chapter 1.5).\n- Generate the pseudocode corresponding to a C++ function (Chapter 2.2).\n\n\n## Overview\n\nThis is the first of a three part series on how to use loops to solve programming problems. The first part will focus on the mechanism of loops, namely the syntax.\n\nLoops are mechanisms to allow a program to execute the same section of code more than once. This is an important tool for cases when an operation needs to happen repeatedly, when counting is required to solve a problem, and when the program needs to wait for an event to occur.\nThere are three types of loops in C++: WHILE, DO-WHILE, and FOR:\n\n| while | do-while | for |\n| :--: | :--: | :--: |\n| A WHILE loop is good for repeating through a given block of code multiple times. | Same as WHILE except we always execute the body of the loop at least once. | Designed for counting, usually meaning we know where we start, where we end and what changes. |\n| $\\begin{aligned} & \\{ \\\\ & \\text { while }(x>0) \\\\ & \\{ \\\\ & \\quad x--; \\\\ & \\quad \\text { cout }<<\\times<<\\text { endl; } \\\\ & \\} \\\\ & \\end{aligned}$ | $\\begin{aligned} & \\text { \\{ do } \\\\ & \\{ \\\\ & \\quad x--; \\\\ & \\quad \\text { cout }<<\\times<<\\text { endl; } \\\\ & \\} \\\\ & \\text { while }(x>0) ; \\end{aligned}$ | $\\begin{aligned} & \\text { \\{ for }(x=10 ; \\\\ & \\quad x>0 ; \\\\ & x--) \\\\ & \\{\\text { cout }<<\\times<<\\text { endl; } \\\\ & \\} \\end{aligned}$ |",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 1,
+            "markdown": "# WHILE \n\nThe simplest loop is the WHILE statement. The WHILE loop will continue executing the body of the loop until the controlling Boolean expression evaluates to false. The syntax is:\n\n```\nwhile (<Boolean expression>)\n    <body statement>;\n```\n\nAs with the IF statement, we can always have more than one statement in the body of the loop by adding curly braces $\\}$ s:\n\n```\nwhile (<Boolean expression>)\n{\n    <body statement1>;\n    <body statement2>;\n    ...\n}\n```\n\nObserve how the body of the loop is indented three spaces exactly as the body of an IF statement is indented.\n\n## Sue's Tips\n\nThe WHILE loop keeps iterating as long as the Boolean expression evaluates to true. This may seem counter-intuitive at first. Some find it easier to think that the loop keeps iterating until the Boolean expression evaluates to true.\n\nOne way to keep this straight in your mind is to read the code as \"while $<$ condition $>$ continue to $<$ body $>$.\" For example consider the following code:\n\n```\nwhile (input < 0)\n    cin >> input;\n```\n\nThis would read \"While input less-than zero, continue to prompt for new input.\"\nIt is possible to count with a WHILE loop. In this case, you initialize your counter before the loop begins, specify the continuation-condition (what must remain true as we continue through the loop) in the Boolean expression, and specify the increment logic in the body:\n\n```\n{\n    int count = 1;\n    while (count <= 10)\n    {\n        cout << count << endl;\n        count++;\n    }\n}\n```\n\nThis code will display the numbers 1 through 10 on the screen, each number on its own line.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 2,
+            "markdown": "# Example 2.3 - While Loop \n\nThis example will demonstrate the syntax of a simple WHILE loop.\n\nWrite a program to prompt the user for his letter grade. If the grade is not in the valid range (A, B, C, D , or F ), then the program will display an error message and prompt again.\n\n```\nPlease enter your letter grade: B\nYour grade is B\n```\n\n...or...\n\n```\nPlease enter your letter grade: E\nInvalid grade. Please enter a letter grade {A,B,C,D,F} G\nInvalid grade. Please enter a letter grade {A,B,C,D,F} C\nYour grade is C\n```\n\nThe most challenging part of this problem is the Boolean expression capturing whether the user input is in the valid range. Anything that is not an $\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}$, or F is classified as invalid.\n\n```\nchar getGrade()\n{\n    char grade; // the value we will be returning\n    // initial prompt\n    cout << \"Please enter your letter grade: \";\n    cin >> grade;\n    // validate the value\n    while (grade != 'A' && grade != 'B' && grade != 'C' &&\n        grade != 'D' && grade != 'F')\n    {\n        cout << \"Invalid grade. Please enter a letter grade {A,B,C,D,F} \";\n        cin >> grade;\n    }\n    // return when done\n    return grade;\n}\n```\n\nAs a challenge, modify getGrade() so either uppercase or lowercase letter grades are accepted. This can be done by either doubling the size of the Boolean expression to include lowercase letters or by converting the grade to uppercase if it is lowercase.\n\nThe complete solution is available at 2-3-while.cpp or:\n/home/cs124/examples/2-3-while.cpp",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 3,
+            "markdown": "# DO-WHILE \n\nThe DO-WHILE loop is the same as the WHILE loop except the controlling Boolean expression is checked after the body of the loop is executed. This is called a trailing-condition loop, while the WHILE loop is a leading-condition loop. As with the WHILE statement, the loop will continue until the controlling Boolean expression evaluates to false. The syntax is:\n\n```\ndo\n    <body statement>;\nwhile (<Boolean expression>);\n```\n\nDO-WHILE loops are used far less frequently than the aforementioned WHILE loops. Those scenarios when the DO-WHILE loop would be the tool of choice center around the need to ensure the body of the loop gets executed at least once. In other words, it is quite possible the controlling Boolean expression in a WHILE loop will evaluate to false the first time through, removing the possibility the body of the loop is executed. This is guaranteed to not happen with the DO-WHILE loop because the body always gets executed first.\n\n## Example\n\nConsider the following code prompting the user for his age:\n\n```\n{\n    int age;\n    do\n    {\n        cout << \"What is your age? \";\n        cin >> age;\n    }\n    while (age < 0);\n}\n```\n\nIn this example, we want to prompt the user for his age at least once. The code will continue prompting the user for his age as long as the user enters negative numbers. Note how the while part of the DO-WHILE loop is on a separate line from the $\\{\\} \\mathrm{s}$. This is because the style guide specifies that $\\}$ s must be on their own lines.\n\n## Sam's Corner\n\nIt turns out that the WHILE loop and the DO-WHILE loop solve exactly the same set of problems. Any DO-WHILE loop can be converted to a WHILE loop by bringing one instance of the body outside the loop. In the above example, the equivalent WHILE loop would be:\n\n```\n{\n    int age;\n    cout << \"What is your age? \"; // one copy of the body outside the loop\n    cin >> age;\n    while (age < 0) // same condition as the DO-WHILE\n    {\n        cout << \"What is your age? \"; // second copy in the body of the loop\n        cin >> age;\n    }\n}\n```\n\nNote how redundant it is to have the second copy of the body outside the loop. This is the primary advantage of the DO-WHILE: to reduce the redundancy.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 4,
+            "markdown": "# Example 2.3 - Do-while Loop \n\nThis example will demonstrate how to use a DO-WHILE loop to validate user input.\n\nWrite a program to sum the numbers the user entered. The program will continue to prompt the user until the value zero $(0)$ is typed.\n\n```\nPlease enter a collection of integer values. When\n    you are done, enter zero (0).\n> 10\n> 15\n> 7\n> 0\nThe sum is: 18\n```\n\nBecause the user needs to be prompted at least once, a DO-WHILE loop is the right tool for the job.\n\n```\nint promptForNumbers()\n{\n    // display instructions\n    cout << \"Please enter a collection of integer values. When\\n\"\n        << \"\\tyou are done, enter zero (0).\\n\";\n    int sum = 0;\n    int value;\n    // perform the loop\n    do\n    {\n        // prompt for value\n        cout << \"> \";\n        cin >> value;\n        // add value to sum\n        sum += value;\n    }\n    while (value != 0);\n    // continue until the user enters zero\n    // return and report\n    return sum;\n}\n```\n\nAs a challenge, can you modify the above function so the value zero is not added to the sum?\nTo take this one step further, modify the above problem so -1 , not 0 , is the terminating condition. This will require you to modify the instructions as well.\n\nThe complete solution is available at 2-3-doWhile.cpp or:\n/home/cs124/examples/2-3-doWhile.cpp",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 5,
+            "markdown": "# FOR \n\nThe final loop is designed for counting. The syntax is:\n\n```\nfor (<initialization statement>; <Boolean expression>; <increment statement>)\n    <body statement>;\n```\n\nHere the syntax is quite a bit more complex than its WHILE and DO-WHILE brethren.\n\n| for (int count $=0$; count < 5 ; count++) <br> cout << count << endl; |  |\n| :--: | :--: |\n| Initialization: | Boolean expression: |\n| The first statement to be executed in a loop. <br> - Can be any statement. <br> - We can declare and initialize a variable inside the loop: | Is executed immediately before the body of the loop. <br> - Can be any expression. <br> - As long as the expression evaluates to true, the loop continues: <br> - If it is left empty, the expression evaluates to true. This means it will loop forever: |\n| for (int $1=0 ;-$ | for $(1=0 ; \\quad ; 1++)$ |\n| - We can initialize more than one variable that is already defined elsewhere in the code: |  |\n| for $(j=0, k=0 ;-$ | for $(1=0 ; \\quad ; 1++)$ |\n| for (; i < 10; i++) |  |\n\nWhile the syntax of the FOR loop may look quite complex, it has the three things any counting problem needs: where to start (initialization), where to end (Boolean expression), and how much to count by (the increment statement). For example, a FOR loop to give a countdown from 10 to zero would be:\n\n```\n{\n    // a countdown, just like what Cape Kennedy uses\n    for (int countDown = 10; countDown >= 0; countDown--)\n        cout << countDown << endl;\n}\n```\n\n\n## Sue's Tips\n\nWhile it may seem difficult to remember what the three fields of a FOR loop (Initialization, Boolean expression, and increment) are for, there is a memory clue to help you remember. Consider the loop to count to four:\n\n```\nfor (int count = 1; count < 5; count++)\n    cout << count << endl;\n```\n\nThis reads \"For count equals one, as long as count is less than five, add one to count.\"",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 6,
+            "markdown": "# Example 2-3 - For Loop \n\nThis example will demonstrate how to use a FOR loop. It will allow the user to specify each of the three components of the loop (Initialization, Boolean expression, and Increment). In many ways, this is a driver program for the FOR loop.\n\nWrite a program prompt the user the parameters for counting. The program will then display the numbers in the specified range.\n\n```\nWhat value do you want to start at? 4\nWhat value do you want to end at? 14\nWhat will you count by (example: 2s): 3\n            4\n            7\n            10\n            13\n```\n\nThe following program will count from start to end.\n\n```\nint main()\n{\n    // start\n    cout << \"What value do you want to start at? \";\n    int start;\n    cin >> start;\n    // end\n    cout << \"How high do you want to count? \";\n    int end;\n    cin >> end;\n    // increment\n    cout << \"What will you count by (ex: 2s): \";\n    int increment;\n    cin >> increment;\n    // count it\n    for (int count = start; count <= end; count += increment)\n        cout << \"\\t\" << count << endl;\n    return 0;\n}\n```\n\nNotice the three parts of a FOR loop: the starting condition (int count = start), the continuation condition (count $<=$ end), and what changes every iteration (count $+=$ increment). As long as the continuation condition is met, the loop will continue and the body of the loop will execute.\n\nAs a challenge, modify the above program to ensure that start $\\leq$ end if increment is positive, and start $\\geq$ end if increment is negative.\n\nThe complete solution is available at 2-3-for.cpp or:\n/home/cs124/examples/2-3-for.cpp",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 7,
+            "markdown": "# Problem 1 \n\nWhat is the output?\n\n```\nvoid function(int a, int &b)\n{\n    a = 0;\n    b = 0;\n}\nint main()\n{\n    int a = 1;\n    int b = 2;\n    function(a, b);\n    cout << \"a == \" << a << '\\t'\n            << \"b == \" << b << endl;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a hint.\n\n## Problem 2\n\nWhat is the output?\n\n```\nint value = 1;\nint main()\n{\n    int value = 2;\n    cout << value;\n    if (true)\n    {\n        int value = 3;\n        cout << value;\n        {\n            int value = 4;\n            cout << value;\n        }\n        cout << value;\n    }\n    cout << value << endl;\n    return 0;\n}\n```\n\nAnswer:",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 8,
+            "markdown": "What is the output?\n\n```\n{\n    int j = 10;\n    for (int i = 1;\n        i < 3;\n        i++)\n        j++;\n    cout << i << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n# Problem 4-7 \n\nWrite the code to implement each of the following loops:\n\n| Count from 1 to 10 |  |\n| :-- | :-- |\n| Keep asking the user for <br> input until he enters a <br> value other than ' $q$ ' |  |\n| Display the powers of <br> two below 2,000 |  |\n| Sum the multiples of <br> seven below 100 |  |\n\nPlease see page 161 for a hint.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 9,
+            "markdown": "Which of the following has no syntax errors?\n\n```\ndo while (true)\n    cout << \"Infinite loop!\\n\";\ndo\n    cout << \"Infinite loop!\\n\";\nwhile (true);\ndo (true)\n    cout << \"Infinite loop!\\n\";\nwhile (true)\n    cout << \"Infinite loop!\\n\";\ndo;\n```\n\nPlease see page 159 for a hint.\n\n# Problem 9-10 \n\nWrite a program that keeps prompting the user for a number until he inputs the number 0 :\nUse a WHILE loop\n$\\square$\n\nUse a DO-WHILE loop",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 10,
+            "markdown": "# Problem 11 \n\nWrite the code to count down from 100 to 10 in steps of 10 :\n\n```\n100\n90\n80\n70\n60\n50\n40\n30\n20\n10\n```\n\n\n## Answer:\n\n$\\square$\nPlease see page 162 for a hint.\n\n## Problem 12-13\n\nWrite the code to prompt the user for 5 numbers and display the sum\n\n```\nPlease enter 5 numbers:\n#1: 54\n#2: 99\n#3: 12\n#4: 65\n#5: 34\nSum: 264\n```\n\nAnswer in pseudocode:\n\nAnswer in $\\mathrm{C}++$ :\n\nPlease see page 161 for a hint.\n\nPage 166 | 2.3 Loop Syntax | Unit 2: Design \\& Loops | Procedural Programming in C++",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 11,
+            "markdown": "# Assignment 2.3 \n\nSue's silly brother Steve has a teacher who loves to give tons of math homework. This week, the assignment is to add all the multiples of 7 that are less than 100 . Last week, he had to add all the multiples of 3 that are less than 100 . Sue wants to make sure that her brother gets a $100 \\%$ on each assignment so she decided to write a program to validate each assignment.\n\n## Example\n\nUser input in underline.\nWhat multiples are we adding? $\\underline{5}$\nThe sum of multiples of 5 less than 100 are: 950\nAnother example:\nWhat multiples are we adding? $\\underline{7}$\nThe sum of multiples of 7 less than 100 are: 735\n\n## Assignment\n\nMake sure you run test bed with:\ntestBed cs124/assign23 assignment23.cpp\nDon't forget to submit your assignment with the name \"Assignment 23\" in the header.\nPlease see page 162 for a hint.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 12,
+        "doc_size_bytes": 384400
+    },
+    "document_annotation": null
+}

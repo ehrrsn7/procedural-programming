@@ -1,0 +1,30 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# G. Index \n\n! ..... 78\n!= ..... 80\n\\#define ..... 125,377\n\\#ifdef. ..... 126,377\n\\&\\& ..... 77\n|| ..... 78\n$++$ ..... 48\n$<<$ ..... 26\n$=$ ..... 50\n$==$ ..... 80\nabstract. ..... 161,377\naddress-of operator ..... 251,377\nALU ..... 5,377\nargc ..... 341, 376, 377\nargv ..... 341, 376, 377\narray ..... 208, 375, 378\narray of strings ..... 211, 219, 220\ndeclare ..... 209\ndesign ..... 227, 231\ninitialize ..... 210\nloop ..... 212, 214\nparameters ..... 215, 217, 218\npointers ..... 263, 265, 267\nreference ..... 212\nstrings ..... 213\nassembly ..... 378\nassert ..... 122, 374, 378\nbitwise operator ..... 288, 378\nbool ..... 38, 378\nBoolean operators ..... 76, 378\ncasting ..... 51, 53, 378\nchar ..... 37, 378\ncin ..... 374\ncin.ignore() ..... 248, 330\ncode generator ..... 17\ncohesion ..... 108, 379\ncoincidental ..... 379\ncomments ..... 8, 365, 366, 379\ncommunicational ..... 379\ncompiler ..... 379\ncompound IF ..... 89\ncompound statement ..... 379\nconceptual ..... 161, 379\nconcrete ..... 161, 379\nconditional expression ..... 286, 370, 376, 379\ncontrol ..... 379\ncounter-controlled loop ..... 175, 380\ncoupling ..... 380\ncout ..... 25, 183, 374, 380\nCPU ..... 5,380\ndata ..... 380\ndata-driven design ..... 231, 378\ndecoder ..... 380\ndelete ..... 322, 370, 376, 380\nDeMorgan ..... 79, 380\ndereference operator ..... 252, 381\ndesk check ..... 161, 381\ndouble ..... 381\ndo-while loop ..... 381\ndriver ..... 381\ndrivers ..... 130\nendl ..... 26, 381\neof ..... 190, 381\nescape sequences ..... 29, 31, 382\n$\\backslash$ ..... 29\n\" ..... 29\n\\\\ ..... 29\n\\n ..... 26\n\\t ..... 27\nevent-controlled loop ..... 177, 382\nexpression ..... 382\nexpressions ..... 46\nexternal ..... 382\nextraction operator ..... 39, 189, 370, 382\nfloat ..... 37\nfstream ..... 184, 188, 382\nfunctional ..... 382\ngetLine ..... 40, 383\nglobal variable ..... 69, 383\nif ..... 86, 374\nifstream ..... 188, 189, 375\ninsertion operator ..... 26, 39, 189, 370, 383\ninstrumenting ..... 350, 383\nint ..... 36, 383\niomanip ..... 28, 383\niostream ..... 7, 383",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 1,
+            "markdown": "jagged array ..... 344,384\nlexer ..... 17,384\nlinker ..... 17\nlocal variable ..... 68,384\nlogical ..... 384\nloop ..... 149\ndesk-check ..... $162,163,164,165$\ndo-while ..... $152,153,375$\nfor ..... $154,155,375,382$\npitfalls ..... 166\nwhile ..... $150,151,375,388$\nmodularization ..... 108\nmodulus ..... $47,49,50,384$\nmulti-dimensional arrays ..... 376,384\ndeclare ..... 306\nparameters ..... 307\nreference ..... 307\nsyntax ..... 306\nmulti-way IF ..... 89,384\nnamespace ..... 7\nnested IF ..... 89,384\nnew $320,370,376,381,385$\nnull ..... 237,385\nNULL ..... 319,385\nofstream ..... $185,375,385$\nonline desk check ..... 161,385\norder of operations ..... 47,82\nparser ..... 17,385\npass-by-pointer ..... 257,386\npass-by-reference ..... $63,65,66,257,385$\npass-by-value ..... $65,66,257,386$\npitfall\n$<$ and $<=$ ..... 166\n$=$ and $==$ ..... 91,166\nchanging pointers ..... 258\nextra semicolon ..... 91,166\ninfinite loop ..... 166\nmissing $\\}$ s ..... 92\npointer ..... 249,253\naddress-of ..... 251\nconstant pointers ..... 272\ndeclare ..... 250\ndereference ..... 252\npassing ..... 256,257\npointers ..... 386\nprecision( ) ..... 25\nprocedural ..... 386\nprototype ..... 67,386\npseudocode ..... 138,386\nscientific notation ..... 25\nscope ..... 67,386\nsearch ..... 229,230\nsensinal-controlled loop ..... 179,386\nsequential ..... 386\nsetf( ) ..... 25,374\n$\\operatorname{setw}()$ ..... 28,30\nsizeof ..... 219,387\nsizeof() ..... 370\nstamp ..... 387\nstring class ..... 331\nappend ..... 334\nc_str() ..... 336\ndeclaring ..... 332\nstream interfaces ..... 333\nstring library ..... 332\nstrings ..... $236,375,387$\ncomparing ..... 240\nc-strings ..... 237,380\ndeclare ..... 238\nimplementation ..... 237\nloop 240, 241, 243, 245, 267, 270\nPascal string ..... 237\npassing ..... 239\nstructure chart ..... 114,387\nstub ..... 132,387\nstyleChecker ..... $18,372,387$\nsubmit ..... $20,372,387$\nswitch ..... $279,285,376,387$\ncase ..... 281,378\ncontrolling expression ..... 279\ndefault ..... 283,380\ntabs ..... 27,388\ntemporal ..... 388\ntestBed ..... $18,372,388$\nvariable ..... 35,388",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 2,
+        "doc_size_bytes": 125646
+    },
+    "document_annotation": null
+}

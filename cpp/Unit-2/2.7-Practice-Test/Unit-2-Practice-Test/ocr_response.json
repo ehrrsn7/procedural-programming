@@ -1,0 +1,70 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# Unit 2 Practice Test \n\n## Practice 2.1\n\nMike's teacher told his class that a flipped coin lands on \"heads\" half the time and \"tails\" the other half. \"That means that if I flip a coin 100 times, it should land on heads exactly fifty times!\" said Mike. Mike's teacher knows that the law of probability does not quite work that way. To demonstrate this principle, she decides to write a program.\n\n## Program\n\nWrite a function to simulate a coin flip, returning true if the coin lands on \"heads\" and false if it lands on \"tails.\" Next, prompt the user for how many trials will be needed for the experiment. Finally, display how many \"heads\" and \"tails\" where recorded in the experiment.\n\n## Example\n\nUser input is underlined.\nHow many coin flips for this experiment: $\\underline{\\mathbf{1 0 0}}$\nThere were 49 heads.\nThere were 51 tails.\n\n## Assignment\n\nPlease:\n\n- Start from the standard template we use for homework assignments:\n/home/cs124/tests/templateTest2.cpp\n- Make sure your professor's name is in the program header.\n- Run test bed with\ntestBed cs124/practice21 test2.cpp\n- Run style checker\n\nNote that the following code might come in handy:\n\n```\n#include <stdlib.h> // needed for the rand(), srand()\n#include <ctime> // needed for the time function\nint main(int argc, char **argv)\n{\n    // this code is necessary to set up the random number generator. If\n    // your program uses a random number generator, you will need this\n    // code. Otherwise, you can safely delete it. Note: this must go in main()\n    srand(argc == 1 ? time(NULL) : (int)argv[1][1]);\n    // this code will actually generate a random number between 0 and 999\n    cout << rand() % 1000 << endl;\n}\n```",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 1,
+            "markdown": "# Grading for Test2 \n\nSample grading criteria:\n\n|  | Exceptional <br> $100 \\%$ | Good <br> $90 \\%$ | Acceptable <br> $70 \\%$ | Developing <br> $50 \\%$ | Missing <br> $0 \\%$ |\n| :--: | :--: | :--: | :--: | :--: | :--: |\n| Expressions <br> $10 \\%$ | The expression <br> for the equation <br> is elegant and <br> easy to verify | The expression <br> correctly computes <br> the equation | One bug exists | Two or more <br> bugs exist | The expression <br> is missing |\n| Modularization <br> $20 \\%$ | Functional <br> cohesion and <br> loose coupling is <br> used throughout | Zero syntax errors in <br> the use of functions, <br> but room exits for <br> improvements in <br> modularization | Data <br> incorrectly <br> passed <br> between <br> functions | At least one bug <br> in the way a <br> function is <br> defined or <br> called | All the code <br> exists in one <br> function |\n| Loop <br> $40 \\%$ | The loop is both <br> elegant and <br> efficient | The loop is <br> syntactically correct <br> and used correctly | The loop is <br> syntactically <br> correct or is <br> used correctly | Elements of the <br> solution are <br> present | No attempt <br> was made to <br> use a loop |\n| Output <br> $20 \\%$ | Zero test bed <br> errors | Looks the same on <br> screen, but minor test <br> bed errors | One major test <br> bed error | The program <br> compiles and <br> elements of the <br> solution exist | Program <br> output does <br> not resemble <br> the problem or <br> fails to compile |\n| Style <br> $10 \\%$ | Well <br> commented, <br> meaningful <br> variable names, <br> effective use of <br> blank lines | Zero style checker <br> errors | One or two <br> minor style <br> checker errors | Code is <br> readable, but <br> serious style <br> infractions | No evidence of <br> the principles <br> of elements of <br> style in the <br> program |\n\n## Solution available at:\n\n/home/cs124/tests/practice21.cpp",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 2,
+            "markdown": "# Unit 2 Project : Calendar Program \n\nCreate a calendar for any month of any year from 1753 forward. This is similar to the cal utility on the Linux system. Prompt the user for the numeric month and year to be displayed as shown in the example below. Your calculations to determine the first day of the month shall start with January 1, 1753 as a Monday. The challenge here is to take into account leap years.\n\nThis project will be done in three phases:\n\n- Project 05 : Design the calendar program\n- Project 06 : Compute the offset for a given month and year\n- Project 07 : Display the calendar table for a given month and year\n\n\n## Interface Design\n\nThere are three parts of the interface design: the output (that which is displayed on the screen during normal operation), the input (that which the user provides), and the errors (when the user enters different data than the program expects).\n\n## Output\n\nThe following is a sample run of the program. The input is underlined.\n\n```\nEnter a month number: 1\nEnter year: 1753\nJanuary, 1753\nSu Mo Tu We Th Fr Sa\n    1 2 3 4 5 6\n    7 8 9 10 11 12 13\n14 15 16 17 18 19 20\n21 22 23 24 25 26 27\n28 29 30 31\n```\n\nThe table is formatted in the following way:\n\n| January, 1753 |  |  |  |  |  |  |  |\n| --: | --: | --: | --: | --: | --: | --: | --: |\n| Su | Mo | Tu | We | Th | Fr | Sa |  |\n|  | 1 | 2 | 3 | 4 | 5 | 6 |  |\n| 7 | 8 | 9 | 10 | 11 | 12 | 13 |  |\n| 214 | 15 | 16 | 17 | 18 | 19 | 20 |  |\n| 21 | 22 | 23 | 24 | 25 | 26 | 27 |  |\n| 28 | 29 | 30 | 31 | 4 |  |  |  |",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 3,
+            "markdown": "# Input \n\nFirst the user will be prompted for the month number:\n\n```\nEnter a month number: 1\n```\n\nNext the user will be prompted for the year:\n\n```\nEnter year: 1990\n```\n\n\n## Errors\n\nWhen the program prompts the user for a month, only the values 1 through 12 are accepted. Any other input will yield a re-prompt:\n\n```\nEnter a month number: 13\nMonth must be between 1 and 12.\nEnter a month number: 0\nMonth must be between 1 and 12.\nEnter a month number: 1\n```\n\nThe same is true with years; the user input must be greater than 1752:\n\n```\nEnter year: 90\nYear must be 1753 or later.\nEnter year: 1990\n```\n\n\n## Project 05\n\nWrite a structure chart for the calendar program. Make sure that all the functions exhibit the highest level of cohesion and the lowest level of coupling.\nOn campus students are required to attach this rubric to your design document. Please self-grade.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 4,
+            "markdown": "# Project 06 \n\nThe second part of the Calendar Program project (the first part being the structure part due earlier) is to write the pseudocode for two functions: computeOffset() and displayTable().\n\n1. Write the pseudocode for the function computeOffset. This function will determine the day of the week of the first day of the month by counting how many days have passed since the $1^{\\text {st }}$ of January, 1753 (which is a Monday and offset $==0$ ). That number (numDays) divided by 7 will tell us how many weeks have passed. The remainder will tell us the offset from Monday. For example, if the month begins on a Thursday, then offset $==3$. The prototype for the function is:\n```\nint computeOffset(int month, int year);\n```\n\nPlease do not plagiarize this from the internet; you must use a loop to solve the problem. The output for this function is the following:\n\n| Day | offset |\n| :-- | :-- |\n| Sunday | 6 |\n| Monday | 0 |\n| Tuesday | 1 |\n| Wednesday | 2 |\n| Thursday | 3 |\n| Friday | 4 |\n| Saturday | 5 |\n\n2. Write the pseudocode for the function displayTable. This function will take the number of days in a month (numDays) and the offset (offset) as parameters and will display the calendar table. For example, consider numDays $==30$ and offset $==3$. The output would be:\n\n| Su | Mo | Tu | We | Th | Fr | Sa |\n| --: | --: | --: | --: | --: | --: | --: |\n|  |  |  |  | 1 | 2 | 3 |\n| 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n| 11 | 12 | 13 | 14 | 15 | 16 | 17 |\n| 18 | 19 | 20 | 21 | 22 | 23 | 24 |\n| 25 | 26 | 27 | 28 | 29 | 30 |  |\n\nThere are two problems you must solve: how to put the spaces before the first day of the month, and how to put the newline character at the end of the week. The prototype of the function is:\nvoid displayTable(int offset, int numDays);",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 5,
+            "markdown": "# Project 07 \n\nThe final part of the Calendar Program project is to write the code necessary to make the calendar appear on the screen:\n\n```\nEnter a month number: 1\nEnter year: 1753\nJanuary, 1753\n    Su Mo Tu We Th Fr Sa\n        1 2 3 4 5 6\n    7 8 9 10 11 12 13\n    14 15 16 17 18 19 20\n    21 22 23 24 25 26 27\n    28 29 30 31\n```\n\nA few hints:\n\n- Check the case where offset $==6$ when the month begins with Sunday. July 2001 is an example of such a month. You do not want to have a blank line between the column headers (the days of the week) and the day numbers.\n- Check the case where the last day of the month is on a Saturday. March 2001 is an example of such a month. You do not want a blank row at the bottom of the calendar.\n- Use the cal program built into the Linux system when you test the program by hand.\n\nAn executable version of the project is available at:\n/home/cs124/projects/prj07.out\n\nPlease do the following:\n\n1. Start with the code written in Project 06.\n2. Fix any bugs that escaped your notice the first time through.\n3. Verify your solution with testBed:\ntestBed cs124/project07 project07.cpp\n4. Submit you code with \"Project 07, Calendar\" in the program header.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 6,
+        "doc_size_bytes": 399197
+    },
+    "document_annotation": null
+}

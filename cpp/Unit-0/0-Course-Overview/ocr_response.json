@@ -1,0 +1,40 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# Table of Contents \n\nTable of Contents ..... 1\nCourse Overview ..... 2\nComputers \\& Programs ..... 4\n1.0 First Program ..... 13\n1.1 Output ..... 24\n1.2 Input \\& Variables ..... 35\n1.3 Expressions ..... 46\n1.4 Functions ..... 58\n1.5 Boolean Expressions ..... 76\n1.6 IF Statements ..... 86\nUnit 1 Practice Test ..... 99\nUnit 1 Project : Monthly Budget ..... 101\n2.0 Modularization ..... 108\n2.1 Debugging ..... 130\n2.2 Designing Algorithms ..... 145\n2.3 Loop Syntax ..... 156\n2.4 Loop Output ..... 168\n2.5 Loop Design ..... 181\n2.6 Files ..... 190\nUnit 2 Practice Test ..... 207\nUnit 2 Project : Calendar Program ..... 209\n3.0 Array Syntax ..... 214\n3.1 Array Design ..... 233\n3.2 Strings ..... 242\n3.3 Pointers ..... 255\n3.4 Pointer Arithmetic ..... 269\n3.5 Advanced Conditionals ..... 284\nUnit 3 Practice Test ..... 301\nUnit 3 Project : MadLib ..... 303\n4.0 Multi-Dimensional Arrays ..... 309\n4.1 Allocating Memory ..... 324\n4.2 String Class ..... 337\n4.3 Command Line ..... 346\n4.4 Instrumentation ..... 356\nUnit 4 Practice Test ..... 361\nUnit 4 Project : Sudoku ..... 363\nA. Elements of Style ..... 369\nB. Order of Operations ..... 375\nC. Lab Help ..... 376\nD. Emacs \\& Linux Cheat-Sheet ..... 377\nE. C++ Syntax Reference Guide ..... 378\nF. Glossary ..... 381\nG. Index ..... 393",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 1,
+            "markdown": "# Course Overview \n\nProcedural programming is the process of solving programming challenges by breaking large problems into smaller ones. These sub-problems are called procedures.\n\n## Goals\n\nThe goal of this class is that each student will be able to solve problems in $\\mathrm{C}++$ and have a solid foundation in software development methodology. By the end of the semester...\n\n- You will be well prepared for CS 165 and the other course in computing majors. This class is the foundation on which all Computer Science (CS), Electrical Engineering (EE), and Electrical \\& Computer Engineering (ECEN) courses are based.\n- You will have confidence in your ability to solve problems with C++. This class will include tons of opportunities for hands-on programming. By the end of the semester, you will have written more than thirty programs.\n- You will possess a tool-bag of different approaches to solve software problems. Not only will we learn the mechanics of the $\\mathrm{C}++$ programming language, we will also learn how to solve programming problems using procedural tools.\n- You will have a firm foundation in the basic constructs of procedural $\\mathrm{C}++$. All the components of procedural programming (except structures) will be learned in CS 124. Object Oriented Programming, the second half of the $\\mathrm{C}++$ language, is the topic of next semester.\n\nThese goals will be explored in the context of $\\mathrm{C}++$ using the Linux operating system.\n\n## Course Layout\n\nThe course will be broken into four sections:\n\n1. Simple Programs. How to write your first program and begin thinking like a programmer. At the end of this section, you will be able to write a program with multiple functions, IF statements, and complex mathematical operations.\n2. Loops. The goal of this section is to be able to solve problems using loops. Additionally we will learn several tools enabling us to solve hard programming problems and manage programs with large amounts of complexity.\n3. Arrays. Next we will learn how to handle and manipulate large amounts of data in increasingly complex data structures. Specifically, we will learn about arrays, pointers, and file I/O.\n4. Advanced Topics. The final section of the course will involve learning about a collection of specialized topics (dynamic memory allocation, multi-dimensional arrays, jagged arrays, and instrumentation to name a few) in the hopes they will help us understand the main topics of the semester better. In other words, the goal is not to learn these specialized topics so much as to make sure we have nailed the fundamentals.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        },
+        {
+            "index": 2,
+            "markdown": "# How to Use This Textbook \n\nThis textbook is closely aligned with CS 124. All the topics, problems, and technology used in CS 124 are described in detail with these pages.\n\n## Sam and Sue\n\nYou may notice two characters present in various sections of this text. They embody two common archetypes representative of people you will probably encounter in industry.\n\n## Sue's Tips\n\nSue is a pragmatist. She cares only about getting the job done at a high quality level and with the minimum amount of effort. In other words, she cares little for the art of programming, focusing instead on the engineering of the craft.\nSue's Tips tend to focus on the following topics:\n\n- Pitfalls: How to avoid common programming pitfalls that cause bugs\n- Effort: How to do the same work with less time and effort\n- Robustness: How to make code more resistant to bugs\n- Efficiency: How to make code execute with fewer resources\n\n\n## Sam's Corner\n\nSam is a technology nerd. He likes solving hard problems for their own sake, not necessarily because they even need to be solved. Sam enjoys getting to the heart of a problem and finding the most elegant solution. It is easy for Sam to get hung up on a problem for hours even though he found a working solution long ago.\nThe following topics are commonly discussed in Sam's Corner:\n\n- Details: The details of how various operations work, even though this knowledge is not necessary to get the job done\n- Tidbits: Interesting tidbits explaining why things are the way they are\n\nNeither Sue's Tips nor Sam's Corner are required knowledge for this course. However, you may discover your inner Sam or Sue and find yourself reading one of their columns.\n\n## Needing Help\n\nOccasionally, each of us reaches a roadblock or feels like help is needed. This textbook offers two ways to bail yourself out of trouble.\nIf you find you are not able to understand the problems we do in class, work through them at home before class. This will give you time for reflection and help ask better questions in class.\nIf you find the programming problems to be too hard, take the time to type out all the examples by hand. Once you finish them, work through the challenge associated with each example. There is something about typing code by hand that helps it seep into our brains. I hope this helps.",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 3,
+        "doc_size_bytes": 262707
+    },
+    "document_annotation": null
+}
