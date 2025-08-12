@@ -1096,7 +1096,7 @@ You may notice two characters present in various sections of this text. They emb
     </ul>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-    <img src="./.etc/assets/sue.png" width="200px" height="auto"">
+    <img src="./.vscode/assets/sue.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -1127,7 +1127,7 @@ You may notice two characters present in various sections of this text. They emb
     </ul>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-    <img src="./.etc/assets/sam.png" width="200px" height="auto"">
+    <img src="./.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -1228,12 +1228,12 @@ Computers today are all based on the basic model developed by Dr. John von Neuma
 CPU (the part that executes instructions), the Memory (the part where programs and data are stored), the
 bus (the wire connecting all components), and the peripherals (input and output devices).
 
-<img src="./.etc/assets/cpu.png" width="50%" height="auto" style="margin-left: 10em">
+<img src="./.vscode/assets/cpu.png" width="50%" height="auto" style="margin-left: 10em">
 
 Please view the following movie to learn more about the parts of a computer:
 
 <a href="https://video.byui.edu/media/Computer+1+-+Parts/0_pw02vv6b/18442462" style="display: flex; align-items: center; justify-content: left;">
-    <img src="./.etc/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;"> Parts of a Computer
+    <img src="./.vscode/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;"> Parts of a Computer
 </a>
 
 Possibly  the  most  important  part  of  a  computer  is  the  CPU.  This  has  several  components:  the  memory
@@ -1244,12 +1244,12 @@ performing math and logical operations). Please view the following movie to lear
 computer:
 
 <a href="https://video.byui.edu/media/Computer+2+-+CPU/0_wjslsmbk/18442462" style="display: flex; align-items: center; justify-content: left;">
-    <img src="./.etc/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;"> The CPU
+    <img src="./.vscode/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;"> The CPU
 </a>
 
 Finally, programs consist of simple instructions that are executed by the CPU.
 
-<img src="./.etc/assets/bus.png" width="50%" height="auto" style="margin-left: 10em">
+<img src="./.vscode/assets/bus.png" width="50%" height="auto" style="margin-left: 10em">
 
 <p style="text-align: right; font-size: .75em;">
 <br><br>
@@ -1484,14 +1484,14 @@ Returns 1 if the value in the register is zero
 Please view the following movie to learn about how these instructions can be used to make a program:
 
 <a href="https://video.byui.edu/media/Computer+3+-+Programs/0_txeqmrku/18442462" style="display: flex; align-items: center; justify-content: left;">
-    <img src="./.etc/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;">
+    <img src="./.vscode/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;">
     Programs
 </a>
 
 The last item is an emulator (a program that pretends it is something else. In this case, it emulates the simple computer presented in the previous movies).
 
 <a href="https://content.byui.edu/file/66227afd-b800-4ba3-b6b3-18db4db6c440/1/Emulator/EmulatorContent.html" style="display: flex; align-items: center; justify-content: left;">
-    <img src="./.etc/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;">
+    <img src="./.vscode/assets/reel.png" width="50px" height="auto" style="margin-right: 10px;">
     Emulator
 </a>
 
@@ -1499,9 +1499,9 @@ To run a program:
 
 1. Type or paste the program in the large edit control below the “Load Program” label. Make sure there
 is one instruction per line or it will not work correctly. You may also need to delete an extra space.
-2. Press the <img src="./.etc/assets/load.png" width="50px" height="auto"> button. This will load the program into memory and set the “Next Instruction”
+2. Press the <img src="./.vscode/assets/load.png" width="50px" height="auto"> button. This will load the program into memory and set the “Next Instruction”
 pointer to zero.
-3. Step through the program, one instruction at a time, by pressing the <img src="./.etc/assets/go.png" width="50px" height="auto"> button.
+3. Step through the program, one instruction at a time, by pressing the <img src="./.vscode/assets/go.png" width="50px" height="auto"> button.
 
 A couple programs you may want to run... what will they do?
 

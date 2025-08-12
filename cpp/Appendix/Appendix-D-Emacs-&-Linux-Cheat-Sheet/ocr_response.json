@@ -1,0 +1,20 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# D. Emacs \\& Linux Cheat-Sheet \n\nThe emacs editor and the Linux system are most effectively used if commonly-used commands are memorized. The following are the commands used most frequently for CS 124:\n\n## Common Emacs Commands\n\nC-a Beginning of line\nC-e End of line\nC-k Kill line. Also puts the line in the buffer\nC- Undo\nC-x C-f Load a new file or an existing file. The name will be specified in the window below\n\nC-x 2 Split the window into two\nC-x 1 Go back to one window mode\nC-x ^ Enlarge window\nC-x o Switch to another window\n\nAlt-x shell Run the shell in the current window Alt-x goto-line . . Goto a given line\n\nC-x C-c Save buffer and kill Emacs\nC-x C-s Save buffer\n\nC-space Set mark\nC-w Cut from the cursor to the mark\nAlt-w Copy from the cursor to the mark\nC-y Paste from the buffer\n\n## Common Linux Commands\n\ncd Change Directory, move from the current directory to another\nls List information about file(s)\nll More verbose version of ls\nmkdir Create new folder(s)\nmv Move or rename files or directories\ncp Copy a file from one location to another\nrm Remove files\nrmdir Remove folder(s)\npwd Print Working Directory\ncat Display the contents of a file to the screen\nmore Display output one screen at a time\nclear Clear terminal screen\nexit Exit the shell\nfgrep Search file for lines that match a string\nkill Stop a process from running\nman Review the help page of a given command\nyppasswd Modify a user password\nemacs Common code editor\nvi More primitive but ubiquitous editor\nnano Another editor\ng++ Compile a C++ program\nstyleChecker Run the style checker on a file testBed Run the test bed on a file submit Turn in a file",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 1,
+        "doc_size_bytes": 170679
+    },
+    "document_annotation": null
+}

@@ -1,0 +1,1251 @@
+:root {
+  --byui-blue: #4f81bd;
+  --rvhs-green: #2d8d42;
+}
+
+/* # Headers */
+.background {
+  background-color: var(--byui-blue);
+  background-image: url("./assets/header.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  width: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 2em;
+  line-height: .8in;
+  min-height: .8in;
+  transform: translateY(-10%);
+  max-width: 8.5in;
+  padding: .5em;
+  padding-top: 1em;
+  margin: 0 auto;
+  text-align: right;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+.unit-1-background {
+  background-color: var(--byui-blue);
+  background-image: url("./assets/unit-1-background.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  width: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 3em;
+  line-height: .8in;
+  min-height: .8in;
+  transform: translateY(-10%);
+  max-width: 8.5in;
+  padding: .5em;
+  padding-top: 2em;
+  margin: 0 auto;
+  text-align: right;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+  clip-path: inset(0.5in 0 0 0);
+}
+
+a {
+  color: var(--byui-blue);
+}
+
+.monospace {
+  font-weight: var(--vscode-font-weight) 700;
+  word-wrap: break-word;
+  font-family: var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);
+  line-height: 25px;
+}
+
+.monospace blockquote {
+  border-color: transparent;
+  background: none;
+  margin-left: 1em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Select the table that is the next sibling of h1#table-of-contents */
+h1#table-of-contents {
+  margin: 1em 0;
+}
+
+h1#table-of-contents + table, /* if following # Table of Contents */
+table:has(thead.table-of-contents), /* if | {.table-of-contents} | --- ...*/
+table:has(tr.table-of-contents), /* if | --- | {.table-of-contents} ...*/
+div.table-of-contents /* generated [[toc]] */
+{
+  border: 2px solid #373461;
+  background: #f3f4f6;
+  width: 100%;
+  margin-left: 1em;
+  padding-top: 1em;
+}
+blockquote:has(div.table-of-contents) { /* generated > [[toc]] */
+  background: unset;
+  border: unset;
+  padding: unset;
+  line-height: 1.9em;
+  page-break-after: always;
+}
+
+div.callout {
+  overflow: visible;
+}
+
+/* Select blockquotes that contain an h2 with id starting with "problem" or "challenge" */
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) {
+    padding: 1em;
+    margin: 2em 0;
+    border-top-width: 4px;
+    background: white;
+    border-radius: 6px;
+    outline: 3px solid var(--byui-blue);
+    border-color: var(--byui-blue);
+}
+blockquote h2[id^="problem"], h2[id^="challenge"], h2[id^="review"] {
+  border-color: var(--byui-blue);
+  color: var(--byui-blue);
+  border-radius: .1em;
+  border-width: 2px;
+  margin: 0;
+}
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"], h2[id^="review"]) em:last-child,
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) p:has(em:last-child) {
+  /* hints */
+  border-color: var(--byui-blue);
+  color: var(--byui-blue);
+  border-radius: .1em;
+  border-width: 2px;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+  font-size: .85em;
+}
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) ul {
+  padding-left: 1.5em;
+}
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) ul li {
+  list-style-type: disc;
+}
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) input {
+  background: #fafafa;
+  border: unset;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid var(--byui-blue);
+  box-sizing: border-box;
+  color: var(--byui-blue);
+  font-weight: bold;
+  line-height: 2em;
+  margin: .3em;
+  max-width: 100vw;
+  padding: 0 .5em;
+  width: 100%;
+  box-sizing: border-box;
+  /* disabled: true; */
+  pointer-events: none;
+}
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) input:focus {
+  outline-color: #4f81bd40;
+}
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"])ul  li:hover::marker,
+blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"])ul  li::marker {
+  font-size: 1.2em; /* Adjust the size of the bullet */
+  color: var(--byui-blue); /* Change the color of the bullet */
+}
+
+/* General Table Styling */
+table.Example {
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  page-break-after: always;
+  page-break-before: always;
+}
+table.Example > thead > tr > th h2 {
+  text-align: center;
+  padding: 0;
+  margin: .2em;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+table.Example > thead {
+  background: var(--byui-blue);
+  color: white;
+  text-align: center;
+  border: none;
+}
+body > div.markdown-body > table.Example > thead > tr > th,
+table.Example > tbody th {
+  border: none;
+  border-top: 1px solid white;
+}
+table.Example > tbody > tr > th {
+  writing-mode: vertical-rl; /* Sets text direction to vertical, right-to-left */
+  background: var(--byui-blue);
+  color: white;
+  min-width: 12px; /* Set a fixed width for the vertical header cell */
+  text-align: center;
+  vertical-align: center;
+}
+table.Example > tbody th > p {
+  writing-mode: vertical-rl; /* Sets text direction to vertical, right-to-left */
+  transform: rotate(180deg);  /* Flips the text to be read bottom-to-top */
+  white-space: nowrap;
+  margin: -8px;
+  padding: 2px;
+}
+table.Example > tbody th > div {
+  width: 0;
+}
+
+/* Content Cell Styling */
+table.Example > tbody > tr > td {
+    vertical-align: top;
+}
+
+div.steel-blue-header-table {
+  display: hidden;
+}
+.steel-blue-header-table + table > thead {
+  background: var(--byui-blue);
+  color: white;
+}
+
+thead.steel-blue-header-table,
+th.steel-blue-header-table ~ th,
+th.steel-blue-header-table > code,
+th.steel-blue-header-table {
+  background: var(--byui-blue);
+  color: white;
+}
+
+table.gray-box > tbody > tr,
+tbody.gray-box > tr,
+thead.gray-box > tr,
+tr.gray-box > td,
+td.gray-box,
+td.gray-box ~ td,
+th.gray-box,
+th.gray-box ~ th {
+  border: 2px solid gray;
+}
+
+/* Select the table that is the next sibling of div.steel-blue-sidebar-table */
+.steel-blue-sidebar-table + table td {
+  background: transparent;
+  font-weight: normal;
+}
+
+.steel-blue-sidebar-table + table > thead,
+.steel-blue-sidebar-table + table > tbody > tr > :first-child,
+.steel-blue-sidebar-table + table > tbody > tr > :first-child code {
+  background: var(--byui-blue);
+  color: white;
+  font-weight: bold;
+}
+
+.steel-blue-sidebar-table + table > thead > th {
+  border-bottom: 3px solid black;
+}
+
+.steel-blue-sidebar-table + table > tbody > tr:nth-child(odd) {
+  background: #d8d8d8aa;
+}
+
+img.sam {
+  width: 75px;
+  height: 75px;
+  float: right;
+  margin-left: .3em;
+  margin-bottom: .3em;
+}
+img.sue {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+table.array td {
+  border: 1px solid black;
+}
+
+table:has(thead.uml-class-diagram) {
+  min-width: 200px;
+  border: 1px solid var(--byui-blue);
+}
+thead.uml-class-diagram {
+  background: var(--byui-blue);
+  color: white;
+}
+
+/* Base row-border class */
+/* Base row-border class */
+[class*="row-border"] + table > tbody > tr, tr.row-border {
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+tr.row-border,
+.row-border-1  + table > tbody > tr:nth-child(1) ,
+.row-border-2  + table > tbody > tr:nth-child(2) ,
+.row-border-3  + table > tbody > tr:nth-child(3) ,
+.row-border-4  + table > tbody > tr:nth-child(4) ,
+.row-border-5  + table > tbody > tr:nth-child(5) ,
+.row-border-6  + table > tbody > tr:nth-child(6) ,
+.row-border-7  + table > tbody > tr:nth-child(7) ,
+.row-border-8  + table > tbody > tr:nth-child(8) ,
+.row-border-9  + table > tbody > tr:nth-child(9) ,
+.row-border-10 + table > tbody > tr:nth-child(10),
+.row-border-11 + table > tbody > tr:nth-child(11),
+.row-border-12 + table > tbody > tr:nth-child(12),
+.row-border-13 + table > tbody > tr:nth-child(13),
+.row-border-14 + table > tbody > tr:nth-child(14),
+.row-border-15 + table > tbody > tr:nth-child(15),
+.row-border-16 + table > tbody > tr:nth-child(16),
+.row-border-17 + table > tbody > tr:nth-child(17),
+.row-border-18 + table > tbody > tr:nth-child(18),
+.row-border-19 + table > tbody > tr:nth-child(19),
+.row-border-20 + table > tbody > tr:nth-child(20),
+.row-border-21 + table > tbody > tr:nth-child(21),
+.row-border-22 + table > tbody > tr:nth-child(22),
+.row-border-23 + table > tbody > tr:nth-child(23),
+.row-border-24 + table > tbody > tr:nth-child(24),
+.row-border-25 + table > tbody > tr:nth-child(25),
+.row-border-26 + table > tbody > tr:nth-child(26),
+.row-border-27 + table > tbody > tr:nth-child(27),
+.row-border-28 + table > tbody > tr:nth-child(28),
+.row-border-29 + table > tbody > tr:nth-child(29),
+.row-border-30 + table > tbody > tr:nth-child(30) { border-bottom-width: 2px; }
+
+/* Obsidian-style callout variables */
+/*
+Callout styles: (already defined in extension)
+--callout-border-width: 0px;
+--callout-border-opacity: 0.25;
+--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+--callout-radius: var(--radius-s);
+--callout-blend-mode: var(--highlight-mix-blend-mode);
+--callout-title-color: inherit;
+--callout-title-padding: 0;
+--callout-title-size: inherit;
+--callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+--callout-content-padding: 0;
+--callout-content-background: transparent;
+--callout-bug: var(--color-red-rgb);
+--callout-default: var(--color-blue-rgb);
+--callout-error: var(--color-red-rgb);
+--callout-example: var(--color-purple-rgb);
+--callout-fail: var(--color-red-rgb);
+--callout-important: var(--color-cyan-rgb);
+--callout-info: var(--color-blue-rgb);
+--callout-question: var(--color-orange-rgb);
+--callout-success: var(--color-green-rgb);
+--callout-summary: var(--color-cyan-rgb);
+--callout-tip: var(--color-cyan-rgb);
+--callout-todo: var(--color-blue-rgb);
+--callout-warning: var(--color-orange-rgb);
+--callout-quote: 158, 158, 158;
+*/
+
+/* adjust the callout styles slightly for my preference */
+div.callout,
+details.callout {
+  border-radius: 1em;
+  padding-left: 18px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/*
+custom code callouts by type: (14 total, 28 '-style' pairs)
+  bug
+  default
+  error
+  example
+  fail
+  important
+  info
+  question
+  success
+  summary
+  tip
+  todo
+  warning
+  quote
+*/
+
+/* Enhanced code styling using callout variables */
+
+/* Replace {COLOR} with the hex value for your tip color, e.g. F59E42 for orange.
+   Example: stroke=%22%23F59E42%22
+   Tip 2ACAC8: stroke=%22%232ACAC8%22
+*/
+
+/* bug */
+code.bug,
+code.bug-style {
+  color: rgb(var(--callout-bug));
+  background-color: rgba(var(--callout-bug), 0.05) !important;
+}
+
+pre:has(.bug),
+pre:has(.bug-style) {
+  background-color: rgba(var(--callout-bug), 0.05) !important;
+  border-color: rgb(var(--callout-bug));
+}
+
+code.bug::before,
+pre:has(code.bug)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%23E93147%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1"><circle cx="12" cy="12" r="10"/><line x1="8" y1="8" x2="16" y2="16"/><line x1="16" y1="8" x2="8" y2="16"/></svg>') no-repeat center center / contain;
+  color: rgb(var(--callout-bug));
+  content: "Bug";
+}
+
+pre:has(code.bug) {
+  background-color: rgba(var(--callout-bug), 0.05);
+  border-color: rgb(var(--callout-bug));
+}
+
+/* default */
+code.default,
+code.default-style {
+  color: rgb(var(--callout-default));
+  background-color: rgba(var(--callout-default), 0.05) !important;
+}
+
+pre:has(.default),
+pre:has(.default-style) {
+  background-color: rgba(var(--callout-default), 0.05) !important;
+  border-color: rgb(var(--callout-default));
+}
+
+code.default::before,
+pre:has(code.default)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-default));
+  content: "Default";
+}
+
+pre:has(code.default) {
+  background-color: rgba(var(--callout-default), 0.05);
+  border-color: rgb(var(--callout-default));
+}
+
+/* error */
+code.error,
+code.error-style {
+  color: rgb(var(--callout-error));
+  background-color: rgba(var(--callout-error), 0.05) !important;
+}
+
+pre:has(.error),
+pre:has(.error-style) {
+  background-color: rgba(var(--callout-error), 0.05) !important;
+  border-color: rgb(var(--callout-error));
+}
+
+code.error::before,
+pre:has(code.error)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-error));
+  content: "Error";
+}
+
+pre:has(code.error) {
+  background-color: rgba(var(--callout-error), 0.05);
+  border-color: rgb(var(--callout-error));
+}
+
+/* example */
+code.example,
+code.example-style {
+  color: rgb(var(--callout-example));
+  background-color: rgba(var(--callout-example), 0.05) !important;
+}
+
+pre:has(.example),
+pre:has(.example-style) {
+  background-color: rgba(var(--callout-example), 0.05) !important;
+  border-color: rgb(var(--callout-example));
+}
+
+code.example::before,
+pre:has(code.example)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-example));
+  content: "Example";
+}
+
+pre:has(code.example) {
+  background-color: rgba(var(--callout-example), 0.05);
+  border-color: rgb(var(--callout-example));
+}
+
+/* fail */
+code.fail,
+code.fail-style {
+  color: rgb(var(--callout-fail));
+  background-color: rgba(var(--callout-fail), 0.05) !important;
+}
+
+pre:has(.fail),
+pre:has(.fail-style) {
+  background-color: rgba(var(--callout-fail), 0.05) !important;
+  border-color: rgb(var(--callout-fail));
+}
+
+code.fail::before,
+pre:has(code.fail)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-fail));
+  content: "Fail";
+}
+
+pre:has(code.fail) {
+  background-color: rgba(var(--callout-fail), 0.05);
+  border-color: rgb(var(--callout-fail));
+}
+
+/* important */
+code.important,
+code.important-style {
+  color: rgb(var(--callout-important));
+  background-color: rgba(var(--callout-important), 0.05) !important;
+}
+
+pre:has(.important),
+pre:has(.important-style) {
+  background-color: rgba(var(--callout-important), 0.05) !important;
+  border-color: rgb(var(--callout-important));
+}
+
+code.important::before,
+pre:has(code.important)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-important));
+  content: "Important";
+}
+
+pre:has(code.important) {
+  background-color: rgba(var(--callout-important), 0.05);
+  border-color: rgb(var(--callout-important));
+}
+
+/* info */
+code.info,
+code.info-style {
+  color: rgb(var(--callout-info));
+  background-color: rgba(var(--callout-info), 0.05) !important;
+}
+
+pre:has(.info),
+pre:has(.info-style) {
+  background-color: rgba(var(--callout-info), 0.05) !important;
+  border-color: rgb(var(--callout-info));
+}
+
+code.info::before,
+pre:has(code.info)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-info));
+  content: "Info";
+}
+
+pre:has(code.info) {
+  background-color: rgba(var(--callout-info), 0.05);
+  border-color: rgb(var(--callout-info));
+}
+
+/* note */
+code.note,
+code.note-style {
+  color: rgb(var(--callout-note));
+  background-color: rgba(var(--callout-note), 0.05) !important;
+}
+
+pre:has(.note),
+pre:has(.note-style) {
+  background-color: rgba(var(--callout-note), 0.05) !important;
+  border-color: rgb(var(--callout-note));
+}
+
+code.note::before,
+pre:has(code.note)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-note));
+  content: "Note";
+}
+
+pre:has(code.note) {
+  background-color: rgba(var(--callout-note), 0.05);
+  border-color: rgb(var(--callout-note));
+}
+
+/* question */
+code.question,
+code.question-style {
+  color: rgb(var(--callout-question));
+  background-color: rgba(var(--callout-question), 0.05) !important;
+}
+
+pre:has(.question),
+pre:has(.question-style) {
+  background-color: rgba(var(--callout-question), 0.05) !important;
+  border-color: rgb(var(--callout-question));
+}
+
+code.question::before,
+pre:has(code.question)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-question));
+  content: "Question";
+}
+
+pre:has(code.question) {
+  background-color: rgba(var(--callout-question), 0.05);
+  border-color: rgb(var(--callout-question));
+}
+
+/* success */
+code.success,
+code.success-style {
+  color: rgb(var(--callout-success));
+  background-color: rgba(var(--callout-success), 0.05) !important;
+}
+
+pre:has(.success),
+pre:has(.success-style) {
+  background-color: rgba(var(--callout-success), 0.05) !important;
+  border-color: rgb(var(--callout-success));
+}
+
+code.success::before,
+pre:has(code.success)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-success));
+  content: "Success";
+}
+
+pre:has(code.success) {
+  background-color: rgba(var(--callout-success), 0.05);
+  border-color: rgb(var(--callout-success));
+}
+
+/* summary */
+code.summary,
+code.summary-style {
+  color: rgb(var(--callout-summary));
+  background-color: rgba(var(--callout-summary), 0.05) !important;
+}
+
+pre:has(.summary),
+pre:has(.summary-style) {
+  background-color: rgba(var(--callout-summary), 0.05) !important;
+  border-color: rgb(var(--callout-summary));
+}
+
+code.summary::before,
+pre:has(code.summary)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-summary));
+  content: "Summary";
+}
+
+pre:has(code.summary) {
+  background-color: rgba(var(--callout-summary), 0.05);
+  border-color: rgb(var(--callout-summary));
+}
+
+/* tip */
+code.tip,
+code.tip-style {
+  color: rgb(var(--callout-tip));
+  background-color: rgba(var(--callout-tip), 0.05) !important;
+}
+
+pre:has(.tip),
+pre:has(.tip-style) {
+  background-color: rgba(var(--callout-tip), 0.05) !important;
+  border-color: rgb(var(--callout-tip));
+}
+
+code.tip::before,
+pre:has(code.tip)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-tip));
+  content: "Tip";
+}
+
+pre:has(code.tip) {
+  background-color: rgba(var(--callout-tip), 0.05);
+  border-color: rgb(var(--callout-tip));
+}
+
+/* todo */
+code.todo,
+code.todo-style {
+  color: rgb(var(--callout-todo));
+  background-color: rgba(var(--callout-todo), 0.05) !important;
+}
+
+pre:has(.todo),
+pre:has(.todo-style) {
+  background-color: rgba(var(--callout-todo), 0.05) !important;
+  border-color: rgb(var(--callout-todo));
+}
+
+code.todo::before,
+pre:has(code.todo)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-todo));
+  content: "Todo";
+}
+
+pre:has(code.todo) {
+  background-color: rgba(var(--callout-todo), 0.05);
+  border-color: rgb(var(--callout-todo));
+}
+
+/* warning */
+code.warning,
+code.warning-style {
+  color: rgb(var(--callout-warning));
+  background-color: rgba(var(--callout-warning), 0.05) !important;
+}
+
+pre:has(.warning),
+pre:has(.warning-style) {
+  background-color: rgba(var(--callout-warning), 0.05) !important;
+  border-color: rgb(var(--callout-warning));
+}
+
+code.warning::before,
+pre:has(code.warning)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-warning));
+  content: "Warning";
+}
+
+pre:has(code.warning) {
+  background-color: rgba(var(--callout-warning), 0.05);
+  border-color: rgb(var(--callout-warning));
+}
+
+/* quote */
+code.quote,
+code.quote-style {
+  color: rgb(var(--callout-quote));
+  background-color: rgba(var(--callout-quote), 0.05) !important;
+}
+
+pre:has(.quote),
+pre:has(.quote-style) {
+  background-color: rgba(var(--callout-quote), 0.05) !important;
+  border-color: rgb(var(--callout-quote));
+}
+
+code.quote::before,
+pre:has(code.quote)::before {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke=%22%232ACAC8%22 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>') no-repeat left center/1.25em 1.25em;
+  color: rgb(var(--callout-quote));
+  content: "Quote";
+}
+
+pre:has(code.quote) {
+  background-color: rgba(var(--callout-quote), 0.05);
+  border-color: rgb(var(--callout-quote));
+}
+
+/* common among all code callouts */
+
+div.callout > div.callout-content > pre {
+  background-color: transparent !important;
+}
+
+/*
+bug
+bug-style
+default
+default-style
+error
+error-style
+example
+example-style
+fail
+fail-style
+important
+important-style
+info
+info-style
+note
+note-style
+question
+question-style
+success
+success-style
+summary
+summary-style
+tip
+tip-style
+todo
+todo-style
+warning
+warning-style
+quote
+quote-style
+*/
+
+code.bug,
+code.bug-style,
+code.default,
+code.default-style,
+code.error,
+code.error-style,
+code.example,
+code.example-style,
+code.fail,
+code.fail-style,
+code.important,
+code.important-style,
+code.info,
+code.info-style,
+code.note,
+code.note-style,
+code.question,
+code.question-style,
+code.success,
+code.success-style,
+code.summary,
+code.summary-style,
+code.tip,
+code.tip-style,
+code.todo,
+code.todo-style,
+code.warning,
+code.warning-style,
+code.quote,
+code.quote-style
+{ /* inline and multiline */
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--radius-s);
+  border-radius: 8px;
+  padding: 2px 6px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+code.bug::before,
+code.default::before,
+code.error::before,
+code.example::before,
+code.fail::before,
+code.important::before,
+code.info::before,
+code.question::before,
+code.success::before,
+code.summary::before,
+code.tip::before,
+code.todo::before,
+code.warning::before,
+code.quote::before
+{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 4px;
+}
+
+pre code.bug,
+pre code.bug-style,
+pre code.default,
+pre code.default-style,
+pre code.error,
+pre code.error-style,
+pre code.example,
+pre code.example-style,
+pre code.fail,
+pre code.fail-style,
+pre code.important,
+pre code.important-style,
+pre code.info,
+pre code.info-style,
+pre code.note,
+pre code.note-style,
+pre code.question,
+pre code.question-style,
+pre code.success,
+pre code.success-style,
+pre code.summary,
+pre code.summary-style,
+pre code.tip,
+pre code.tip-style,
+pre code.todo,
+pre code.todo-style,
+pre code.warning,
+pre code.warning-style,
+pre code.quote,
+pre code.quote-style,
+.callout > div.callout-content > pre:has(code.bug),
+.callout > div.callout-content > pre:has(code.bug-style),
+.callout > div.callout-content > pre:has(code.default),
+.callout > div.callout-content > pre:has(code.default-style),
+.callout > div.callout-content > pre:has(code.error),
+.callout > div.callout-content > pre:has(code.error-style),
+.callout > div.callout-content > pre:has(code.example),
+.callout > div.callout-content > pre:has(code.example-style),
+.callout > div.callout-content > pre:has(code.fail),
+.callout > div.callout-content > pre:has(code.fail-style),
+.callout > div.callout-content > pre:has(code.important),
+.callout > div.callout-content > pre:has(code.important-style),
+.callout > div.callout-content > pre:has(code.info),
+.callout > div.callout-content > pre:has(code.info-style),
+.callout > div.callout-content > pre:has(code.note),
+.callout > div.callout-content > pre:has(code.note-style),
+.callout > div.callout-content > pre:has(code.question),
+.callout > div.callout-content > pre:has(code.question-style),
+.callout > div.callout-content > pre:has(code.success),
+.callout > div.callout-content > pre:has(code.success-style),
+.callout > div.callout-content > pre:has(code.summary),
+.callout > div.callout-content > pre:has(code.summary-style),
+.callout > div.callout-content > pre:has(code.tip),
+.callout > div.callout-content > pre:has(code.tip-style),
+.callout > div.callout-content > pre:has(code.todo),
+.callout > div.callout-content > pre:has(code.todo-style),
+.callout > div.callout-content > pre:has(code.warning),
+.callout > div.callout-content > pre:has(code.warning-style),
+.callout > div.callout-content > pre:has(code.quote),
+.callout > div.callout-content > pre:has(code.quote-style)
+{ /* multiline only */
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0px !important;
+}
+
+pre.bug,
+pre.bug-style,
+pre.default,
+pre.default-style,
+pre.error,
+pre.error-style,
+pre.example,
+pre.example-style,
+pre.fail,
+pre.fail-style,
+pre.important,
+pre.important-style,
+pre.info,
+pre.info-style,
+pre.note,
+pre.note-style,
+pre.question,
+pre.question-style,
+pre.success,
+pre.success-style,
+pre.summary,
+pre.summary-style,
+pre.tip,
+pre.tip-style,
+pre.todo,
+pre.todo-style,
+pre.warning,
+pre.warning-style,
+pre.quote,
+pre.quote-style
+{
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-radius: var(--radius-s);
+  padding: var(--size-4-3);
+  position: relative;
+}
+
+pre:has(code.tip).bug::before,
+pre:has(code.tip).bug-style::before,
+pre:has(code.tip).default::before,
+pre:has(code.tip).default-style::before,
+pre:has(code.tip).error::before,
+pre:has(code.tip).error-style::before,
+pre:has(code.tip).example::before,
+pre:has(code.tip).example-style::before,
+pre:has(code.tip).fail::before,
+pre:has(code.tip).fail-style::before,
+pre:has(code.tip).important::before,
+pre:has(code.tip).important-style::before,
+pre:has(code.tip).info::before,
+pre:has(code.tip).info-style::before,
+pre:has(code.tip).note::before,
+pre:has(code.tip).note-style::before,
+pre:has(code.tip).question::before,
+pre:has(code.tip).question-style::before,
+pre:has(code.tip).success::before,
+pre:has(code.tip).success-style::before,
+pre:has(code.tip).summary::before,
+pre:has(code.tip).summary-style::before,
+pre:has(code.tip).tip::before,
+pre:has(code.tip).tip-style::before,
+pre:has(code.tip).todo::before,
+pre:has(code.tip).todo-style::before,
+pre:has(code.tip).warning::before,
+pre:has(code.tip).warning-style::before,
+pre:has(code.tip).quote::before,
+pre:has(code.tip).quote-style::before
+{
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.025em;
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+  padding-left: 1.5em;
+  font-weight: bold;
+  width: auto;
+  background-size: 1.25em 1.25em;
+}
+
+pre:has(code.bug),
+pre:has(code.bug-style),
+pre:has(code.default),
+pre:has(code.default-style),
+pre:has(code.error),
+pre:has(code.error-style),
+pre:has(code.example),
+pre:has(code.example-style),
+pre:has(code.fail),
+pre:has(code.fail-style),
+pre:has(code.important),
+pre:has(code.important-style),
+pre:has(code.info),
+pre:has(code.info-style),
+pre:has(code.note),
+pre:has(code.note-style),
+pre:has(code.question),
+pre:has(code.question-style),
+pre:has(code.success),
+pre:has(code.success-style),
+pre:has(code.summary),
+pre:has(code.summary-style),
+pre:has(code.tip),
+pre:has(code.tip-style),
+pre:has(code.todo),
+pre:has(code.todo-style),
+pre:has(code.warning),
+pre:has(code.warning-style),
+pre:has(code.quote),
+pre:has(code.quote-style)
+{
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-radius: var(--radius-s);
+  padding: var(--size-4-3);
+  position: relative;
+}
+
+pre:has(code.bug)::before,
+pre:has(code.bug-style)::before,
+pre:has(code.default)::before,
+pre:has(code.default-style)::before,
+pre:has(code.error)::before,
+pre:has(code.error-style)::before,
+pre:has(code.example)::before,
+pre:has(code.example-style)::before,
+pre:has(code.fail)::before,
+pre:has(code.fail-style)::before,
+pre:has(code.important)::before,
+pre:has(code.important-style)::before,
+pre:has(code.info)::before,
+pre:has(code.info-style)::before,
+pre:has(code.note)::before,
+pre:has(code.note-style)::before,
+pre:has(code.question)::before,
+pre:has(code.question-style)::before,
+pre:has(code.success)::before,
+pre:has(code.success-style)::before,
+pre:has(code.summary)::before,
+pre:has(code.summary-style)::before,
+pre:has(code.tip)::before,
+pre:has(code.tip-style)::before,
+pre:has(code.todo)::before,
+pre:has(code.todo-style)::before,
+pre:has(code.warning)::before,
+pre:has(code.warning-style)::before,
+pre:has(code.quote)::before,
+pre:has(code.quote-style)::before
+{
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.025em;
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+  padding-left: 1.5em;
+  font-weight: bold;
+  width: auto;
+  background-size: 1.25em 1.25em;
+}
+
+/* debug table */
+table.example {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+  background: #fafaff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+table.example th,
+table.example td {
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+table.example th {
+  background: #e0e7ff;
+  color: #3730a3;
+  font-weight: 600;
+}
+
+table.example tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+table.example td {
+  border: 1px solid black;
+}
+
+table.example td.bug {
+  color: rgba(var(--callout-bug), 1);
+  background-color: rgba(var(--callout-bug), 0.3);
+}
+table.example td.bug-style {
+  color: rgba(var(--callout-bug), 1);
+  background-color: rgba(var(--callout-bug), 0.3);
+}
+table.example td.default {
+  color: rgba(var(--callout-default), 1);
+  background-color: rgba(var(--callout-default), 0.3);
+}
+table.example td.default-style {
+  color: rgba(var(--callout-default), 1);
+  background-color: rgba(var(--callout-default), 0.3);
+}
+table.example td.error {
+  color: rgba(var(--callout-error), 1);
+  background-color: rgba(var(--callout-error), 0.3);
+}
+table.example td.error-style {
+  color: rgba(var(--callout-error), 1);
+  background-color: rgba(var(--callout-error), 0.3);
+}
+table.example td.example {
+  color: rgba(var(--callout-example), 1);
+  background-color: rgba(var(--callout-example), 0.3);
+}
+table.example td.example-style {
+  color: rgba(var(--callout-example), 1);
+  background-color: rgba(var(--callout-example), 0.3);
+}
+table.example td.fail {
+  color: rgba(var(--callout-fail), 1);
+  background-color: rgba(var(--callout-fail), 0.3);
+}
+table.example td.fail-style {
+  color: rgba(var(--callout-fail), 1);
+  background-color: rgba(var(--callout-fail), 0.3);
+}
+table.example td.important {
+  color: rgba(var(--callout-important), 1);
+  background-color: rgba(var(--callout-important), 0.3);
+}
+table.example td.important-style {
+  color: rgba(var(--callout-important), 1);
+  background-color: rgba(var(--callout-important), 0.3);
+}
+table.example td.info {
+  color: rgba(var(--callout-info), 1);
+  background-color: rgba(var(--callout-info), 0.3);
+}
+table.example td.info-style {
+  color: rgba(var(--callout-info), 1);
+  background-color: rgba(var(--callout-info), 0.3);
+}
+table.example td.note {
+  color: rgba(var(--callout-note), 1);
+  background-color: rgba(var(--callout-note), 0.3);
+}
+table.example td.note-style {
+  color: rgba(var(--callout-note), 1);
+  background-color: rgba(var(--callout-note), 0.3);
+}
+table.example td.question {
+  color: rgba(var(--callout-question), 1);
+  background-color: rgba(var(--callout-question), 0.3);
+}
+table.example td.question-style {
+  color: rgba(var(--callout-question), 1);
+  background-color: rgba(var(--callout-question), 0.3);
+}
+table.example td.success {
+  color: rgba(var(--callout-success), 1);
+  background-color: rgba(var(--callout-success), 0.3);
+}
+table.example td.success-style {
+  color: rgba(var(--callout-success), 1);
+  background-color: rgba(var(--callout-success), 0.3);
+}
+table.example td.summary {
+  color: rgba(var(--callout-summary), 1);
+  background-color: rgba(var(--callout-summary), 0.3);
+}
+table.example td.summary-style {
+  color: rgba(var(--callout-summary), 1);
+  background-color: rgba(var(--callout-summary), 0.3);
+}
+table.example td.tip {
+  color: rgba(var(--callout-tip), 1);
+  background-color: rgba(var(--callout-tip), 0.3);
+}
+table.example td.tip-style {
+  color: rgba(var(--callout-tip), 1);
+  background-color: rgba(var(--callout-tip), 0.3);
+}
+table.example td.todo {
+  color: rgba(var(--callout-todo), 1);
+  background-color: rgba(var(--callout-todo), 0.3);
+}
+table.example td.todo-style {
+  color: rgba(var(--callout-todo), 1);
+  background-color: rgba(var(--callout-todo), 0.3);
+}
+table.example td.warning {
+  color: rgba(var(--callout-warning), 1);
+  background-color: rgba(var(--callout-warning), 0.3);
+}
+table.example td.warning-style {
+  color: rgba(var(--callout-warning), 1);
+  background-color: rgba(var(--callout-warning), 0.3);
+}
+table.example td.quote {
+  color: rgba(var(--callout-quote), 1);
+  background-color: rgba(var(--callout-quote), 0.3);
+}
+table.example td.quote-style {
+  color: rgba(var(--callout-quote), 1);
+  background-color: rgba(var(--callout-quote), 0.3);
+}

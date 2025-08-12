@@ -428,7 +428,7 @@ It turns out that there are many other formatting options available to programme
     </ul>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-    <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+    <img src="../../.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>

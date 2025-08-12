@@ -1,0 +1,20 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# Appendix \n\n## B. Order of Operations\n\nThe order of operations is the evaluation order for an expression. When parentheses are not included, the following table describes which order the compiler assumes you meant. Of course, it is always better to be explicit by including parentheses. Operators in rows of the same color have the same precedence.\n\n| Name | Operator | Example |\n| :--: | :--: | :--: |\n| Array indexing | [] | array[4] |\n| Function call | () | function() |\n| Postfix increment and decrement | $++$ | count++ count-- |\n| Prefix increment and decrement | $++$ | ++count --count |\n| Not | ! | !married |\n| Negative | - | $-4$ |\n| Dereference | * | *pValue |\n| Address-of | \\& | \\&value |\n| Allocate with new | new | new int |\n| Free with delete | delete | delete pValue |\n| Casting | () | (int)4.2 |\n| Get size of | sizeof | sizeof(int) |\n| Multiplication | * | $3 * 4$ |\n| Division | / | $3 / 4$ |\n| Modulus | \\% | $3 \\% 4$ |\n| Addition | $+$ | $3+4$ |\n| Subtraction | - | $3-4$ |\n| Insertion | $<<$ | cout << value |\n| Extraction | $>>$ | cin >> value |\n| Greater than, etc. | $>=<=><$ | $3>=4$ |\n| Equal to, not equal to | $==!=$ | $3!=4$ |\n| Logical And | \\&\\& | passed \\&\\& juniorStatus |\n| Logical OR | || | passed || juniorStatus |\n| Assignment, etc. | $=+=$ | value $+=4$ |\n| Conditional expression | ? : | passed ? \"happy\" : \"sad\" |",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2200,
+                "width": 1700
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "usage_info": {
+        "pages_processed": 1,
+        "doc_size_bytes": 173571
+    },
+    "document_annotation": null
+}

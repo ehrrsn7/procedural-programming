@@ -134,7 +134,7 @@ Thus when you declare a variable to be an integer (int), the 1’s and 0’s in 
    </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+   <img src="../../.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -224,7 +224,7 @@ With this line of code, a new variable is created. The name is “`age`” which
       Each place corresponds to a power of two in binary; add the value only if there's a 1 in that place. Integers are typically 32 bits (4 bytes), with the left-most bit indicating the sign.
    </p>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+   <img src="../../.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -314,7 +314,7 @@ long double pi = 3.14159265358979323;
    </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sue.png" width="200px" height="auto">
+   <img src="../../.vscode/assets/sue.png" width="200px" height="auto">
 </td>
 </tr>
 </tbody>
@@ -414,7 +414,7 @@ Unit 1: Simple Programs
    </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+   <img src="../../.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -447,7 +447,7 @@ There are a few things to observe about this declaration. First, the size of the
    </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sue.png" width="200px" height="auto">
+   <img src="../../.vscode/assets/sue.png" width="200px" height="auto">
 </td>
 </tr>
 </tbody>
@@ -480,7 +480,7 @@ There are only two possible values for a `bool`: `true` or `false`. By conventio
    </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sam.png" width="200px" height="auto"">
+   <img src="../../.vscode/assets/sam.png" width="200px" height="auto"">
 </td>
 </tr>
 </tbody>
@@ -606,7 +606,7 @@ Unit 1: Simple Programs
    </p>
 </td>
 <td style="display: flex; padding: 0; height: 100%">
-   <img src="../../.etc/assets/sam.png" width="200px" height="auto">
+   <img src="../../.vscode/assets/sam.png" width="200px" height="auto">
 </td>
 </tr>
 </tbody>
