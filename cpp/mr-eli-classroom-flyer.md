@@ -1,6 +1,6 @@
 <table>
     <tr>
-        <td valign="top" width="50%">
+        <td valign="top" width="50%" style="padding-top: 40px">
 
 # Mr. Eli
 
@@ -17,12 +17,10 @@
 
 ---
 
-![alt text](image.png){width=200} ![alt text](image-3.png){width=200} ![alt text](image-4.png){width=200}
+![alt text](image.png){height=200} ![alt text](image-3.png){height=200} ![alt text](image-4.png){height=200}
 
 </td>
 <td valign="top" width="50%">
-
----
 
 ## What We Do
 - Build real-world apps and games
@@ -39,7 +37,7 @@
 
 ---
 
-![alt text](image-1.png){width=200} ![alt text](image-2.png){width=200}
+![alt text](image-1.png){height=200} ![alt text](image-2.png){height=200}
 
 ---
 

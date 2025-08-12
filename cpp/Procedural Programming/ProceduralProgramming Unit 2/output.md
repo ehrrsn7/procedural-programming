@@ -1,3 +1,45 @@
+#### 2.0 Modularization - Learning Objectives:
+- Measure the Cohesion level of a function.
+- Measure the degree of Coupling between functions.
+- Create a map of a program using a Structure Chart.
+- Design programs that exhibit high degrees of modularization.
+
+#### 2.1 Debugging - Learning Objectives:
+- Create asserts to catch common programmer problems.
+- Use #define to move constants to the top of a program.
+- Use #ifdef to create debug code for testing.
+- Write a driver program to verify a function.
+- Create stub functions to outline a large program.
+
+#### 2.2 Designing Algorithms - Learning Objectives:
+- Recite the pseudocode keywords.
+- Understand the detail required for pseudocode.
+- Generate pseudocode for a C++ function.
+
+#### 2.3 Loop Syntax - Learning Objectives:
+- Demonstrate correct syntax for WHILE, DO-WHILE, FOR.
+- Create a loop to solve a simple problem.
+
+#### 2.4 Loop Output - Learning Objectives:
+- Predict output using the desk check technique.
+- Recognize common pitfalls with loops.
+
+#### 2.5 Loop Design - Learning Objectives:
+- Recognize the three main types of loops.
+- Use a loop to solve a complex problem.
+
+#### 2.6 Files - Learning Objectives:
+- Write code to read data from a file.
+- Write code to write data to a file.
+- Perform error checking on file streams.
+- Understand ways to find the end-of-file marker.
+
+#### Unit 2 Practice Test - Learning Objectives:
+- Demonstrate mastery of modularization, debugging, design, loops, and file I/O.
+
+#### Unit 2 Project: Calendar Program - Learning Objectives:
+- Apply modularization, loops, and file I/O to build a complete program.
+
 # Unit 2. Design \& Loops 
 
 2.0 Modularization ..... 108

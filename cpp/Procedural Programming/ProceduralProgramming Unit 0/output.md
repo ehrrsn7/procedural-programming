@@ -1,3 +1,13 @@
+### 0.0 Course Overview - Learning Objectives:
+- Understand the structure, goals, and expectations of the course.
+- Recognize the importance of procedural programming.
+- See how the course prepares students for further study in computing.
+### 0.1 Computers & Programs - Learning Objectives:
+- Identify the main parts of a computer (CPU, memory, bus, peripherals).
+- Understand the analogy between computer programs and recipes, and how computers follow instructions.
+- Recognize the structure of a simple C++ program (headers, functions, statements).
+- Explain the purpose and styles of comments in C++ code.
+
 # Table of Contents 
 
 Table of Contents ..... 1

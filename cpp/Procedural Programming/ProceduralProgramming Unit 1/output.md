@@ -1,4 +1,34 @@
-# Unit 1. Simple Programs 
+#### 1.0 First Program - Learning Objectives:
+- Write and run your first C++ program.
+- Establish foundational programming skills, including understanding the basic structure of a C++ program.
+#### 1.1 Output - Learning Objectives:
+- Display information to users using output statements in C++.
+#### 1.2 Input & Variables - Learning Objectives:
+- Read user input and store data in variables, emphasizing variable types and naming conventions.
+#### 1.3 Expressions - Learning Objectives:
+- Create and evaluate mathematical and logical expressions in C++.
+#### 1.4 Functions - Learning Objectives:
+- Define and call functions to organize code and solve sub-problems.
+#### 1.5 Boolean Expressions - Learning Objectives:
+- Use Boolean logic and expressions for decision making.
+#### 1.6 IF Statements - Learning Objectives:
+- Use if statements for conditional execution to control program flow.
+#### 1.7 Unit Assessment - Learning Objectives:
+- Write and run a basic C++ program.
+- Use output statements to display information.
+- Read user input and use variables appropriately.
+- Create and evaluate mathematical and logical expressions.
+- Define and use functions to organize code.
+- Apply Boolean logic and expressions for decision making.
+- Use if statements for conditional execution and control of program flow.
+#### 1.8 Unit Project - Learning Objectives:
+- Write a complete C++ program that includes input, output, variables, expressions, and functions.
+- Demonstrate understanding of program structure and syntax.
+- Apply Boolean logic and if statements for decision making.
+- Organize code using functions to solve a problem.
+- Use clear and meaningful comments to document your code.
+
+# Unit 1. Simple Programs
 
 1.0 First Program ..... 13
 1.1 Output. ..... 24
@@ -10,7 +40,7 @@
 Unit 1 Practice Test ..... 99
 Unit 1 Project : Monthly Budget ..... 101
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ### 1.0 First Program
 
@@ -45,7 +75,7 @@ The process of turning in a homework assignment consists of several steps. While
 
 This entire process will be demonstrated in "Example - Hello World" at the end of the chapter.
 
-# 0. Login 
+# 0. Login
 
 All programming assignments are done on the Linux system. This includes the pre-class assignments, the projects, and the in-lab tests. You can either go to the Linux Lab to use the campus computers, or connect remotely to the lab from your personal computer. Either way, you will need to $\log$ in. If you have not done this in Assignment 0.0, please re-visit the quiz for the default password. The lab assistants will be able to help you reset your password if necessary. Please see Appendix C: Lab Help for a description of what the lab assistants can and cannot do.
 
@@ -78,7 +108,7 @@ ssh sam@157.201.194.230 -p 215
 For more information, please see:
 Setup - Terminal
 
-# 1. Copy Template 
+# 1. Copy Template
 
 Once you have successfully logged into the Linux system (either remotely or in the Linux Lab), the next step is to copy over the template for the assignment. All the assignments for this class start with a template file which has placeholders for the assignment name and the author (that would be you!). This file, and all other files pertaining to the course, can be found on:
 /home/cs124
@@ -102,7 +132,7 @@ For more commands or more details on the above, please see Appendix D: Linux and
 
 Be careful how you name your files. By the end of the semester, you could easily get lost in a sea of files. Spend a few moments thinking of how you will organize all your files as this will be a useful practice for the remainder of your career.
 
-# 2. Edit with Emacs 
+# 2. Edit with Emacs
 
 Once the template has been copied to your directory, you are now ready to edit your program. There are many editors to choose from. Some editors are specialized to a specific task (such as Excel and Photoshop). The editor we use for programming problems is specialized for writing code. There are many editors you may use, including emacs and vi. For help with common emacs commands, please see "Appendix D: Linux and Emacs Cheat Sheet."
 
@@ -137,7 +167,7 @@ int main()
 
 When you have finished writing the code for your program, save it and exit the editor. To save, first hit the <control> and x key at the same time, followed shortly with <control> and s. The shorthand for this key sequence is C-x C-s. You can then exit emacs with C-x C-c. More emacs keystokes are presented in Appendix D at the back of this book.
 
-# 3. Compile 
+# 3. Compile
 
 After the program is saved in a file, the next step is compilation. Compilation is the process of translating the program from one format $(\mathrm{C}++$ in this case $)$ to another (machine language). This process is remarkably similar to how people translate text from French to English. There are four steps:
 ![[ProceduralProgramming Unit 1_img_1.jpeg]]
@@ -153,7 +183,7 @@ If, for example, we are going to compile the file hw10.cpp, the following comman
 g++ hw10.cpp
 If the compilation is successful, then the file a.out will be created. If there was an error with the program due to a typographical error, then the compiler will state what the error was and where in the program the error was encountered.
 
-# 4. Test Bed 
+# 4. Test Bed
 
 After we have successfully passed the compilation process, it is then necessary to verify our solution. This is typically done in a two-step process. The first is to simply run the program by hand and visually inspect the output. To execute a newly-compiled program, type the name of the program in the terminal. Since the default name of a newly-compiled program is "a.out," then type:
 a.out
@@ -237,7 +267,7 @@ sumOfSquares += userInput * userInput;
 
 For more details on the University's style guidelines, please see "Appendix A: Elements of Style" and look at the coding examples presented in this class.
 
-# 6. Submit 
+# 6. Submit
 
 The last step of turning in an assignment is to submit it. While we discuss this as the end of the homework process, you can submit an assignment as often as you like. In the case of multiple submissions, the last one submitted at the moment the assignment is graded is the one that will be used. It is therefore a good idea to submit your assignments frequently so your professor has the most recent copy of your work. The syntax for the program submission tool is:
 submit <file name>
@@ -270,7 +300,7 @@ Submit is basically a fancy copy function. It makes two copies of the program: o
 Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is "eniac", then the file appears as eniac.cpp in the instructor's folder.
 Please do not use a dot in the name of your file. If you submit hw1.0.cpp, for example, then it will appear as eniac. 0 instead of eniac.cpp and the instructor will not grade it
 
-# Example 1.0 - Display "Hello World" 
+# Example 1.0 - Display "Hello World"
 
 This example will demonstrate how to turn in a homework assignment. All the tools involved in this process, including emacs, g++, testBed, styleChecker, and submit, will be illustrated.
 
@@ -312,7 +342,7 @@ My favorite thing about teaching is interacting with interesting students every 
 The complete solution is available at 1-0-firstProgram.cpp or:
 /home/cs124/examples/1-0-firstProgram.cpp
 
-# Problem 1 
+# Problem 1
 
 If your body was a computer, select all the von Neumann functions that the spinal cord would perform?
 Answer:
@@ -352,7 +382,7 @@ Answer:
 
 Please see page 7 for a bint.
 
-# Assignment 1.0 
+# Assignment 1.0
 
 Write a program to put the text "Hello World" on the screen. Please note that examples of the code for this program are present in the course notes.
 
@@ -395,7 +425,7 @@ styleChecker assignment10.cpp
 6. Turn your assignment in with the submit command. Don't forget to submit your assignment with the name "Assignment 10" in the header
 submit assignment10.cpp
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ### 1.1 Output
 
@@ -426,7 +456,7 @@ There are two main methods for a computer to display output on the screen. The f
 
 The second method is to use streams. Streams are, in many ways, like a typewriter. An individual typing on a typewriter only needs to worry about the message that is to appear on the page. The typewriter itself knows how to render each letter and scroll the paper. A programmer using streams to display output specifies the text of the message as well as simple control commands (such as the end of the line, tabs, etc.). The operating system and other tools are left to handle the mechanics of getting the text to render on the screen. We will use stream output exclusively in CS 124.
 
-# COUT 
+# COUT
 
 As previously discussed, computer programs are much like recipes: consisting of a list of instructions necessary to produce some output. These instructions are called statements. One of the fundamental statements in the $\mathrm{C}++$ language is cout: the statement that puts text on the screen. The syntax of cout is:
 
@@ -459,7 +489,7 @@ cout.precision(2);
 
 The first statement means we never want to see the number displayed in scientific notation. Unless the number is very big or very small, most humans prefer to see numbers displayed in "fixed" notation. The second statement indicates that the decimal point is required in all presentations of the number. The final statement indicates that two digits to the right of the decimal point will be displayed. We can specify any number of digits of course. Note that there is some interplay between these three statements; usually we use them together. These settings are "sticky." This means that once the program has executed these lines of code, all real numbers will be treated this way until the setting is changed again.
 
-# New Lines 
+# New Lines
 
 Often the programmer would like to indicate that the end of a line has been reached. With a typewriter, one hits the Carriage Return to jump to the next line; it does not happen automatically. The same is true with stream output. The programmer indicates a newline is needed using two methods:
 
@@ -502,7 +532,7 @@ Both of these statements are exactly the same to the compiler; the difference li
 | Mixing | ```cout << "Mix text with " << 42 << " numbers.\n";``` | Variables need to be outside quotes, requiring separate insertion operators for each one. |
 | Comments | ```cout << "CS124" // class << "-1-" // section << "Bob"; // prof.``` | Comments are more meaningful when they are on the same line as to what they are clarifying. |
 
-# Alignment 
+# Alignment
 
 It is often desirable to make output characters align in columns or tables. This is particularly useful when working with columns of numbers. In these cases, we have two tools at our disposal: tabs and set-width.
 
@@ -525,7 +555,7 @@ The first word "Deux" is left aligned because, after the $\backslash n$ is encou
 
 When the third statement is executed, the first tab moves the cursor to the 8 column. The second tab moves the cursor to the next multiple of 8 (the 16 column). From here, the text "Tres" is rendered.
 
-# Set Width 
+# Set Width
 
 Tabs work great for left-aligning text. However, often one needs to right-align text. This is performed with the set width command. Set width works by counting backwards from a specified numbers of spaces so the next text in the cout statement will be right-aligned. Consider the following code:
 
@@ -578,7 +608,7 @@ Page 28 | 1.1 Output | Unit 1: Simple Program | Procedural Programming in C++
 
 Observe how the second row displays two decimals even though the code only has one. This is because of the cout.precision(2) statement indicating that two decimals will always be used. The third row also displays two decimal places, rounding the number up because the digit in the third decimal place is a 5 .
 
-# Suc's Tips 
+# Suc's Tips
 
 It is helpful to first draw out the output on graph paper so you can get the column widths correct the first time. When the output is complex (as it is for Project 1), aligning columns can become frustrating.
 
@@ -605,7 +635,7 @@ Up to this point, the following are the escape sequences we can use:
 There are many other lesser known and seldom used escape characters as well:
 https://msdn.microsoft.com/en-us/library/h21280bw.aspx
 
-# Example 1.1 - Money Alignment 
+# Example 1.1 - Money Alignment
 
 This example will demonstrate how to use tabs and setw() to align money. This is important in Assignment 1.1, Project 1, and many output scenarios.
 
@@ -665,7 +695,7 @@ Finally, what is the biggest number you can put in a column before things start 
 The complete solution is available at 1-1-alignMoney.cpp or:
 /home/cs124/examples/1-1-alignMoney.cpp
 
-# Example 1.1 - Escape Sequences 
+# Example 1.1 - Escape Sequences
 
 This example will demonstrate how to display special characters on the screen using escape sequences. Not only will we use escape sequences to get tabs and newlines on the screen, but we will use escapes to display characters that are normally treated as special.
 
@@ -696,7 +726,7 @@ As a challenge, try to reverse the order of the text so the escape appears befor
 The complete solution is available at 1-1-escapeSequence.cpp or:
 /home/cs124/examples/1-1-escapeSequence.cpp
 
-# Problem 1 
+# Problem 1
 
 Write the code to put a newline on the screen:
 Answer:
@@ -734,7 +764,7 @@ $\square$
 
 Please see page 29 for a bint.
 
-# Problem 5 
+# Problem 5
 
 What is the output of the following code?
 
@@ -782,7 +812,7 @@ Answer:
 $\square$
 Please see page 30 for a bint.
 
-# Assignment 1.1 
+# Assignment 1.1
 
 Write a program to output your monthly budget:
 
@@ -821,7 +851,7 @@ testBed cs124/assign11 assignment11.cpp
 Don't forget to submit your assignment with the name "Assignment 11" in the header.
 Please see page 30 for a bint.
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ### 1.2 Input \& Variables
 
@@ -871,7 +901,7 @@ There is no intrinsic meaning for these 1's and 0's; they could mean or refer to
 
 Thus when you declare a variable to be an integer (int), the l's and 0 's in memory will be interpreted using the integer formula and only integer data can be stored in the variable.
 
-# Sam's Corner 
+# Sam's Corner
 
 Under the covers, all data in a computer is represented as a charge stored in a very small capacitor on a chip. We call these bits, 1 indicating "true" (corresponding to a charge in the capacitor) and 0 corresponding to "false" (corresponding to no charge). Bits are stored differently on CDs, flash memory, and hard drives.
 
@@ -892,7 +922,7 @@ It is easiest to explain how integers are stored in memory by considering a spec
 
 In other words, each place has a value corresponding to it (as a power of two because we are counting in binary). You add that value to the sum only if there is a 1 in that place. Typically integers are 32 bits (4 bytes) in length. The left-most bit is special, indicating whether the number is positive or negative.
 
-# Floating point numbers 
+# Floating point numbers
 
 In mathematics, real numbers are numbers that can have a decimal. It is often convenient to represent very large or very small real numbers in scientific notation:
 
@@ -933,7 +963,7 @@ http://en.cppreference.com/w/cpp/language/ascii
 
 The char data-type is actually a form of integer where the size is 1 byte (or 8 bits). This means there are only 256 possible values, not four billion. Each number in the char range corresponds to a glyph (letter, number, or symbol) in the ASCII table. Thus you can treat a char like a letter or you can do math with it like any other integer. For example, 'A' +1 is the same as 'B', which is 66 .
 
-# Text 
+# Text
 
 Text consists of a collection or string of characters. While all the data-types listed below can readily fit into a small slot in memory, text can be exceedingly long. For example, the amount of memory necessary to store your name is much less than that required to store a complete book. You declare a string variable with:
 char text[256] = "CS 124";
@@ -955,7 +985,7 @@ There are only two possible values for a bool: true or false. By convention, we 
 
 A bool takes a single byte of memory, consisting of 8 bits. Note that we really only need a single bit to capture Boolean (true/false) data. Why do we need 8 then? This has to do with how convenient it is for the computer to work with bytes and how awkward it is to work with bits. When evaluating a bool, any l's in any of the bits will result in a true evaluation. Only when all 8 bits are 0 will the bool evaluate to false. This means that there are 255 true values $\left(2^{8}-1\right)$ and 1 false value.
 
-# Input 
+# Input
 
 Now that we know how to store data in a computer program using variables, it is possible to prompt the user for input. Note that without variables we would not have a place to store the user input so asking the user questions would be futile. The main mechanism with which we prompt users for input is the cin function. This function, like cout, is part of the iostream library. The code for prompting the user for his age is:
 
@@ -1013,7 +1043,7 @@ cin >> units;
 
 In this example, the input stream starts at the space before the 4 . The first thing that happens is that all the white-spaces are skipped. This moves the cursor to the 4 . Since a 4 is a digit, it can be put into the integer temperature. Thus the value in temperature is 4 and the cursor advances to the next spot. From here, 2 is recognized as a digit so the 4 value in temperature becomes 40 and 2 is added to yield 42. Again the cursor is advanced. At this point, c is not a digit so we stop accepting input in the variable temperature. The next cin statement is executed which accepts text. Recall that text accepts input up to the first white-space. Since the cursor is on the c , the entire word of "celsius" will be put in the units variable and the cursor will stop at the white-space.
 
-# Multiple Extraction Operators 
+# Multiple Extraction Operators
 
 Often it is convenient to input data into more than one variable on a single input statement. This can be done by "stacking" the extraction operators much like we stacked the insertion operators:
 
@@ -1040,7 +1070,7 @@ Recall how, when reading text into a variable using cin, only one word (or more 
 
 Observe how we do not use the extraction (>>) operator which was part of our other input mechanisms. The getline function takes two parameters: the name of the variable (fullName in this example) and the length of the buffer ( 256 because that is how large fullName was when it was defined).
 
-# Example 1.2 - Many Prompts 
+# Example 1.2 - Many Prompts
 
 This example will demonstrate how to declare text, integer, floating point, and character variables. It will also demonstrate how to accept data from the user with each of these data types.
 
@@ -1091,7 +1121,7 @@ Also, try to configure the output to display two digits of accuracy rather than 
 The complete solution is available at 1-2-manyPrompts.cpp or:
 /home/cs124/examples/1-2-manyPrompts.cpp
 
-# Problem 1 
+# Problem 1
 
 What is the output of the following line of code?
 cout << "\\"/\n";
@@ -1135,7 +1165,7 @@ How would you declare a variable for each of the following?
 
 Please see page 36 for a bint.
 
-# Problem 6 
+# Problem 6
 
 Declare a variable to store the ratio of feet to meters.
 Answer:
@@ -1185,7 +1215,7 @@ Answer:
 
 Please see page 37 for a bint.
 
-# Problem 10 
+# Problem 10
 
 Write the code to prompt a person for his first name.
 Answer:
@@ -1203,7 +1233,7 @@ Write the code to prompt a person for his full name.
 Answer:
 $\square$
 
-# Assignment 1.2 
+# Assignment 1.2
 
 Write a program that prompts the user for his or her income and displays the result on the screen. There will be two parts:
 
@@ -1233,7 +1263,7 @@ testBed cs124/assign12 assignment12.cpp
 Don't forget to submit your assignment with the name "Assignment 12" in the header.
 Please see page 41 for a bint.
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ### 1.3 Expressions
 
@@ -1271,7 +1301,7 @@ As you may recall from our earlier discussion of how computers work, a CPU can o
 2. The order of operations are honored: parentheses first and assignment last
 3. When there is an integer being compared/computed with a float, it is converted to a float just before evaluation.
 
-# Step 1 - Variables are replaced with values 
+# Step 1 - Variables are replaced with values
 
 Every variable refers to a location of memory. This memory location is guaranteed to be filled with 1's and 0 's. In other words, there is always a value in a variable and that value can always be accessed at any time. Sometimes the value is meaningless. Consider the following example:
 
@@ -1319,7 +1349,7 @@ The order of operations for mathematical operators in $\mathrm{C}++$ is:
 
 This should be very familiar; it is similar to the order of operations for Algebra. There are, of course a few differences
 
-# Increment ++ 
+# Increment ++
 
 Because it is possible to change the value of a variable in $\mathrm{C}++$, we have an operator designed specifically for the task. Consider the following code:
 
@@ -1358,7 +1388,7 @@ In this case, age is incremented before the expression is evaluated and the outp
 
 ![[ProceduralProgramming Unit 1_img_6.jpeg]]
 
-# Multiplication * 
+# Multiplication *
 
 In C++ (and most other computer languages for that matter), the multiplication operator is an asterisk *. You cannot use the dot operator (ex: .), the multiplication $x$ (ex: $\times$ ), or put a number next to a variable (ex: $7 y$ ) as you can in standard algebra notation.
 
@@ -1409,7 +1439,7 @@ In this case, when you divide 19 by 10 , the remainder is 9 . Therefore, the val
 
 ![[ProceduralProgramming Unit 1_img_7.jpeg]]
 
-# Assignment $=$ 
+# Assignment $=$
 
 In mathematics, the equals symbol $=$ is a statement of equality. You are stating that the right-side and the left-side are the same or balanced. In $\mathrm{C}++$, the equals symbol is a statement of assignment. You are specifying that the evaluation of the right-side is to be assigned to the variable on the left-side. Consider the following code:
 
@@ -1438,7 +1468,7 @@ The $+=$ operator says, in effect, add the right-side to the variable on the lef
 | $*=$ | Multiply and assign | Multiply by |
 | $/=$ | Divide and assign | Subdivide |
 
-# Step 3 - Converting 
+# Step 3 - Converting
 
 The final step in evaluating an expression is to convert data from one type to another. This arises from the fact that you can't add an integer to a floating point number. You can add two ints or two floats, but not an int to a float. Consider the following code:
 
@@ -1487,7 +1517,7 @@ There are actually two notations for casting in $\mathrm{C}++$. The older notati
 }
 ```
 
-# Putting it all together 
+# Putting it all together
 
 So how does this work together? Consider the following example:
 
@@ -1513,7 +1543,7 @@ The most predictable way to evaluate the value of the variable c is to handle th
 
 Seemingly simple expressions can be quite complex and unpredictable when data-type conversion occurs. It is far easier to use only one data-type in an expression. In other words, don't mix floats and ints!
 
-# Example 1.3 - Compute Change 
+# Example 1.3 - Compute Change
 
 This example will demonstrate how to evaluate simple expressions, how to update the value in a variable, casting, and how to use modulus.
 
@@ -1538,7 +1568,7 @@ As a challenge, try to modify the above program so it will not only compute chan
 The complete solution is available at 1-3-computeChange.cpp or:
 /home/cs124/examples/1-3-computeChange.cpp
 
-# Problem 1 
+# Problem 1
 
 Please write the variable declaration used for each variable name:
 
@@ -1584,7 +1614,7 @@ yards $==$ $\qquad$
 
 Please see page 49 for a bint.
 
-# Problem 5 
+# Problem 5
 
 What is the value of a?
 int $a=(2+2) / 3 ;$
@@ -1620,7 +1650,7 @@ How many days: 17
 weeks: 2
 days: 3
 
-# Problem 10 
+# Problem 10
 
 What is the output?
 
@@ -1639,7 +1669,7 @@ What is the output?
 
 Answer:
 
-# Temperature Conversion 
+# Temperature Conversion
 
 Write a program to convert Fahrenheit to Celsius. This program will prompt the user for the Fahrenheit number and convert it to Celsius. The equation is:
 $\mathrm{C}=5 / 9(\mathrm{~F}-32)$
@@ -1661,7 +1691,7 @@ testBed cs124/assign13 assignment13.cpp
 Don't forget to submit your assignment with the name "Assignment 13" in the header.
 Please see page 49 for a hint.
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ### 1.4 Functions
 
@@ -1724,7 +1754,7 @@ Function names are typically verbs because functions do things. Similarly variab
 
 Finally, observe how one piece of information enters the function (double feet) and one piece of information leaves the function (return meters;). The input parameter (feet) is treated like any other variable inside the function.
 
-# Calling a Function 
+# Calling a Function
 
 Calling a function is similar to looking up a footnote in the scriptures. The first step is to mark your current spot in the reading so you can return once the footnote has been read. The second step is to read the contents of the footnote. The third is to return back to your original spot in the reading. Observe that we can also jump to the Topical Guide or Bible Dictionary from the footnote. This requires us to remember our spot in the footnote as well as our spot in the scriptures. While humans can typically only remember one or two spots before their place is lost, computers can remember an extremely large number of places.
 
@@ -1739,7 +1769,7 @@ Computers follow the same algorithm when calling functions as we do when looking
 
 In this example, the user is converting his height in feet to the meters equivalent. To accomplish this, the function convertFeetToMeters() is called. This indicates the computer must stop working in the calling function and jump to the function convertFeetToMeters() much like a footnote in the scriptures indicates we should jump to the bottom of the page. After the computer has finished executing the code in convertFeetToMeters(), control returns to the calling function.
 
-# Example 1.4 - Simple Function Calling 
+# Example 1.4 - Simple Function Calling
 
 This example will demonstrate how call a function and accept input from a function. There will be no parameter passing in this example.
 
@@ -1800,7 +1830,7 @@ int main()
 The complete solution is available at 1-4-simpleFunctionCalling.cpp or:
 /home/cs124/examples/1-4-simpleFunctionCalling.cpp
 
-# Example 1.4 - Prompt Function 
+# Example 1.4 - Prompt Function
 
 This example will demonstrate how create a simple prompt function. This function will display a message to the user asking him for information, receive the information using cin, and return the value through the function return mechanism.
 
@@ -1851,7 +1881,7 @@ As a challenge, try to add a new function to prompt for GPA. Note that this one 
 The complete solution is available at 1-4-promptFunction.cpp or:
 /home/cs124/examples/1-4-promptFunction.cpp
 
-# Parameter Passing 
+# Parameter Passing
 
 Parameter passing is the process of sending data between functions. The programmer can send only one piece of data from the callee (the function responding to the function call) and the caller (the function issuing or initiating the function call). This data is sent through the return mechanism. However, the programmer can specify an unlimited amount of data to flow from the caller to the callee through the parameter passing mechanism.
 
@@ -1903,7 +1933,7 @@ displayCoordinates(4); // two parameters expected. Where is the second?
 - Getting the parameters crossed. For example, the function expects the first parameter to be row but the programmer supplied column instead:
 displayCoordinates(column, row); // first parameter should be row, not column
 
-# Working with Parameters 
+# Working with Parameters
 
 There are four main ways to think of parameter passing in a $\mathrm{C}++$ program:
 ![[ProceduralProgramming Unit 1_img_9.jpeg]]
@@ -1918,7 +1948,7 @@ float add(float value1, float value2);
 Update: The final way is when data is converted or updated in the function. This special case occurs when the input parameter and the return value are the same variable. In this case, we need a special indicator on the variable in the parameter list to specify that the variable is shared between the caller and the callee. We call this call-by-reference.
 void update(int \&money);
 
-# Example 1-4 - Compute Function 
+# Example 1-4 - Compute Function
 
 This example will demonstrate how to send data to a function and receive data from a function. This follows the "Processing" model of information flow through a function.
 
@@ -1978,7 +2008,7 @@ Data is passed from main() into the function computeSavings() through the ()s af
 
 When execution is in the function computeSavings(), only variables declared in that function can be used. This means that the statements in the function only have access to the variables centsIncome, centsTithing, and centsSavings. The variables from the caller (dollarsAllowance, centsAllowance, and centsDeposit) are not visible to computeSavings(). To pass data between the functions, parameters must be used
 
-# Pass-By-Reference 
+# Pass-By-Reference
 
 Pass-by-reference, otherwise known as "call-by-reference" is the process of indicating to the compiler that a given parameter variable is shared between the caller and the callee. We use the ampersand \& to indicate the parameter is pass-by-reference.
 
@@ -1999,7 +2029,7 @@ void getCoordinates(int &row, int &column) // data is sent back by row and colum
 }
 ```
 
-# Example 1.4 - Passing By Reference 
+# Example 1.4 - Passing By Reference
 
 This example will demonstrate how to pass no data to a function, how to use pass-by-value, and how to use pass-by-reference.
 
@@ -2053,7 +2083,7 @@ The only difference between passByReference(int \&reference) and passByValue(int
 The complete solution is available at 1-4-passByReference.cpp or:
 /home/cs124/examples/1-4-passByReference.cpp
 
-# Prototypes 
+# Prototypes
 
 C++ programs are compiled linearly from the top of the file to the bottom. At the point in time when a given line of code is compiled, the compiler must know about all the variables and functions referenced in order for it to be compiled correctly. This means that the variables and functions must be defined above the line of code in which they are referenced.
 
@@ -2073,7 +2103,7 @@ A final topic essential to understanding how data passes between functions is Sc
 
 ## A variable is only visible from the point where it is declared to the next closing curly brace \}
 
-# Local Variables 
+# Local Variables
 
 The most common way to declare variables is in a function. This is called a "local variable" because the variable is local to (or restricted to) one function. Consider the following example:
 
@@ -2123,7 +2153,7 @@ Though we have not learned about IF statements yet, consider the following code:
 
 Here the variable temp is only relevant inside the IF statement. We know this because the variable falls out of scope once the \} is reached after the statement "second = temp; ". Because the scope of temp is IF local, it is only visible inside the IF statement. Therefore, there is no possibility for side effects.
 
-# Blocks 
+# Blocks
 
 A variable is only visible until program execution encounters the closing $\}$ in which it is defined. Note that you can introduce $\}$ s at any point in the program. They are called blocks. Consider the following example:
 
@@ -2172,7 +2202,7 @@ These are very problematic because they are accessible by any function in the en
 
 Unfortunately, these questions are not only exceedingly difficult to answer with global variables, but they are exceedingly important when trying to fix bugs. For this reason, global variables are banned for all classes in the BYU-Idaho Computer Science curriculum.
 
-# Problem 1 
+# Problem 1
 
 Write the $\mathrm{C}++$ statements for the following:
 
@@ -2216,7 +2246,7 @@ Answer:
 
 Please see page 64 for a bint.
 
-# Problem 5 
+# Problem 5
 
 What is the output?
 
@@ -2262,7 +2292,7 @@ int main()
 
 Answer:
 
-# Problem 7 
+# Problem 7
 
 What is the output?
 
@@ -2306,7 +2336,7 @@ Answer:
 
 Please see page 62 for a bint.
 
-# Problem 9 
+# Problem 9
 
 What is the output?
 
@@ -2351,7 +2381,7 @@ int main()
 
 Answer:
 
-# Problem 11 
+# Problem 11
 
 What is the output?
 
@@ -2397,7 +2427,7 @@ Answer:
 
 Please see page 67 for a bint.
 
-# Assignment 1.4 
+# Assignment 1.4
 
 You should start this assignment by copying the file /home/cs124/assignments/assign14.cpp to your directory:
 cp /home/cs124/assignments/assign14.cpp assignment14.cpp
@@ -2448,7 +2478,7 @@ Please verify your solution against:
 testBed cs124/assign14 assignment14.cpp
 Don't forget to submit your assignment with the name "Assignment 14" in the header.
 
-# 1.5 Boolean Expressions 
+# 1.5 Boolean Expressions
 
 Sam is reading his scriptures one day and comes across the following verse from 2 Corinthians:
 Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a Cheerful giver. (2 Corinthians 9:7)
@@ -2488,7 +2518,7 @@ Boolean algebra is a way to express logical statements mathematically. This is i
 | $>$ | Greater than | $>$ | age $>65$ |
 | $\geq$ | Greater than or equal to | $>=$ | grade $>=90$ |
 
-# And, Or, and Not 
+# And, Or, and Not
 
 The three main logical operators we use in computer programming are And, Or, and Not. These, it turns out, are also commonly used in our spoken language as well. For example, consider the following scripture:
 
@@ -2520,7 +2550,7 @@ If leftSide $=$ false and rightSide $=$ false, then leftSide \&\& rightSide eval
 
 The AND operator is picky: it evaluates to true only when both sides are true.
 
-# OR 
+# OR
 
 The Boolean operator OR evaluates to true if either the left-side or the right-side are true. If both are false, the expression evaluates to false. Consider the following statement containing a Boolean OR expression:
 bool answer = leftSide || rightSide;
@@ -2550,7 +2580,7 @@ The corresponding truth-table is:
 
 If right = false then !right is true. If right = true then !right is false. In other words, the NOT operator can be thought of as the "opposite operator."
 
-# Example 
+# Example
 
 Back to our scripture from the beginning:
 Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a Cheerful giver. (2 Corinthians 9:7)
@@ -2604,7 +2634,7 @@ $$
 \end{aligned}
 $$
 
-# Comparison Operators 
+# Comparison Operators
 
 Boolean algebra only works with Boolean values, values that evaluate to either true or false. Often times we need to make logical decisions based on values that are numeric. Comparison operators allow us to make these conversions.
 
@@ -2650,7 +2680,7 @@ char letterGrade = 'B';
 bool goodGrade = ('C' >= letterGrade);
 ```
 
-# Example 1.5 - Decision Function 
+# Example 1.5 - Decision Function
 
 This example will demonstrate how to write a function to help make a decision. This will be a binary decision (choosing between two options) so the return type will be a bool.
 
@@ -2694,7 +2724,7 @@ As a challenge, modify the above example to more accurately reflect the law.
 The complete solution is available at 1-5-decisionFunction.cpp or:
 /home/cs124/examples/1-5-decisionFunction.cpp
 
-# Order of Operations 
+# Order of Operations
 
 With all these Boolean operators, the order of operations table has become quite complex (a more complete version of this table is in Appendix B):
 
@@ -2721,7 +2751,7 @@ There are a couple things to remember when trying to memorize the order of opera
 
 While it is useful (and indeed necessary!) to memorize the order of operations, please don't expect the readers of your code to do the same. It is far better to disambiguate your expressions by using many parentheses. This gives the bugs nowhere to hide!
 
-# Problem 1, 2 
+# Problem 1, 2
 
 Write a function to multiply two numbers. Call the function multiply().
 
@@ -2736,7 +2766,7 @@ Write a function to represent the prerequisites for CS 165: you must pass CS 124
 Write a function to represent how to pass this class: you can either earn a grade greater than or equal to $60 \%$ or you must bribe the professor. Realize, of course, that this is not how to pass the class...
 $\square$
 
-# Problem 5-11 
+# Problem 5-11
 
 What is the value for each of the following variables?
 \{
@@ -2763,7 +2793,7 @@ For each of the following, indicate where the parentheses goes to disambiguate t
 
 Please see page 49 for a hint.
 
-# Assignment 1.5 
+# Assignment 1.5
 
 Write a function to determine if an individual is a full tithe payer. This program will have one function that accepts as parameters the income and payment, and will return whether or not the user is a full tithe payer. The return type will need to be a Boolean value. Note that main() is already written for you. Also note that the skeleton of isFullTithePayer() is written, but there is more code to be written in the function for it to work as desired.
 
@@ -2795,7 +2825,7 @@ The test bed is available at:
 testBed cs124/assign15 assignment15.cpp
 Don't forget to submit your assignment with the name "Assignment 15 " in the header.
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ### 1.6 IF Statements
 
@@ -2842,7 +2872,7 @@ For example:
 
 The Boolean expression, also called the controlling expression, determines whether the statements inside the body of the loop are to be executed. If the Boolean expression (assignmentLate $==$ true in this case) evaluates to true, then control enters the body of the IF statement (assignmentGrade $=0 ;$ ). Otherwise, the body of the IF statement is skipped.
 
-# Action-A/Action-B 
+# Action-A/Action-B
 
 The second flavor of the IF statement is represented with the following syntax:
 
@@ -2878,7 +2908,7 @@ else
     cout << "Great job! You passed!\n";
 ```
 
-# Example 1.6 - IF Statements 
+# Example 1.6 - IF Statements
 
 This example will demonstrate both types of IF statements: the Action/No-Action type and the ActionA/Action-B type.
 
@@ -2927,7 +2957,7 @@ Another challenge would be to remove the IF statement from the validGpa() functi
 The complete solution is available at 1-6-ifStatements.cpp or:
 /home/cs124/examples/1-6-ifStatements.cpp
 
-# Details 
+# Details
 
 Anytime there is a place for a statement in C++, multiple statements can be added by using $\}$ s. Similarly, whenever there is a place for a statement in C++, any statement can go there. For example, the body of an IF statement could contain another IF statement.
 
@@ -3012,7 +3042,7 @@ If we just change the spacing a little, we can re-arrange the code to a much mor
 
 This is the preferred style for a multi-way IF. Technically speaking, we can achieve a multi-way IF without resorting to ELSE statements.
 
-# Sue's Tips 
+# Sue's Tips
 
 Be careful and deliberate in the order in which the IF statements are arranged in multi-way IFs. Not only may a bug exist if they are in the incorrect order, but there may be performance implications as well. Make sure to put the most-likely or common cases at the top and the lesslikely ones at the bottom.
 
@@ -3054,7 +3084,7 @@ expressions are redundant. This statement has exactly the same descriptive power
 
 Not only is this code much easier to read (simpler Boolean expressions) and less bug-prone (there is no redundancy), it is also much more efficient. Consider the case where numberGrade $==93$. In this case, the first Boolean expression will evaluate to true and the body of the first IF statement will be executed. Since the entire rest of the multi-way IF is part of the ELSE condition of the first IF statement, it will all be skipped. Thus, far less code will be executed.
 
-# Pitfalls 
+# Pitfalls
 
 The C++ language was designed to be as efficient and high-performance as possible. In other words, it was designed to facilitate making an efficient compiler so the resulting machine language executes quickly on the CPU. The C++ language was not designed to be easy to learn or easy to write code. Modern derivatives of $\mathrm{C}++$ such as Java and C\# were designed with that in mind. Taking this point into account, $\mathrm{C}++$ programmers should always be on the look-out for various pitfalls that beset the language.
 
@@ -3072,7 +3102,7 @@ Algebra treats the equals sign as a statement of equivalence, much like $\mathrm
 
 In this statement, it may look like the program will display a message if the user has failed the class. Since the first statement sets fail to false, we will not execute the cout in the body of the IF. Closer inspection, however, will reveal that we are not comparing fail with true. Instead we are setting fail to true. Thus, the variable will change and the Boolean expression will evaluate to true.
 
-# Pitfall: Extra semicolon 
+# Pitfall: Extra semicolon
 
 Remember that the semicolon signifies the end of a statement. The end of an IF statement is the end of the statement inside of the body of the IF. Thus, if there is a semicolon after the Boolean expression, we are signifying that there is no body in the IF!
 
@@ -3126,7 +3156,7 @@ This is exactly the same as:
 
 Observe how only the first statement (classFail = true;) is part of the IF.
 
-# Example 1.6 - Overtime 
+# Example 1.6 - Overtime
 
 This example will demonstrate how to send data to a function and receive data from a function. This follows the "Processing" model of information flow through a function.
 
@@ -3165,7 +3195,7 @@ Some companies credit employees with an hour of work each month even if they onl
 The complete solution is available at 1-6-overtime.cpp or:
 /home/cs124/examples/1-6-overtime.cpp
 
-# Problem 1 
+# Problem 1
 
 What is the output?
 
@@ -3208,7 +3238,7 @@ bool $g=10+2-$ false;
 
 Please see page 79 for a hint.
 
-# Problem 9-13 
+# Problem 9-13
 
 For each of the following, indicate where the parentheses goes to disambiguate the order of operations:
 
@@ -3245,7 +3275,7 @@ Answer:
 
 Write a function to accept a number from the caller as a parameter and return whether the number is positive:
 
-# Problem 16 
+# Problem 16
 
 What is the output?
 
@@ -3293,7 +3323,7 @@ Answer:
 
 Please see page 91 for a hint.
 
-# Problem 18 
+# Problem 18
 
 What is the output when the user inputs the letter ' $m$ '?
 
@@ -3339,7 +3369,7 @@ What is the output when the user inputs the number 5?
 
 Answer:
 
-# Assignment 1.6 
+# Assignment 1.6
 
 Write a function (computeTax()) to determine which tax bracket a user is in. The tax tables are:
 
@@ -3378,7 +3408,7 @@ testBed cs124/assign16 assignment16.cpp
 Don't forget to submit your assignment with the name "Assignment 16 " in the header.
 Please see page 89 for a hint.
 
-# Unit 1. Simple Programs 
+# Unit 1. Simple Programs
 
 ## Unit 1 Practice Test
 
@@ -3414,7 +3444,7 @@ testBed cs124/practice12 practice12.cpp
 A sample solution is on:
 /home/cs124/tests/practice12.cpp
 
-# Grading for Test1 
+# Grading for Test1
 
 Sample grading criteria:
 
@@ -3427,7 +3457,7 @@ Sample grading criteria:
 | $\begin{aligned} & \mathrm{I} / \mathrm{O} \\ & 20 \% \end{aligned}$ | Zero test bed errors | Looks the same on screen, but minor test bed errors | One major test bed error | One or more tests pass test bed | Program input and output do not resemble the problem |
 | Programming <br> Style <br> $20 \%$ | Well commented, meaningful variable names, effective use of blank lines | Zero style checker errors | One or two minor style checker errors | Code is readable, but serious style infractions | No evidence of the principles of "elements of style" in the program |
 
-# Unit 1 Project : Monthly Budget 
+# Unit 1 Project : Monthly Budget
 
 Our first project will be to write a program to manage a user's personal finances for a month. This program will ask the user for various pieces of financial information then will then display a report of whether the user is on target to meet his or her financial goals.
 This project will be done in three phases:
@@ -3468,7 +3498,7 @@ The following is a report on your monthly expenses
 You may choose to use the following functions as part of your design:
 ![[ProceduralProgramming Unit 1_img_11.jpeg]]
 
-# Algorithms 
+# Algorithms
 
 ## main()
 
@@ -3568,7 +3598,7 @@ end
 
 Note that this algorithm is vastly oversimplified because it does not take into account deductions and other credits. Please do not use this algorithm to compute your actual tax burden!
 
-# Project 02 
+# Project 02
 
 The first submission point due at the end of Week 02 is to prompt the user for input and display the budget back on the screen:
 
@@ -3614,7 +3644,7 @@ styleChecker project02.cpp
 6. Submit it with "Project 02, Monthly Budget" in the program header:
 submit project02.cpp
 
-# Project 03 
+# Project 03
 
 This second part of the Monthly Budget project will be to divide the program into functions and perform some of the simple calculations:
 
@@ -3656,7 +3686,7 @@ submit project03.cpp
 An executable version of the project is available at:
 /home/cs124/projects/prj03.out
 
-# Project 04 
+# Project 04
 
 This final part of the Monthly Budget project will be to add the compute tax component.
 
