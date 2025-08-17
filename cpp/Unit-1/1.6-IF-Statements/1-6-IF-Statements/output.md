@@ -423,7 +423,7 @@ For each of the following, indicate where the parentheses goes to disambiguate t
 | $3.1 *!b>7 * a++==++c+2$ |  |
 | $a<b<c<d$ |  |
 
-Please see page 82 for a bint.
+Please see page 82 for a hint.
 
 ## Problem 14
 
@@ -520,7 +520,7 @@ What is the output when the user inputs the letter ' $m$ '?
 
 Answer:
 
-Please see page 92 for a bint.
+Please see page 92 for a hint.
 
 ## Problem 19
 

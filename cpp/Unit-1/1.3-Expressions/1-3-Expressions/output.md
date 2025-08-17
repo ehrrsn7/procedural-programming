@@ -330,7 +330,7 @@ Please see page 36 for questions
 Insert parentheses to indicate the order of operations:
 $a=a+b * c++ / 4$
 
-Please see page 47 for a bint.
+Please see page 47 for a hint.
 
 ## Problem 4
 
@@ -347,7 +347,7 @@ $$
 Answer:
 yards $==$ $\qquad$
 
-Please see page 49 for a bint.
+Please see page 49 for a hint.
 
 # Problem 5 
 

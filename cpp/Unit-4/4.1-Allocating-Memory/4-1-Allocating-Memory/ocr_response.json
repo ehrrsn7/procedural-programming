@@ -112,7 +112,7 @@
         },
         {
             "index": 11,
-            "markdown": "# Problem 7 \n\nHow much memory is allocated with each of the following?\n\n| $p=$ new double; |  |\n| :-- | :-- |\n| $p=$ new char[8]; |  |\n| $p=$ new int[6]; |  |\n| $p=$ new char(65); |  |\n\nPlease see page 328 for a bint.\n\n## Problem 8\n\nWrite the code to prompt the user for a number of float grades, then allocate an array just big enough to store the array.\n$\\square$",
+            "markdown": "# Problem 7 \n\nHow much memory is allocated with each of the following?\n\n| $p=$ new double; |  |\n| :-- | :-- |\n| $p=$ new char[8]; |  |\n| $p=$ new int[6]; |  |\n| $p=$ new char(65); |  |\n\nPlease see page 328 for a hint.\n\n## Problem 8\n\nWrite the code to prompt the user for a number of float grades, then allocate an array just big enough to store the array.\n$\\square$",
             "images": [],
             "dimensions": {
                 "dpi": 200,

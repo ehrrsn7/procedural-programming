@@ -1,48 +1,48 @@
 # Table of Contents 
 
-Table of Contents ..... 1
-Course Overview ..... 2
-Computers \& Programs ..... 4
-1.0 First Program ..... 13
-1.1 Output ..... 24
-1.2 Input \& Variables ..... 35
-1.3 Expressions ..... 46
-1.4 Functions ..... 58
-1.5 Boolean Expressions ..... 76
-1.6 IF Statements ..... 86
-Unit 1 Practice Test ..... 99
-Unit 1 Project : Monthly Budget ..... 101
-2.0 Modularization ..... 108
-2.1 Debugging ..... 130
-2.2 Designing Algorithms ..... 145
-2.3 Loop Syntax ..... 156
-2.4 Loop Output ..... 168
-2.5 Loop Design ..... 181
-2.6 Files ..... 190
-Unit 2 Practice Test ..... 207
-Unit 2 Project : Calendar Program ..... 209
-3.0 Array Syntax ..... 214
-3.1 Array Design ..... 233
-3.2 Strings ..... 242
-3.3 Pointers ..... 255
-3.4 Pointer Arithmetic ..... 269
-3.5 Advanced Conditionals ..... 284
-Unit 3 Practice Test ..... 301
-Unit 3 Project : MadLib ..... 303
-4.0 Multi-Dimensional Arrays ..... 309
-4.1 Allocating Memory ..... 324
-4.2 String Class ..... 337
-4.3 Command Line ..... 346
-4.4 Instrumentation ..... 356
-Unit 4 Practice Test ..... 361
-Unit 4 Project : Sudoku ..... 363
-A. Elements of Style ..... 369
-B. Order of Operations ..... 375
-C. Lab Help ..... 376
-D. Emacs \& Linux Cheat-Sheet ..... 377
-E. C++ Syntax Reference Guide ..... 378
-F. Glossary ..... 381
-G. Index ..... 393
+Table of Contents 
+Course Overview 
+Computers \& Programs 
+1.0 First Program 
+1.1 Output 
+1.2 Input \& Variables 
+1.3 Expressions 
+1.4 Functions 
+1.5 Boolean Expressions 
+1.6 IF Statements 
+Unit 1 Practice Test 
+Unit 1 Project : Monthly Budget 
+2.0 Modularization 
+2.1 Debugging 
+2.2 Designing Algorithms 
+2.3 Loop Syntax 
+2.4 Loop Output 
+2.5 Loop Design 
+2.6 Files 
+Unit 2 Practice Test 
+Unit 2 Project : Calendar Program 
+3.0 Array Syntax 
+3.1 Array Design 
+3.2 Strings 
+3.3 Pointers 
+3.4 Pointer Arithmetic 
+3.5 Advanced Conditionals 
+Unit 3 Practice Test 
+Unit 3 Project : MadLib 
+4.0 Multi-Dimensional Arrays 
+4.1 Allocating Memory 
+4.2 String Class 
+4.3 Command Line 
+4.4 Instrumentation 
+Unit 4 Practice Test 
+Unit 4 Project : Sudoku 
+A. Elements of Style 
+B. Order of Operations 
+C. Lab Help 
+D. Emacs \& Linux Cheat-Sheet 
+E. C++ Syntax Reference Guide 
+F. Glossary 
+G. Index 
 
 # Course Overview 
 

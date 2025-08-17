@@ -351,7 +351,7 @@ The sorted names are: "Sam, Sid, and Sue"
 Answer:
 $\square$
 
-## Please see page 340 for a bint.
+## Please see page 340 for a hint.
 
 Page 344 | 4.2 String Class | Unit 4: Advanced Topics | Procedural Programming in C++
 

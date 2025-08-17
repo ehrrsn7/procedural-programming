@@ -364,7 +364,7 @@ a.out 456
 
 Answer:
 
-Please see page 348 for a bint.
+Please see page 348 for a hint.
 
 ## Problem 5
 
@@ -381,7 +381,7 @@ int main(int argc, char ** argv)
 
 Answer:
 
-Please see page 347 for a bint.
+Please see page 347 for a hint.
 
 ## Problem 6
 
@@ -396,7 +396,7 @@ The absolute value of -3.90 is 3.9
 
 Answer:
 
-Please see page 347 for a bint.
+Please see page 347 for a hint.
 
 Write a program to convert feet to meters. The conversion from feet to meters is:
 1 foot $=0.3048$ meters

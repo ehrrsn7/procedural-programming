@@ -1,12 +1,12 @@
 # Unit 4. Advanced Topics 
 
-4.0 Multi-Dimensional Arrays ..... 309
-4.1 Allocating Memory ..... 324
-4.2 String Class ..... 337
-4.3 Command Line ..... 346
-4.4 Instrumentation ..... 356
-Unit 4 Practice Test ..... 361
-Unit 4 Project : Sudoku ..... 363
+4.0 Multi-Dimensional Arrays 
+4.1 Allocating Memory 
+4.2 String Class 
+4.3 Command Line 
+4.4 Instrumentation 
+Unit 4 Practice Test 
+Unit 4 Project : Sudoku 
 
 # Unit 4. Advanced Topics 
 
@@ -172,7 +172,7 @@ We can also initialize a multi-dimensional array at declaration time. The best w
 ```
 
 
-## Suc's Tips
+## Sue's Tips
 
 Notice how the horizontal dimension comes second in multi-dimensional arrays. In Geometry, we learned to specify coordinates as ( $\mathrm{X}, \mathrm{Y}$ ) where the horizontal dimension comes first. Multidimensional arrays are the opposite! Rather than trying to re-learn ( $\mathrm{Y}, \mathrm{X}$ ) (which just doesn't feel right, does it?), it is more convenient to use (Row, Column) as our array dimensions.
 Storing a digital image is a slightly more complex example. Each pixel consists of three values (red, green, and blue) with 256 possible values in each (char). The pixels themselves are arrayed in a two-dimensional image $(4,000 \times 3,000)$. The resulting declaration is:
@@ -531,7 +531,7 @@ char convert(int input)
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 2
 
@@ -574,7 +574,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 4
 
@@ -600,7 +600,7 @@ What is the syntax error?
 
 Answer:
 
-Please see page 287 for a bint.
+Please see page 287 for a hint.
 
 ## Problem 5
 
@@ -617,7 +617,7 @@ const float x = 1;
 int array[x]
 ```
 
-int array[][] 22int array[6 * 5 + 2][4 / 2];Please see page 215 for a bint.
+int array[][] 22int array[6 * 5 + 2][4 / 2];Please see page 215 for a hint.
 
 ## Problem 7
 
@@ -1208,7 +1208,7 @@ How much memory is allocated with each of the following?
 | $p=$ new int[6]; |  |
 | $p=$ new char(65); |  |
 
-Please see page 328 for a bint.
+Please see page 328 for a hint.
 
 ## Problem 8
 
@@ -1607,7 +1607,7 @@ The sorted names are: "Sam, Sid, and Sue"
 Answer:
 $\square$
 
-## Please see page 340 for a bint.
+## Please see page 340 for a hint.
 
 Page 344 | 4.2 String Class | Unit 4: Advanced Topics | Procedural Programming in C++
 
@@ -2002,7 +2002,7 @@ a.out 456
 
 Answer:
 
-Please see page 348 for a bint.
+Please see page 348 for a hint.
 
 ## Problem 5
 
@@ -2019,7 +2019,7 @@ int main(int argc, char ** argv)
 
 Answer:
 
-Please see page 347 for a bint.
+Please see page 347 for a hint.
 
 ## Problem 6
 
@@ -2034,7 +2034,7 @@ The absolute value of -3.90 is 3.9
 
 Answer:
 
-Please see page 347 for a bint.
+Please see page 347 for a hint.
 
 Write a program to convert feet to meters. The conversion from feet to meters is:
 1 foot $=0.3048$ meters

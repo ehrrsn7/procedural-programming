@@ -1,13 +1,13 @@
 # Unit 3. Pointers \& Arrays 
 
-3.0 Array Syntax ..... 214
-3.1 Array Design ..... 233
-3.2 Strings ..... 242
-3.3 Pointers ..... 255
-3.4 Pointer Arithmetic ..... 269
-3.5 Advanced Conditionals ..... 284
-Unit 3 Practice Test ..... 301
-Unit 3 Project : MadLib ..... 303
+3.0 Array Syntax 
+3.1 Array Design 
+3.2 Strings 
+3.3 Pointers 
+3.4 Pointer Arithmetic 
+3.5 Advanced Conditionals 
+Unit 3 Practice Test 
+Unit 3 Project : MadLib 
 
 # Unit 3: Pointers \& Arrays 
 
@@ -586,7 +586,7 @@ What is the output?
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 2
 
@@ -604,7 +604,7 @@ What is the output?
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 3
 
@@ -621,7 +621,7 @@ What is the output?
 
 Answer:
 
-Please see page 219 for a bint.
+Please see page 219 for a hint.
 
 # Problem 4 
 
@@ -674,7 +674,7 @@ void fill(int array[])
 Write the code to call the function with a variable called array.
 Answer:
 $\square$
-Please see page 221 for a bint.
+Please see page 221 for a hint.
 
 ## Problem 8
 
@@ -690,7 +690,7 @@ Given the following code:
 Write a function prototype for display().
 Answer:
 $\square$
-Please see page 223 for a bint.
+Please see page 223 for a hint.
 
 ## Problem 9
 
@@ -1007,7 +1007,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 2
 
@@ -1646,7 +1646,7 @@ void displayText(text);
 void displayText(char [] text);
 ```
 
-Please see page 221 for a bint.
+Please see page 221 for a hint.
 
 ## Problem 6
 
@@ -2258,7 +2258,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 258 for a bint.
+Please see page 258 for a hint.
 
 ## Problem 5
 
@@ -3534,7 +3534,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 258 for a bint.
+Please see page 258 for a hint.
 
 ## Problem 2
 
@@ -3581,7 +3581,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 285 for a bint.
+Please see page 285 for a hint.
 
 ## Problem 4
 

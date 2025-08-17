@@ -512,7 +512,7 @@ Answer:
 $\square$
 $\square$
 
-Please see page 140 for a bint.
+Please see page 140 for a hint.
 
 ## Problem 5
 
@@ -523,7 +523,7 @@ $\square$
 $\square$
 $\square$
 
-Please see page 138 for a bint.
+Please see page 138 for a hint.
 
 ## Problem 6
 

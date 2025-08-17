@@ -510,7 +510,7 @@ $$
 \end{aligned}
 $$
 
-Please see page 47 for a bint.
+Please see page 47 for a hint.
 
 ## Problem 2
 
@@ -525,21 +525,21 @@ $$
 
 Answer:
 
-Please see page 49 for a bint.
+Please see page 49 for a hint.
 
 ## Problem 3
 
 Write a function to display "Hello World". Call it hello()
 Answer:
 
-Please see page 60 for a bint.
+Please see page 60 for a hint.
 
 ## Problem 4
 
 Write a function to return a number. Call it get()
 Answer:
 
-Please see page 64 for a bint.
+Please see page 64 for a hint.
 
 # Problem 5 
 
@@ -607,7 +607,7 @@ int main()
 
 Answer:
 
-Please see page 62 for a bint.
+Please see page 62 for a hint.
 
 ## Problem 8
 
@@ -629,7 +629,7 @@ int main()
 
 Answer:
 
-Please see page 62 for a bint.
+Please see page 62 for a hint.
 
 # Problem 9 
 
@@ -653,7 +653,7 @@ int main()
 
 Answer:
 
-Please see page 65 for a bint.
+Please see page 65 for a hint.
 
 ## Problem 10
 
@@ -698,7 +698,7 @@ int b()
 
 Answer:
 
-Please see page 67 for a bint.
+Please see page 67 for a hint.
 
 ## Problem 12
 
@@ -720,7 +720,7 @@ int main()
 
 Answer:
 
-Please see page 67 for a bint.
+Please see page 67 for a hint.
 
 # Assignment 1.4 
 

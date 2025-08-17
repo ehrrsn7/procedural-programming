@@ -62,7 +62,7 @@
         },
         {
             "index": 6,
-            "markdown": "# Problem 1 \n\nWhat is the value of $\\underline{b}$ at the end of execution?\n\n```\nbool vegas(bool b)\n{\n    b = false;\n    return true;\n}\nint main()\n{\n    bool b;\n    vegas(b);\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a bint.\n\n## Problem 2\n\nWhat is the output when the user types ' $a$ '?\n\n```\nvoid function(char &value)\n{\n    cin >> value;\n    return;\n}\nint main()\n{\n    char input = 'b';\n    function(input);\n    cout << input << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n## Problem 3\n\nWhich of the following is not a basic computer operation?\n\n- Receive information\n- Connect to the network\n- Perform math\n- Compare two numbers",
+            "markdown": "# Problem 1 \n\nWhat is the value of $\\underline{b}$ at the end of execution?\n\n```\nbool vegas(bool b)\n{\n    b = false;\n    return true;\n}\nint main()\n{\n    bool b;\n    vegas(b);\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a hint.\n\n## Problem 2\n\nWhat is the output when the user types ' $a$ '?\n\n```\nvoid function(char &value)\n{\n    cin >> value;\n    return;\n}\nint main()\n{\n    char input = 'b';\n    function(input);\n    cout << input << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n## Problem 3\n\nWhich of the following is not a basic computer operation?\n\n- Receive information\n- Connect to the network\n- Perform math\n- Compare two numbers",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -92,7 +92,7 @@
         },
         {
             "index": 9,
-            "markdown": "# Problem 11 \n\nWrite the pseudocode for a function to compute how many days are in a given year. Hint: the answer is 365 or 366 .:\n\nAnswer:\n$\\square$\nPlease see page 150 for a bint.\n\n## Problem 12\n\nWrite the pseudocode for a function to display the multiples of 7 under 100 .\nAnswer:\n$\\square$\nPlease see page 148 for a bint.",
+            "markdown": "# Problem 11 \n\nWrite the pseudocode for a function to compute how many days are in a given year. Hint: the answer is 365 or 366 .:\n\nAnswer:\n$\\square$\nPlease see page 150 for a hint.\n\n## Problem 12\n\nWrite the pseudocode for a function to display the multiples of 7 under 100 .\nAnswer:\n$\\square$\nPlease see page 148 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,

@@ -30,15 +30,16 @@
 
 # Unit 1. Simple Programs
 
-1.0 First Program ..... 13
-1.1 Output. ..... 24
-1.2 Input \& Variables ..... 35
-1.3 Expressions ..... 46
-1.4 Functions ..... 58
-1.5 Boolean Expressions ..... 76
-1.6 IF Statements. ..... 86
-Unit 1 Practice Test ..... 99
-Unit 1 Project : Monthly Budget ..... 101
+| ---
+| 1.0 First Program
+| 1.1 Output
+| 1.2 Input & Variables
+| 1.3 Expressions
+| 1.4 Functions
+| 1.5 Boolean Expressions
+| 1.6 IF Statements.
+| Unit 1 Practice Test
+| Unit 1 Project : Monthly Budget
 
 # Unit 1. Simple Programs
 
@@ -128,7 +129,7 @@ Most Linux commands do not display anything on the screen if they were successfu
 
 For more commands or more details on the above, please see Appendix D: Linux and Emacs Cheat-Sheet.
 
-## Suc's Tips
+## Sue's Tips
 
 Be careful how you name your files. By the end of the semester, you could easily get lost in a sea of files. Spend a few moments thinking of how you will organize all your files as this will be a useful practice for the remainder of your career.
 
@@ -177,7 +178,7 @@ After the program is saved in a file, the next step is compilation. Compilation 
 3. Generator: After the meaning of the source language is understood through the parsing process, the next step is to generate text in the target language. In the case of the French to English translation, this means putting the parsed meaning from the French language into the equivalent English words using the English syntax. In the case of compiling $\mathrm{C}++$ programs, the end result of this phase is assembly language similar to what we used in Chapter 0.2 .
 4. Linker: The final phase is to output the result from the code generator into a format understood by the listener. In the case of the French to English translation, that would involve speaking the translated text. In the case of compiling $\mathrm{C}++$ code, that involves creating machine language which the CPU will be able to understand.
 
-All four of these steps are done almost instantly with the compiler. The compiler we use in this class is $\mathrm{g}++$. The syntax is:
+All four of these steps are done almost instantly with the compiler. The compiler we use in this class is `g++`. The syntax is:
 g++ <source file>
 If, for example, we are going to compile the file hw10.cpp, the following command will need to be typed:
 g++ hw10.cpp
@@ -347,7 +348,7 @@ The complete solution is available at 1-0-firstProgram.cpp or:
 If your body was a computer, select all the von Neumann functions that the spinal cord would perform?
 Answer:
 
-Please see page 5 for a bint.
+Please see page 5 for a hint.
 
 ## Problem 2
 
@@ -355,14 +356,14 @@ If a given processor were to be simplified to only contain a single instruction,
 
 Answer:
 
-Please see page 5 for a bint.
+Please see page 5 for a hint.
 
 ## Problem 3
 
 Which of the following does a CPU consume? \{Natural language, C++, Assembly language, Machine \}?
 Answer:
 
-Please see page 5 for a bint.
+Please see page 5 for a hint.
 
 ## Problem 4
 
@@ -380,7 +381,7 @@ int main()
 
 Answer:
 
-Please see page 7 for a bint.
+Please see page 7 for a hint.
 
 # Assignment 1.0
 
@@ -608,7 +609,7 @@ Page 28 | 1.1 Output | Unit 1: Simple Program | Procedural Programming in C++
 
 Observe how the second row displays two decimals even though the code only has one. This is because of the cout.precision(2) statement indicating that two decimals will always be used. The third row also displays two decimal places, rounding the number up because the digit in the third decimal place is a 5 .
 
-# Suc's Tips
+# Sue's Tips
 
 It is helpful to first draw out the output on graph paper so you can get the column widths correct the first time. When the output is complex (as it is for Project 1), aligning columns can become frustrating.
 
@@ -732,7 +733,7 @@ Write the code to put a newline on the screen:
 Answer:
 $\square$
 
-Please see page 26 for a bint.
+Please see page 26 for a hint.
 
 ## Problem 2
 
@@ -742,7 +743,7 @@ How do you right-align numbers in $\mathrm{C}++$ ?
 Answer:
 $\square$
 
-Please see page 28 for a bint.
+Please see page 28 for a hint.
 
 ## Problem 3
 
@@ -752,7 +753,7 @@ $\square$
 Answer:
 $\square$
 
-Please see page 27 for a bint.
+Please see page 27 for a hint.
 
 ## Problem 4
 
@@ -762,7 +763,7 @@ $\backslash / \backslash / \backslash /$
 Answer:
 $\square$
 
-Please see page 29 for a bint.
+Please see page 29 for a hint.
 
 # Problem 5
 
@@ -793,7 +794,7 @@ $$
 Note that there is a tab at the start of the second line.
 Answer:
 $\square$
-Please see page 27 for a bint.
+Please see page 27 for a hint.
 
 ## Problem 7
 
@@ -810,7 +811,7 @@ $$
 
 Answer:
 $\square$
-Please see page 30 for a bint.
+Please see page 30 for a hint.
 
 # Assignment 1.1
 
@@ -849,11 +850,11 @@ Please note:
 - Please verify your solution against:
 testBed cs124/assign11 assignment11.cpp
 Don't forget to submit your assignment with the name "Assignment 11" in the header.
-Please see page 30 for a bint.
+Please see page 30 for a hint.
 
 # Unit 1. Simple Programs
 
-### 1.2 Input \& Variables
+### 1.2 Input & Variables
 
 Sue is excited because she just got a list of ancestor names from her grandmother. Finally, she can get some traction on her genealogy work! Unfortunately, the names are in the wrong order. Rather than being in the format of [LastName, FirstName MiddleInitial], they are [FirstName MiddleInitial LastName]. Instead of retyping the entire list, Sue writes a program to swap the names.
 
@@ -1128,14 +1129,14 @@ cout << "\\"/\n";
 
 Answer:
 
-Please see page 29 for a bint.
+Please see page 29 for a hint.
 
 ## Problem 2
 
 How do you put a tab on the screen?
 Answer:
 
-Please see page 27 for a bint.
+Please see page 27 for a hint.
 
 ## Problem 3
 
@@ -1143,14 +1144,14 @@ How do you output the following:
 You will need to use '\n' a ton in this class.
 Answer:
 
-Please see page 29 for a bint.
+Please see page 29 for a hint.
 
 ## Problem 4
 
 How do you declare an integer variable?
 Answer:
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 ## Problem 5
 
@@ -1163,14 +1164,14 @@ How would you declare a variable for each of the following?
 | nameStudent |  |
 | ageStudent |  |
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 # Problem 6
 
 Declare a variable to store the ratio of feet to meters.
 Answer:
 
-Please see page 37 for a bint.
+Please see page 37 for a hint.
 
 ## Problem 7
 
@@ -1193,7 +1194,7 @@ What is the number of bytes for each data type?
 }
 ```
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 ## Problem 8
 
@@ -1206,14 +1207,14 @@ int value
 long double value;
 ```
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 ## Problem 9
 
 Declare a variable to represent the following number in $\mathrm{C}++: 8,820,198,883,463.39$
 Answer:
 
-Please see page 37 for a bint.
+Please see page 37 for a hint.
 
 # Problem 10
 
@@ -1261,7 +1262,7 @@ Your income is: \$ 932.16
 Please verify your solution against:
 testBed cs124/assign12 assignment12.cpp
 Don't forget to submit your assignment with the name "Assignment 12" in the header.
-Please see page 41 for a bint.
+Please see page 41 for a hint.
 
 # Unit 1. Simple Programs
 
@@ -1595,7 +1596,7 @@ Please see page 36 for questions
 Insert parentheses to indicate the order of operations:
 $a=a+b * c++ / 4$
 
-Please see page 47 for a bint.
+Please see page 47 for a hint.
 
 ## Problem 4
 
@@ -1612,7 +1613,7 @@ $$
 Answer:
 yards $==$ $\qquad$
 
-Please see page 49 for a bint.
+Please see page 49 for a hint.
 
 # Problem 5
 
@@ -1946,7 +1947,7 @@ Processing: The third way occurs when a function converts data from one type to 
 bool isLeap(int year);
 float add(float value1, float value2);
 Update: The final way is when data is converted or updated in the function. This special case occurs when the input parameter and the return value are the same variable. In this case, we need a special indicator on the variable in the parameter list to specify that the variable is shared between the caller and the callee. We call this call-by-reference.
-void update(int \&money);
+void update(int &money);
 
 # Example 1-4 - Compute Function
 
@@ -2010,7 +2011,7 @@ When execution is in the function computeSavings(), only variables declared in t
 
 # Pass-By-Reference
 
-Pass-by-reference, otherwise known as "call-by-reference" is the process of indicating to the compiler that a given parameter variable is shared between the caller and the callee. We use the ampersand \& to indicate the parameter is pass-by-reference.
+Pass-by-reference, otherwise known as "call-by-reference" is the process of indicating to the compiler that a given parameter variable is shared between the caller and the callee. We use the ampersand & to indicate the parameter is pass-by-reference.
 
 | Pass By Value | Pass By Reference |
 | :--: | :--: |
@@ -2062,7 +2063,7 @@ void passByValue(int value)
 }
 ```
 
-The final uses pass-by-reference. This means that both the caller and the callee share a variable. This relationship is indicated by the ' $\&$ ' symbol beside the parameter in the function:
+The final uses pass-by-reference. This means that both the caller and the callee share a variable. This relationship is indicated by the ' $&$ ' symbol beside the parameter in the function:
 
 ```
 /***
@@ -2078,7 +2079,7 @@ void passByReference(int &reference)
 }
 ```
 
-The only difference between passByReference(int \&reference) and passByValue(int value) is the existence of the \& beside the variable name. When the \& is specified, then pass-by-reference is used.
+The only difference between passByReference(int &reference) and passByValue(int value) is the existence of the & beside the variable name. When the & is specified, then pass-by-reference is used.
 
 The complete solution is available at 1-4-passByReference.cpp or:
 /home/cs124/examples/1-4-passByReference.cpp
@@ -2215,7 +2216,7 @@ $$
 \end{aligned}
 $$
 
-Please see page 47 for a bint.
+Please see page 47 for a hint.
 
 ## Problem 2
 
@@ -2230,21 +2231,21 @@ $$
 
 Answer:
 
-Please see page 49 for a bint.
+Please see page 49 for a hint.
 
 ## Problem 3
 
 Write a function to display "Hello World". Call it hello()
 Answer:
 
-Please see page 60 for a bint.
+Please see page 60 for a hint.
 
 ## Problem 4
 
 Write a function to return a number. Call it get()
 Answer:
 
-Please see page 64 for a bint.
+Please see page 64 for a hint.
 
 # Problem 5
 
@@ -2312,7 +2313,7 @@ int main()
 
 Answer:
 
-Please see page 62 for a bint.
+Please see page 62 for a hint.
 
 ## Problem 8
 
@@ -2334,7 +2335,7 @@ int main()
 
 Answer:
 
-Please see page 62 for a bint.
+Please see page 62 for a hint.
 
 # Problem 9
 
@@ -2358,7 +2359,7 @@ int main()
 
 Answer:
 
-Please see page 65 for a bint.
+Please see page 65 for a hint.
 
 ## Problem 10
 
@@ -2403,7 +2404,7 @@ int b()
 
 Answer:
 
-Please see page 67 for a bint.
+Please see page 67 for a hint.
 
 ## Problem 12
 
@@ -2425,7 +2426,7 @@ int main()
 
 Answer:
 
-Please see page 67 for a bint.
+Please see page 67 for a hint.
 
 # Assignment 1.4
 
@@ -2509,7 +2510,7 @@ Boolean algebra is a way to express logical statements mathematically. This is i
 | Math | English | C++ | Example |
 | :-- | :-- | :-- | :-- |
 | $\sim$ | Not | $!$ | !true |
-| $\wedge$ | And | $\& \&$ | true \&\& false |
+| $\wedge$ | And | $& &$ | true && false |
 | $v$ | Or | $\| \|$ | true || false |
 | $=$ | Equals | $==$ | $\mathrm{x}+5==42 / 2$ |
 | $\neq$ | Not Equals | $!=$ | graduated $!=$ true |
@@ -2531,13 +2532,13 @@ $$
 $$
 
 In $\mathrm{C}++$, this will be rendered as:
-bool isAcceptable = isFromHisHeart \&\& !(isGrudgingly || isOfNecessity);
+bool isAcceptable = isFromHisHeart && !(isGrudgingly || isOfNecessity);
 This Boolean expression has all three components: And, Or, and Not.
 
 ## AND
 
 The Boolean operator AND evaluates to true only if the left-side and the right-side are both true. If either are false, the expression evaluates to false. Consider the following statement containing a Boolean AND expression:
-bool answer = leftSide \&\& rightSide;
+bool answer = leftSide && rightSide;
 This can be represented with a truth-table:
 
 | AND |  | Left- <br> side |  |
@@ -2546,7 +2547,7 @@ This can be represented with a truth-table:
 |  | true | true | false |
 |  | false | false | false |
 
-If leftSide $=$ false and rightSide $=$ false, then leftSide \&\& rightSide evaluates to false. This case is represented in the lower-right corner of the truth table (observe how the column corresponding to that cell has false in the header corresponding to the leftSide variable. Observe how the row corresponding to that cell has false in the header corresponding to the rightSide variable).
+If leftSide $=$ false and rightSide $=$ false, then leftSide && rightSide evaluates to false. This case is represented in the lower-right corner of the truth table (observe how the column corresponding to that cell has false in the header corresponding to the leftSide variable. Observe how the row corresponding to that cell has false in the header corresponding to the rightSide variable).
 
 The AND operator is picky: it evaluates to true only when both sides are true.
 
@@ -2586,14 +2587,14 @@ Back to our scripture from the beginning:
 Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a Cheerful giver. (2 Corinthians 9:7)
 
 This, as we discussed, is the same as:
-bool isAcceptable = isFromHisHeart \&\& !(isGrudgingly || isOfNecessity);
+bool isAcceptable = isFromHisHeart && !(isGrudgingly || isOfNecessity);
 In this case, Sam is giving from his heart (isFromHisHeart = true) and is not giving of necessity (isOfNecessity $=$ false). Unfortunately, he is a bit resentful (isGrudgingly = true). Evaluation is:
 
-1. bool isAcceptable = isFromHisHeart \&\& !(isGrudgingly || isOfNecessity);
-2. bool isAcceptable = true \&\& !(true || false); // replace variables with values
-3. bool isAcceptable = true \&\& !(true); // true || false --> true
-4. bool isAcceptable = true \&\& false; // !true --> false
-5. bool isAcceptable = false; // true \&\& false --> false
+1. bool isAcceptable = isFromHisHeart && !(isGrudgingly || isOfNecessity);
+2. bool isAcceptable = true && !(true || false); // replace variables with values
+3. bool isAcceptable = true && !(true); // true || false --> true
+4. bool isAcceptable = true && false; // !true --> false
+5. bool isAcceptable = false; // true && false --> false
 
 Thus we can see that Sam's offering is not acceptable to the Lord. The grudging feelings have wiped out all the virtue from his sacrifice.
 
@@ -2609,8 +2610,8 @@ Knowing this algebraic transformation makes it much easier to solve equations. T
 
 $$
 \begin{aligned}
-& !(p| | q)==!p \& \&!q \\
-& !(p \& \& q)==!p| |!q
+& !(p| | q)==!p & &!q \\
+& !(p & & q)==!p| |!q
 \end{aligned}
 $$
 
@@ -2618,8 +2619,8 @@ It also works for AND/OR:
 
 $$
 \begin{aligned}
-& a| |(b \& \& c)==(a| | b) \& \&(a| | c) \\
-& a \& \&(b| | c)==(a \& \& b) \||(a \& \& c)
+& a| |(b & & c)==(a| | b) & &(a| | c) \\
+& a & &(b| | c)==(a & & b) \||(a & & c)
 \end{aligned}
 $$
 
@@ -2629,7 +2630,7 @@ Boolean operators also work with numbers as well. Recall that $\emptyset \righta
 
 $$
 \begin{aligned}
-& (7 \& \& \emptyset) \rightarrow(\text { true } \& \& \text { false }) \rightarrow \text { false } \\
+& (7 & & \emptyset) \rightarrow(\text { true } & & \text { false }) \rightarrow \text { false } \\
 & !65 \rightarrow \text { !true } \rightarrow \text { false }
 \end{aligned}
 $$
@@ -2736,7 +2737,7 @@ With all these Boolean operators, the order of operations table has become quite
 | $+-$ | Addition, subtraction |  |  |
 | $>>=<<=$ | Greater than, less than, etc. | Relative <br> Absolute | Binary |
 | $==!=$ | Equality |  |  |
-| \&\& | And | AND <br> OR |  |
+| && | And | AND <br> OR |  |
 | $\|\mid$ | Or |  |  |
 | $=+=$ * $=$ | Assignment |  |  |
 
@@ -2772,11 +2773,11 @@ What is the value for each of the following variables?
 \{
 bool a = ('a' < 'a');
 bool b = ('b' > 'a');
-bool c = (a * 4) \&\& b;
+bool c = (a * 4) && b;
 bool d = !(b || (c || true));
-bool e = a \&\& b \&\& c \&\& d;
+bool e = a && b && c && d;
 bool f = a || b || c || d;
-bool g = (a != b) \&\& true;
+bool g = (a != b) && true;
 \}
 
 ## Problem 12-16
@@ -2787,7 +2788,7 @@ For each of the following, indicate where the parentheses goes to disambiguate t
 | :-- | :-- |
 | $1+2>3 * 3$ |  |
 | $!a<b$ |  |
-| $a+b \& \& c| | d$ |  |
+| $a+b & & c| | d$ |  |
 | $2 *$ c++ $>2+7==9 \% 2$ |  |
 | $a>b>c>d$ |  |
 
@@ -3228,8 +3229,8 @@ bool a = false && true || false && true;
 ```
 
 $\qquad$
-bool b = false || true \&\& false || true;
-bool c = true \&\& true \&\& true \&\& false;
+bool b = false || true && false || true;
+bool c = true && true && true && false;
 bool d = false || false || false || true;
 bool $\mathrm{e}=100>90>80$;
 bool $f=90<80$ || 70;
@@ -3246,11 +3247,11 @@ For each of the following, indicate where the parentheses goes to disambiguate t
 | :-- | :-- |
 | $4+1>2 * 2$ |  |
 | $a++<!b$ |  |
-| $a * b+c \& \& d \mid \mid e$ |  |
+| $a * b+c & & d \mid \mid e$ |  |
 | $3.1 *!b>7 * a++==++c+2$ |  |
 | $a<b<c<d$ |  |
 
-Please see page 82 for a bint.
+Please see page 82 for a hint.
 
 ## Problem 14
 
@@ -3347,7 +3348,7 @@ What is the output when the user inputs the letter ' $m$ '?
 
 Answer:
 
-Please see page 92 for a bint.
+Please see page 92 for a hint.
 
 ## Problem 19
 
