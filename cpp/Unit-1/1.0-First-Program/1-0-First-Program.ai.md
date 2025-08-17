@@ -176,7 +176,7 @@ After the program is saved in a file, the next step is compilation. Compilation 
 3. **Generator**: After the meaning of the source language is understood through the parsing process, the next step is to generate text in the target language. In the case of the French to English translation, this means putting the parsed meaning from the French language into the equivalent English words using the English syntax. In the case of compiling `C++` programs, the end result of this phase is assembly language similar to what we used in Chapter 0.2 .
 4. **Linker**: The final phase is to output the result from the code generator into a format understood by the listener. In the case of the French to English translation, that would involve speaking the translated text. In the case of compiling `C++` code, that involves creating machine language which the CPU will be able to understand.
 
-All four of these steps are done almost instantly with the compiler. The compiler we use in this class is $\mathrm{g}++$. The syntax is:
+All four of these steps are done almost instantly with the compiler. The compiler we use in this class is `g++`. The syntax is:
 ```bash
 g++ <source file>
 ```
@@ -203,7 +203,7 @@ testBed cs124/assign10 hw10.cpp
 ```
 It is important to note that you will not get a point on a pre-class assignment unless Test Bed passes without error.
 
-### 5. Style Checker
+## 5. Style Checker
 
 Once the program has been written and passes Test Bed, it is not yet finished. Another important component is whether the code itself is human-readable and in a standard format. This is collectively called "style." A programming style consists of many components, including variable names, indentations, and comments.
 While style is an inherently subjective notion, we have a tool to help us with the process. This tool is called Style Checker. While Style Checker will certainly not catch all possible style mistakes, it will catch the most obvious ones. You should never turn in an assignment without running Style Checker first. The syntax for Style Checker is:
@@ -371,134 +371,178 @@ Here, Submit will determine that the program is an Assignment (as opposed to a T
 submit homework to helfrich cs124 and assign10. (y/n)
 It is worthwhile to read that message.
 
-### Sam's Corner
+> [!tldr] Sam's Corner
+> ![Sam](../../../.vscode/assets/sam.png){.sam}
+> Submit is basically a fancy copy function. It makes two copies of the program: one for you and one for the instructor. If, for example, you submitted to "Assignment 10" for "CS 124", then you will get a copy on.
+> ```
+> /home/<username>/submittedHomework/cs124_assign10.cpp
+> ```
+> Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is "`eniac`", then the file appears as `eniac`.cpp in the instructor's folder.
+> 
+> Please do not use a dot in the name of your file. If you submit hw1.0.cpp, for example, then it will appear as `eniac.0` instead of `eniac.cpp` and the instructor will not grade it.
 
-Submit is basically a fancy copy function. It makes two copies of the program: one for you and one for the instructor. If, for example, you submitted to "Assignment 10" for "CS 124", then you will get a copy on.
-/home/<username>/submittedHomework/cs124_assign10.cpp
-Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is "eniac", then the file appears as eniac.cpp in the instructor's folder.
-Please do not use a dot in the name of your file. If you submit hw1.0.cpp, for example, then it will appear as eniac. 0 instead of eniac.cpp and the instructor will not grade it
+> [!Success] Example
+> ## Example 1.0 - Display "Hello World"
+> 
+> ### Demo
+> [This example will demonstrate how to turn in a homework assignment. All the tools involved in this process, including emacs, g++, testBed, styleChecker, and submit, will be illustrated.]{style="display: block; min-height: .8in;"}
+> 
+> ---
+> 
+> ### Problem
+> [Write a program to prompt to display a simple message on the screen. This message will be the classic "Hello World" that we seem to always use when writing our first program with a new computer language.]{style="display: block; min-height: .9in;"}
+> 
+> ---
+> 
+> ### Solution
+> The code for the solution is:
+>
+> ```cpp
+> /*************************************************************
+>  * Program:
+>  * Assignment 10, Hello World
+>  * Brother Helfrich, CS124
+>  * Author:
+>  * Sam Student
+>  * Summary:
+>  * This program is designed to be the first C++ program you have ever
+>  * written. While not particularly complex, it is often the most difficult
+>  * to write because the tools are so unfamiliar.
+>  *************************************************************/
+> #include <iostream>
+> using namespace std;
+> /*************************************************************
+>  * Hello world on the screen
+>  *************************************************************/
+> int main()
+> {
+>     // display
+>     cout << "Hello World\n";
+>     return 0;
+> }
+> ```
+> Of course the real challenge is using the tools...
+> 
+> ---
+> 
+> ### Challenge
+> As a challenge, modify this program to display a paragraph including your name and a short introduction. My paragraph is:
+> 
+> ```
+> Hello, I am Br. Helfrich.
+>   
+> My favorite thing about teaching is interacting with interesting students every day. Some days, however, students have no questions and don't bother to come by my office. Those are long and lonely days...
+> ```
+> 
+> ---
+> 
+> ### See Also
+> The complete solution is available at 1-0-firstProgram.cpp or:
+> ```
+> /home/cs124/examples/1-0-firstProgram.cpp
+> ```
 
-## Example 1.0 - Display "Hello World"
+> ## Problem 1
+> 
+> If your body was a computer, select all the von Neumann functions that the spinal cord would perform?
+> 
+> Answer:
+> 
+> <input>
+> 
+> *Please see page 5 for a hint.*
 
-This example will demonstrate how to turn in a homework assignment. All the tools involved in this process, including emacs, g++, testBed, styleChecker, and submit, will be illustrated.
+> ## Problem 2
+> 
+> If a given processor were to be simplified to only contain a single instruction, which part would be most affected?
+> 
+> Answer:
+> 
+> <input>
+> 
+> 
+> *Please see page 5 for a hint.*
 
-Write a program to prompt to display a simple message on the screen. This message will be the classic "Hello World" that we seem to always use when writing our first program with a new computer language.
+> ## Problem 3
+> 
+> Which of the following does a CPU consume? \{Natural language, C++, Assembly language, Machine \}?
+>
+> Answer:
+> 
+> <input>
+> 
+> *Please see page 5 for a hint.*
 
-The code for the solution is:
+> ## Problem 4
+> 
+> What is wrong with the following program:
+> 
+> ```
+> #include <iostream>
+> using namespace std;
+> int main()
+> {
+>     cout << "Howdy\n";
+>     return 0;
+> }
+> ```
+> 
+> Answer:
+> 
+> <input>
+> 
+> *Please see page 7 for a hint.*
 
-```
-/*************************************************************
-* Program:
-* Assignment 10, Hello World
-* Brother Helfrich, CS124
-* Author:
-* Sam Student
-* Summary:
-* This program is designed to be the first C++ program you have ever
-* written. While not particularly complex, it is often the most difficult
-* to write because the tools are so unfamiliar.
-*************************************************************/
-#include <iostream>
-using namespace std;
-/*************************************************************
-* Hello world on the screen
-*************************************************************/
-int main()
-{
-    // display
-    cout << "Hello World\n";
-    return 0;
-}
-```
-
-Of course the real challenge is using the tools...
-As a challenge, modify this program to display a paragraph including your name and a short introduction. My paragraph is:
-
-Hello, I am Br. Helfrich.
-My favorite thing about teaching is interacting with interesting students every day. Some days, however, students have no questions and don't bother to come by my office. Those are long and lonely days...
-
-The complete solution is available at 1-0-firstProgram.cpp or:
-/home/cs124/examples/1-0-firstProgram.cpp
-
-## Problem 1
-
-If your body was a computer, select all the von Neumann functions that the spinal cord would perform?
-Answer:
-
-Please see page 5 for a bint.
-
-## Problem 2
-
-If a given processor were to be simplified to only contain a single instruction, which part would be most affected?
-
-Answer:
-
-Please see page 5 for a bint.
-
-## Problem 3
-
-Which of the following does a CPU consume? \{Natural language, C++, Assembly language, Machine \}?
-Answer:
-
-Please see page 5 for a bint.
-
-## Problem 4
-
-What is wrong with the following program:
-
-```
-#include <iostream>
-using namespace std;
-int main()
-{
-    cout << "Howdy\n";
-    return 0;
-}
-```
-
-Answer:
-
-Please see page 7 for a bint.
-
-## Assignment 1.0
-
-Write a program to put the text "Hello World" on the screen. Please note that examples of the code for this program are present in the course notes.
-
-### Example
-
-Run the program from the command prompt by typing `a.out`.
-
-```
-$`a.out`
-Hello World
-$
-```
-
-
-### Instructions
-
-Please...
-
-1. Copy template from: /home/cs124/template.cpp. You will want to use a command like:
-```
-cp /home/cs124/template.cpp assignment10.cpp
-```
-
-2. Edit the file using emacs or another editor of your choice. For example:
-```
-emacs assignment10.cpp
-```
-
-3. After you have typed your program, save it and compile with:
-```
-g++ assignment10.cpp
-```
-
-4. If there are no errors, you can run it with:
-`a.out`
-Please verify your solution against test-bed with:
-testBed cs124/assign10 assignment10.cpp
-5. Check the style to ensure it complies with the University's style guidelines:
-styleChecker assignment10.cpp
-6. Turn your assignment in with the submit command. Don't forget to submit your assignment with the name "Assignment 10" in the header
-submit assignment10.cpp
+> [!success]
+> ## Assignment 1.0
+> 
+> Write a program to put the text "Hello World" on the screen. Please note that examples of the code for this program are present in the course notes.
+> 
+> ---
+> ### Example
+> 
+> Run the program from the command prompt by typing `a.out`.
+> 
+> ```
+> $`a.out`
+> Hello World
+> $
+> ```
+> 
+> ---
+> ### Instructions
+> 
+> Please...
+> 
+> 1. Copy template from: `/home/cs124/template.cpp`. You will want to use a command like:
+> ```
+> cp /home/cs124/template.cpp assignment10.cpp
+> ```
+> 
+> 2. Edit the file using emacs or another editor of your choice. For example:
+> ```
+> emacs assignment10.cpp
+> ```
+> 
+> 3. After you have typed your program, save it and compile with:
+> ```
+> g++ assignment10.cpp
+> ```
+> 
+> 4. If there are no errors, you can run it with:
+> ```
+> a.out
+> ```
+> Please verify your solution against test-bed with:
+> ```
+> testBed cs124/assign10 assignment10.cpp
+> ```
+> 5. Check the style to ensure it complies with the University's style guidelines:
+> ```
+> styleChecker assignment10.cpp
+> ```
+> 6. Turn your assignment in with the submit command. Don't forget to submit your assignment with the name "`Assignment 10`" in the header
+> ```
+> submit assignment10.cpp
+> ```
+> *Please see page 21 for a hint.*{style="align-text: right; width: 100%;"}

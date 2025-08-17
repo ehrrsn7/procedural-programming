@@ -531,7 +531,7 @@ char convert(int input)
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 2
 
@@ -574,7 +574,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 4
 
@@ -600,7 +600,7 @@ What is the syntax error?
 
 Answer:
 
-Please see page 287 for a bint.
+Please see page 287 for a hint.
 
 ## Problem 5
 
@@ -617,7 +617,7 @@ const float x = 1;
 int array[x]
 ```
 
-int array[][] 22int array[6 * 5 + 2][4 / 2];Please see page 215 for a bint.
+int array[][] 22int array[6 * 5 + 2][4 / 2];Please see page 215 for a hint.
 
 ## Problem 7
 

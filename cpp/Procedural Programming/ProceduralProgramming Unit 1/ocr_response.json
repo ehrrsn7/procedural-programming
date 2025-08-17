@@ -112,7 +112,7 @@
         },
         {
             "index": 10,
-            "markdown": "# Problem 1 \n\nIf your body was a computer, select all the von Neumann functions that the spinal cord would perform?\nAnswer:\n\nPlease see page 5 for a bint.\n\n## Problem 2\n\nIf a given processor were to be simplified to only contain a single instruction, which part would be most affected?\n\nAnswer:\n\nPlease see page 5 for a bint.\n\n## Problem 3\n\nWhich of the following does a CPU consume? \\{Natural language, C++, Assembly language, Machine \\}?\nAnswer:\n\nPlease see page 5 for a bint.\n\n## Problem 4\n\nWhat is wrong with the following program:\n\n```\n#include <iostream>\nusing namespace std;\nint main()\n{\n    cout << \"Howdy\\n\";\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 7 for a bint.",
+            "markdown": "# Problem 1 \n\nIf your body was a computer, select all the von Neumann functions that the spinal cord would perform?\nAnswer:\n\nPlease see page 5 for a hint.\n\n## Problem 2\n\nIf a given processor were to be simplified to only contain a single instruction, which part would be most affected?\n\nAnswer:\n\nPlease see page 5 for a hint.\n\n## Problem 3\n\nWhich of the following does a CPU consume? \\{Natural language, C++, Assembly language, Machine \\}?\nAnswer:\n\nPlease see page 5 for a hint.\n\n## Problem 4\n\nWhat is wrong with the following program:\n\n```\n#include <iostream>\nusing namespace std;\nint main()\n{\n    cout << \"Howdy\\n\";\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 7 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -252,7 +252,7 @@
         },
         {
             "index": 20,
-            "markdown": "# Problem 1 \n\nWrite the code to put a newline on the screen:\nAnswer:\n$\\square$\n\nPlease see page 26 for a bint.\n\n## Problem 2\n\nHow do you right-align numbers in $\\mathrm{C}++$ ?\n5\n555\nAnswer:\n$\\square$\n\nPlease see page 28 for a bint.\n\n## Problem 3\n\nIf the tab stops are set to 8 spaces, what will be the output of the following code?\n$\\square$\n\nAnswer:\n$\\square$\n\nPlease see page 27 for a bint.\n\n## Problem 4\n\nWrite the code to generate the following output:\n/ $\\backslash / \\backslash / \\backslash$\n$\\backslash / \\backslash / \\backslash /$\nAnswer:\n$\\square$\n\nPlease see page 29 for a bint.",
+            "markdown": "# Problem 1 \n\nWrite the code to put a newline on the screen:\nAnswer:\n$\\square$\n\nPlease see page 26 for a hint.\n\n## Problem 2\n\nHow do you right-align numbers in $\\mathrm{C}++$ ?\n5\n555\nAnswer:\n$\\square$\n\nPlease see page 28 for a hint.\n\n## Problem 3\n\nIf the tab stops are set to 8 spaces, what will be the output of the following code?\n$\\square$\n\nAnswer:\n$\\square$\n\nPlease see page 27 for a hint.\n\n## Problem 4\n\nWrite the code to generate the following output:\n/ $\\backslash / \\backslash / \\backslash$\n$\\backslash / \\backslash / \\backslash /$\nAnswer:\n$\\square$\n\nPlease see page 29 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -262,7 +262,7 @@
         },
         {
             "index": 21,
-            "markdown": "# Problem 5 \n\nWhat is the output of the following code?\n\n$$\n\\begin{aligned}\n& \\{\\text { cout << \"\\t1\\t2\\t3\\n\\t4\\t5\\t6\\n\\t7\\t8\\t9\\n\"; } \\\\\n& \\}\n\\end{aligned}\n$$\n\nAnswer:\n$\\square$\nPlease see page 29 for question.\n\n## Problem 6\n\nWrite a program to put the following text on the screen:\n\n$$\n\\begin{aligned}\n& \\text { I am taking } \\\\\n& \\text { \"C5 124\" }\n\\end{aligned}\n$$\n\nNote that there is a tab at the start of the second line.\nAnswer:\n$\\square$\nPlease see page 27 for a bint.\n\n## Problem 7\n\nWrite the code to generate the following output:\n\n$$\n\\begin{aligned}\n& \\text { Bill: } \\\\\n& \\text { \\$ } 10.00 \\text { - Price } \\\\\n& \\text { \\$ } 1.50 \\text { - Tip } \\\\\n& \\text { \\$ } 11.50 \\text { - Total }\n\\end{aligned}\n$$\n\nAnswer:\n$\\square$\nPlease see page 30 for a bint.",
+            "markdown": "# Problem 5 \n\nWhat is the output of the following code?\n\n$$\n\\begin{aligned}\n& \\{\\text { cout << \"\\t1\\t2\\t3\\n\\t4\\t5\\t6\\n\\t7\\t8\\t9\\n\"; } \\\\\n& \\}\n\\end{aligned}\n$$\n\nAnswer:\n$\\square$\nPlease see page 29 for question.\n\n## Problem 6\n\nWrite a program to put the following text on the screen:\n\n$$\n\\begin{aligned}\n& \\text { I am taking } \\\\\n& \\text { \"C5 124\" }\n\\end{aligned}\n$$\n\nNote that there is a tab at the start of the second line.\nAnswer:\n$\\square$\nPlease see page 27 for a hint.\n\n## Problem 7\n\nWrite the code to generate the following output:\n\n$$\n\\begin{aligned}\n& \\text { Bill: } \\\\\n& \\text { \\$ } 10.00 \\text { - Price } \\\\\n& \\text { \\$ } 1.50 \\text { - Tip } \\\\\n& \\text { \\$ } 11.50 \\text { - Total }\n\\end{aligned}\n$$\n\nAnswer:\n$\\square$\nPlease see page 30 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -272,7 +272,7 @@
         },
         {
             "index": 22,
-            "markdown": "# Assignment 1.1 \n\nWrite a program to output your monthly budget:\n\n| Item | Projected |\n| :-- | :-- |\n| Income | $\\$ 1000.00$ |\n| Taxes | $\\$ 100.00$ |\n| Tithing | $\\$ 100.00$ |\n| Living | $\\$ 650.00$ |\n| Other | $\\$ 90.00$ |\n\n## Example\n\n| Item | Projected |\n| :--: | :--: |\n|  |  |\n| Income | \\$ 1000.00 |\n| Taxes | \\$ 100.00 |\n| Tithing | \\$ 100.00 |\n| Living | \\$ 650.00 |\n| Other | \\$ 90.00 |\n|  |  |\n| Delta | \\$ 60.00 |\n\n## Instructions\n\nPlease note:\n\n- There is a single tab at the start of each line, but nowhere else.\n- There are 13 ' $=$ 's in the first column, 10 in the second. There are 2 spaces between the columns.\n- The spacing between the ' $\\$$ ' and the right edge of the money is 9 .\n- You will need to set the formatting of the prices with the precision() command.\n- Please display the money as a number, rather than as text. This means two things. First, the numbers should be outside the quotes (again, see the example above). Second, you will need to use the setw( ) function to get the numbers to line up correctly.\n- Please verify your solution against:\ntestBed cs124/assign11 assignment11.cpp\nDon't forget to submit your assignment with the name \"Assignment 11\" in the header.\nPlease see page 30 for a bint.",
+            "markdown": "# Assignment 1.1 \n\nWrite a program to output your monthly budget:\n\n| Item | Projected |\n| :-- | :-- |\n| Income | $\\$ 1000.00$ |\n| Taxes | $\\$ 100.00$ |\n| Tithing | $\\$ 100.00$ |\n| Living | $\\$ 650.00$ |\n| Other | $\\$ 90.00$ |\n\n## Example\n\n| Item | Projected |\n| :--: | :--: |\n|  |  |\n| Income | \\$ 1000.00 |\n| Taxes | \\$ 100.00 |\n| Tithing | \\$ 100.00 |\n| Living | \\$ 650.00 |\n| Other | \\$ 90.00 |\n|  |  |\n| Delta | \\$ 60.00 |\n\n## Instructions\n\nPlease note:\n\n- There is a single tab at the start of each line, but nowhere else.\n- There are 13 ' $=$ 's in the first column, 10 in the second. There are 2 spaces between the columns.\n- The spacing between the ' $\\$$ ' and the right edge of the money is 9 .\n- You will need to set the formatting of the prices with the precision() command.\n- Please display the money as a number, rather than as text. This means two things. First, the numbers should be outside the quotes (again, see the example above). Second, you will need to use the setw( ) function to get the numbers to line up correctly.\n- Please verify your solution against:\ntestBed cs124/assign11 assignment11.cpp\nDon't forget to submit your assignment with the name \"Assignment 11\" in the header.\nPlease see page 30 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -352,7 +352,7 @@
         },
         {
             "index": 30,
-            "markdown": "# Problem 1 \n\nWhat is the output of the following line of code?\ncout << \"\\\\\"/\\n\";\n\nAnswer:\n\nPlease see page 29 for a bint.\n\n## Problem 2\n\nHow do you put a tab on the screen?\nAnswer:\n\nPlease see page 27 for a bint.\n\n## Problem 3\n\nHow do you output the following:\nYou will need to use '\\n' a ton in this class.\nAnswer:\n\nPlease see page 29 for a bint.\n\n## Problem 4\n\nHow do you declare an integer variable?\nAnswer:\n\nPlease see page 36 for a bint.\n\n## Problem 5\n\nHow would you declare a variable for each of the following?\n\n| Variable name | Declaration |\n| :-- | :-- |\n| yearBorn |  |\n| gpa |  |\n| nameStudent |  |\n| ageStudent |  |\n\nPlease see page 36 for a bint.",
+            "markdown": "# Problem 1 \n\nWhat is the output of the following line of code?\ncout << \"\\\\\"/\\n\";\n\nAnswer:\n\nPlease see page 29 for a hint.\n\n## Problem 2\n\nHow do you put a tab on the screen?\nAnswer:\n\nPlease see page 27 for a hint.\n\n## Problem 3\n\nHow do you output the following:\nYou will need to use '\\n' a ton in this class.\nAnswer:\n\nPlease see page 29 for a hint.\n\n## Problem 4\n\nHow do you declare an integer variable?\nAnswer:\n\nPlease see page 36 for a hint.\n\n## Problem 5\n\nHow would you declare a variable for each of the following?\n\n| Variable name | Declaration |\n| :-- | :-- |\n| yearBorn |  |\n| gpa |  |\n| nameStudent |  |\n| ageStudent |  |\n\nPlease see page 36 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -362,7 +362,7 @@
         },
         {
             "index": 31,
-            "markdown": "# Problem 6 \n\nDeclare a variable to store the ratio of feet to meters.\nAnswer:\n\nPlease see page 37 for a bint.\n\n## Problem 7\n\nWhat is the number of bytes for each data type?\n\n```\n{\n    cout << sizeof(char) << endl;\n    char a;\n    cout << sizeof(a) << endl;\n    cout << sizeof(bool) << endl;\n    int b;\n    cout << sizeof(b) << endl;\n    float c;\n    cout << sizeof(c) << endl;\n    double d;\n    cout << sizeof(d) << endl;\n    long double e;\n    cout << sizeof(e) << endl;\n}\n```\n\nPlease see page 36 for a bint.\n\n## Problem 8\n\nWhich of the following can store the largest number?\n\n```\nbool value;\nchar value[256];\nint value\nlong double value;\n```\n\nPlease see page 36 for a bint.\n\n## Problem 9\n\nDeclare a variable to represent the following number in $\\mathrm{C}++: 8,820,198,883,463.39$\nAnswer:\n\nPlease see page 37 for a bint.",
+            "markdown": "# Problem 6 \n\nDeclare a variable to store the ratio of feet to meters.\nAnswer:\n\nPlease see page 37 for a hint.\n\n## Problem 7\n\nWhat is the number of bytes for each data type?\n\n```\n{\n    cout << sizeof(char) << endl;\n    char a;\n    cout << sizeof(a) << endl;\n    cout << sizeof(bool) << endl;\n    int b;\n    cout << sizeof(b) << endl;\n    float c;\n    cout << sizeof(c) << endl;\n    double d;\n    cout << sizeof(d) << endl;\n    long double e;\n    cout << sizeof(e) << endl;\n}\n```\n\nPlease see page 36 for a hint.\n\n## Problem 8\n\nWhich of the following can store the largest number?\n\n```\nbool value;\nchar value[256];\nint value\nlong double value;\n```\n\nPlease see page 36 for a hint.\n\n## Problem 9\n\nDeclare a variable to represent the following number in $\\mathrm{C}++: 8,820,198,883,463.39$\nAnswer:\n\nPlease see page 37 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -382,7 +382,7 @@
         },
         {
             "index": 33,
-            "markdown": "# Assignment 1.2 \n\nWrite a program that prompts the user for his or her income and displays the result on the screen. There will be two parts:\n\n## Get Income\n\nThe first part is code that prompts the user for his income. It will ask the user:\nYour monthly income:\nThere will be a tab before \"Your\" and a single space after the \":\". There is no newline at the end of this prompt. The user will then provide his or her income as a float.\n\n## Display\n\nThe second part is code to display the results to the screen.\nYour income is: \\$ 1010.99\nNote that there is one space between the colon and the dollar sign. The money is right aligned to 9 spaces from the dollar sign.\n\n## Example\n\nUser input is underlined. Note that you will not be making the input underlined; this is just the notation used in the assignments to distinguish input from output.\n\nYour monthly income: 932.16\nYour income is: \\$ 932.16\n\n## Instructions\n\nPlease verify your solution against:\ntestBed cs124/assign12 assignment12.cpp\nDon't forget to submit your assignment with the name \"Assignment 12\" in the header.\nPlease see page 41 for a bint.",
+            "markdown": "# Assignment 1.2 \n\nWrite a program that prompts the user for his or her income and displays the result on the screen. There will be two parts:\n\n## Get Income\n\nThe first part is code that prompts the user for his income. It will ask the user:\nYour monthly income:\nThere will be a tab before \"Your\" and a single space after the \":\". There is no newline at the end of this prompt. The user will then provide his or her income as a float.\n\n## Display\n\nThe second part is code to display the results to the screen.\nYour income is: \\$ 1010.99\nNote that there is one space between the colon and the dollar sign. The money is right aligned to 9 spaces from the dollar sign.\n\n## Example\n\nUser input is underlined. Note that you will not be making the input underlined; this is just the notation used in the assignments to distinguish input from output.\n\nYour monthly income: 932.16\nYour income is: \\$ 932.16\n\n## Instructions\n\nPlease verify your solution against:\ntestBed cs124/assign12 assignment12.cpp\nDon't forget to submit your assignment with the name \"Assignment 12\" in the header.\nPlease see page 41 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -492,7 +492,7 @@
         },
         {
             "index": 42,
-            "markdown": "# Problem 1 \n\nPlease write the variable declaration used for each variable name:\n\n- numberStudents: $\\qquad$\n- pi: $\\qquad$\n- hometown: $\\qquad$\n- priceApples: $\\qquad$\n\nPlease see page 36 for questions\n\n## Problem 2\n\nHow much space in memory does each variable take?\n\n- bool value; $\\qquad$\n- char value[256]; $\\qquad$\n- char value; $\\qquad$\n- long double value; $\\qquad$\n\nPlease see page 36 for questions\n\n## Problem 3\n\nInsert parentheses to indicate the order of operations:\n$a=a+b * c++ / 4$\n\nPlease see page 47 for a bint.\n\n## Problem 4\n\nWhat is the value of yard at the end of execution?\n\n$$\n\\begin{aligned}\n& \\text { \\{ float feet }=7 \\text {; } \\\\\n& \\text { float yards }=(1 / 3) \\text { feet; } \\\\\n& \\text { \\} }\n\\end{aligned}\n$$\n\nAnswer:\nyards $==$ $\\qquad$\n\nPlease see page 49 for a bint.",
+            "markdown": "# Problem 1 \n\nPlease write the variable declaration used for each variable name:\n\n- numberStudents: $\\qquad$\n- pi: $\\qquad$\n- hometown: $\\qquad$\n- priceApples: $\\qquad$\n\nPlease see page 36 for questions\n\n## Problem 2\n\nHow much space in memory does each variable take?\n\n- bool value; $\\qquad$\n- char value[256]; $\\qquad$\n- char value; $\\qquad$\n- long double value; $\\qquad$\n\nPlease see page 36 for questions\n\n## Problem 3\n\nInsert parentheses to indicate the order of operations:\n$a=a+b * c++ / 4$\n\nPlease see page 47 for a hint.\n\n## Problem 4\n\nWhat is the value of yard at the end of execution?\n\n$$\n\\begin{aligned}\n& \\text { \\{ float feet }=7 \\text {; } \\\\\n& \\text { float yards }=(1 / 3) \\text { feet; } \\\\\n& \\text { \\} }\n\\end{aligned}\n$$\n\nAnswer:\nyards $==$ $\\qquad$\n\nPlease see page 49 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -682,7 +682,7 @@
         },
         {
             "index": 58,
-            "markdown": "# Problem 1 \n\nWrite the $\\mathrm{C}++$ statements for the following:\n\n$$\n\\begin{aligned}\n& c=2 \\pi r \\\\\n& 8+3=x \\\\\n& e=m c^{2} \\\\\n& x=\\frac{1}{2} y\n\\end{aligned}\n$$\n\nPlease see page 47 for a bint.\n\n## Problem 2\n\nWhat is the value of $c$ when the expression is evaluated:\n\n$$\n\\begin{aligned}\n& \\text { int } f=34 \\\\\n& \\text { float } c=(f-32) * 5 / 9\n\\end{aligned}\n$$\n\nAnswer:\n\nPlease see page 49 for a bint.\n\n## Problem 3\n\nWrite a function to display \"Hello World\". Call it hello()\nAnswer:\n\nPlease see page 60 for a bint.\n\n## Problem 4\n\nWrite a function to return a number. Call it get()\nAnswer:\n\nPlease see page 64 for a bint.",
+            "markdown": "# Problem 1 \n\nWrite the $\\mathrm{C}++$ statements for the following:\n\n$$\n\\begin{aligned}\n& c=2 \\pi r \\\\\n& 8+3=x \\\\\n& e=m c^{2} \\\\\n& x=\\frac{1}{2} y\n\\end{aligned}\n$$\n\nPlease see page 47 for a hint.\n\n## Problem 2\n\nWhat is the value of $c$ when the expression is evaluated:\n\n$$\n\\begin{aligned}\n& \\text { int } f=34 \\\\\n& \\text { float } c=(f-32) * 5 / 9\n\\end{aligned}\n$$\n\nAnswer:\n\nPlease see page 49 for a hint.\n\n## Problem 3\n\nWrite a function to display \"Hello World\". Call it hello()\nAnswer:\n\nPlease see page 60 for a hint.\n\n## Problem 4\n\nWrite a function to return a number. Call it get()\nAnswer:\n\nPlease see page 64 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -702,7 +702,7 @@
         },
         {
             "index": 60,
-            "markdown": "# Problem 7 \n\nWhat is the output?\n\n```\ndouble a(double b, double c)\n{\n    return b - c;\n}\nint main()\n{\n    float x = a(4.0, 3.0);\n    float y = a(7.0, 5.0);\n    cout << a(x, y) << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a bint.\n\n## Problem 8\n\nWhat is the output?\n\n```\ndouble add(double n1, double n2)\n{\n    return n1 + n2;\n}\nint main()\n{\n    double n3 = add(0.1, 0.2);\n    double n4 = add(n3, add(0.3, 0.4));\n    cout << n4 << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a bint.",
+            "markdown": "# Problem 7 \n\nWhat is the output?\n\n```\ndouble a(double b, double c)\n{\n    return b - c;\n}\nint main()\n{\n    float x = a(4.0, 3.0);\n    float y = a(7.0, 5.0);\n    cout << a(x, y) << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a hint.\n\n## Problem 8\n\nWhat is the output?\n\n```\ndouble add(double n1, double n2)\n{\n    return n1 + n2;\n}\nint main()\n{\n    double n3 = add(0.1, 0.2);\n    double n4 = add(n3, add(0.3, 0.4));\n    cout << n4 << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -712,7 +712,7 @@
         },
         {
             "index": 61,
-            "markdown": "# Problem 9 \n\nWhat is the output?\n\n```\nvoid weird(int a, int &b)\n{\n    a = 1;\n    b = 2;\n}\nint main()\n{\n    int a = 3;\n    int b = 4;\n    weird(a, b);\n    cout << a * b << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a bint.\n\n## Problem 10\n\nWhat is the output?\n\n```\nvoid setTrue(bool a)\n{\n    a = true;\n    return;\n}\nint main()\n{\n    bool a = false;\n    setTrue(a);\n    cout << (int)a << endl;\n    return 0;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 9 \n\nWhat is the output?\n\n```\nvoid weird(int a, int &b)\n{\n    a = 1;\n    b = 2;\n}\nint main()\n{\n    int a = 3;\n    int b = 4;\n    weird(a, b);\n    cout << a * b << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a hint.\n\n## Problem 10\n\nWhat is the output?\n\n```\nvoid setTrue(bool a)\n{\n    a = true;\n    return;\n}\nint main()\n{\n    bool a = false;\n    setTrue(a);\n    cout << (int)a << endl;\n    return 0;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -722,7 +722,7 @@
         },
         {
             "index": 62,
-            "markdown": "# Problem 11 \n\nWhat is the output?\n\n```\nint main()\n{\n    cout << a(b()) << endl;\n    return 0;\n}\nint a(int value)\n{\n    return value * 2;\n}\nint b()\n{\n    return 3;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a bint.\n\n## Problem 12\n\nWhat is the output?\n\n```\nchar value = 'a';\nint main()\n{\n    char value = 'b';\n    if (true)\n    {\n        char value = 'c';\n    }\n    cout << value << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a bint.",
+            "markdown": "# Problem 11 \n\nWhat is the output?\n\n```\nint main()\n{\n    cout << a(b()) << endl;\n    return 0;\n}\nint a(int value)\n{\n    return value * 2;\n}\nint b()\n{\n    return 3;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a hint.\n\n## Problem 12\n\nWhat is the output?\n\n```\nchar value = 'a';\nint main()\n{\n    char value = 'b';\n    if (true)\n    {\n        char value = 'c';\n    }\n    cout << value << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -932,7 +932,7 @@
         },
         {
             "index": 83,
-            "markdown": "# Problem 9-13 \n\nFor each of the following, indicate where the parentheses goes to disambiguate the order of operations:\n\n| Raw expression | With parentheses |\n| :-- | :-- |\n| $4+1>2 * 2$ |  |\n| $a++<!b$ |  |\n| $a * b+c \\& \\& d \\mid \\mid e$ |  |\n| $3.1 *!b>7 * a++==++c+2$ |  |\n| $a<b<c<d$ |  |\n\nPlease see page 82 for a bint.\n\n## Problem 14\n\nWhat is the output?\n\n```\nint subtract(int b, int a)\n{\n    return a - b;\n}\nint main()\n{\n    int c = subtract(4, 3);\n    cout << c << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n## Problem 15\n\nWrite a function to accept a number from the caller as a parameter and return whether the number is positive:",
+            "markdown": "# Problem 9-13 \n\nFor each of the following, indicate where the parentheses goes to disambiguate the order of operations:\n\n| Raw expression | With parentheses |\n| :-- | :-- |\n| $4+1>2 * 2$ |  |\n| $a++<!b$ |  |\n| $a * b+c \\& \\& d \\mid \\mid e$ |  |\n| $3.1 *!b>7 * a++==++c+2$ |  |\n| $a<b<c<d$ |  |\n\nPlease see page 82 for a hint.\n\n## Problem 14\n\nWhat is the output?\n\n```\nint subtract(int b, int a)\n{\n    return a - b;\n}\nint main()\n{\n    int c = subtract(4, 3);\n    cout << c << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n## Problem 15\n\nWrite a function to accept a number from the caller as a parameter and return whether the number is positive:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -952,7 +952,7 @@
         },
         {
             "index": 85,
-            "markdown": "# Problem 18 \n\nWhat is the output when the user inputs the letter ' $m$ '?\n\n```\n{\n    char gender;\n    // prompt for gender\n    cout << \"What is your gender? (m/f)\";\n    cin >> gender;\n    // turn it into a bool\n    bool isMale = true;\n    if (gender == 'f');\n        isMale = false;\n    // output the result\n    if (isMale)\n        cout << \"You are male!\\n\";\n    else\n        cout << \"You are female!\\n\";\n}\n```\n\nAnswer:\n\nPlease see page 92 for a bint.\n\n## Problem 19\n\nWhat is the output when the user inputs the number 5?\n\n```\n{\n    int number;\n    // prompt for number\n    cout << \"number? \";\n    cin >> number;\n    // crazy math\n    if (number = 0)\n        number += 2;\n    // output\n    cout << number << endl;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 18 \n\nWhat is the output when the user inputs the letter ' $m$ '?\n\n```\n{\n    char gender;\n    // prompt for gender\n    cout << \"What is your gender? (m/f)\";\n    cin >> gender;\n    // turn it into a bool\n    bool isMale = true;\n    if (gender == 'f');\n        isMale = false;\n    // output the result\n    if (isMale)\n        cout << \"You are male!\\n\";\n    else\n        cout << \"You are female!\\n\";\n}\n```\n\nAnswer:\n\nPlease see page 92 for a hint.\n\n## Problem 19\n\nWhat is the output when the user inputs the number 5?\n\n```\n{\n    int number;\n    // prompt for number\n    cout << \"number? \";\n    cin >> number;\n    // crazy math\n    if (number = 0)\n        number += 2;\n    // output\n    cout << number << endl;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,

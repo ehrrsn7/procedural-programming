@@ -99,6 +99,72 @@ div.callout {
   overflow: visible;
 }
 
+/* Page-Long 'Example' Blocks */
+div.callout:has(div.callout-content > h2[id^="example"]) {
+  outline: 3px dashed var(--rvhs-green);
+  background-color: color-mix(in srgb, var(--rvhs-green) 10%, #9bffbc2c 90%);
+  position: relative;
+  overflow: visible;
+}
+div.callout-content > h2[id^="example"] {
+  text-align: center;
+  background-color: color-mix(in srgb, var(--rvhs-green) 50%, #00631f 50%);
+  color: white;
+  font-weight: bold;
+  padding: .5em;
+  letter-spacing: .03em;
+  border-radius: .5em;
+}
+div.callout:has(div.callout-content > h2[id^="example"]) > div.callout-content > h3 {
+  position: absolute;
+  left: -.1in;
+  transform: translate(-50%, -5%) rotate(-90deg);
+  background-color: color-mix(in srgb, var(--rvhs-green) 50%, #003f14 50%);
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+div.callout:has(div.callout-content > h2[id^="example"]) pre {
+  background: #fafafaa0 !important;
+}
+
+/* Page-Long 'Assignment' Blocks */
+div.callout:has(div.callout-content > h2[id^="assignment"]) {
+  outline: 3px dashed var(--rvhs-green);
+  background-color: color-mix(in srgb, var(--rvhs-green) 10%, #bbfdd10e 90%);
+  position: relative;
+  overflow: visible;
+}
+div.callout-content > h2[id^="assignment"] {
+  text-align: center;
+  background-color: var(--rvhs-green);
+  color: white;
+  font-weight: bold;
+  padding: .5em;
+  letter-spacing: .03em;
+  border-radius: .5em;
+}
+div.callout:has(div.callout-content > h2[id^="assignment"]) > div.callout-content > h3 {
+  position: absolute;
+  left: -.1in;
+  transform: translate(-50%, -5%) rotate(-90deg);
+  background-color: var(--rvhs-green);
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+div.callout:has(div.callout-content > h2[id^="assignment"]) pre {
+  background: #fafafaa0 !important;
+}
+
 /* Select blockquotes that contain an h2 with id starting with "problem" or "challenge" */
 blockquote:has(h2[id^="problem"], h2[id^="challenge"], h2[id^="review"]) {
     padding: 1em;

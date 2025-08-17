@@ -525,7 +525,7 @@ void displayText(text);
 void displayText(char [] text);
 ```
 
-Please see page 221 for a bint.
+Please see page 221 for a hint.
 
 ## Problem 6
 

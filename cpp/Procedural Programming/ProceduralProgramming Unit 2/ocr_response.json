@@ -249,7 +249,7 @@
         },
         {
             "index": 18,
-            "markdown": "# Problem 4 \n\nCreate a list of the levels of Coupling from best on the top to worst on the bottom.\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n\nPlease see page 117 for a bint.\n\n## Problem 5\n\nClassify the form of Coupling from the following example of code:\n\n```\nvoid displayGreeting()\n{\n    // prompt for name\n    char name[256];\n    cout << \"What is your name? \";\n    cin >> name;\n    // display the greeting\n    cout << \"Hello, \" << name << \" how are you today?\\n\";\n}\n```\n\nAnswer:\n\nPlease see page 113 for a bint.\n\n## Problem 6\n\nClassify the form of Coupling from the following example of code:\n\n```\nvoid setGender()\n{\n    char input;\n    cout << \"Are you male? \";\n    cin >> input;\n    isFemale = (input == 'n') || (input == 'N');\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 4 \n\nCreate a list of the levels of Coupling from best on the top to worst on the bottom.\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n$\\bullet$\n\nPlease see page 117 for a hint.\n\n## Problem 5\n\nClassify the form of Coupling from the following example of code:\n\n```\nvoid displayGreeting()\n{\n    // prompt for name\n    char name[256];\n    cout << \"What is your name? \";\n    cin >> name;\n    // display the greeting\n    cout << \"Hello, \" << name << \" how are you today?\\n\";\n}\n```\n\nAnswer:\n\nPlease see page 113 for a hint.\n\n## Problem 6\n\nClassify the form of Coupling from the following example of code:\n\n```\nvoid setGender()\n{\n    char input;\n    cout << \"Are you male? \";\n    cin >> input;\n    isFemale = (input == 'n') || (input == 'N');\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -429,7 +429,7 @@
         },
         {
             "index": 35,
-            "markdown": "# Problem 4 \n\nCreate a stub for the following function:\n\n```\nfloat getIncome()\n{\n    float income;\n    // prompt\n    cout << \"Please enter your income: \";\n    cin >> income;\n    return income;\n}\n```\n\nAnswer:\n$\\square$\n$\\square$\n\nPlease see page 140 for a bint.\n\n## Problem 5\n\nCreate a driver program for the following function:\nfloat sqrt(float value);\nAnswer:\n$\\square$\n$\\square$\n$\\square$\n\nPlease see page 138 for a bint.\n\n## Problem 6\n\nCreate a driver program for the following function:\nvoid displayTable(int numDaysInMonth, int offset);\nAnswer:\n$\\square$\n$\\square$\n$\\square$",
+            "markdown": "# Problem 4 \n\nCreate a stub for the following function:\n\n```\nfloat getIncome()\n{\n    float income;\n    // prompt\n    cout << \"Please enter your income: \";\n    cin >> income;\n    return income;\n}\n```\n\nAnswer:\n$\\square$\n$\\square$\n\nPlease see page 140 for a hint.\n\n## Problem 5\n\nCreate a driver program for the following function:\nfloat sqrt(float value);\nAnswer:\n$\\square$\n$\\square$\n$\\square$\n\nPlease see page 138 for a hint.\n\n## Problem 6\n\nCreate a driver program for the following function:\nvoid displayTable(int numDaysInMonth, int offset);\nAnswer:\n$\\square$\n$\\square$\n$\\square$",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -529,7 +529,7 @@
         },
         {
             "index": 44,
-            "markdown": "# Problem 1 \n\nWhat is the value of $\\underline{b}$ at the end of execution?\n\n```\nbool vegas(bool b)\n{\n    b = false;\n    return true;\n}\nint main()\n{\n    bool b;\n    vegas(b);\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a bint.\n\n## Problem 2\n\nWhat is the output when the user types ' $a$ '?\n\n```\nvoid function(char &value)\n{\n    cin >> value;\n    return;\n}\nint main()\n{\n    char input = 'b';\n    function(input);\n    cout << input << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a bint.\n\n## Problem 3\n\nWhich of the following is not a basic computer operation?\n\n- Receive information\n- Connect to the network\n- Perform math\n- Compare two numbers",
+            "markdown": "# Problem 1 \n\nWhat is the value of $\\underline{b}$ at the end of execution?\n\n```\nbool vegas(bool b)\n{\n    b = false;\n    return true;\n}\nint main()\n{\n    bool b;\n    vegas(b);\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a hint.\n\n## Problem 2\n\nWhat is the output when the user types ' $a$ '?\n\n```\nvoid function(char &value)\n{\n    cin >> value;\n    return;\n}\nint main()\n{\n    char input = 'b';\n    function(input);\n    cout << input << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a hint.\n\n## Problem 3\n\nWhich of the following is not a basic computer operation?\n\n- Receive information\n- Connect to the network\n- Perform math\n- Compare two numbers",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -559,7 +559,7 @@
         },
         {
             "index": 47,
-            "markdown": "# Problem 11 \n\nWrite the pseudocode for a function to compute how many days are in a given year. Hint: the answer is 365 or 366 .:\n\nAnswer:\n$\\square$\nPlease see page 150 for a bint.\n\n## Problem 12\n\nWrite the pseudocode for a function to display the multiples of 7 under 100 .\nAnswer:\n$\\square$\nPlease see page 148 for a bint.",
+            "markdown": "# Problem 11 \n\nWrite the pseudocode for a function to compute how many days are in a given year. Hint: the answer is 365 or 366 .:\n\nAnswer:\n$\\square$\nPlease see page 150 for a hint.\n\n## Problem 12\n\nWrite the pseudocode for a function to display the multiples of 7 under 100 .\nAnswer:\n$\\square$\nPlease see page 148 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -759,7 +759,7 @@
         },
         {
             "index": 67,
-            "markdown": "# Problem 1 \n\nWhich of the following is the definition of the conceptual level of understanding of an algorithm?\n\n- What the program does, not how the solution is achieved\n- What the components do and how they influence the program\n- The value of every variable at every stage of execution\n- Realization where the flaws or bugs are\n\nPlease see page 168 for a bint.\n\n## Problem 2\n\nWhere do you put the line numbers in a desk check table?\nAnswer:\n\n## Problem 3\n\nGiven a program that converts feet to meters, create a desk check table for the input value of 2 feet.\n\n| convert |\n| :-- |\n| PROMPT for feet |\n| GET feet |\n| SET meters = feet * 0.301 |\n| PUT meters |\n| END |\n\n![img-9.jpeg](img-9.jpeg)\n\n## Problem 4\n\nDesk check the following program.\n\n| addNumbers |\n| :-- |\n| SET number $=1$ |\n| DOWNIILE number $\\leq 5$ |\n| SET number $=$ number + number |\n| ENDDO |\n| END |\n\n![img-10.jpeg](img-10.jpeg)\n\nPlease see page 171 for a bint.",
+            "markdown": "# Problem 1 \n\nWhich of the following is the definition of the conceptual level of understanding of an algorithm?\n\n- What the program does, not how the solution is achieved\n- What the components do and how they influence the program\n- The value of every variable at every stage of execution\n- Realization where the flaws or bugs are\n\nPlease see page 168 for a hint.\n\n## Problem 2\n\nWhere do you put the line numbers in a desk check table?\nAnswer:\n\n## Problem 3\n\nGiven a program that converts feet to meters, create a desk check table for the input value of 2 feet.\n\n| convert |\n| :-- |\n| PROMPT for feet |\n| GET feet |\n| SET meters = feet * 0.301 |\n| PUT meters |\n| END |\n\n![img-9.jpeg](img-9.jpeg)\n\n## Problem 4\n\nDesk check the following program.\n\n| addNumbers |\n| :-- |\n| SET number $=1$ |\n| DOWNIILE number $\\leq 5$ |\n| SET number $=$ number + number |\n| ENDDO |\n| END |\n\n![img-10.jpeg](img-10.jpeg)\n\nPlease see page 171 for a hint.",
             "images": [
                 {
                     "id": "img-9.jpeg",

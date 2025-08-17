@@ -692,7 +692,7 @@ $\bullet$
 $\bullet$
 $\bullet$
 
-Please see page 117 for a bint.
+Please see page 117 for a hint.
 
 ## Problem 5
 
@@ -712,7 +712,7 @@ void displayGreeting()
 
 Answer:
 
-Please see page 113 for a bint.
+Please see page 113 for a hint.
 
 ## Problem 6
 

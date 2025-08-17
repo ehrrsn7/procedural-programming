@@ -152,7 +152,7 @@
         },
         {
             "index": 12,
-            "markdown": "# Problem 1 \n\nWrite the $\\mathrm{C}++$ statements for the following:\n\n$$\n\\begin{aligned}\n& c=2 \\pi r \\\\\n& 8+3=x \\\\\n& e=m c^{2} \\\\\n& x=\\frac{1}{2} y\n\\end{aligned}\n$$\n\nPlease see page 47 for a bint.\n\n## Problem 2\n\nWhat is the value of $c$ when the expression is evaluated:\n\n$$\n\\begin{aligned}\n& \\text { int } f=34 \\\\\n& \\text { float } c=(f-32) * 5 / 9\n\\end{aligned}\n$$\n\nAnswer:\n\nPlease see page 49 for a bint.\n\n## Problem 3\n\nWrite a function to display \"Hello World\". Call it hello()\nAnswer:\n\nPlease see page 60 for a bint.\n\n## Problem 4\n\nWrite a function to return a number. Call it get()\nAnswer:\n\nPlease see page 64 for a bint.",
+            "markdown": "# Problem 1 \n\nWrite the $\\mathrm{C}++$ statements for the following:\n\n$$\n\\begin{aligned}\n& c=2 \\pi r \\\\\n& 8+3=x \\\\\n& e=m c^{2} \\\\\n& x=\\frac{1}{2} y\n\\end{aligned}\n$$\n\nPlease see page 47 for a hint.\n\n## Problem 2\n\nWhat is the value of $c$ when the expression is evaluated:\n\n$$\n\\begin{aligned}\n& \\text { int } f=34 \\\\\n& \\text { float } c=(f-32) * 5 / 9\n\\end{aligned}\n$$\n\nAnswer:\n\nPlease see page 49 for a hint.\n\n## Problem 3\n\nWrite a function to display \"Hello World\". Call it hello()\nAnswer:\n\nPlease see page 60 for a hint.\n\n## Problem 4\n\nWrite a function to return a number. Call it get()\nAnswer:\n\nPlease see page 64 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -172,7 +172,7 @@
         },
         {
             "index": 14,
-            "markdown": "# Problem 7 \n\nWhat is the output?\n\n```\ndouble a(double b, double c)\n{\n    return b - c;\n}\nint main()\n{\n    float x = a(4.0, 3.0);\n    float y = a(7.0, 5.0);\n    cout << a(x, y) << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a bint.\n\n## Problem 8\n\nWhat is the output?\n\n```\ndouble add(double n1, double n2)\n{\n    return n1 + n2;\n}\nint main()\n{\n    double n3 = add(0.1, 0.2);\n    double n4 = add(n3, add(0.3, 0.4));\n    cout << n4 << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a bint.",
+            "markdown": "# Problem 7 \n\nWhat is the output?\n\n```\ndouble a(double b, double c)\n{\n    return b - c;\n}\nint main()\n{\n    float x = a(4.0, 3.0);\n    float y = a(7.0, 5.0);\n    cout << a(x, y) << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a hint.\n\n## Problem 8\n\nWhat is the output?\n\n```\ndouble add(double n1, double n2)\n{\n    return n1 + n2;\n}\nint main()\n{\n    double n3 = add(0.1, 0.2);\n    double n4 = add(n3, add(0.3, 0.4));\n    cout << n4 << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 62 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -182,7 +182,7 @@
         },
         {
             "index": 15,
-            "markdown": "# Problem 9 \n\nWhat is the output?\n\n```\nvoid weird(int a, int &b)\n{\n    a = 1;\n    b = 2;\n}\nint main()\n{\n    int a = 3;\n    int b = 4;\n    weird(a, b);\n    cout << a * b << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a bint.\n\n## Problem 10\n\nWhat is the output?\n\n```\nvoid setTrue(bool a)\n{\n    a = true;\n    return;\n}\nint main()\n{\n    bool a = false;\n    setTrue(a);\n    cout << (int)a << endl;\n    return 0;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 9 \n\nWhat is the output?\n\n```\nvoid weird(int a, int &b)\n{\n    a = 1;\n    b = 2;\n}\nint main()\n{\n    int a = 3;\n    int b = 4;\n    weird(a, b);\n    cout << a * b << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 65 for a hint.\n\n## Problem 10\n\nWhat is the output?\n\n```\nvoid setTrue(bool a)\n{\n    a = true;\n    return;\n}\nint main()\n{\n    bool a = false;\n    setTrue(a);\n    cout << (int)a << endl;\n    return 0;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -192,7 +192,7 @@
         },
         {
             "index": 16,
-            "markdown": "# Problem 11 \n\nWhat is the output?\n\n```\nint main()\n{\n    cout << a(b()) << endl;\n    return 0;\n}\nint a(int value)\n{\n    return value * 2;\n}\nint b()\n{\n    return 3;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a bint.\n\n## Problem 12\n\nWhat is the output?\n\n```\nchar value = 'a';\nint main()\n{\n    char value = 'b';\n    if (true)\n    {\n        char value = 'c';\n    }\n    cout << value << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a bint.",
+            "markdown": "# Problem 11 \n\nWhat is the output?\n\n```\nint main()\n{\n    cout << a(b()) << endl;\n    return 0;\n}\nint a(int value)\n{\n    return value * 2;\n}\nint b()\n{\n    return 3;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a hint.\n\n## Problem 12\n\nWhat is the output?\n\n```\nchar value = 'a';\nint main()\n{\n    char value = 'b';\n    if (true)\n    {\n        char value = 'c';\n    }\n    cout << value << endl;\n    return 0;\n}\n```\n\nAnswer:\n\nPlease see page 67 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,

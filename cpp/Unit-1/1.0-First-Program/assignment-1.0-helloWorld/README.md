@@ -27,5 +27,4 @@
     - Review your code for style and formatting according to the guidelines.
 
 6. **Submit:**
-    - Submit your `.cpp` file as instructed in [submission.md](./submission.md)
-
+    - Submit your `.cpp` file in the assignment in Google Classroom.

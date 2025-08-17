@@ -250,7 +250,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 218 for a bint.
+Please see page 218 for a hint.
 
 ## Problem 2
 

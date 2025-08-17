@@ -142,7 +142,7 @@
         },
         {
             "index": 13,
-            "markdown": "# Problem 1 \n\nWhat is the output of the following code?\n\n| \\{ | a | b | c | d |\n| :--: | :--: | :--: | :--: | :--: |\n| int $a=0 ;$ <br> int $b=1 ;$ <br> int * $c=\\& b ;$ <br> $* \\mathrm{c}=2 ;$ <br> int * $d=\\& a ;$ <br> $b=3 ;$ <br> $d=\\& b ;$ <br> $* d=4 ;$ <br> cout << \"b == \" << b << endl; <br> \\} |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n\nAnswer:\n\nPlease see page 258 for a bint.\n\n## Problem 2\n\nWhat is the output of the following code?\n\n```\n{\n    char a[] = \"Banana\";\n    char b[] = \"Bread\";\n    char * c;\n    if (a == b)\n        c = a;\n    else\n        c = b;\n    cout << c << endl;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 1 \n\nWhat is the output of the following code?\n\n| \\{ | a | b | c | d |\n| :--: | :--: | :--: | :--: | :--: |\n| int $a=0 ;$ <br> int $b=1 ;$ <br> int * $c=\\& b ;$ <br> $* \\mathrm{c}=2 ;$ <br> int * $d=\\& a ;$ <br> $b=3 ;$ <br> $d=\\& b ;$ <br> $* d=4 ;$ <br> cout << \"b == \" << b << endl; <br> \\} |  |  |  |  |\n| :-- | :-- | :-- | :-- | :-- |\n\nAnswer:\n\nPlease see page 258 for a hint.\n\n## Problem 2\n\nWhat is the output of the following code?\n\n```\n{\n    char a[] = \"Banana\";\n    char b[] = \"Bread\";\n    char * c;\n    if (a == b)\n        c = a;\n    else\n        c = b;\n    cout << c << endl;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -152,7 +152,7 @@
         },
         {
             "index": 14,
-            "markdown": "# Problem 3 \n\nWhat is the output of the following code?\n\n```\n{\n    int number = 5;\n    switch (number)\n    {\n        case 4:\n            cout << \"four!\\n\";\n            break;\n            case 5:\n                cout << \"five!\\n\";\n                break;\n            case 6:\n                cout << \"six!\\n\";\n                break;\n            default:\n                cout << \"unknown!\\n\";\n    }\n}\n```\n\nAnswer:\n\nPlease see page 285 for a bint.\n\n## Problem 4\n\nWhat is the syntax error in the following code?\n\n```\n{\n    int input = 20;\n    switch (input)\n    {\n        case 'a':\n            cout << \"A!\\n\";\n            break;\n            case true:\n                cout << \"B!\\n\";\n                break;\n            case 2.0:\n                cout << \"C!\\n\";\n                break;\n            default:\n                cout << \"unknown!\\n\";\n    }\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 3 \n\nWhat is the output of the following code?\n\n```\n{\n    int number = 5;\n    switch (number)\n    {\n        case 4:\n            cout << \"four!\\n\";\n            break;\n            case 5:\n                cout << \"five!\\n\";\n                break;\n            case 6:\n                cout << \"six!\\n\";\n                break;\n            default:\n                cout << \"unknown!\\n\";\n    }\n}\n```\n\nAnswer:\n\nPlease see page 285 for a hint.\n\n## Problem 4\n\nWhat is the syntax error in the following code?\n\n```\n{\n    int input = 20;\n    switch (input)\n    {\n        case 'a':\n            cout << \"A!\\n\";\n            break;\n            case true:\n                cout << \"B!\\n\";\n                break;\n            case 2.0:\n                cout << \"C!\\n\";\n                break;\n            default:\n                cout << \"unknown!\\n\";\n    }\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,

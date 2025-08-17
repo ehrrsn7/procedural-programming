@@ -3,7 +3,7 @@
 ### 1.1 Output
 
 Sam is sitting in the computer lab waiting for class to begin. He is bored, bored, bored! Just for kicks, he decides to dabble in ASCII-art. His first attempt is to reproduce his school logo:
-![[1-1-Output_img_1.jpeg]]
+![](1-1-Output_img_1.jpeg)
 
 ## Objectives
 
@@ -309,7 +309,7 @@ Write the code to put a newline on the screen:
 Answer:
 $\square$
 
-Please see page 26 for a bint.
+Please see page 26 for a hint.
 
 ## Problem 2
 
@@ -319,7 +319,7 @@ How do you right-align numbers in $\mathrm{C}++$ ?
 Answer:
 $\square$
 
-Please see page 28 for a bint.
+Please see page 28 for a hint.
 
 ## Problem 3
 
@@ -329,7 +329,7 @@ $\square$
 Answer:
 $\square$
 
-Please see page 27 for a bint.
+Please see page 27 for a hint.
 
 ## Problem 4
 
@@ -339,7 +339,7 @@ $\backslash / \backslash / \backslash /$
 Answer:
 $\square$
 
-Please see page 29 for a bint.
+Please see page 29 for a hint.
 
 # Problem 5 
 
@@ -370,7 +370,7 @@ $$
 Note that there is a tab at the start of the second line.
 Answer:
 $\square$
-Please see page 27 for a bint.
+Please see page 27 for a hint.
 
 ## Problem 7
 
@@ -387,7 +387,7 @@ $$
 
 Answer:
 $\square$
-Please see page 30 for a bint.
+Please see page 30 for a hint.
 
 # Assignment 1.1 
 
@@ -426,4 +426,4 @@ Please note:
 - Please verify your solution against:
 testBed cs124/assign11 assignment11.cpp
 Don't forget to submit your assignment with the name "Assignment 11" in the header.
-Please see page 30 for a bint.
+Please see page 30 for a hint.

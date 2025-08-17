@@ -178,7 +178,7 @@ If a program is like a recipe for cookies then which of the following is most li
 - Measurements
 - Chef
 
-Please see page 4 for a bint.
+Please see page 4 for a hint.
 
 # Problem 3 
 

@@ -142,7 +142,7 @@
         },
         {
             "index": 12,
-            "markdown": "# Problem 1 \n\nWhat is returned if the input is 82 ?\n\n```\nchar convert(int input)\n{\n    char letters[] = \"ABCDF\";\n    int minRange[] =\n        {90, 80, 70, 60, 0};\n    for (int i = 0; i < 5; i++)\n        if (minRange[i] <= input)\n            return letters[i];\n    return 'F';\n}\n```\n\nAnswer:\n\nPlease see page 218 for a bint.\n\n## Problem 2\n\nWhat is the output of the following code?\n\n```\nint num(int n, float * a)\n{\n    int s = 0;\n    for (int i = 0; i < n; i++)\n        s += (a[i] >= 80.0);\n    return s;\n}\nint main()\n{\n    cout << num(5, {71.3, 84.7, 63.9, 99.8, 70})\n        << endl;\n    return 0;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 1 \n\nWhat is returned if the input is 82 ?\n\n```\nchar convert(int input)\n{\n    char letters[] = \"ABCDF\";\n    int minRange[] =\n        {90, 80, 70, 60, 0};\n    for (int i = 0; i < 5; i++)\n        if (minRange[i] <= input)\n            return letters[i];\n    return 'F';\n}\n```\n\nAnswer:\n\nPlease see page 218 for a hint.\n\n## Problem 2\n\nWhat is the output of the following code?\n\n```\nint num(int n, float * a)\n{\n    int s = 0;\n    for (int i = 0; i < n; i++)\n        s += (a[i] >= 80.0);\n    return s;\n}\nint main()\n{\n    cout << num(5, {71.3, 84.7, 63.9, 99.8, 70})\n        << endl;\n    return 0;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -152,7 +152,7 @@
         },
         {
             "index": 13,
-            "markdown": "# Problem 3 \n\nWhat is the output of the following code?\n\n```\n{\n    char a[8] = \"Rexburg\";\n    bool b[8] =\n        {true, false, true, true,\n        false, true, true, false};\n    for (int i = 0; i < 8; i++)\n        if (b[i])\n            cout << a[i];\n    cout << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a bint.\n\n## Problem 4\n\nWhat is the syntax error?\n\n```\n{\n    char letter = 'a';\n    switch (letter)\n    {\n        case 'a':\n            cout << \"A\\n\";\n        case true:\n            cout << \"B!\\n\";\n            break;\n            break;\n            case 1:\n            cout << \"C!\\n\";\n            break;\n    }\n}\n```\n\nAnswer:\n\nPlease see page 287 for a bint.\n\n## Problem 5\n\nDeclare a variable to represent a Sudoku board:",
+            "markdown": "# Problem 3 \n\nWhat is the output of the following code?\n\n```\n{\n    char a[8] = \"Rexburg\";\n    bool b[8] =\n        {true, false, true, true,\n        false, true, true, false};\n    for (int i = 0; i < 8; i++)\n        if (b[i])\n            cout << a[i];\n    cout << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a hint.\n\n## Problem 4\n\nWhat is the syntax error?\n\n```\n{\n    char letter = 'a';\n    switch (letter)\n    {\n        case 'a':\n            cout << \"A\\n\";\n        case true:\n            cout << \"B!\\n\";\n            break;\n            break;\n            case 1:\n            cout << \"C!\\n\";\n            break;\n    }\n}\n```\n\nAnswer:\n\nPlease see page 287 for a hint.\n\n## Problem 5\n\nDeclare a variable to represent a Sudoku board:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -162,7 +162,7 @@
         },
         {
             "index": 14,
-            "markdown": "# Problem 6 \n\nWhat is wrong with each of the following array declarations?\n\n```\nint x = 6;\nint array[x][x];\nconst float x = 1;\nint array[x]\n```\n\nint array[][] 22int array[6 * 5 + 2][4 / 2];Please see page 215 for a bint.\n\n## Problem 7\n\nWhat is the output of the following code fragment?\n\n```\n{\n    int array[2][2] =\n        { {3, 4}, {1, 2} };\n    cout << array[1][0];\n}\n```\n\nAnswer:\n\n## Problem 8\n\nConsider an array that is declared with the following code:\nint array[7][21];\n\nWrite a prototype of a function that will accept this array as a parameter.\nAnswer: $\\qquad$\n$\\qquad$",
+            "markdown": "# Problem 6 \n\nWhat is wrong with each of the following array declarations?\n\n```\nint x = 6;\nint array[x][x];\nconst float x = 1;\nint array[x]\n```\n\nint array[][] 22int array[6 * 5 + 2][4 / 2];Please see page 215 for a hint.\n\n## Problem 7\n\nWhat is the output of the following code fragment?\n\n```\n{\n    int array[2][2] =\n        { {3, 4}, {1, 2} };\n    cout << array[1][0];\n}\n```\n\nAnswer:\n\n## Problem 8\n\nConsider an array that is declared with the following code:\nint array[7][21];\n\nWrite a prototype of a function that will accept this array as a parameter.\nAnswer: $\\qquad$\n$\\qquad$",
             "images": [],
             "dimensions": {
                 "dpi": 200,
