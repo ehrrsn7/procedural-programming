@@ -1,14 +1,14 @@
 # Unit 2. Design \& Loops 
 
-2.0 Modularization ..... 108
-2.1 Debugging. ..... 130
-2.2 Designing Algorithms ..... 145
-2.3 Loop Syntax ..... 156
-2.4 Loop Output ..... 168
-2.5 Loop Design ..... 181
-2.6 Files ..... 190
-Unit 2 Practice Test ..... 207
-Unit 2 Project : Calendar Program ..... 209
+2.0 Modularization 
+2.1 Debugging. 
+2.2 Designing Algorithms 
+2.3 Loop Syntax 
+2.4 Loop Output 
+2.5 Loop Design 
+2.6 Files 
+Unit 2 Practice Test 
+Unit 2 Project : Calendar Program 
 
 # 2.0 Modularization 
 

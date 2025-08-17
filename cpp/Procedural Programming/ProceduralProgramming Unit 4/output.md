@@ -1,12 +1,12 @@
 # Unit 4. Advanced Topics 
 
-4.0 Multi-Dimensional Arrays ..... 309
-4.1 Allocating Memory ..... 324
-4.2 String Class ..... 337
-4.3 Command Line ..... 346
-4.4 Instrumentation ..... 356
-Unit 4 Practice Test ..... 361
-Unit 4 Project : Sudoku ..... 363
+4.0 Multi-Dimensional Arrays 
+4.1 Allocating Memory 
+4.2 String Class 
+4.3 Command Line 
+4.4 Instrumentation 
+Unit 4 Practice Test 
+Unit 4 Project : Sudoku 
 
 # Unit 4. Advanced Topics 
 
@@ -172,7 +172,7 @@ We can also initialize a multi-dimensional array at declaration time. The best w
 ```
 
 
-## Suc's Tips
+## Sue's Tips
 
 Notice how the horizontal dimension comes second in multi-dimensional arrays. In Geometry, we learned to specify coordinates as ( $\mathrm{X}, \mathrm{Y}$ ) where the horizontal dimension comes first. Multidimensional arrays are the opposite! Rather than trying to re-learn ( $\mathrm{Y}, \mathrm{X}$ ) (which just doesn't feel right, does it?), it is more convenient to use (Row, Column) as our array dimensions.
 Storing a digital image is a slightly more complex example. Each pixel consists of three values (red, green, and blue) with 256 possible values in each (char). The pixels themselves are arrayed in a two-dimensional image $(4,000 \times 3,000)$. The resulting declaration is:

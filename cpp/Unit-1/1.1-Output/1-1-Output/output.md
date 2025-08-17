@@ -185,7 +185,7 @@ Page 28 | 1.1 Output | Unit 1: Simple Program | Procedural Programming in C++
 
 Observe how the second row displays two decimals even though the code only has one. This is because of the cout.precision(2) statement indicating that two decimals will always be used. The third row also displays two decimal places, rounding the number up because the digit in the third decimal place is a 5 .
 
-# Suc's Tips 
+# Sue's Tips 
 
 It is helpful to first draw out the output on graph paper so you can get the column widths correct the first time. When the output is complex (as it is for Project 1), aligning columns can become frustrating.
 

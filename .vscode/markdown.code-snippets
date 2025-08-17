@@ -1,0 +1,663 @@
+{
+  "Warning Block": {
+    "prefix": "warning",
+    "body": [
+      "> [!WARNING]",
+      "> ${1:Your warning message here}"
+    ],
+    "description": "Insert a warning callout block"
+  },
+  "Tip Block": {
+    "prefix": "tip",
+    "body": [
+      "> [!TIP]",
+      "> ${1:Your tip message here}"
+    ],
+    "description": "Insert a tip callout block"
+  },
+  "Info Block": {
+    "prefix": "info",
+    "body": [
+      "> [!INFO]",
+      "> ${1:Your info message here}"
+    ],
+    "description": "Insert an info callout block"
+  },
+  "Danger Block": {
+    "prefix": "danger",
+    "body": [
+      "> [!DANGER]",
+      "> ${1:Your danger message here}"
+    ],
+    "description": "Insert a danger callout block"
+  },
+  "Error Block": {
+    "prefix": "error",
+    "body": [
+      "> [!ERROR]",
+      "> ${1:Your error message here}"
+    ],
+    "description": "Insert an error callout block"
+  },
+  "Success Block": {
+    "prefix": "success",
+    "body": [
+      "> [!SUCCESS]",
+      "> ${1:Your success message here}"
+    ],
+    "description": "Insert a success callout block"
+  },
+  "Check Block": {
+    "prefix": "check",
+    "body": [
+      "> [!CHECK]",
+      "> ${1:Your check message here}"
+    ],
+    "description": "Insert a check callout block"
+  },
+  "Bug Block": {
+    "prefix": "bug",
+    "body": [
+      "> [!BUG]",
+      "> ${1:Your bug report here}"
+    ],
+    "description": "Insert a bug callout block"
+  },
+  "Note Block": {
+    "prefix": "note",
+    "body": [
+      "> [!NOTE]",
+      "> ${1:Your note here}"
+    ],
+    "description": "Insert a note callout block"
+  },
+  "Example Block": {
+    "prefix": "example",
+    "body": [
+      "> [!EXAMPLE]",
+      "> ${1:Your example here}"
+    ],
+    "description": "Insert an example callout block"
+  },
+  "Fail Block": {
+    "prefix": "fail",
+    "body": [
+      "> [!FAIL]",
+      "> ${1:Your fail message here}"
+    ],
+    "description": "Insert a fail callout block"
+  },
+  "Missing Block": {
+    "prefix": "missing",
+    "body": [
+      "> [!MISSING]",
+      "> ${1:Your missing content note here}"
+    ],
+    "description": "Insert a missing callout block"
+  },
+  "Important Block": {
+    "prefix": "important",
+    "body": [
+      "> [!IMPORTANT]",
+      "> ${1:Your important message here}"
+    ],
+    "description": "Insert an important callout block"
+  },
+  "Question Block": {
+    "prefix": "question",
+    "body": [
+      "> [!QUESTION]",
+      "> ${1:Your question here}"
+    ],
+    "description": "Insert a question callout block"
+  },
+  "Help Block": {
+    "prefix": "help",
+    "body": [
+      "> [!HELP]",
+      "> ${1:Your help message here}"
+    ],
+    "description": "Insert a help callout block"
+  },
+  "Summary Block": {
+    "prefix": "summary",
+    "body": [
+      "> [!SUMMARY]",
+      "> ${1:Your summary here}"
+    ],
+    "description": "Insert a summary callout block"
+  },
+  "TLDR Block": {
+    "prefix": "tldr",
+    "body": [
+      "> [!TLDR]",
+      "> ${1:Your TLDR summary here}"
+    ],
+    "description": "Insert a TLDR callout block"
+  },
+  "Todo Block": {
+    "prefix": "todo",
+    "body": [
+      "> [!TODO]",
+      "> ${1:Your todo item here}"
+    ],
+    "description": "Insert a todo callout block"
+  },
+  "Quote Block": {
+    "prefix": "quote",
+    "body": [
+      "> [!QUOTE]",
+      "> ${1:Your quote here}"
+    ],
+    "description": "Insert a quote callout block"
+  },
+  "Cite Block": {
+    "prefix": "cite",
+    "body": [
+      "> [!CITE]",
+      "> ${1:Your citation here}"
+    ],
+    "description": "Insert a cite callout block"
+  },
+  "Expandable Info Block": {
+    "prefix": "info-expand",
+    "body": [
+      "> [!INFO]-",
+      "> ${1:Your expandable info here}"
+    ],
+    "description": "Insert an expandable info callout block"
+  },
+  "Code Block with Language": {
+    "prefix": "codeblock",
+    "body": [
+      "```${1:cpp}",
+      "${2:// Your code here}",
+      "```"
+    ],
+    "description": "Insert a code block with language syntax highlighting"
+  },
+  "Styled Code Block": {
+    "prefix": "codestyle",
+    "body": [
+      "```${1:cpp} {.${2|warning,tip,info,error,success,fail,bug,example,important,default|}$3}",
+      "${4:// Your code here}",
+      "```"
+    ],
+    "description": "Insert a styled code block with CSS class"
+  },
+  "Inline Styled Code": {
+    "prefix": "inlinecode",
+    "body": [
+      "`${1:code}`{.${2|warning,tip,info,error,success,fail,bug,example,important,default|}}"
+    ],
+    "description": "Insert inline code with CSS styling"
+  },
+  "Page Break": {
+    "prefix": "pagebreak",
+    "body": [
+      "<div style=\"page-break-after: always;\"></div>"
+    ],
+    "description": "Insert a page break for PDF export"
+  },
+  "Horizontal Rule": {
+    "prefix": "hr",
+    "body": [
+      "---"
+    ],
+    "description": "Insert a horizontal rule"
+  },
+  "Line Break (Backslash)": {
+    "prefix": "linebreak",
+    "body": [
+      "${1:First line}\\",
+      "${2:Second line}"
+    ],
+    "description": "Insert line break using backslash (Mr. Eli's preferred method)"
+  },
+  "Line Break (Two Spaces)": {
+    "prefix": "linebreak-spaces",
+    "body": [
+      "${1:First line}  ",
+      "${2:Second line}"
+    ],
+    "description": "Insert line break using two trailing spaces"
+  },
+  "Line Break (HTML)": {
+    "prefix": "linebreak-html",
+    "body": [
+      "${1:First line}<br>",
+      "${2:Second line}"
+    ],
+    "description": "Insert line break using HTML br tag"
+  },
+  "Bold Text": {
+    "prefix": "bold",
+    "body": [
+      "**${1:bold text}**"
+    ],
+    "description": "Insert bold text"
+  },
+  "Italic Text": {
+    "prefix": "italic",
+    "body": [
+      "*${1:italic text}*"
+    ],
+    "description": "Insert italic text"
+  },
+  "Strikethrough Text": {
+    "prefix": "strike",
+    "body": [
+      "~~${1:strikethrough text}~~"
+    ],
+    "description": "Insert strikethrough text"
+  },
+  "Highlighted Text": {
+    "prefix": "highlight",
+    "body": [
+      "==${1:highlighted text}=="
+    ],
+    "description": "Insert highlighted text"
+  },
+  "Block Quote": {
+    "prefix": "blockquote",
+    "body": [
+      "> ${1:Your quote here}"
+    ],
+    "description": "Insert a block quote"
+  },
+  "Multi-line Block Quote": {
+    "prefix": "blockquote-multi",
+    "body": [
+      "> ${1:First line}\\",
+      ">\\",
+      "> ${2:Second paragraph}"
+    ],
+    "description": "Insert a multi-line block quote using backslash line breaks"
+  },
+  "Unordered List": {
+    "prefix": "ul",
+    "body": [
+      "- ${1:First item}",
+      "- ${2:Second item}",
+      "- ${3:Third item}"
+    ],
+    "description": "Insert an unordered list"
+  },
+  "Ordered List": {
+    "prefix": "ol",
+    "body": [
+      "1. ${1:First item}",
+      "2. ${2:Second item}",
+      "3. ${3:Third item}"
+    ],
+    "description": "Insert an ordered list"
+  },
+  "Task List": {
+    "prefix": "tasklist",
+    "body": [
+      "- [x] ${1:Completed task}",
+      "- [ ] ${2:Incomplete task}",
+      "- [ ] ${3:Another task}"
+    ],
+    "description": "Insert a task list with checkboxes"
+  },
+  "Nested List": {
+    "prefix": "nestedlist",
+    "body": [
+      "- ${1:Main item}",
+      "  - ${2:Sub item}",
+      "  - ${3:Sub item}",
+      "- ${4:Main item}",
+      "  - ${5:Sub item}"
+    ],
+    "description": "Insert a nested list"
+  },
+  "Table (Simple)": {
+    "prefix": "table",
+    "body": [
+      "| ${1:Header 1} | ${2:Header 2} | ${3:Header 3} |",
+      "|:-------------|:-------------|:-------------|",
+      "| ${4:Row 1}    | ${5:Data}     | ${6:Data}     |",
+      "| ${7:Row 2}    | ${8:Data}     | ${9:Data}     |"
+    ],
+    "description": "Insert a simple table"
+  },
+  "Table (Aligned)": {
+    "prefix": "table-aligned",
+    "body": [
+      "| ${1:Left} | ${2:Center} | ${3:Right} |",
+      "|:----------|:----------:|----------:|",
+      "| ${4:Data} | ${5:Data}   | ${6:Data} |"
+    ],
+    "description": "Insert a table with different alignments"
+  },
+  "Definition List": {
+    "prefix": "deflist",
+    "body": [
+      "${1:Term}",
+      ":   ${2:Definition goes here}",
+      "",
+      "${3:Another Term}",
+      ":   ${4:Another definition}"
+    ],
+    "description": "Insert a definition list"
+  },
+  "Collapsible Section": {
+    "prefix": "collapse",
+    "body": [
+      "<details>",
+      "<summary>${1:Click to expand}</summary>",
+      "",
+      "${2:Hidden content goes here}",
+      "",
+      "</details>"
+    ],
+    "description": "Insert a collapsible section"
+  },
+  "Math Equation Block": {
+    "prefix": "math",
+    "body": [
+      "$$",
+      "${1:equation}",
+      "$$"
+    ],
+    "description": "Insert a LaTeX math equation block"
+  },
+  "Inline Math": {
+    "prefix": "imath",
+    "body": [
+      "$${1:equation}$$"
+    ],
+    "description": "Insert inline LaTeX math"
+  },
+  "Math Align Block": {
+    "prefix": "mathalign",
+    "body": [
+      "$$",
+      "\\begin{align}",
+      "${1:equation_1} &= ${2:expression_1} \\\\",
+      "${3:equation_2} &= ${4:expression_2}",
+      "\\end{align}",
+      "$$"
+    ],
+    "description": "Insert aligned math equations"
+  },
+  "Math Cases Block": {
+    "prefix": "mathcases",
+    "body": [
+      "$$",
+      "\\begin{cases}",
+      "${1:condition_1} & \\text{${2:description_1}} \\\\",
+      "${3:condition_2} & \\text{${4:description_2}}",
+      "\\end{cases}",
+      "$$"
+    ],
+    "description": "Insert math cases block"
+  },
+  "Educational Header": {
+    "prefix": "eduheader",
+    "body": [
+      "---",
+      "title: \"${1:Title}\"",
+      "description: \"${2:Description}\"",
+      "course: \"${3:CS 165}\"",
+      "unit: \"${4:Unit 0}\"",
+      "chapter: \"${5:Chapter}\"",
+      "tags:",
+      "  - ${6:cpp}",
+      "  - ${7:object-oriented-programming}",
+      "source:",
+      "  type: \"${8:AI-Generated Draft}\"",
+      "  method: \"${9:Manual Creation}\"",
+      "  original: \"${10:source.pdf}\"",
+      "  generated: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}\"",
+      "author: \"${11:CS 165 Course Materials}\"",
+      "date: \"${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}\"",
+      "---",
+      "",
+      "# ${1:Title}",
+      "",
+      "${0}"
+    ],
+    "description": "Insert educational document header with metadata"
+  },
+  "Table of Contents": {
+    "prefix": "toc",
+    "body": [
+      "# Table of Contents",
+      "",
+      "| Table of Contents |",
+      "| :--- |",
+      "| ${1:Section} |",
+      "${0}"
+    ],
+    "description": "Insert a table of contents template"
+  },
+  "Bootstrap Card": {
+    "prefix": "card",
+    "body": [
+      "<div class=\"card\">",
+      "  <div class=\"card-header\">",
+      "    <h5 class=\"card-title\">${1:Card Title}</h5>",
+      "  </div>",
+      "  <div class=\"card-body\">",
+      "    ${2:Card content goes here}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Insert a Bootstrap card component"
+  },
+  "Bootstrap Alert": {
+    "prefix": "alert",
+    "body": [
+      "<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  ${2:Alert message}",
+      "</div>"
+    ],
+    "description": "Insert a Bootstrap alert component"
+  },
+  "Link": {
+    "prefix": "link",
+    "body": [
+      "[${1:link text}](${2:URL})"
+    ],
+    "description": "Insert a markdown link"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": [
+      "![${1:alt text}](${2:image.png})"
+    ],
+    "description": "Insert a markdown image"
+  },
+  "Image with Size": {
+    "prefix": "imgsize",
+    "body": [
+      "![${1:alt text}](${2:image.png}){width=${3:50}}"
+    ],
+    "description": "Insert a markdown image with size attribute"
+  },
+  "Footnote Reference": {
+    "prefix": "footnote",
+    "body": [
+      "[^${1:1}]"
+    ],
+    "description": "Insert a footnote reference"
+  },
+  "Footnote Definition": {
+    "prefix": "footnotedeff",
+    "body": [
+      "[^${1:1}]: ${2:Footnote content here}"
+    ],
+    "description": "Insert a footnote definition"
+  },
+  "Emoji": {
+    "prefix": "emoji",
+    "body": [
+      "${1:✅ 🔄 📋 💡 🤓 🎉 ⚠️ 🚨 ℹ️}"
+    ],
+    "description": "Insert common emojis"
+  },
+  "HTML Table": {
+    "prefix": "htmltable",
+    "body": [
+      "<table class=\"${1:example}\">",
+      "<tbody>",
+      "<tr>",
+      "    <td class=\"${2:style}\">${3:Content}",
+      "    <td class=\"${4:style}\">${5:Content}",
+      "</tr>",
+      "</tbody>",
+      "</table>"
+    ],
+    "description": "Insert an HTML table with CSS classes"
+  },
+  "Sue's Tips": {
+    "prefix": "sues-tips",
+    "body": [
+      "> [!DANGER] 💡 **Sue's Tip:**",
+      "> ![Sue](.vscode/assets/sue.png){width=50 align=right} ",
+      "> ${1:Practical advice for getting the job done efficiently}"
+    ],
+    "description": "Insert a Sue's Tips section with character image"
+  },
+  "Sam's Corner": {
+    "prefix": "sams-corner",
+    "body": [
+      "> [!TLDR] 🤓 **Sam's Corner:**",
+      "> ![Sam](.vscode/assets/sam.png){width=50 align=right}",
+      "> ${1:Technical details and interesting tidbits}"
+    ],
+    "description": "Insert a Sam's Corner section with character image"
+  },
+  "C++ Class Template": {
+    "prefix": "cppclass",
+    "body": [
+      "```cpp",
+      "class ${1:ClassName} {",
+      "private:",
+      "    ${2:// Private members}",
+      "",
+      "public:",
+      "    // Constructor",
+      "    ${1:ClassName}(${3:parameters});",
+      "    ",
+      "    // Destructor",
+      "    ~${1:ClassName}();",
+      "    ",
+      "    // Member functions",
+      "    ${4:returnType} ${5:functionName}(${6:parameters});",
+      "};",
+      "```"
+    ],
+    "description": "Insert a C++ class template"
+  },
+  "Python Class Template": {
+    "prefix": "pyclass",
+    "body": [
+      "```python",
+      "class ${1:ClassName}:",
+      "    def __init__(self${2:, parameters}):",
+      "        ${3:# Initialize instance variables}",
+      "    ",
+      "    def ${4:method_name}(self${5:, parameters}):",
+      "        ${6:# Method implementation}",
+      "        return ${7:result}",
+      "```"
+    ],
+    "description": "Insert a Python class template"
+  },
+  "All Style Classes": {
+    "prefix": "allstyles",
+    "body": [
+      "```{.${1|bug,default,error,example,fail,important,info,question,success,summary,tip,todo,warning,quote,bug-style,default-style,error-style,example-style,fail-style,important-style,info-style,question-style,success-style,summary-style,tip-style,todo-style,warning-style,quote-style|}}",
+      "${2:Your code here}",
+      "```"
+    ],
+    "description": "Insert a code block with all available style classes"
+  },
+  "Highlight Text": {
+    "prefix": "highlight",
+    "body": [
+      "==${1:highlighted text}=="
+    ],
+    "description": "Highlight text with extended markdown syntax"
+  },
+  "PDF Export Footer": {
+    "prefix": "pdffooter",
+    "body": [
+      "```css",
+      ":root {",
+      "    --course-name: \"${1:CS 165}\";",
+      "    --unit-name: \"${2:Unit Name}\";",
+      "    --chapter-name: \"${3:Chapter Name}\";",
+      "}",
+      "",
+      "@page {",
+      "    @bottom-center {",
+      "        content: \"Page \" counter(page) \" | \" var(--chapter-name) \" | \" var(--unit-name) \" | \" var(--course-name);",
+      "        font-size: 9px;",
+      "    }",
+      "}",
+      "```"
+    ],
+    "description": "Insert CSS for PDF export with dynamic footer"
+  },
+  "VS Code Settings": {
+    "prefix": "vscode-settings",
+    "body": [
+      "```json",
+      "{",
+      "  \"markdown.styles\": [\"./markdown-styles.css\"],",
+      "  \"markdown.preview.breaks\": ${1:true},",
+      "  \"markdown.preview.linkify\": ${2:true},",
+      "  \"markdown.preview.typographer\": ${3:true}",
+      "}",
+      "```"
+    ],
+    "description": "Insert VS Code markdown settings configuration"
+  },
+  "Quadratic Formula": {
+    "prefix": "quadratic",
+    "body": [
+      "$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$"
+    ],
+    "description": "Insert quadratic formula"
+  },
+  "Algorithm Complexity": {
+    "prefix": "complexity",
+    "body": [
+      "$$",
+      "\\begin{cases}",
+      "O(1) & \\text{constant time} \\\\",
+      "O(\\log n) & \\text{logarithmic time} \\\\",
+      "O(n) & \\text{linear time} \\\\",
+      "O(n \\log n) & \\text{linearithmic time} \\\\",
+      "O(n^2) & \\text{quadratic time}",
+      "\\end{cases}",
+      "$$"
+    ],
+    "description": "Insert algorithm complexity notation"
+  },
+  "All Headings": {
+    "prefix": "headings",
+    "body": [
+      "# ${1:Heading 1} (2.5rem)",
+      "## ${2:Heading 2} (2rem)",
+      "### ${3:Heading 3} (1.75rem)",
+      "#### ${4:Heading 4} (1.5rem)",
+      "##### ${5:Heading 5} (1.25rem)",
+      "###### ${6:Heading 6} (1rem)"
+    ],
+    "description": "Insert all heading levels with size annotations"
+  },
+  "Complete Text Formatting": {
+    "prefix": "textformat",
+    "body": [
+      "This is **bold text** and this is *italic text*. You can also use ==highlighted text== for emphasis.",
+      "This is _underlined text_ using HTML `<u>` tags or `_` characters.",
+      "This is ~~strikethrough text~~ using double tildes `~~text~~`."
+    ],
+    "description": "Insert complete text formatting examples"
+  }
+}

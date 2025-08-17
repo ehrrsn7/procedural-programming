@@ -1,4 +1,16 @@
 {
+    "markdown.styles": [
+        "./.vscode/markdown-styles.css",
+    ],
+    "markdown.preview.breaks": false,
+    "markdown.preview.linkify": true,
+    "markdown.preview.typographer": true,
+    "gitdoc.enabled": true,
+    "gitdoc.autoCommitDelay": 10000,
+    "gitdoc.autoPushDelay": 30000,
+    "gitdoc.commitMessageFormat": "🤖 AI Commit: ${aiMessage} | ${date}",
+    "gitdoc.ai.useEmojis": true,
+    "markdownExtended.disabledPlugins": "html5-embed",
     "terminal.integrated.env.windows": {
         "PATH": "${env:USERPROFILE}\\nodejs\\node-v23.7.0-win-x64;${env:PATH}"
     },
