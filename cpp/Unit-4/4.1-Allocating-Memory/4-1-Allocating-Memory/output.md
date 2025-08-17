@@ -517,7 +517,7 @@ How much memory is allocated with each of the following?
 | $p=$ new int[6]; |  |
 | $p=$ new char(65); |  |
 
-Please see page 328 for a bint.
+Please see page 328 for a hint.
 
 ## Problem 8
 

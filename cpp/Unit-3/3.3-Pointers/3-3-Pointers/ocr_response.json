@@ -132,7 +132,7 @@
         },
         {
             "index": 12,
-            "markdown": "# Problem 4 \n\nWhat is the output of the following code?\n\n```\n{\n    int a = 10;\n    int * b = &a;\n    while (*b > 5)\n        (*b)--;\n    cout << \"Answer: \"\n        << a\n        << endl;\n}\n```\n\nAnswer:\n\nPlease see page 258 for a bint.\n\n## Problem 5\n\nWhat is the output of the following code?\n\n```\nvoid funky(int * a)\n{\n    *a = 8;\n    return;\n}\nint main()\n{\n    int b = 9;\n    funky(&b);\n    cout << b << endl;\n    return 0;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 4 \n\nWhat is the output of the following code?\n\n```\n{\n    int a = 10;\n    int * b = &a;\n    while (*b > 5)\n        (*b)--;\n    cout << \"Answer: \"\n        << a\n        << endl;\n}\n```\n\nAnswer:\n\nPlease see page 258 for a hint.\n\n## Problem 5\n\nWhat is the output of the following code?\n\n```\nvoid funky(int * a)\n{\n    *a = 8;\n    return;\n}\nint main()\n{\n    int b = 9;\n    funky(&b);\n    cout << b << endl;\n    return 0;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,

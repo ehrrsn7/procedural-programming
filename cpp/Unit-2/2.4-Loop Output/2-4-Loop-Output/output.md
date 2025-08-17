@@ -311,7 +311,7 @@ Which of the following is the definition of the conceptual level of understandin
 - The value of every variable at every stage of execution
 - Realization where the flaws or bugs are
 
-Please see page 168 for a bint.
+Please see page 168 for a hint.
 
 ## Problem 2
 
@@ -346,7 +346,7 @@ Desk check the following program.
 
 ![[2-4-Loop-Output_img_2.jpeg]]
 
-Please see page 171 for a bint.
+Please see page 171 for a hint.
 
 # Problem 5 
 

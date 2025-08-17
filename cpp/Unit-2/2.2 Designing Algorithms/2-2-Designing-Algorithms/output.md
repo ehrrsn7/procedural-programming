@@ -252,7 +252,7 @@ int main()
 
 Answer:
 
-Please see page 65 for a bint.
+Please see page 65 for a hint.
 
 ## Problem 2
 
@@ -378,14 +378,14 @@ Write the pseudocode for a function to compute how many days are in a given year
 
 Answer:
 $\square$
-Please see page 150 for a bint.
+Please see page 150 for a hint.
 
 ## Problem 12
 
 Write the pseudocode for a function to display the multiples of 7 under 100 .
 Answer:
 $\square$
-Please see page 148 for a bint.
+Please see page 148 for a hint.
 
 # Assignment 2.2 
 

@@ -536,7 +536,7 @@ What is the output of the following code?
 
 Answer:
 
-Please see page 258 for a bint.
+Please see page 258 for a hint.
 
 ## Problem 5
 

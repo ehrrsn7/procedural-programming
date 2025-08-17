@@ -92,7 +92,7 @@
         },
         {
             "index": 9,
-            "markdown": "# Problem 9-13 \n\nFor each of the following, indicate where the parentheses goes to disambiguate the order of operations:\n\n| Raw expression | With parentheses |\n| :-- | :-- |\n| $4+1>2 * 2$ |  |\n| $a++<!b$ |  |\n| $a * b+c \\& \\& d \\mid \\mid e$ |  |\n| $3.1 *!b>7 * a++==++c+2$ |  |\n| $a<b<c<d$ |  |\n\nPlease see page 82 for a bint.\n\n## Problem 14\n\nWhat is the output?\n\n```\nint subtract(int b, int a)\n{\n    return a - b;\n}\nint main()\n{\n    int c = subtract(4, 3);\n    cout << c << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n## Problem 15\n\nWrite a function to accept a number from the caller as a parameter and return whether the number is positive:",
+            "markdown": "# Problem 9-13 \n\nFor each of the following, indicate where the parentheses goes to disambiguate the order of operations:\n\n| Raw expression | With parentheses |\n| :-- | :-- |\n| $4+1>2 * 2$ |  |\n| $a++<!b$ |  |\n| $a * b+c \\& \\& d \\mid \\mid e$ |  |\n| $3.1 *!b>7 * a++==++c+2$ |  |\n| $a<b<c<d$ |  |\n\nPlease see page 82 for a hint.\n\n## Problem 14\n\nWhat is the output?\n\n```\nint subtract(int b, int a)\n{\n    return a - b;\n}\nint main()\n{\n    int c = subtract(4, 3);\n    cout << c << endl;\n    return 0;\n}\n```\n\nAnswer:\n\n## Problem 15\n\nWrite a function to accept a number from the caller as a parameter and return whether the number is positive:",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -112,7 +112,7 @@
         },
         {
             "index": 11,
-            "markdown": "# Problem 18 \n\nWhat is the output when the user inputs the letter ' $m$ '?\n\n```\n{\n    char gender;\n    // prompt for gender\n    cout << \"What is your gender? (m/f)\";\n    cin >> gender;\n    // turn it into a bool\n    bool isMale = true;\n    if (gender == 'f');\n        isMale = false;\n    // output the result\n    if (isMale)\n        cout << \"You are male!\\n\";\n    else\n        cout << \"You are female!\\n\";\n}\n```\n\nAnswer:\n\nPlease see page 92 for a bint.\n\n## Problem 19\n\nWhat is the output when the user inputs the number 5?\n\n```\n{\n    int number;\n    // prompt for number\n    cout << \"number? \";\n    cin >> number;\n    // crazy math\n    if (number = 0)\n        number += 2;\n    // output\n    cout << number << endl;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 18 \n\nWhat is the output when the user inputs the letter ' $m$ '?\n\n```\n{\n    char gender;\n    // prompt for gender\n    cout << \"What is your gender? (m/f)\";\n    cin >> gender;\n    // turn it into a bool\n    bool isMale = true;\n    if (gender == 'f');\n        isMale = false;\n    // output the result\n    if (isMale)\n        cout << \"You are male!\\n\";\n    else\n        cout << \"You are female!\\n\";\n}\n```\n\nAnswer:\n\nPlease see page 92 for a hint.\n\n## Problem 19\n\nWhat is the output when the user inputs the number 5?\n\n```\n{\n    int number;\n    // prompt for number\n    cout << \"number? \";\n    cin >> number;\n    // crazy math\n    if (number = 0)\n        number += 2;\n    // output\n    cout << number << endl;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,

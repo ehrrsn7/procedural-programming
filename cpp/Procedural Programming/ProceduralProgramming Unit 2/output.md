@@ -42,15 +42,15 @@
 
 # Unit 2. Design \& Loops 
 
-2.0 Modularization ..... 108
-2.1 Debugging. ..... 130
-2.2 Designing Algorithms ..... 145
-2.3 Loop Syntax ..... 156
-2.4 Loop Output ..... 168
-2.5 Loop Design ..... 181
-2.6 Files ..... 190
-Unit 2 Practice Test ..... 207
-Unit 2 Project : Calendar Program ..... 209
+2.0 Modularization 
+2.1 Debugging. 
+2.2 Designing Algorithms 
+2.3 Loop Syntax 
+2.4 Loop Output 
+2.5 Loop Design 
+2.6 Files 
+Unit 2 Practice Test 
+Unit 2 Project : Calendar Program 
 
 # 2.0 Modularization 
 
@@ -734,7 +734,7 @@ $\bullet$
 $\bullet$
 $\bullet$
 
-Please see page 117 for a bint.
+Please see page 117 for a hint.
 
 ## Problem 5
 
@@ -754,7 +754,7 @@ void displayGreeting()
 
 Answer:
 
-Please see page 113 for a bint.
+Please see page 113 for a hint.
 
 ## Problem 6
 
@@ -1439,7 +1439,7 @@ Answer:
 $\square$
 $\square$
 
-Please see page 140 for a bint.
+Please see page 140 for a hint.
 
 ## Problem 5
 
@@ -1450,7 +1450,7 @@ $\square$
 $\square$
 $\square$
 
-Please see page 138 for a bint.
+Please see page 138 for a hint.
 
 ## Problem 6
 
@@ -1747,7 +1747,7 @@ int main()
 
 Answer:
 
-Please see page 65 for a bint.
+Please see page 65 for a hint.
 
 ## Problem 2
 
@@ -1770,7 +1770,7 @@ int main()
 
 Answer:
 
-Please see page 65 for a bint.
+Please see page 65 for a hint.
 
 ## Problem 3
 
@@ -1869,14 +1869,14 @@ Write the pseudocode for a function to compute how many days are in a given year
 
 Answer:
 $\square$
-Please see page 150 for a bint.
+Please see page 150 for a hint.
 
 ## Problem 12
 
 Write the pseudocode for a function to display the multiples of 7 under 100 .
 Answer:
 $\square$
-Please see page 148 for a bint.
+Please see page 148 for a hint.
 
 # Assignment 2.2 
 
@@ -2736,7 +2736,7 @@ Which of the following is the definition of the conceptual level of understandin
 - The value of every variable at every stage of execution
 - Realization where the flaws or bugs are
 
-Please see page 168 for a bint.
+Please see page 168 for a hint.
 
 ## Problem 2
 
@@ -2771,7 +2771,7 @@ Desk check the following program.
 
 ![[ProceduralProgramming Unit 2_img_11.jpeg]]
 
-Please see page 171 for a bint.
+Please see page 171 for a hint.
 
 # Problem 5 
 

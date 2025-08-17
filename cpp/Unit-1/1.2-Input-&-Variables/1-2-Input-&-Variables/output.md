@@ -275,14 +275,14 @@ cout << "\\"/\n";
 
 Answer:
 
-Please see page 29 for a bint.
+Please see page 29 for a hint.
 
 ## Problem 2
 
 How do you put a tab on the screen?
 Answer:
 
-Please see page 27 for a bint.
+Please see page 27 for a hint.
 
 ## Problem 3
 
@@ -290,14 +290,14 @@ How do you output the following:
 You will need to use '\n' a ton in this class.
 Answer:
 
-Please see page 29 for a bint.
+Please see page 29 for a hint.
 
 ## Problem 4
 
 How do you declare an integer variable?
 Answer:
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 ## Problem 5
 
@@ -310,14 +310,14 @@ How would you declare a variable for each of the following?
 | nameStudent |  |
 | ageStudent |  |
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 # Problem 6 
 
 Declare a variable to store the ratio of feet to meters.
 Answer:
 
-Please see page 37 for a bint.
+Please see page 37 for a hint.
 
 ## Problem 7
 
@@ -340,7 +340,7 @@ What is the number of bytes for each data type?
 }
 ```
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 ## Problem 8
 
@@ -353,14 +353,14 @@ int value
 long double value;
 ```
 
-Please see page 36 for a bint.
+Please see page 36 for a hint.
 
 ## Problem 9
 
 Declare a variable to represent the following number in $\mathrm{C}++: 8,820,198,883,463.39$
 Answer:
 
-Please see page 37 for a bint.
+Please see page 37 for a hint.
 
 # Problem 10 
 
@@ -408,4 +408,4 @@ Your income is: \$ 932.16
 Please verify your solution against:
 testBed cs124/assign12 assignment12.cpp
 Don't forget to submit your assignment with the name "Assignment 12" in the header.
-Please see page 41 for a bint.
+Please see page 41 for a hint.

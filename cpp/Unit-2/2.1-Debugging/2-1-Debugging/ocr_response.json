@@ -132,7 +132,7 @@
         },
         {
             "index": 12,
-            "markdown": "# Problem 4 \n\nCreate a stub for the following function:\n\n```\nfloat getIncome()\n{\n    float income;\n    // prompt\n    cout << \"Please enter your income: \";\n    cin >> income;\n    return income;\n}\n```\n\nAnswer:\n$\\square$\n$\\square$\n\nPlease see page 140 for a bint.\n\n## Problem 5\n\nCreate a driver program for the following function:\nfloat sqrt(float value);\nAnswer:\n$\\square$\n$\\square$\n$\\square$\n\nPlease see page 138 for a bint.\n\n## Problem 6\n\nCreate a driver program for the following function:\nvoid displayTable(int numDaysInMonth, int offset);\nAnswer:\n$\\square$\n$\\square$\n$\\square$",
+            "markdown": "# Problem 4 \n\nCreate a stub for the following function:\n\n```\nfloat getIncome()\n{\n    float income;\n    // prompt\n    cout << \"Please enter your income: \";\n    cin >> income;\n    return income;\n}\n```\n\nAnswer:\n$\\square$\n$\\square$\n\nPlease see page 140 for a hint.\n\n## Problem 5\n\nCreate a driver program for the following function:\nfloat sqrt(float value);\nAnswer:\n$\\square$\n$\\square$\n$\\square$\n\nPlease see page 138 for a hint.\n\n## Problem 6\n\nCreate a driver program for the following function:\nvoid displayTable(int numDaysInMonth, int offset);\nAnswer:\n$\\square$\n$\\square$\n$\\square$",
             "images": [],
             "dimensions": {
                 "dpi": 200,

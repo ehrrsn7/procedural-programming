@@ -72,7 +72,7 @@
         },
         {
             "index": 6,
-            "markdown": "# Problem 1 \n\nWhat is the output of the following code?\n\n```\n{\n    int a[4];\n    for (int i = 0; i < 4; i++)\n        a[i] = i;\n    for (int j = 3; j >= 0; j--)\n        cout << a[j];\n    cout << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a bint.\n\n## Problem 2\n\nWhat is the output of the following code?\n\n```\n{\n    char a[] = {'t', 'm', 'q'};\n    char b[] = {'a', 'z', 'b'};\n    char c[3];\n    for (int i = 0; i < 3; i++)\n        if (a[i] > b[i])\n            c[i] = a[i];\n        else\n            c[i] = b[i];\n    for (int i = 0; i < 3; i++)\n        cout << c[i];\n    cout << endl;\n}\n```\n\nAnswer:",
+            "markdown": "# Problem 1 \n\nWhat is the output of the following code?\n\n```\n{\n    int a[4];\n    for (int i = 0; i < 4; i++)\n        a[i] = i;\n    for (int j = 3; j >= 0; j--)\n        cout << a[j];\n    cout << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a hint.\n\n## Problem 2\n\nWhat is the output of the following code?\n\n```\n{\n    char a[] = {'t', 'm', 'q'};\n    char b[] = {'a', 'z', 'b'};\n    char c[3];\n    for (int i = 0; i < 3; i++)\n        if (a[i] > b[i])\n            c[i] = a[i];\n        else\n            c[i] = b[i];\n    for (int i = 0; i < 3; i++)\n        cout << c[i];\n    cout << endl;\n}\n```\n\nAnswer:",
             "images": [],
             "dimensions": {
                 "dpi": 200,

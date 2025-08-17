@@ -152,7 +152,7 @@
         },
         {
             "index": 15,
-            "markdown": "# Problem 1 \n\nWhat is the output?\n\n```\n{\n    float nums[] = {1.9, 5.2, 7.6};\n    cout << nums[1] << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a bint.\n\n## Problem 2\n\nWhat is the output?\n\n```\n{\n    int a[] = {2, 4, 6};\n    int b = 0;\n    for (int c = 0; c < 3; c++)\n        b += a[c];\n    cout << b << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a bint.\n\n## Problem 3\n\nWhat is the output?\n\n```\n{\n    char letters[] = \"FFFFFFDCBAA\";\n    int number = 87;\n    cout << letters[number / 10]\n        << endl;\n}\n```\n\nAnswer:\n\nPlease see page 219 for a bint.",
+            "markdown": "# Problem 1 \n\nWhat is the output?\n\n```\n{\n    float nums[] = {1.9, 5.2, 7.6};\n    cout << nums[1] << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a hint.\n\n## Problem 2\n\nWhat is the output?\n\n```\n{\n    int a[] = {2, 4, 6};\n    int b = 0;\n    for (int c = 0; c < 3; c++)\n        b += a[c];\n    cout << b << endl;\n}\n```\n\nAnswer:\n\nPlease see page 218 for a hint.\n\n## Problem 3\n\nWhat is the output?\n\n```\n{\n    char letters[] = \"FFFFFFDCBAA\";\n    int number = 87;\n    cout << letters[number / 10]\n        << endl;\n}\n```\n\nAnswer:\n\nPlease see page 219 for a hint.",
             "images": [],
             "dimensions": {
                 "dpi": 200,
@@ -172,7 +172,7 @@
         },
         {
             "index": 17,
-            "markdown": "# Problem 7 \n\nGiven the following function declaration:\n\n```\nvoid fill(int array[])\n{\n    for (int i = 0; i < 10; i++)\n        array[i] = 0;\n}\n```\n\nWrite the code to call the function with a variable called array.\nAnswer:\n$\\square$\nPlease see page 221 for a bint.\n\n## Problem 8\n\nGiven the following code:\n\n```\n{\n    float numbers[32];\n    display(numbers, 32);\n}\n```\n\nWrite a function prototype for display().\nAnswer:\n$\\square$\nPlease see page 223 for a bint.\n\n## Problem 9\n\nWrite the code to compute and display the average of the following numbers: $54.1,18.6,32.7$, and 7 :\nAverage is 28.1\nAnswer:\n$\\square$",
+            "markdown": "# Problem 7 \n\nGiven the following function declaration:\n\n```\nvoid fill(int array[])\n{\n    for (int i = 0; i < 10; i++)\n        array[i] = 0;\n}\n```\n\nWrite the code to call the function with a variable called array.\nAnswer:\n$\\square$\nPlease see page 221 for a hint.\n\n## Problem 8\n\nGiven the following code:\n\n```\n{\n    float numbers[32];\n    display(numbers, 32);\n}\n```\n\nWrite a function prototype for display().\nAnswer:\n$\\square$\nPlease see page 223 for a hint.\n\n## Problem 9\n\nWrite the code to compute and display the average of the following numbers: $54.1,18.6,32.7$, and 7 :\nAverage is 28.1\nAnswer:\n$\\square$",
             "images": [],
             "dimensions": {
                 "dpi": 200,
