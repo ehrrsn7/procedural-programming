@@ -1,17 +1,30 @@
 ---
-
 title: "1.0 First Program"
-date_generated: 2025-08-08T16:01:00-07:00
-model: mistral-ocr-2505-completion
-usage_info:
-    pages_processed: 12
-    doc_size_bytes: 551389
-document_annotation: null
+description: "A chapter on first program in C++."
+course: "CS 124"
+unit: "Unit 1"
+chapter: "1.0"
+tags:
+    - cpp
+    - procedural-programming
+source:
+    type: "AI-Generated Draft"
+    method: "Mistral OCR"
+    model: mistral-ocr-2505-completion
+    original: "1-1-Output.pdf"
+    generated: "2025-08-08T16:01:00-07:00"
+    usage_info:
+        pages_processed: 12
+        doc_size_bytes: 551389
+    document_annotation: null
+author:
+    name: "Procedural Programming in C++"
+    author: "James Helfrich"
+    description: "CS 124 Textbook"
+    ASIN: "B0DTWH6ZWQ"
 ---
 
-# 1.0 First Program {.unit-1-background}
-
-# Unit 1. Simple Programs
+## Unit 1. Simple Programs {.unit-1-background}
 
 | ---
 | 1.0 First Program
@@ -22,9 +35,11 @@ document_annotation: null
 | 1.5 Boolean Expressions
 | 1.6 IF Statements.
 | Unit 1 Practice Test
-| Unit 1 Project : Monthly Budget
+| Unit 1 Project : Monthly Budget {.table-of-contents}
 
-# Unit 1. Simple Programs
+> [[toc]]
+
+## Unit 1. Simple Programs {.unit-1-background}
 
 # 1.0 First Program
 
@@ -50,12 +65,12 @@ Before reading this section, please make sure you are able to:
 The process of turning in a homework assignment consists of several steps. While these steps may seem unfamiliar at first, they will be well-rehearsed and second-nature in a week or two. The lab assistants (wearing green vests in the Linux lab) are ready and eager to help you if you get stuck on the way. The process consists of the following steps:
 
 1. Log into the lab
-2. Copy the assignment template using cp
-3. Edit your file using emacs
-4. Compile the program using g++
-5. Verify your solution with testBed
-6. Verify your style with styleChecker
-7. Turn it in with submit
+2. Copy the assignment template using `cp`
+3. Edit your file using `emacs`
+4. Compile the program using `g++`
+5. Verify your solution with `testBed`
+6. Verify your style with `styleChecker`
+7. Turn it in with `submit`
 
 This entire process will be demonstrated in "Example - Hello World" at the end of the chapter.
 
@@ -105,7 +120,7 @@ cp /home/cs124/template.cpp hw10.cpp
 Most Linux commands do not display anything on the screen if they were successful. You will need to do a directory listing (ls) to see if the file copied. A list of other common Linux commands are the following:
 
 | :--------------------: | :------------: | :-------------------------------------------
-| **Navigation tools**   |      `cd`      | Change directory {.steel-blue-sidebar-table}
+| **Navigation tools**   |      `cd`      | Change directory {.rvhs-green-sidebar-table}
 |                        |      `ls`      | List information about file(s)
 |                        |     `cat`      | Display the contents of a file to the screen
 |                        |    `clear`     | Clear terminal screen
@@ -119,7 +134,7 @@ Most Linux commands do not display anything on the screen if they were successfu
 |                        |     `g++`      | Compile a C++ program
 | **Homework tools**     | `stylechecker` | Run the style checker on a file
 |                        |   `testBed`    | Run the test bed on a file
-|                        |    `submit`    | Turn in a file
+|                        |    `submit`    | Turn in a file {.rvhs-green-sidebar-table}
 
 For more commands or more details on the above, please see _Appendix D: Linux and Emacs Cheat-Sheet_.
 
@@ -138,24 +153,24 @@ emacs hello.cpp
 This will start emacs with a blank document named hello. cpp. From here you can type anything you like. However, if you wish this program to function correctly, you need to type valid C++. For your first program, you can make it say "Hello World" as we need to do for the first assignment:
 
 ```cpp
-/******************************************************************************
-* Program:
-* Assignment 10, Hello World
-* Brother Helfrich, CS124
-* Author:
-* Sam Student
-* Summary:
-* This program is designed to be the first C++ program you have ever
-* written. While not particularly complex, it is often the most difficult
-* to write because the tools are so unfamiliar.
-***************************************************************************/
+/***********************************************************************
+ * Program:
+ * Assignment 10, Hello World
+ * Brother Helfrich, CS124
+ * Author:
+ * Sam Student
+ * Summary:
+ * This program is designed to be the first C++ program you have ever
+ * written. While not particularly complex, it is often the most difficult
+ * to write because the tools are so unfamiliar.
+ ***********************************************************************/
 
 #include <iostream>
 using namespace std;
 
-/******************************************************************************
-* Hello world on the screen
-*****************************************************************************/
+/***********************************************************************
+ * Hello world on the screen
+ *************************************************************************/
 int main()
 {
     // display
@@ -190,7 +205,7 @@ If the compilation is successful, then the file `a.out` will be created. If ther
 
 After we have successfully passed the compilation process, it is then necessary to verify our solution. This is typically done in a two-step process. The first is to simply run the program by hand and visually inspect the output. To execute a newly-compiled program, type the name of the program in the terminal. Since the default name of a newly-compiled program is "`a.out`," then type:
 ```bash
-`a.out`
+a.out
 ```
 
 The second step in the verification process is to test the program against the key. This is done with a program called Test Bed. Test Bed compares the output of your program against what was expected. If everything behaves correctly, a message "No Errors" will be displayed. On the other hand, if the program malfunctions or produces different output than expected, then the difference is displayed to the user. In this way, Test Bed is a two-edged sword: you know when you got the right answer, but it is exceedingly picky. In other words, Test Bed will notice if a space was used instead of a tab even though it appears identical on the screen. The syntax for Test Bed is:
@@ -214,8 +229,10 @@ If, for example, you would like to run Style Checker on hw10.cpp, then the follo
 ```bash
 styleChecker hw10.cpp
 ```
+
 The main components to style include:
-<table>
+
+<table class="steel-blue-sidebar-table centered-sidebar">
 <tr>
 <th>
 Variable names
@@ -238,7 +255,9 @@ Function names
 <td>
 
 Function names are camelCased just like variable names. Function names are typically verbs while variable names are nouns. We will learn about functions in Chapter 1.4.
+```cpp
 displayBudget( )
+```
 
 </td>
 
@@ -253,10 +272,11 @@ Indent
 
 Indentations are three spaces. No tabs please!
 
-| $\{$ |
-| :-- |
-| $\}$ |
-| $\}$ |
+```cpp
+{
+    cout << "Hello world\n";
+}
+```
 
 </td>
 
@@ -271,7 +291,7 @@ Line length
 
 Lines are no longer than 80 characters in length. If more space is needed for a comment, break the comment into two lines. The same is true for cout statements (Chapter 1.1) and function parameters (Chapter 1.4).
 
-```
+```cpp
 // Long comments can be broken into two lines
 // to increase readability. Start each new
 // line with "//"s
@@ -290,16 +310,16 @@ Program comments
 
 All programs have a program comment block at the beginning of the file. This can be found in the standard template. An example is:
 
-```
+```cpp
 /**********************************************
-* Program:
-* Assignment 10, Hello World
-* Brother Helfrich, CS124
-* Author:
-* Sam Student
-* Summary:
-* Display a message
-*********************************************/
+ * Program:
+ * Assignment 10, Hello World
+ * Brother Helfrich, CS124
+ * Author:
+ * Sam Student
+ * Summary:
+ * Display a message
+ *********************************************/
 ```
 
 </td>
@@ -315,12 +335,12 @@ Function comments
 
 Every function such as main() has a comment block describing what the function does:
 
-```
+```cpp
 /**********************************************
-* MAIN
-* This program will display a simple message
-* on the screen
-*********************************************/
+ * MAIN
+ * This program will display a simple message
+ * on the screen
+ *********************************************/
 ```
 
 </td>
@@ -335,7 +355,7 @@ Space between operators
 <td>
 
 All operators, such as addition ('+') and the insertion operator ('<<') are to have a single space on either side to set them apart:
-```
+```cpp
 sumOfSquares += userInput * userInput;
 ```
 
@@ -343,40 +363,48 @@ sumOfSquares += userInput * userInput;
 </tr>
 </table>
 
-For more details on the University's style guidelines, please see "Appendix A: Elements of Style" and look at the coding examples presented in this class.
+For more details on the University's style guidelines, please see "_Appendix A: Elements of Style_" and look at the coding examples presented in this class.
 
 ## 6. Submit
 
 The last step of turning in an assignment is to submit it. While we discuss this as the end of the homework process, you can submit an assignment as often as you like. In the case of multiple submissions, the last one submitted at the moment the assignment is graded is the one that will be used. It is therefore a good idea to submit your assignments frequently so your professor has the most recent copy of your work. The syntax for the program submission tool is:
+```bash
 submit <file name>
+```
 If, for example, your program is named "hw10.cpp," then the following command is to be executed:
+```bash
 submit hw10.cpp
+```
 One word of caution with the Submit tool. The tool reads the program header to determine the professor name, the class number, and the assignment number. If any of these are incorrect, then the program will not be submitted correctly. For example, consider the following header:
 
-```
-/**************************************************************
-* Program:
-* Assignment 10, Hello World
-* Brother Helfrich, CS124
-* Author:
-* Susan Bakersfield
-* Summary:
-* This program is designed to be the first C++ program you have ever
-* written. While not particularly complex, it is often the most difficult
-* to write because the tools are so unfamiliar.
-*************************************************************/
+```cpp
+/************************************************************************
+ * Program:
+ * Assignment 10, Hello World
+ * Brother Helfrich, CS124
+ * Author:
+ * Susan Bakersfield
+ * Summary:
+ * This program is designed to be the first C++ program you have ever
+ * written. While not particularly complex, it is often the most difficult
+ * to write because the tools are so unfamiliar.
+ ***********************************************************************/
 ```
 
 Here, Submit will determine that the program is an Assignment (as opposed to a Test or Project), the assignment number is 10 , the professor is Br . Helfrich, and the class is CS 124 . If any of these are incorrect, then the file will be sent to another location. To help you with this, submit tells the user what it read from the header:
-submit homework to helfrich cs124 and assign10. (y/n)
+```bash
+submit homework to helfrich cs124 and assign10? (y/n)
+```
 It is worthwhile to read that message.
 
 > [!tldr] Sam's Corner
 > ![Sam](../../../.vscode/assets/sam.png){.sam}
 > Submit is basically a fancy copy function. It makes two copies of the program: one for you and one for the instructor. If, for example, you submitted to "Assignment 10" for "CS 124", then you will get a copy on.
-> ```
+>
+> ```txt
 > /home/<username>/submittedHomework/cs124_assign10.cpp
 > ```
+>
 > Observe how the name of the file is changed to that of the assignment and class name. The second copy gets sent to the instructor. Here the filename is changed to the login ID. If, for example, your login is "`eniac`", then the file appears as `eniac`.cpp in the instructor's folder.
 > 
 > Please do not use a dot in the name of your file. If you submit hw1.0.cpp, for example, then it will appear as `eniac.0` instead of `eniac.cpp` and the instructor will not grade it.
@@ -398,7 +426,7 @@ It is worthwhile to read that message.
 > The code for the solution is:
 >
 > ```cpp
-> /*************************************************************
+> /***********************************************************************
 >  * Program:
 >  * Assignment 10, Hello World
 >  * Brother Helfrich, CS124
@@ -408,12 +436,12 @@ It is worthwhile to read that message.
 >  * This program is designed to be the first C++ program you have ever
 >  * written. While not particularly complex, it is often the most difficult
 >  * to write because the tools are so unfamiliar.
->  *************************************************************/
+>  ***********************************************************************/
 > #include <iostream>
 > using namespace std;
-> /*************************************************************
+> /***********************************************************************
 >  * Hello world on the screen
->  *************************************************************/
+>  ***********************************************************************/
 > int main()
 > {
 >     // display
@@ -545,4 +573,5 @@ It is worthwhile to read that message.
 > ```
 > submit assignment10.cpp
 > ```
-> *Please see page 21 for a hint.*{style="align-text: right; width: 100%;"}
+>
+> *Please see page 21 for a hint.*

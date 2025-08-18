@@ -210,18 +210,18 @@ table.Example > tbody > tr > td {
     vertical-align: top;
 }
 
-div.steel-blue-header-table {
+div.rvhs-green-header-table {
   display: hidden;
 }
-.steel-blue-header-table + table > thead {
+.rvhs-green-header-table + table > thead {
   background: var(--byui-blue);
   color: white;
 }
 
-thead.steel-blue-header-table,
-th.steel-blue-header-table ~ th,
-th.steel-blue-header-table > code,
-th.steel-blue-header-table {
+thead.rvhs-green-header-table,
+th.rvhs-green-header-table ~ th,
+th.rvhs-green-header-table > code,
+th.rvhs-green-header-table {
   background: var(--byui-blue);
   color: white;
 }
@@ -237,25 +237,25 @@ th.gray-box ~ th {
   border: 2px solid gray;
 }
 
-/* Select the table that is the next sibling of div.steel-blue-sidebar-table */
-.steel-blue-sidebar-table + table td {
+/* Select the table that is the next sibling of div.rvhs-green-sidebar-table */
+.rvhs-green-sidebar-table + table td {
   background: transparent;
   font-weight: normal;
 }
 
-.steel-blue-sidebar-table + table > thead,
-.steel-blue-sidebar-table + table > tbody > tr > :first-child,
-.steel-blue-sidebar-table + table > tbody > tr > :first-child code {
+.rvhs-green-sidebar-table + table > thead,
+.rvhs-green-sidebar-table + table > tbody > tr > :first-child,
+.rvhs-green-sidebar-table + table > tbody > tr > :first-child code {
   background: var(--byui-blue);
   color: white;
   font-weight: bold;
 }
 
-.steel-blue-sidebar-table + table > thead > th {
+.rvhs-green-sidebar-table + table > thead > th {
   border-bottom: 3px solid black;
 }
 
-.steel-blue-sidebar-table + table > tbody > tr:nth-child(odd) {
+.rvhs-green-sidebar-table + table > tbody > tr:nth-child(odd) {
   background: #d8d8d8aa;
 }
 
